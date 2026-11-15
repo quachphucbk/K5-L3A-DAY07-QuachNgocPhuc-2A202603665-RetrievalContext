@@ -1,0 +1,976 @@
+{
+  "created_at_utc": "2026-11-14T10:34:49.920909+00:00",
+  "stage": "agent_dev",
+  "query_id": "q06",
+  "config_id": "baseline800",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Vì sao hộ nghèo thường nhạy cảm hơn trước biến động giá lương thực và năng lượng?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao hộ nghèo thường nhạy cảm hơn trước biến động giá lương thực và năng lượng?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2ftEqrReGTNgLqVDBZZ",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_015teCBMWt3WiTWVn5nuyRdA",
+            "name": "search_documents",
+            "input": {
+              "query": "why poor households more vulnerable to food and energy price shocks"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_015teCBMWt3WiTWVn5nuyRdA",
+          "name": "search_documents",
+          "input": {
+            "query": "why poor households more vulnerable to food and energy price shocks"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1334,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 97,
+          "output_tokens_details": {
+            "thinking_tokens": 32
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001819,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1334,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.6263595409982372
+    },
+    {
+      "event": "search",
+      "query": "why poor households more vulnerable to food and energy price shocks",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8880463838577334
+        },
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8772670961240835
+        },
+        {
+          "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+          "metadata": {
+            "end": 1419,
+            "start": 589,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8743732721360598
+        }
+      ],
+      "context": "[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+      "context_candidates": [
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8880463838577334
+        },
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8772670961240835
+        },
+        {
+          "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+          "metadata": {
+            "end": 1419,
+            "start": 589,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8743732721360598
+        }
+      ],
+      "context_ids": [
+        "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f"
+      ],
+      "elapsed_seconds": 0.0392491670063464
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao hộ nghèo thường nhạy cảm hơn trước biến động giá lương thực và năng lượng?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_015teCBMWt3WiTWVn5nuyRdA",
+              "name": "search_documents",
+              "input": {
+                "query": "why poor households more vulnerable to food and energy price shocks"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_015teCBMWt3WiTWVn5nuyRdA",
+              "content": "{\"current_context\": \"[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\", \"current_context_ids\": [\"1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f\"], \"searched_queries\": [\"why poor households more vulnerable to food and energy price shocks\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2ftNVF9RTYrqjUnnfPH",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01GfGep4BTK6eaM6Z7JjSYqQ",
+            "name": "search_documents",
+            "input": {
+              "query": "poor households spend larger share of income on food and energy, price shock impact on poverty"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01GfGep4BTK6eaM6Z7JjSYqQ",
+          "name": "search_documents",
+          "input": {
+            "query": "poor households spend larger share of income on food and energy, price shock impact on poverty"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1733,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 91,
+          "output_tokens_details": {
+            "thinking_tokens": 20
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002188,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1733,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.689903708989732
+    },
+    {
+      "event": "search",
+      "query": "poor households spend larger share of income on food and energy, price shock impact on poverty",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.9044356346130435
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8865756392479006
+        },
+        {
+          "id": "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "Record maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)",
+          "metadata": {
+            "end": 2742,
+            "start": 1903,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8849676457105332
+        }
+      ],
+      "context": "[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+      "context_candidates": [
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.9044356346130435
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8865756392479006
+        },
+        {
+          "id": "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "Record maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)",
+          "metadata": {
+            "end": 2742,
+            "start": 1903,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8849676457105332
+        }
+      ],
+      "context_ids": [
+        "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f"
+      ],
+      "elapsed_seconds": 0.03206304200284649
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao hộ nghèo thường nhạy cảm hơn trước biến động giá lương thực và năng lượng?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01GfGep4BTK6eaM6Z7JjSYqQ",
+              "name": "search_documents",
+              "input": {
+                "query": "poor households spend larger share of income on food and energy, price shock impact on poverty"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01GfGep4BTK6eaM6Z7JjSYqQ",
+              "content": "{\"current_context\": \"[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\", \"current_context_ids\": [\"1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f\"], \"searched_queries\": [\"why poor households more vulnerable to food and energy price shocks\", \"poor households spend larger share of income on food and energy, price shock impact on poverty\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2ftUTRAUTcPqP1R6TAc",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_017xobuDPKSNDSZHTXgMKgBP",
+            "name": "search_documents",
+            "input": {
+              "query": "low-income households share of consumption spent on food and energy vulnerability to commodity price increases"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_017xobuDPKSNDSZHTXgMKgBP",
+          "name": "search_documents",
+          "input": {
+            "query": "low-income households share of consumption spent on food and energy vulnerability to commodity price increases"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1766,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 136,
+          "output_tokens_details": {
+            "thinking_tokens": 62
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002446,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1766,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.5254029159987113
+    },
+    {
+      "event": "search",
+      "query": "low-income households share of consumption spent on food and energy vulnerability to commodity price increases",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.871615860712059
+        },
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8603082895278992
+        },
+        {
+          "id": "3d1e3aeec297a7866ec8589c274107a39ce0ec3f259eecfb1876ab432b0e665c",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "BOX 1.2 Tracking the impact on poverty of the conflict in the Middle East The conflict in the Middle East and the associated increase in energy prices impacted projected economic growth in 2026. Nearly two in three countries were facing weaker growth prospects in June 2026 compared with the outlook in Global Economic Prospects, January 2026 (World Bank 2026b, 2026c). According to the projections of Global Economic Prospects, June 2026 (World Bank 2026c), commodity prices were expected to rise by 22 percent in 2026, while, according to earlier projections in January 2026, they had been expected to decline by 7 percent in 2026 (World Bank 2026b). The higher commodity prices led to a resurgence of inflationary pressures similar to the situation observed at the start of the Russian Federation’s invasion of Ukraine, which resulted in a reduction in food production, particularly of wheat. What",
+          "metadata": {
+            "end": 1415,
+            "start": 515,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8531711785095243
+        }
+      ],
+      "context": "[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+      "context_candidates": [
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.871615860712059
+        },
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8603082895278992
+        },
+        {
+          "id": "3d1e3aeec297a7866ec8589c274107a39ce0ec3f259eecfb1876ab432b0e665c",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "BOX 1.2 Tracking the impact on poverty of the conflict in the Middle East The conflict in the Middle East and the associated increase in energy prices impacted projected economic growth in 2026. Nearly two in three countries were facing weaker growth prospects in June 2026 compared with the outlook in Global Economic Prospects, January 2026 (World Bank 2026b, 2026c). According to the projections of Global Economic Prospects, June 2026 (World Bank 2026c), commodity prices were expected to rise by 22 percent in 2026, while, according to earlier projections in January 2026, they had been expected to decline by 7 percent in 2026 (World Bank 2026b). The higher commodity prices led to a resurgence of inflationary pressures similar to the situation observed at the start of the Russian Federation’s invasion of Ukraine, which resulted in a reduction in food production, particularly of wheat. What",
+          "metadata": {
+            "end": 1415,
+            "start": 515,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8531711785095243
+        }
+      ],
+      "context_ids": [
+        "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f"
+      ],
+      "elapsed_seconds": 0.042094709002412856
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao hộ nghèo thường nhạy cảm hơn trước biến động giá lương thực và năng lượng?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_017xobuDPKSNDSZHTXgMKgBP",
+              "name": "search_documents",
+              "input": {
+                "query": "low-income households share of consumption spent on food and energy vulnerability to commodity price increases"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_017xobuDPKSNDSZHTXgMKgBP",
+              "content": "{\"current_context\": \"[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\", \"current_context_ids\": [\"1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f\"], \"searched_queries\": [\"why poor households more vulnerable to food and energy price shocks\", \"poor households spend larger share of income on food and energy, price shock impact on poverty\", \"low-income households share of consumption spent on food and energy vulnerability to commodity price increases\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2ftbNP1JDSCSbWn46Be",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01HUw1ex3EYmhTMp6fvY5Yb8",
+            "name": "search_documents",
+            "input": {
+              "query": "poor households spend larger share of budget on food and energy so price shocks hit them harder"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01HUw1ex3EYmhTMp6fvY5Yb8",
+          "name": "search_documents",
+          "input": {
+            "query": "poor households spend larger share of budget on food and energy so price shocks hit them harder"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1799,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 127,
+          "output_tokens_details": {
+            "thinking_tokens": 55
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002434,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1799,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.454075790999923
+    },
+    {
+      "event": "search",
+      "query": "poor households spend larger share of budget on food and energy so price shocks hit them harder",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8909326726754129
+        },
+        {
+          "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+          "metadata": {
+            "end": 1419,
+            "start": 589,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8638470850082004
+        },
+        {
+          "id": "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "Record maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)",
+          "metadata": {
+            "end": 2742,
+            "start": 1903,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8612795041466411
+        }
+      ],
+      "context": "[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+      "context_candidates": [
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8909326726754129
+        },
+        {
+          "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+          "metadata": {
+            "end": 1419,
+            "start": 589,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8638470850082004
+        },
+        {
+          "id": "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "Record maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)",
+          "metadata": {
+            "end": 2742,
+            "start": 1903,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8612795041466411
+        }
+      ],
+      "context_ids": [
+        "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f"
+      ],
+      "elapsed_seconds": 0.037181332998443395
+    },
+    {
+      "event": "model",
+      "step": 5,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao hộ nghèo thường nhạy cảm hơn trước biến động giá lương thực và năng lượng?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01HUw1ex3EYmhTMp6fvY5Yb8",
+              "name": "search_documents",
+              "input": {
+                "query": "poor households spend larger share of budget on food and energy so price shocks hit them harder"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01HUw1ex3EYmhTMp6fvY5Yb8",
+              "content": "{\"current_context\": \"[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\", \"current_context_ids\": [\"1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f\"], \"searched_queries\": [\"why poor households more vulnerable to food and energy price shocks\", \"poor households spend larger share of income on food and energy, price shock impact on poverty\", \"low-income households share of consumption spent on food and energy vulnerability to commodity price increases\", \"poor households spend larger share of budget on food and energy so price shocks hit them harder\"], \"searches_remaining\": 0}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2fthjdMCUF13UUeX8bH",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01Hww2Mvh7Rkm94R8QjJVFig",
+            "name": "finish",
+            "input": {
+              "status": "abstain",
+              "answer": "Chưa đủ bằng chứng trong kho để trả lời. Đã dùng hết lượt tìm kiếm. Đoạn duy nhất được truy xuất nói về việc cú sốc giá năng lượng tác động trực tiếp đến ngân sách hộ gia đình và gián tiếp qua chi phí vận tải lương thực, cùng với giá phân bón tăng. Tuy nhiên, đoạn này không nói về hộ nghèo, không so sánh mức độ nhạy cảm giữa hộ nghèo và hộ khác, và không giải thích tỷ trọng chi tiêu lương thực/năng lượng trong ngân sách hộ nghèo. Vì vậy không thể kết luận vì sao hộ nghèo nhạy cảm hơn.",
+              "citations": []
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01Hww2Mvh7Rkm94R8QjJVFig",
+          "name": "finish",
+          "input": {
+            "status": "abstain",
+            "answer": "Chưa đủ bằng chứng trong kho để trả lời. Đã dùng hết lượt tìm kiếm. Đoạn duy nhất được truy xuất nói về việc cú sốc giá năng lượng tác động trực tiếp đến ngân sách hộ gia đình và gián tiếp qua chi phí vận tải lương thực, cùng với giá phân bón tăng. Tuy nhiên, đoạn này không nói về hộ nghèo, không so sánh mức độ nhạy cảm giữa hộ nghèo và hộ khác, và không giải thích tỷ trọng chi tiêu lương thực/năng lượng trong ngân sách hộ nghèo. Vì vậy không thể kết luận vì sao hộ nghèo nhạy cảm hơn.",
+            "citations": []
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1825,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 694,
+          "output_tokens_details": {
+            "thinking_tokens": 331
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0005295,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1825,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 4.091830833000131
+    },
+    {
+      "event": "finish",
+      "status": "abstain",
+      "answer": "Chưa đủ bằng chứng trong kho để trả lời. Đã dùng hết lượt tìm kiếm. Đoạn duy nhất được truy xuất nói về việc cú sốc giá năng lượng tác động trực tiếp đến ngân sách hộ gia đình và gián tiếp qua chi phí vận tải lương thực, cùng với giá phân bón tăng. Tuy nhiên, đoạn này không nói về hộ nghèo, không so sánh mức độ nhạy cảm giữa hộ nghèo và hộ khác, và không giải thích tỷ trọng chi tiêu lương thực/năng lượng trong ngân sách hộ nghèo. Vì vậy không thể kết luận vì sao hộ nghèo nhạy cảm hơn.",
+      "citations": [],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 4,
+  "model_calls": 5,
+  "usage": {
+    "input_tokens": 8457,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1145
+  },
+  "cost_usd": null,
+  "status": "abstain",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 800,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+  "context_ids": [
+    "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f"
+  ],
+  "context_chunks": [
+    {
+      "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 46,
+      "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+      "metadata": {
+        "end": 1901,
+        "start": 1416,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 14,
+        "segment_start": 0
+      },
+      "score": 0.8909326726754129
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 5,
+    "returned_calls": 5
+  },
+  "estimated_cost_usd": 0.0014182,
+  "answer": "Chưa đủ bằng chứng trong kho để trả lời. Đã dùng hết lượt tìm kiếm. Đoạn duy nhất được truy xuất nói về việc cú sốc giá năng lượng tác động trực tiếp đến ngân sách hộ gia đình và gián tiếp qua chi phí vận tải lương thực, cùng với giá phân bón tăng. Tuy nhiên, đoạn này không nói về hộ nghèo, không so sánh mức độ nhạy cảm giữa hộ nghèo và hộ khác, và không giải thích tỷ trọng chi tiêu lương thực/năng lượng trong ngân sách hộ nghèo. Vì vậy không thể kết luận vì sao hộ nghèo nhạy cảm hơn.",
+  "citations": [],
+  "elapsed_seconds": 10.538517125009093,
+  "answerable": true,
+  "context_strict_hit": false,
+  "context_set_hit": false,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

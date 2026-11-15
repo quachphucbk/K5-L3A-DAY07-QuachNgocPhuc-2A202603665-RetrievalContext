@@ -1,0 +1,717 @@
+{
+  "created_at_utc": "2026-11-14T10:39:28.765161+00:00",
+  "stage": "agent_dev",
+  "query_id": "q01",
+  "config_id": "neighbors3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Trong mục “Gains in global poverty reduction could be reversed in coming decades”, đợt cập nhật tháng 6/2025 đổi năm cơ sở so sánh mức giá từ năm nào sang năm nào?",
+  "filter": {
+    "section": "Gains in global poverty reduction could be reversed in coming decades"
+  },
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong mục “Gains in global poverty reduction could be reversed in coming decades”, đợt cập nhật tháng 6/2025 đổi năm cơ sở so sánh mức giá từ năm nào sang năm nào?\", \"filter\": {\"section\": \"Gains in global poverty reduction could be reversed in coming decades\"}}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gEnShQpaEryvVWV9bM",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_018CV5qu9cgcXbcwXPA1w7dh",
+            "name": "search_documents",
+            "input": {
+              "query": "Gains in global poverty reduction could be reversed in coming decades June 2025 update base year purchasing power parity"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_018CV5qu9cgcXbcwXPA1w7dh",
+          "name": "search_documents",
+          "input": {
+            "query": "Gains in global poverty reduction could be reversed in coming decades June 2025 update base year purchasing power parity"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1396,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 81,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001801,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1396,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.4823820000019623
+    },
+    {
+      "event": "search",
+      "query": "Gains in global poverty reduction could be reversed in coming decades June 2025 update base year purchasing power parity",
+      "query_rewritten": true,
+      "filter": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades"
+      },
+      "results": [
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8754432723190366
+        },
+        {
+          "id": "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "forecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)",
+          "metadata": {
+            "end": 2055,
+            "start": 1428,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8634929060935974
+        },
+        {
+          "id": "cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "https://datacatalog.worldbank.org/int/search /dataset/0067066 /pip_poverty_projections.\n\nNote: the figure reports extreme poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). Historical growth scenarios apply each economy’s observed GdP per capita growth during the stated period. GdP per capita growth forecasts use each economy’s projected GdP growth in the coming years from Global Economic Prospects, June 2026 (World bank 2026c) for 2026–27, combined with growth projections from the international Monetary Fund for 2028–30 (iMF 2025, 2026). the 2 percent and 4 percent GdP per capita growth scenarios assume growth in all economies at 2 percent or 4 percent a year.",
+          "metadata": {
+            "end": 1616,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.8634287200314584
+        }
+      ],
+      "context": "[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\n\n[cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\n16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.\n\n[638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nforecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)",
+      "context_candidates": [
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8754432723190366
+        },
+        {
+          "id": "cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 0,
+            "end": 529,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "forecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 1428,
+            "end": 2055,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "https://datacatalog.worldbank.org/int/search /dataset/0067066 /pip_poverty_projections.\n\nNote: the figure reports extreme poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). Historical growth scenarios apply each economy’s observed GdP per capita growth during the stated period. GdP per capita growth forecasts use each economy’s projected GdP growth in the coming years from Global Economic Prospects, June 2026 (World bank 2026c) for 2026–27, combined with growth projections from the international Monetary Fund for 2028–30 (iMF 2025, 2026). the 2 percent and 4 percent GdP per capita growth scenarios assume growth in all economies at 2 percent or 4 percent a year.",
+          "metadata": {
+            "end": 1616,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.8634287200314584
+        },
+        {
+          "id": "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 32,
+            "segment_start": 0,
+            "start": 0,
+            "end": 900,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "d89c5535b4eecaf69f529885351da8512ee1fe66ac7ea329ad124fba75f9ea57",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "Poverty reduction is especially difficult in economies affected by conflict and institutional weakness, which typically face compounding challenges even after the conflict has subsided (Corral et al. 2020; Federle et al. 2024; Korn and Stemmler 2025; Novta and Pugacheva 2021; World Bank 2025b). Conflict destroys assets and disrupts livelihoods, whereas poverty fuels grievances and weakens the capacity of the state to prevent violence (Corral et al. 2020).\n\nThese challenges are compounded by the current global environment, in which economies dependent on energy imports and economies directly affected by conflict face the weakest growth prospects (World Bank 2026c). Furthermore, when a population grows quickly, the economy must expand even more quickly to deliver the same level of improvement in per capita welfare.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 32,
+            "segment_start": 0,
+            "start": 1618,
+            "end": 2442,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+        "cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd",
+        "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6"
+      ],
+      "elapsed_seconds": 0.03252283298934344
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong mục “Gains in global poverty reduction could be reversed in coming decades”, đợt cập nhật tháng 6/2025 đổi năm cơ sở so sánh mức giá từ năm nào sang năm nào?\", \"filter\": {\"section\": \"Gains in global poverty reduction could be reversed in coming decades\"}}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_018CV5qu9cgcXbcwXPA1w7dh",
+              "name": "search_documents",
+              "input": {
+                "query": "Gains in global poverty reduction could be reversed in coming decades June 2025 update base year purchasing power parity"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_018CV5qu9cgcXbcwXPA1w7dh",
+              "content": "{\"current_context\": \"[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\\n\\n[cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\n16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.\\n\\n[638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nforecast of the World bank in June 2026 (World bank 2026c).\\n\\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\\n\\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)\", \"current_context_ids\": [\"9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715\", \"cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd\", \"638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6\"], \"searched_queries\": [\"Gains in global poverty reduction could be reversed in coming decades June 2025 update base year purchasing power parity\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gEuFUYAWJwsipSXGjc",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01X8JRok2wkkQNC8v2y4Dxbu",
+            "name": "search_documents",
+            "input": {
+              "query": "June 2025 update international poverty line 2021 PPP base year replaces 2017 prices"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01X8JRok2wkkQNC8v2y4Dxbu",
+          "name": "search_documents",
+          "input": {
+            "query": "June 2025 update international poverty line 2021 PPP base year replaces 2017 prices"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2700,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 92,
+          "output_tokens_details": {
+            "thinking_tokens": 17
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.000316,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2700,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.598728166994988
+    },
+    {
+      "event": "search",
+      "query": "June 2025 update international poverty line 2021 PPP base year replaces 2017 prices",
+      "query_rewritten": true,
+      "filter": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades"
+      },
+      "results": [
+        {
+          "id": "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty",
+          "metadata": {
+            "end": 896,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.9047486186027527
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.9002497732788205
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8975732922554016
+        }
+      ],
+      "context": "[03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\n13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty\n\n[0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nline among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.\n\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+      "context_candidates": [
+        {
+          "id": "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty",
+          "metadata": {
+            "end": 896,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.9047486186027527
+        },
+        {
+          "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 897,
+            "end": 1538,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.9002497732788205
+        },
+        {
+          "id": "cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 0,
+            "end": 529,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "forecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 1428,
+            "end": 2055,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8975732922554016
+        },
+        {
+          "id": "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Note: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 2234,
+            "end": 2494,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+        "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+      ],
+      "elapsed_seconds": 0.0561827500059735
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong mục “Gains in global poverty reduction could be reversed in coming decades”, đợt cập nhật tháng 6/2025 đổi năm cơ sở so sánh mức giá từ năm nào sang năm nào?\", \"filter\": {\"section\": \"Gains in global poverty reduction could be reversed in coming decades\"}}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01X8JRok2wkkQNC8v2y4Dxbu",
+              "name": "search_documents",
+              "input": {
+                "query": "June 2025 update international poverty line 2021 PPP base year replaces 2017 prices"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01X8JRok2wkkQNC8v2y4Dxbu",
+              "content": "{\"current_context\": \"[03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\n13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty\\n\\n[0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nline among low-income economies.\\n\\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.\\n\\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\", \"current_context_ids\": [\"03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266\", \"0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944\", \"9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715\"], \"searched_queries\": [\"Gains in global poverty reduction could be reversed in coming decades June 2025 update base year purchasing power parity\", \"June 2025 update international poverty line 2021 PPP base year replaces 2017 prices\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gF2oPkicmqqnXC2tgB",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01674HGgPFUzwpUYTMgTY5wX",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Theo Box 1.1 trong báo cáo, vào tháng 6/2025, năm cơ sở để so sánh mức giá giữa các nền kinh tế (PPP) được cập nhật từ năm 2017 sang năm 2021 [03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266]. Lưu ý: đoạn nguồn được tìm thấy là Box 1.1; tôi không thấy tiêu đề mục “Gains in global poverty reduction could be reversed in coming decades” xuất hiện trực tiếp trong đoạn trích.",
+              "citations": [
+                "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01674HGgPFUzwpUYTMgTY5wX",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Theo Box 1.1 trong báo cáo, vào tháng 6/2025, năm cơ sở để so sánh mức giá giữa các nền kinh tế (PPP) được cập nhật từ năm 2017 sang năm 2021 [03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266]. Lưu ý: đoạn nguồn được tìm thấy là Box 1.1; tôi không thấy tiêu đề mục “Gains in global poverty reduction could be reversed in coming decades” xuất hiện trực tiếp trong đoạn trích.",
+            "citations": [
+              "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2769,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 494,
+          "output_tokens_details": {
+            "thinking_tokens": 136
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0005239,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2769,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 3.8651980830036337
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Theo Box 1.1 trong báo cáo, vào tháng 6/2025, năm cơ sở để so sánh mức giá giữa các nền kinh tế (PPP) được cập nhật từ năm 2017 sang năm 2021 [03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266]. Lưu ý: đoạn nguồn được tìm thấy là Box 1.1; tôi không thấy tiêu đề mục “Gains in global poverty reduction could be reversed in coming decades” xuất hiện trực tiếp trong đoạn trích.",
+      "citations": [
+        "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 2,
+  "model_calls": 3,
+  "usage": {
+    "input_tokens": 6865,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 667
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "neighbors"
+  },
+  "context": "[03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\n13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty\n\n[0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nline among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.\n\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+  "context_ids": [
+    "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+    "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+    "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+  ],
+  "context_chunks": [
+    {
+      "id": "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 45,
+      "text": "13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty",
+      "metadata": {
+        "end": 896,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 13,
+        "segment_start": 0
+      },
+      "score": 0.9047486186027527
+    },
+    {
+      "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 45,
+      "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 13,
+        "segment_start": 0,
+        "start": 897,
+        "end": 1538,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 48,
+      "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+      "metadata": {
+        "end": 1427,
+        "start": 531,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 16,
+        "segment_start": 0
+      },
+      "score": 0.9002497732788205
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 3,
+    "returned_calls": 3
+  },
+  "estimated_cost_usd": 0.00102,
+  "answer": "Theo Box 1.1 trong báo cáo, vào tháng 6/2025, năm cơ sở để so sánh mức giá giữa các nền kinh tế (PPP) được cập nhật từ năm 2017 sang năm 2021 [03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266]. Lưu ý: đoạn nguồn được tìm thấy là Box 1.1; tôi không thấy tiêu đề mục “Gains in global poverty reduction could be reversed in coming decades” xuất hiện trực tiếp trong đoạn trích.",
+  "citations": [
+    "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266"
+  ],
+  "elapsed_seconds": 7.03525770799024,
+  "answerable": true,
+  "context_strict_hit": true,
+  "context_set_hit": true,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

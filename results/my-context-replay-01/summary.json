@@ -1,0 +1,81 @@
+{
+  "source_traces": "/Users/phucqn/Documents/Default Project/K5-L3A-DAY07-QuachNgocPhuc-2A202603665-RetrievalContext/results/dev-retrieval-01/traces.jsonl",
+  "source_sha256": "7981de49bff510be3d47c31c7ff3cca24a846f0c2ab07c93229f8184f5d941f3",
+  "stage": "controlled_context_replay",
+  "api_calls": 0,
+  "meaning": "Same query/ranking per method across policies; no LLM answers, scores are literal evidence proxies.",
+  "metrics": [
+    {
+      "method": "dense",
+      "config_id": "baseline800",
+      "n": 15,
+      "strict": 2,
+      "set": 2,
+      "pack_seconds": 2.574795507825911e-05
+    },
+    {
+      "method": "dense",
+      "config_id": "budget3200",
+      "n": 15,
+      "strict": 7,
+      "set": 7,
+      "pack_seconds": 2.7833986678160727e-05
+    },
+    {
+      "method": "dense",
+      "config_id": "neighbors3200",
+      "n": 15,
+      "strict": 6,
+      "set": 6,
+      "pack_seconds": 8.049700409173965e-05
+    },
+    {
+      "method": "bm25",
+      "config_id": "baseline800",
+      "n": 15,
+      "strict": 2,
+      "set": 2,
+      "pack_seconds": 1.4003031537868083e-05
+    },
+    {
+      "method": "bm25",
+      "config_id": "budget3200",
+      "n": 15,
+      "strict": 4,
+      "set": 4,
+      "pack_seconds": 2.270900586154312e-05
+    },
+    {
+      "method": "bm25",
+      "config_id": "neighbors3200",
+      "n": 15,
+      "strict": 2,
+      "set": 2,
+      "pack_seconds": 4.6205022954382e-05
+    },
+    {
+      "method": "hybrid",
+      "config_id": "baseline800",
+      "n": 15,
+      "strict": 2,
+      "set": 2,
+      "pack_seconds": 1.8251012079417706e-05
+    },
+    {
+      "method": "hybrid",
+      "config_id": "budget3200",
+      "n": 15,
+      "strict": 6,
+      "set": 6,
+      "pack_seconds": 2.4167951778508723e-05
+    },
+    {
+      "method": "hybrid",
+      "config_id": "neighbors3200",
+      "n": 15,
+      "strict": 5,
+      "set": 5,
+      "pack_seconds": 7.533199095632881e-05
+    }
+  ]
+}

@@ -1,0 +1,821 @@
+{
+  "created_at_utc": "2026-11-14T10:37:22.084223+00:00",
+  "stage": "agent_dev",
+  "query_id": "q03",
+  "config_id": "budget3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Vì sao việc nâng chuẩn nghèo quốc gia được nêu trong báo cáo không có nghĩa là định nghĩa người nghèo trở nên rộng rãi hơn?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao việc nâng chuẩn nghèo quốc gia được nêu trong báo cáo không có nghĩa là định nghĩa người nghèo trở nên rộng rãi hơn?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g5Sg4HBp3YefJXaZEG",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01WLaHHBTenfNrxgjGyCGQGy",
+            "name": "search_documents",
+            "input": {
+              "query": "national poverty line update does not mean more people counted as poor"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01WLaHHBTenfNrxgjGyCGQGy",
+          "name": "search_documents",
+          "input": {
+            "query": "national poverty line update does not mean more people counted as poor"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1360,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 62,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.000167,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1360,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.8323324160010088
+    },
+    {
+      "event": "search",
+      "query": "national poverty line update does not mean more people counted as poor",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8786660360494889
+        },
+        {
+          "id": "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 50,
+          "text": "Note: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.",
+          "metadata": {
+            "end": 1242,
+            "start": 547,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 18,
+            "segment_start": 0
+          },
+          "score": 0.8783669544239808
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8733026981353822
+        }
+      ],
+      "context": "[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\n\n[d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 50]\nNote: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.\n\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+      "context_candidates": [
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8786660360494889
+        },
+        {
+          "id": "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 50,
+          "text": "Note: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.",
+          "metadata": {
+            "end": 1242,
+            "start": 547,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 18,
+            "segment_start": 0
+          },
+          "score": 0.8783669544239808
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8733026981353822
+        }
+      ],
+      "context_ids": [
+        "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+        "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+        "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4"
+      ],
+      "elapsed_seconds": 0.03819904199917801
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao việc nâng chuẩn nghèo quốc gia được nêu trong báo cáo không có nghĩa là định nghĩa người nghèo trở nên rộng rãi hơn?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01WLaHHBTenfNrxgjGyCGQGy",
+              "name": "search_documents",
+              "input": {
+                "query": "national poverty line update does not mean more people counted as poor"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01WLaHHBTenfNrxgjGyCGQGy",
+              "content": "{\"current_context\": \"[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\\n\\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\\n\\n[d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 50]\\nNote: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.\\n\\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\", \"current_context_ids\": [\"90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc\", \"d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141\", \"21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4\"], \"searched_queries\": [\"national poverty line update does not mean more people counted as poor\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g5b2ranxjcvbUnARpq",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_014gcTrN1DMkx2thzsFC6Lgp",
+            "name": "search_documents",
+            "input": {
+              "query": "latest national poverty lines updated higher consumption cost of living same real standard"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_014gcTrN1DMkx2thzsFC6Lgp",
+          "name": "search_documents",
+          "input": {
+            "query": "latest national poverty lines updated higher consumption cost of living same real standard"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2655,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 150,
+          "output_tokens_details": {
+            "thinking_tokens": 81
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003405,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2655,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.8775824170006672
+    },
+    {
+      "event": "search",
+      "query": "latest national poverty lines updated higher consumption cost of living same real standard",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.9046945032659485
+        },
+        {
+          "id": "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 50,
+          "text": "Note: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.",
+          "metadata": {
+            "end": 1242,
+            "start": 547,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 18,
+            "segment_start": 0
+          },
+          "score": 0.8863979185108107
+        },
+        {
+          "id": "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "The societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe",
+          "metadata": {
+            "end": 1879,
+            "start": 980,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 43,
+            "segment_start": 63
+          },
+          "score": 0.88358516194909
+        }
+      ],
+      "context": "[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\n\n[d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 50]\nNote: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.\n\n[c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 75]\nThe societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe",
+      "context_candidates": [
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.9046945032659485
+        },
+        {
+          "id": "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 50,
+          "text": "Note: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.",
+          "metadata": {
+            "end": 1242,
+            "start": 547,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 18,
+            "segment_start": 0
+          },
+          "score": 0.8863979185108107
+        },
+        {
+          "id": "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "The societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe",
+          "metadata": {
+            "end": 1879,
+            "start": 980,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 43,
+            "segment_start": 63
+          },
+          "score": 0.88358516194909
+        }
+      ],
+      "context_ids": [
+        "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+        "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+        "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7"
+      ],
+      "elapsed_seconds": 0.038281749992165715
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao việc nâng chuẩn nghèo quốc gia được nêu trong báo cáo không có nghĩa là định nghĩa người nghèo trở nên rộng rãi hơn?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_014gcTrN1DMkx2thzsFC6Lgp",
+              "name": "search_documents",
+              "input": {
+                "query": "latest national poverty lines updated higher consumption cost of living same real standard"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_014gcTrN1DMkx2thzsFC6Lgp",
+              "content": "{\"current_context\": \"[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\\n\\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\\n\\n[d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 50]\\nNote: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.\\n\\n[c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 75]\\nThe societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe\", \"current_context_ids\": [\"90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc\", \"d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141\", \"c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7\"], \"searched_queries\": [\"national poverty line update does not mean more people counted as poor\", \"latest national poverty lines updated higher consumption cost of living same real standard\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g5jnDSBhrJegGcD3tm",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01DLEgy89F38K4NnnDDMuBD5",
+            "name": "search_documents",
+            "input": {
+              "query": "national poverty lines revised same real living standard not a change in poverty definition"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01DLEgy89F38K4NnnDDMuBD5",
+          "name": "search_documents",
+          "input": {
+            "query": "national poverty lines revised same real living standard not a change in poverty definition"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2741,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 214,
+          "output_tokens_details": {
+            "thinking_tokens": 146
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003811,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2741,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.1772602919954807
+    },
+    {
+      "event": "search",
+      "query": "national poverty lines revised same real living standard not a change in poverty definition",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "The societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe",
+          "metadata": {
+            "end": 1879,
+            "start": 980,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 43,
+            "segment_start": 63
+          },
+          "score": 0.8831801940906179
+        },
+        {
+          "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+          "metadata": {
+            "end": 1538,
+            "start": 897,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8792507124393895
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8770016954542232
+        }
+      ],
+      "context": "[c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 75]\nThe societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe\n\n[0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nline among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.\n\n[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+      "context_candidates": [
+        {
+          "id": "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "The societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe",
+          "metadata": {
+            "end": 1879,
+            "start": 980,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 43,
+            "segment_start": 63
+          },
+          "score": 0.8831801940906179
+        },
+        {
+          "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+          "metadata": {
+            "end": 1538,
+            "start": 897,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8792507124393895
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8770016954542232
+        }
+      ],
+      "context_ids": [
+        "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+        "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+        "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc"
+      ],
+      "elapsed_seconds": 0.03553645798820071
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao việc nâng chuẩn nghèo quốc gia được nêu trong báo cáo không có nghĩa là định nghĩa người nghèo trở nên rộng rãi hơn?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01DLEgy89F38K4NnnDDMuBD5",
+              "name": "search_documents",
+              "input": {
+                "query": "national poverty lines revised same real living standard not a change in poverty definition"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01DLEgy89F38K4NnnDDMuBD5",
+              "content": "{\"current_context\": \"[c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 75]\\nThe societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe\\n\\n[0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nline among low-income economies.\\n\\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.\\n\\n[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\\n\\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\", \"current_context_ids\": [\"c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7\", \"0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944\", \"90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc\"], \"searched_queries\": [\"national poverty line update does not mean more people counted as poor\", \"latest national poverty lines updated higher consumption cost of living same real standard\", \"national poverty lines revised same real living standard not a change in poverty definition\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g5tGBj6HzJy5AALBFT",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_016LnwK24t2QJ916pPFAh9eV",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Theo kho tài liệu, việc nâng chuẩn nghèo quốc gia không làm định nghĩa người nghèo rộng hơn vì:\n\n- Các lần điều chỉnh tăng chuẩn nghèo quốc gia, đặc biệt ở Tây Phi, xuất phát từ cải tiến phương pháp khảo sát hộ gia đình. Cải tiến này cho ra mức tiêu dùng đo được cao hơn, nên chuẩn nghèo quốc gia cũng được nâng lên [0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944].\n- Các chuẩn cao hơn \"không phản ánh một tiêu chuẩn hào phóng hơn về thế nào là nghèo\". Chúng phản ánh dữ liệu tốt hơn để ước tính chi phí nhu cầu cơ bản, gồm một gói lương thực tối thiểu và khoản dành cho tiêu dùng phi lương thực thiết yếu [0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944].\n- Việc cập nhật theo PPP 2021 cùng chuẩn quốc gia mới làm tăng các chuẩn nghèo toàn cầu (ví dụ, nước thu nhập thấp từ $2.15 lên $3.00). Báo cáo nói rõ đây \"không phải là việc dời mốc\" trong đo lường nghèo; nó phản ánh chuẩn mực đo tiêu dùng đã thay đổi ở các nước nghèo nhất và khác biệt chi phí sinh hoạt giữa các nước theo một phương pháp đã được thiết lập [90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc].\n\nTóm lại, nâng chuẩn là hệ quả của đo lường tiêu dùng tốt hơn và cập nhật chi phí sinh hoạt, không phải nới rộng tiêu chuẩn \"nghèo\" về mặt khái niệm. Lưu ý: kho chỉ có phần giải thích này; tôi không tìm thấy trong kho con số cụ thể về mức tăng tỷ lệ nghèo do các điều chỉnh đó.",
+              "citations": [
+                "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+                "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_016LnwK24t2QJ916pPFAh9eV",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Theo kho tài liệu, việc nâng chuẩn nghèo quốc gia không làm định nghĩa người nghèo rộng hơn vì:\n\n- Các lần điều chỉnh tăng chuẩn nghèo quốc gia, đặc biệt ở Tây Phi, xuất phát từ cải tiến phương pháp khảo sát hộ gia đình. Cải tiến này cho ra mức tiêu dùng đo được cao hơn, nên chuẩn nghèo quốc gia cũng được nâng lên [0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944].\n- Các chuẩn cao hơn \"không phản ánh một tiêu chuẩn hào phóng hơn về thế nào là nghèo\". Chúng phản ánh dữ liệu tốt hơn để ước tính chi phí nhu cầu cơ bản, gồm một gói lương thực tối thiểu và khoản dành cho tiêu dùng phi lương thực thiết yếu [0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944].\n- Việc cập nhật theo PPP 2021 cùng chuẩn quốc gia mới làm tăng các chuẩn nghèo toàn cầu (ví dụ, nước thu nhập thấp từ $2.15 lên $3.00). Báo cáo nói rõ đây \"không phải là việc dời mốc\" trong đo lường nghèo; nó phản ánh chuẩn mực đo tiêu dùng đã thay đổi ở các nước nghèo nhất và khác biệt chi phí sinh hoạt giữa các nước theo một phương pháp đã được thiết lập [90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc].\n\nTóm lại, nâng chuẩn là hệ quả của đo lường tiêu dùng tốt hơn và cập nhật chi phí sinh hoạt, không phải nới rộng tiêu chuẩn \"nghèo\" về mặt khái niệm. Lưu ý: kho chỉ có phần giải thích này; tôi không tìm thấy trong kho con số cụ thể về mức tăng tỷ lệ nghèo do các điều chỉnh đó.",
+            "citations": [
+              "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+              "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2699,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1147,
+          "output_tokens_details": {
+            "thinking_tokens": 153
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0008434,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2699,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 5.778303333005169
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Theo kho tài liệu, việc nâng chuẩn nghèo quốc gia không làm định nghĩa người nghèo rộng hơn vì:\n\n- Các lần điều chỉnh tăng chuẩn nghèo quốc gia, đặc biệt ở Tây Phi, xuất phát từ cải tiến phương pháp khảo sát hộ gia đình. Cải tiến này cho ra mức tiêu dùng đo được cao hơn, nên chuẩn nghèo quốc gia cũng được nâng lên [0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944].\n- Các chuẩn cao hơn \"không phản ánh một tiêu chuẩn hào phóng hơn về thế nào là nghèo\". Chúng phản ánh dữ liệu tốt hơn để ước tính chi phí nhu cầu cơ bản, gồm một gói lương thực tối thiểu và khoản dành cho tiêu dùng phi lương thực thiết yếu [0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944].\n- Việc cập nhật theo PPP 2021 cùng chuẩn quốc gia mới làm tăng các chuẩn nghèo toàn cầu (ví dụ, nước thu nhập thấp từ $2.15 lên $3.00). Báo cáo nói rõ đây \"không phải là việc dời mốc\" trong đo lường nghèo; nó phản ánh chuẩn mực đo tiêu dùng đã thay đổi ở các nước nghèo nhất và khác biệt chi phí sinh hoạt giữa các nước theo một phương pháp đã được thiết lập [90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc].\n\nTóm lại, nâng chuẩn là hệ quả của đo lường tiêu dùng tốt hơn và cập nhật chi phí sinh hoạt, không phải nới rộng tiêu chuẩn \"nghèo\" về mặt khái niệm. Lưu ý: kho chỉ có phần giải thích này; tôi không tìm thấy trong kho con số cụ thể về mức tăng tỷ lệ nghèo do các điều chỉnh đó.",
+      "citations": [
+        "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+        "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 3,
+  "model_calls": 4,
+  "usage": {
+    "input_tokens": 9455,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1573
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 75]\nThe societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe\n\n[0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nline among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.\n\n[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+  "context_ids": [
+    "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+    "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+    "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc"
+  ],
+  "context_chunks": [
+    {
+      "id": "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 75,
+      "text": "The societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe",
+      "metadata": {
+        "end": 1879,
+        "start": 980,
+        "section": "Poverty extends beyond absolute welfare thresholds",
+        "chunking": "paragraph",
+        "printed_page": 43,
+        "segment_start": 63
+      },
+      "score": 0.8831801940906179
+    },
+    {
+      "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 45,
+      "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+      "metadata": {
+        "end": 1538,
+        "start": 897,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 13,
+        "segment_start": 0
+      },
+      "score": 0.8792507124393895
+    },
+    {
+      "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 45,
+      "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+      "metadata": {
+        "end": 2232,
+        "start": 1540,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 13,
+        "segment_start": 0
+      },
+      "score": 0.8770016954542232
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 4,
+    "returned_calls": 4
+  },
+  "estimated_cost_usd": 0.001732,
+  "answer": "Theo kho tài liệu, việc nâng chuẩn nghèo quốc gia không làm định nghĩa người nghèo rộng hơn vì:\n\n- Các lần điều chỉnh tăng chuẩn nghèo quốc gia, đặc biệt ở Tây Phi, xuất phát từ cải tiến phương pháp khảo sát hộ gia đình. Cải tiến này cho ra mức tiêu dùng đo được cao hơn, nên chuẩn nghèo quốc gia cũng được nâng lên [0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944].\n- Các chuẩn cao hơn \"không phản ánh một tiêu chuẩn hào phóng hơn về thế nào là nghèo\". Chúng phản ánh dữ liệu tốt hơn để ước tính chi phí nhu cầu cơ bản, gồm một gói lương thực tối thiểu và khoản dành cho tiêu dùng phi lương thực thiết yếu [0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944].\n- Việc cập nhật theo PPP 2021 cùng chuẩn quốc gia mới làm tăng các chuẩn nghèo toàn cầu (ví dụ, nước thu nhập thấp từ $2.15 lên $3.00). Báo cáo nói rõ đây \"không phải là việc dời mốc\" trong đo lường nghèo; nó phản ánh chuẩn mực đo tiêu dùng đã thay đổi ở các nước nghèo nhất và khác biệt chi phí sinh hoạt giữa các nước theo một phương pháp đã được thiết lập [90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc].\n\nTóm lại, nâng chuẩn là hệ quả của đo lường tiêu dùng tốt hơn và cập nhật chi phí sinh hoạt, không phải nới rộng tiêu chuẩn \"nghèo\" về mặt khái niệm. Lưu ý: kho chỉ có phần giải thích này; tôi không tìm thấy trong kho con số cụ thể về mức tăng tỷ lệ nghèo do các điều chỉnh đó.",
+  "citations": [
+    "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+    "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc"
+  ],
+  "elapsed_seconds": 11.777766166007495,
+  "answerable": true,
+  "context_strict_hit": true,
+  "context_set_hit": true,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

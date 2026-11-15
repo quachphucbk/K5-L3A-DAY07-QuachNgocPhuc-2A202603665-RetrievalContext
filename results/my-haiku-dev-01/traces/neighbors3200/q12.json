@@ -1,0 +1,1256 @@
+{
+  "created_at_utc": "2026-11-14T10:41:24.807307+00:00",
+  "stage": "agent_dev",
+  "query_id": "q12",
+  "config_id": "neighbors3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Trong mục “Gains in global poverty reduction could be reversed in coming decades”, thu nhập trung vị toàn cầu đã tăng lên mức bao nhiêu USD/ngày vào năm 2024?",
+  "filter": {
+    "section": "Gains in global poverty reduction could be reversed in coming decades"
+  },
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong mục “Gains in global poverty reduction could be reversed in coming decades”, thu nhập trung vị toàn cầu đã tăng lên mức bao nhiêu USD/ngày vào năm 2024?\", \"filter\": {\"section\": \"Gains in global poverty reduction could be reversed in coming decades\"}}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gPLyGgHH3LvacVEFzz",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01WaR3Y2EMygt3mnxqZHygQo",
+            "name": "search_documents",
+            "input": {
+              "query": "Gains in global poverty reduction could be reversed in coming decades global median income 2024 per day"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01WaR3Y2EMygt3mnxqZHygQo",
+          "name": "search_documents",
+          "input": {
+            "query": "Gains in global poverty reduction could be reversed in coming decades global median income 2024 per day"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1393,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 75,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001768,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1393,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.6810894160007592
+    },
+    {
+      "event": "search",
+      "query": "Gains in global poverty reduction could be reversed in coming decades global median income 2024 per day",
+      "query_rewritten": true,
+      "filter": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades"
+      },
+      "results": [
+        {
+          "id": "fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "After decades of progress, the reduction in extreme poverty has ground to a halt After decades of significant and steady progress, the reduction of global poverty has reached a critical juncture. In 1990, nearly 2.3 billion people—43 percent of the global population—were living in extreme poverty, defined as living on less than $3.00-a-person-a-day (in 2021 PPP terms) (refer to box 1.1). By 2019, the number had fallen dramatically, to 837 million people, or 10.8 percent of the global population. But, since then, virtually no progress on reducing extreme poverty has been made. The COVID-19 pandemic triggered the largest setback in decades (Mahler et al. 2022). In 2026, 811 million people—1 in 10 globally—were living in extreme poverty, and this rate has remained essentially unchanged since 2020. Factoring in the economic growth and price impacts of the conflict in the Middle East suggests",
+          "metadata": {
+            "end": 1582,
+            "start": 682,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 12,
+            "segment_start": 1291
+          },
+          "score": 0.8865169686212964
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8826270892584706
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.882129576269674
+        }
+      ],
+      "context": "[fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\nAfter decades of progress, the reduction in extreme poverty has ground to a halt After decades of significant and steady progress, the reduction of global poverty has reached a critical juncture. In 1990, nearly 2.3 billion people—43 percent of the global population—were living in extreme poverty, defined as living on less than $3.00-a-person-a-day (in 2021 PPP terms) (refer to box 1.1). By 2019, the number had fallen dramatically, to 837 million people, or 10.8 percent of the global population. But, since then, virtually no progress on reducing extreme poverty has been made. The COVID-19 pandemic triggered the largest setback in decades (Mahler et al. 2022). In 2026, 811 million people—1 in 10 globally—were living in extreme poverty, and this rate has remained essentially unchanged since 2020. Factoring in the economic growth and price impacts of the conflict in the Middle East suggests\n\n[c3e295ff3d7685082acb1f2e5418903a2e81ad4dc901b470e6d1cf8a9861bdad | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\nGains in global poverty reduction could be reversed in coming decades Following the decades during which global extreme poverty fell at historic rates, the decline has come to a dramatic stop.1 Extreme poverty is increasingly concentrated in economies in Sub-Saharan Africa and in economies experiencing fragility, conflict, and violence. In these economies, poverty rates have generally stagnated or risen. Population growth in these economies, combined with rates of poverty reduction that are insufficient to sustain the progress achieved during the preceding years, means that the number of people living in extreme poverty globally is projected to increase in coming decades.\n\n[e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\nthat the extreme poverty rate may be even higher (refer to box 1.2).\n\n[cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\n16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.",
+      "context_candidates": [
+        {
+          "id": "fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "After decades of progress, the reduction in extreme poverty has ground to a halt After decades of significant and steady progress, the reduction of global poverty has reached a critical juncture. In 1990, nearly 2.3 billion people—43 percent of the global population—were living in extreme poverty, defined as living on less than $3.00-a-person-a-day (in 2021 PPP terms) (refer to box 1.1). By 2019, the number had fallen dramatically, to 837 million people, or 10.8 percent of the global population. But, since then, virtually no progress on reducing extreme poverty has been made. The COVID-19 pandemic triggered the largest setback in decades (Mahler et al. 2022). In 2026, 811 million people—1 in 10 globally—were living in extreme poverty, and this rate has remained essentially unchanged since 2020. Factoring in the economic growth and price impacts of the conflict in the Middle East suggests",
+          "metadata": {
+            "end": 1582,
+            "start": 682,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 12,
+            "segment_start": 1291
+          },
+          "score": 0.8865169686212964
+        },
+        {
+          "id": "c3e295ff3d7685082acb1f2e5418903a2e81ad4dc901b470e6d1cf8a9861bdad",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "Gains in global poverty reduction could be reversed in coming decades Following the decades during which global extreme poverty fell at historic rates, the decline has come to a dramatic stop.1 Extreme poverty is increasingly concentrated in economies in Sub-Saharan Africa and in economies experiencing fragility, conflict, and violence. In these economies, poverty rates have generally stagnated or risen. Population growth in these economies, combined with rates of poverty reduction that are insufficient to sustain the progress achieved during the preceding years, means that the number of people living in extreme poverty globally is projected to increase in coming decades.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 12,
+            "segment_start": 1291,
+            "start": 0,
+            "end": 680,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "that the extreme poverty rate may be even higher (refer to box 1.2).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 12,
+            "segment_start": 1291,
+            "start": 1583,
+            "end": 1651,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8826270892584706
+        },
+        {
+          "id": "cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 0,
+            "end": 529,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "forecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 1428,
+            "end": 2055,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.882129576269674
+        },
+        {
+          "id": "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\n\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 23,
+            "segment_start": 0,
+            "start": 869,
+            "end": 1331,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634",
+        "c3e295ff3d7685082acb1f2e5418903a2e81ad4dc901b470e6d1cf8a9861bdad",
+        "e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5",
+        "cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd"
+      ],
+      "elapsed_seconds": 0.04192512499867007
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong mục “Gains in global poverty reduction could be reversed in coming decades”, thu nhập trung vị toàn cầu đã tăng lên mức bao nhiêu USD/ngày vào năm 2024?\", \"filter\": {\"section\": \"Gains in global poverty reduction could be reversed in coming decades\"}}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01WaR3Y2EMygt3mnxqZHygQo",
+              "name": "search_documents",
+              "input": {
+                "query": "Gains in global poverty reduction could be reversed in coming decades global median income 2024 per day"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01WaR3Y2EMygt3mnxqZHygQo",
+              "content": "{\"current_context\": \"[fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\nAfter decades of progress, the reduction in extreme poverty has ground to a halt After decades of significant and steady progress, the reduction of global poverty has reached a critical juncture. In 1990, nearly 2.3 billion people—43 percent of the global population—were living in extreme poverty, defined as living on less than $3.00-a-person-a-day (in 2021 PPP terms) (refer to box 1.1). By 2019, the number had fallen dramatically, to 837 million people, or 10.8 percent of the global population. But, since then, virtually no progress on reducing extreme poverty has been made. The COVID-19 pandemic triggered the largest setback in decades (Mahler et al. 2022). In 2026, 811 million people—1 in 10 globally—were living in extreme poverty, and this rate has remained essentially unchanged since 2020. Factoring in the economic growth and price impacts of the conflict in the Middle East suggests\\n\\n[c3e295ff3d7685082acb1f2e5418903a2e81ad4dc901b470e6d1cf8a9861bdad | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\nGains in global poverty reduction could be reversed in coming decades Following the decades during which global extreme poverty fell at historic rates, the decline has come to a dramatic stop.1 Extreme poverty is increasingly concentrated in economies in Sub-Saharan Africa and in economies experiencing fragility, conflict, and violence. In these economies, poverty rates have generally stagnated or risen. Population growth in these economies, combined with rates of poverty reduction that are insufficient to sustain the progress achieved during the preceding years, means that the number of people living in extreme poverty globally is projected to increase in coming decades.\\n\\n[e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\nthat the extreme poverty rate may be even higher (refer to box 1.2).\\n\\n[cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\n16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.\", \"current_context_ids\": [\"fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634\", \"c3e295ff3d7685082acb1f2e5418903a2e81ad4dc901b470e6d1cf8a9861bdad\", \"e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5\", \"cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd\"], \"searched_queries\": [\"Gains in global poverty reduction could be reversed in coming decades global median income 2024 per day\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gPTmJXNhc7Q1DhyixD",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01B8QSkHkpeBaN49W7pyCdKh",
+            "name": "search_documents",
+            "input": {
+              "query": "global median income per day rose to 2024 poverty prosperity planet report"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01B8QSkHkpeBaN49W7pyCdKh",
+          "name": "search_documents",
+          "input": {
+            "query": "global median income per day rose to 2024 poverty prosperity planet report"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2900,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 91,
+          "output_tokens_details": {
+            "thinking_tokens": 23
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003355,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2900,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.2184277920023305
+    },
+    {
+      "event": "search",
+      "query": "global median income per day rose to 2024 poverty prosperity planet report",
+      "query_rewritten": true,
+      "filter": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades"
+      },
+      "results": [
+        {
+          "id": "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30",
+          "metadata": {
+            "end": 900,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 30,
+            "segment_start": 0
+          },
+          "score": 0.9008055001737331
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8980252742767334
+        },
+        {
+          "id": "3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 54,
+          "text": "22 POVERTY , PROSPERITY , AND PLANET REPORT 2026 in 2000 to a majority by 2026, and extreme poverty has all but disappeared. In today’s lower-middle-income economies, the group living on between $3.00 and $8.30 a day is now the largest, and the middle class, though growing, remains a minority. In low-income economies, the distribution has barely shifted. About half the population is still living on less than $3.00 a day, and the middle class is negligible. High-income economies, by contrast, are composed almost entirely of households living on more than $8.30 a day, and the majority are above the prosperity standard.",
+          "metadata": {
+            "end": 624,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 22,
+            "segment_start": 0
+          },
+          "score": 0.8937633037567139
+        }
+      ],
+      "context": "[a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\n30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30\n\n[e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\nline Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.\n\n[94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\n23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,\n\n[e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\nthat the extreme poverty rate may be even higher (refer to box 1.2).",
+      "context_candidates": [
+        {
+          "id": "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30",
+          "metadata": {
+            "end": 900,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 30,
+            "segment_start": 0
+          },
+          "score": 0.9008055001737331
+        },
+        {
+          "id": "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "line Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 30,
+            "segment_start": 0,
+            "start": 901,
+            "end": 1377,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8980252742767334
+        },
+        {
+          "id": "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\n\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 23,
+            "segment_start": 0,
+            "start": 869,
+            "end": 1331,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 54,
+          "text": "22 POVERTY , PROSPERITY , AND PLANET REPORT 2026 in 2000 to a majority by 2026, and extreme poverty has all but disappeared. In today’s lower-middle-income economies, the group living on between $3.00 and $8.30 a day is now the largest, and the middle class, though growing, remains a minority. In low-income economies, the distribution has barely shifted. About half the population is still living on less than $3.00 a day, and the middle class is negligible. High-income economies, by contrast, are composed almost entirely of households living on more than $8.30 a day, and the majority are above the prosperity standard.",
+          "metadata": {
+            "end": 624,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 22,
+            "segment_start": 0
+          },
+          "score": 0.8937633037567139
+        },
+        {
+          "id": "6e79576a0542ae1097aa894bb0b6d846f8e1a405a476af506e2cf7d8ec7a7495",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 54,
+          "text": "These patterns connect the report’s monitoring to the concerns of middle-income economies. More work and better-paying work help people escape poverty (refer to chapter 4). Stable, well-paid jobs also protect against falling back into poverty, and they therefore help households climb from vulnerability to security, an agenda that has particular force in locations where the vulnerable group is largest. Vulnerability to climate-related hazards—a distinct concept, reflecting the lack of the means to cope if a hazard strikes rather than the risk of falling back into poverty—extends well above the poverty line (refer to chapter 3). Vulnerability in this case means that middle-class households are also exposed to risk if social protection and financial services are lacking. The $8.30 line and the $28.00 prosperity standard are precisely the boundaries within which the middle class is found.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 22,
+            "segment_start": 0,
+            "start": 626,
+            "end": 1523,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+        "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+        "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+        "e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5"
+      ],
+      "elapsed_seconds": 0.05083687498699874
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong mục “Gains in global poverty reduction could be reversed in coming decades”, thu nhập trung vị toàn cầu đã tăng lên mức bao nhiêu USD/ngày vào năm 2024?\", \"filter\": {\"section\": \"Gains in global poverty reduction could be reversed in coming decades\"}}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01B8QSkHkpeBaN49W7pyCdKh",
+              "name": "search_documents",
+              "input": {
+                "query": "global median income per day rose to 2024 poverty prosperity planet report"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01B8QSkHkpeBaN49W7pyCdKh",
+              "content": "{\"current_context\": \"[a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\\n30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30\\n\\n[e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\\nline Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\\n\\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.\\n\\n[94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\\n23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,\\n\\n[e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\nthat the extreme poverty rate may be even higher (refer to box 1.2).\", \"current_context_ids\": [\"a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219\", \"e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1\", \"94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce\", \"e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5\"], \"searched_queries\": [\"Gains in global poverty reduction could be reversed in coming decades global median income 2024 per day\", \"global median income per day rose to 2024 poverty prosperity planet report\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gPdjL78w2gkS7cNywt",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01UsvBFTwWofMXW7Ld6wR4G7",
+            "name": "search_documents",
+            "input": {
+              "query": "Gains in global poverty reduction could be reversed in coming decades median income"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01UsvBFTwWofMXW7Ld6wR4G7",
+          "name": "search_documents",
+          "input": {
+            "query": "Gains in global poverty reduction could be reversed in coming decades median income"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 3138,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 68,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003478,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 3138,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.3287640839989763
+    },
+    {
+      "event": "search",
+      "query": "Gains in global poverty reduction could be reversed in coming decades median income",
+      "query_rewritten": true,
+      "filter": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades"
+      },
+      "results": [
+        {
+          "id": "c3e295ff3d7685082acb1f2e5418903a2e81ad4dc901b470e6d1cf8a9861bdad",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "Gains in global poverty reduction could be reversed in coming decades Following the decades during which global extreme poverty fell at historic rates, the decline has come to a dramatic stop.1 Extreme poverty is increasingly concentrated in economies in Sub-Saharan Africa and in economies experiencing fragility, conflict, and violence. In these economies, poverty rates have generally stagnated or risen. Population growth in these economies, combined with rates of poverty reduction that are insufficient to sustain the progress achieved during the preceding years, means that the number of people living in extreme poverty globally is projected to increase in coming decades.",
+          "metadata": {
+            "end": 680,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 12,
+            "segment_start": 1291
+          },
+          "score": 0.8819329738617006
+        },
+        {
+          "id": "fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "After decades of progress, the reduction in extreme poverty has ground to a halt After decades of significant and steady progress, the reduction of global poverty has reached a critical juncture. In 1990, nearly 2.3 billion people—43 percent of the global population—were living in extreme poverty, defined as living on less than $3.00-a-person-a-day (in 2021 PPP terms) (refer to box 1.1). By 2019, the number had fallen dramatically, to 837 million people, or 10.8 percent of the global population. But, since then, virtually no progress on reducing extreme poverty has been made. The COVID-19 pandemic triggered the largest setback in decades (Mahler et al. 2022). In 2026, 811 million people—1 in 10 globally—were living in extreme poverty, and this rate has remained essentially unchanged since 2020. Factoring in the economic growth and price impacts of the conflict in the Middle East suggests",
+          "metadata": {
+            "end": 1582,
+            "start": 682,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 12,
+            "segment_start": 1291
+          },
+          "score": 0.8776150418749566
+        },
+        {
+          "id": "37c84adc454195e89209378dc9572516f156e79500fe298281369f515dba4e5f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "This concentration means that the recent gains are fragile. Economic downturns, climate shocks, or conflict could push large numbers of people back into poverty, as the COVID-19 pandemic demonstrated (Mahler et al. 2022).",
+          "metadata": {
+            "end": 931,
+            "start": 710,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8736053554541297
+        }
+      ],
+      "context": "[c3e295ff3d7685082acb1f2e5418903a2e81ad4dc901b470e6d1cf8a9861bdad | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\nGains in global poverty reduction could be reversed in coming decades Following the decades during which global extreme poverty fell at historic rates, the decline has come to a dramatic stop.1 Extreme poverty is increasingly concentrated in economies in Sub-Saharan Africa and in economies experiencing fragility, conflict, and violence. In these economies, poverty rates have generally stagnated or risen. Population growth in these economies, combined with rates of poverty reduction that are insufficient to sustain the progress achieved during the preceding years, means that the number of people living in extreme poverty globally is projected to increase in coming decades.\n\n[fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\nAfter decades of progress, the reduction in extreme poverty has ground to a halt After decades of significant and steady progress, the reduction of global poverty has reached a critical juncture. In 1990, nearly 2.3 billion people—43 percent of the global population—were living in extreme poverty, defined as living on less than $3.00-a-person-a-day (in 2021 PPP terms) (refer to box 1.1). By 2019, the number had fallen dramatically, to 837 million people, or 10.8 percent of the global population. But, since then, virtually no progress on reducing extreme poverty has been made. The COVID-19 pandemic triggered the largest setback in decades (Mahler et al. 2022). In 2026, 811 million people—1 in 10 globally—were living in extreme poverty, and this rate has remained essentially unchanged since 2020. Factoring in the economic growth and price impacts of the conflict in the Middle East suggests\n\n[e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\nthat the extreme poverty rate may be even higher (refer to box 1.2).\n\n[37c84adc454195e89209378dc9572516f156e79500fe298281369f515dba4e5f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\nThis concentration means that the recent gains are fragile. Economic downturns, climate shocks, or conflict could push large numbers of people back into poverty, as the COVID-19 pandemic demonstrated (Mahler et al. 2022).",
+      "context_candidates": [
+        {
+          "id": "c3e295ff3d7685082acb1f2e5418903a2e81ad4dc901b470e6d1cf8a9861bdad",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "Gains in global poverty reduction could be reversed in coming decades Following the decades during which global extreme poverty fell at historic rates, the decline has come to a dramatic stop.1 Extreme poverty is increasingly concentrated in economies in Sub-Saharan Africa and in economies experiencing fragility, conflict, and violence. In these economies, poverty rates have generally stagnated or risen. Population growth in these economies, combined with rates of poverty reduction that are insufficient to sustain the progress achieved during the preceding years, means that the number of people living in extreme poverty globally is projected to increase in coming decades.",
+          "metadata": {
+            "end": 680,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 12,
+            "segment_start": 1291
+          },
+          "score": 0.8819329738617006
+        },
+        {
+          "id": "fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "After decades of progress, the reduction in extreme poverty has ground to a halt After decades of significant and steady progress, the reduction of global poverty has reached a critical juncture. In 1990, nearly 2.3 billion people—43 percent of the global population—were living in extreme poverty, defined as living on less than $3.00-a-person-a-day (in 2021 PPP terms) (refer to box 1.1). By 2019, the number had fallen dramatically, to 837 million people, or 10.8 percent of the global population. But, since then, virtually no progress on reducing extreme poverty has been made. The COVID-19 pandemic triggered the largest setback in decades (Mahler et al. 2022). In 2026, 811 million people—1 in 10 globally—were living in extreme poverty, and this rate has remained essentially unchanged since 2020. Factoring in the economic growth and price impacts of the conflict in the Middle East suggests",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 12,
+            "segment_start": 1291,
+            "start": 682,
+            "end": 1582,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "that the extreme poverty rate may be even higher (refer to box 1.2).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 12,
+            "segment_start": 1291,
+            "start": 1583,
+            "end": 1651,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "37c84adc454195e89209378dc9572516f156e79500fe298281369f515dba4e5f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "This concentration means that the recent gains are fragile. Economic downturns, climate shocks, or conflict could push large numbers of people back into poverty, as the COVID-19 pandemic demonstrated (Mahler et al. 2022).",
+          "metadata": {
+            "end": 931,
+            "start": 710,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8736053554541297
+        },
+        {
+          "id": "113b2b40603ec15c2ceadfb49206131c6ceda819f5e59af328a3bf0ea7979fe7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "31 Global Poverty: Stalled Pro GreSS and riSinG Con Centration (refer to annex 1B, figure 1B.2). Across all poverty lines, the shares of the poor have risen in low-income economies, while they have fallen in upper-middle-income economies. Continued progress in middle-income economies, where structural growth challenges can impede sustained poverty reduction (World Bank 2024b), therefore remains pivotal to reducing global poverty. Many of the people who have escaped extreme poverty in middle-income economies are still living close to the $3.00 line. Incomes are clustered between $3.00 and $4.20 a day, well short of the economic security that defines the middle class (refer to box 1.3 and figure 1.3).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 31,
+            "segment_start": 0,
+            "start": 0,
+            "end": 708,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "f91568cb14ed898d513d6b23dbf0daf9d39a36a527353145aa6496e285dd3524",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "After decades of progress, global extreme poverty is projected to rise That poverty is now concentrated in economies where progress has stalled has profound implications for the outlook on extreme poverty. Because the population is also growing most rapidly in these same economies, the rising share of the global population in these economies is pulling the global poverty rate upward, even if national rates do not worsen. The stalled reduction in poverty may not merely be a temporary setback.6 If per capita growth in these economies continues at the pace observed over 2015–24, the global extreme poverty rate and the number of people living in extreme poverty will increase by 2030 (refer to figure 1.9). This would represent an unprecedented reversal of the decades-long decline in the global number of the extreme poor.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 31,
+            "segment_start": 0,
+            "start": 933,
+            "end": 1760,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "c3e295ff3d7685082acb1f2e5418903a2e81ad4dc901b470e6d1cf8a9861bdad",
+        "fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634",
+        "e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5",
+        "37c84adc454195e89209378dc9572516f156e79500fe298281369f515dba4e5f"
+      ],
+      "elapsed_seconds": 0.04643775000295136
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong mục “Gains in global poverty reduction could be reversed in coming decades”, thu nhập trung vị toàn cầu đã tăng lên mức bao nhiêu USD/ngày vào năm 2024?\", \"filter\": {\"section\": \"Gains in global poverty reduction could be reversed in coming decades\"}}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01UsvBFTwWofMXW7Ld6wR4G7",
+              "name": "search_documents",
+              "input": {
+                "query": "Gains in global poverty reduction could be reversed in coming decades median income"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01UsvBFTwWofMXW7Ld6wR4G7",
+              "content": "{\"current_context\": \"[c3e295ff3d7685082acb1f2e5418903a2e81ad4dc901b470e6d1cf8a9861bdad | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\nGains in global poverty reduction could be reversed in coming decades Following the decades during which global extreme poverty fell at historic rates, the decline has come to a dramatic stop.1 Extreme poverty is increasingly concentrated in economies in Sub-Saharan Africa and in economies experiencing fragility, conflict, and violence. In these economies, poverty rates have generally stagnated or risen. Population growth in these economies, combined with rates of poverty reduction that are insufficient to sustain the progress achieved during the preceding years, means that the number of people living in extreme poverty globally is projected to increase in coming decades.\\n\\n[fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\nAfter decades of progress, the reduction in extreme poverty has ground to a halt After decades of significant and steady progress, the reduction of global poverty has reached a critical juncture. In 1990, nearly 2.3 billion people—43 percent of the global population—were living in extreme poverty, defined as living on less than $3.00-a-person-a-day (in 2021 PPP terms) (refer to box 1.1). By 2019, the number had fallen dramatically, to 837 million people, or 10.8 percent of the global population. But, since then, virtually no progress on reducing extreme poverty has been made. The COVID-19 pandemic triggered the largest setback in decades (Mahler et al. 2022). In 2026, 811 million people—1 in 10 globally—were living in extreme poverty, and this rate has remained essentially unchanged since 2020. Factoring in the economic growth and price impacts of the conflict in the Middle East suggests\\n\\n[e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\nthat the extreme poverty rate may be even higher (refer to box 1.2).\\n\\n[37c84adc454195e89209378dc9572516f156e79500fe298281369f515dba4e5f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\\nThis concentration means that the recent gains are fragile. Economic downturns, climate shocks, or conflict could push large numbers of people back into poverty, as the COVID-19 pandemic demonstrated (Mahler et al. 2022).\", \"current_context_ids\": [\"c3e295ff3d7685082acb1f2e5418903a2e81ad4dc901b470e6d1cf8a9861bdad\", \"fe1f4377134fa9efef1590ee5d14059bd6aa9a0d083eae8df35b653b1ce66634\", \"e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5\", \"37c84adc454195e89209378dc9572516f156e79500fe298281369f515dba4e5f\"], \"searched_queries\": [\"Gains in global poverty reduction could be reversed in coming decades global median income 2024 per day\", \"global median income per day rose to 2024 poverty prosperity planet report\", \"Gains in global poverty reduction could be reversed in coming decades median income\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gPjYKQEx4UgCmKfDqw",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01B4B5t8wjQZaKgE6TwXCNLf",
+            "name": "search_documents",
+            "input": {
+              "query": "global median income per day 2024 PPP"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01B4B5t8wjQZaKgE6TwXCNLf",
+          "name": "search_documents",
+          "input": {
+            "query": "global median income per day 2024 PPP"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2790,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 87,
+          "output_tokens_details": {
+            "thinking_tokens": 29
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003225,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2790,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.4062677909969352
+    },
+    {
+      "event": "search",
+      "query": "global median income per day 2024 PPP",
+      "query_rewritten": true,
+      "filter": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades"
+      },
+      "results": [
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.900924801826477
+        },
+        {
+          "id": "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty",
+          "metadata": {
+            "end": 896,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8878599405288696
+        },
+        {
+          "id": "49dcfa6ca670b8450d6a587cc8490bfb359e85f93edc9831c6d1751417dcfdc1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 53,
+          "text": "$28.00 and above Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the distribution of the population across four welfare groups in 2000–26. the groups are defined by the $3.00-, $8.30-, and $28.00-a-person-a-day lines (expressed in 2021 purchasing power parity terms). economies are grouped according to the World bank income classification in 2024, and the grouping is held fixed over the period. because economies are classified by their status at the end of the period, those in the upper-middle- income group are the ones that grew most quickly over these years, and the improvement shown for this group partly reflects this selection. data for 2025 and 2026 are nowcasts (refer to annex 1a).",
+          "metadata": {
+            "end": 1729,
+            "start": 899,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 21,
+            "segment_start": 0
+          },
+          "score": 0.8877635598182678
+        }
+      ],
+      "context": "[94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\n23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,\n\n[1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\nhttps://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\n\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.\n\n[03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\n13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty\n\n[e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\nthat the extreme poverty rate may be even higher (refer to box 1.2).",
+      "context_candidates": [
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.900924801826477
+        },
+        {
+          "id": "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\n\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 23,
+            "segment_start": 0,
+            "start": 869,
+            "end": 1331,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty",
+          "metadata": {
+            "end": 896,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8878599405288696
+        },
+        {
+          "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 897,
+            "end": 1538,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "49dcfa6ca670b8450d6a587cc8490bfb359e85f93edc9831c6d1751417dcfdc1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 53,
+          "text": "$28.00 and above Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the distribution of the population across four welfare groups in 2000–26. the groups are defined by the $3.00-, $8.30-, and $28.00-a-person-a-day lines (expressed in 2021 purchasing power parity terms). economies are grouped according to the World bank income classification in 2024, and the grouping is held fixed over the period. because economies are classified by their status at the end of the period, those in the upper-middle- income group are the ones that grew most quickly over these years, and the improvement shown for this group partly reflects this selection. data for 2025 and 2026 are nowcasts (refer to annex 1a).",
+          "metadata": {
+            "end": 1729,
+            "start": 899,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 21,
+            "segment_start": 0
+          },
+          "score": 0.8877635598182678
+        },
+        {
+          "id": "13aa0054ee7188919476ad8b180447ca042fe08d77be397b4d74b80970fa7972",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 53,
+          "text": "21 Global Poverty: Stalled Pro GreSS and riSinG Con Centration The expansion of the middle class has been concentrated in middle-income economies (refer to figure B1.3.1, panels b and c). In today’s upper-middle-income economies, the middle class has grown from a small minority of the population BOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued) FIGURE B1.3.1 The global middle class has grown, mostly in middle-income economies 0 20 40 60 80 100 Share of population (%) 2000 2005 2010 2015 2020 2025 a. Low income Share of population (%) 0 20 40 60 80 100 2000 2005 2010 2015 2020 2025 c. Upper-middle income Share of population (%) 0 20 40 60 80 100 2000 2005 2010 2015 2020 2025 b. Lower-middle income Share of population (%) 0 20 40 60 80 100 2000 2005 2010 2015 2020 2025 d. High income Below $3.00 $3.00–$8.30 $8.30–$28.00",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 21,
+            "segment_start": 0,
+            "start": 0,
+            "end": 898,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+        "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17",
+        "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+        "e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5"
+      ],
+      "elapsed_seconds": 0.05030075000831857
+    },
+    {
+      "event": "model",
+      "step": 5,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong mục “Gains in global poverty reduction could be reversed in coming decades”, thu nhập trung vị toàn cầu đã tăng lên mức bao nhiêu USD/ngày vào năm 2024?\", \"filter\": {\"section\": \"Gains in global poverty reduction could be reversed in coming decades\"}}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01B4B5t8wjQZaKgE6TwXCNLf",
+              "name": "search_documents",
+              "input": {
+                "query": "global median income per day 2024 PPP"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01B4B5t8wjQZaKgE6TwXCNLf",
+              "content": "{\"current_context\": \"[94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\\n23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,\\n\\n[1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\\nhttps://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\\n\\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.\\n\\n[03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\n13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty\\n\\n[e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\nthat the extreme poverty rate may be even higher (refer to box 1.2).\", \"current_context_ids\": [\"94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce\", \"1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17\", \"03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266\", \"e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5\"], \"searched_queries\": [\"Gains in global poverty reduction could be reversed in coming decades global median income 2024 per day\", \"global median income per day rose to 2024 poverty prosperity planet report\", \"Gains in global poverty reduction could be reversed in coming decades median income\", \"global median income per day 2024 PPP\"], \"searches_remaining\": 0}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gPqcTNfTRqjCS14jy5",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01RF8NZxyjpHCpq6S63NjuhG",
+            "name": "finish",
+            "input": {
+              "status": "abstain",
+              "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các đoạn tìm được (Hình 1.3, Box 1.1, trang 43–79) chỉ nói về phân phối phúc lợi theo nhóm thu nhập, các ngưỡng nghèo $3.00, $4.20, $8.30/ngày theo PPP 2021, nhưng không có con số thu nhập trung vị toàn cầu năm 2024 và không thấy mục “Gains in global poverty reduction could be reversed in coming decades” trong kết quả. Đã hết lượt tìm kiếm nên không thể suy ra con số.",
+              "citations": []
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01RF8NZxyjpHCpq6S63NjuhG",
+          "name": "finish",
+          "input": {
+            "status": "abstain",
+            "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các đoạn tìm được (Hình 1.3, Box 1.1, trang 43–79) chỉ nói về phân phối phúc lợi theo nhóm thu nhập, các ngưỡng nghèo $3.00, $4.20, $8.30/ngày theo PPP 2021, nhưng không có con số thu nhập trung vị toàn cầu năm 2024 và không thấy mục “Gains in global poverty reduction could be reversed in coming decades” trong kết quả. Đã hết lượt tìm kiếm nên không thể suy ra con số.",
+            "citations": []
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 3067,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 339,
+          "output_tokens_details": {
+            "thinking_tokens": 32
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0004762,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 3067,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.204421332993661
+    },
+    {
+      "event": "finish",
+      "status": "abstain",
+      "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các đoạn tìm được (Hình 1.3, Box 1.1, trang 43–79) chỉ nói về phân phối phúc lợi theo nhóm thu nhập, các ngưỡng nghèo $3.00, $4.20, $8.30/ngày theo PPP 2021, nhưng không có con số thu nhập trung vị toàn cầu năm 2024 và không thấy mục “Gains in global poverty reduction could be reversed in coming decades” trong kết quả. Đã hết lượt tìm kiếm nên không thể suy ra con số.",
+      "citations": [],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 4,
+  "model_calls": 5,
+  "usage": {
+    "input_tokens": 13288,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 660
+  },
+  "cost_usd": null,
+  "status": "abstain",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "neighbors"
+  },
+  "context": "[94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\n23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,\n\n[1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\nhttps://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\n\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.\n\n[03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\n13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty\n\n[e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\nthat the extreme poverty rate may be even higher (refer to box 1.2).",
+  "context_ids": [
+    "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+    "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17",
+    "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+    "e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5"
+  ],
+  "context_chunks": [
+    {
+      "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 55,
+      "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+      "metadata": {
+        "end": 868,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 23,
+        "segment_start": 0
+      },
+      "score": 0.900924801826477
+    },
+    {
+      "id": "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 55,
+      "text": "https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\n\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 23,
+        "segment_start": 0,
+        "start": 869,
+        "end": 1331,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 45,
+      "text": "13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty",
+      "metadata": {
+        "end": 896,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 13,
+        "segment_start": 0
+      },
+      "score": 0.8878599405288696
+    },
+    {
+      "id": "e4560ae7917ce8b5386e8b4b5d9f4300ce8e63628d7f4d3fd09ab06a82ffa0d5",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 44,
+      "text": "that the extreme poverty rate may be even higher (refer to box 1.2).",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 12,
+        "segment_start": 1291,
+        "start": 1583,
+        "end": 1651,
+        "chunking": "paragraph"
+      }
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 5,
+    "returned_calls": 5
+  },
+  "estimated_cost_usd": 0.0016588,
+  "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các đoạn tìm được (Hình 1.3, Box 1.1, trang 43–79) chỉ nói về phân phối phúc lợi theo nhóm thu nhập, các ngưỡng nghèo $3.00, $4.20, $8.30/ngày theo PPP 2021, nhưng không có con số thu nhập trung vị toàn cầu năm 2024 và không thấy mục “Gains in global poverty reduction could be reversed in coming decades” trong kết quả. Đã hết lượt tìm kiếm nên không thể suy ra con số.",
+  "citations": [],
+  "elapsed_seconds": 9.028900958990562,
+  "answerable": true,
+  "context_strict_hit": false,
+  "context_set_hit": false,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

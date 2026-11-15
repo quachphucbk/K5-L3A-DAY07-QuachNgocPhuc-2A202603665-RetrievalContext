@@ -1,0 +1,77 @@
+{
+  "grounded_answer": {
+    "distribution": {
+      "0": 5,
+      "1": 6,
+      "2": 3
+    },
+    "N": 14,
+    "mean_out_of_2": 0.8571428571428571
+  },
+  "citation_validity": {
+    "n": 15,
+    "N": 20
+  },
+  "answer_citation_coverage": {
+    "n": 11,
+    "N": 11
+  },
+  "abstention": {
+    "n": 1,
+    "N": 2
+  },
+  "false_abstention": {
+    "n": 3,
+    "N": 14
+  },
+  "context_sufficient_reviewed": {
+    "n": 9,
+    "N": 14
+  },
+  "errors": 1,
+  "limits": 0,
+  "context_grade_distribution": {
+    "0": 5,
+    "1": 0,
+    "2": 9
+  },
+  "technical": {
+    "scheduled": 17,
+    "status_counts": {
+      "answered": 11,
+      "abstain": 5,
+      "error": 1
+    },
+    "tool_use": {
+      "n": 16,
+      "N": 16
+    },
+    "search_distribution": {
+      "2": 3,
+      "4": 6,
+      "1": 5,
+      "3": 2
+    },
+    "model_calls": 65,
+    "elapsed_seconds": 172.94431808398804,
+    "usage": {
+      "input_tokens": 159852,
+      "output_tokens": 17895,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "known_estimated_cost_usd": 0.0249327,
+    "cost_estimate_complete": false,
+    "context_evidence_exact": {
+      "n": 7,
+      "N": 14
+    },
+    "context_evidence_set": {
+      "n": 8,
+      "N": 14
+    },
+    "semantic_quality": "pending human review; status counts are not accuracy/abstention correctness",
+    "billing": "Estimate from returned usage only; not invoice or hardware cost."
+  },
+  "review_provenance": "Codex presented file evidence and proposed labels; Quách Ngọc Phúc confirmed each case in chat. One execution error acknowledged separately."
+}

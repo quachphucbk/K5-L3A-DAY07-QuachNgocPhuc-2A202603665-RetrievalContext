@@ -1,0 +1,612 @@
+{
+  "created_at_utc": "2026-11-14T10:38:28.217238+00:00",
+  "stage": "agent_dev",
+  "query_id": "q11",
+  "config_id": "budget3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Có thể xác định một mức thu nhập cố định bảo đảm an toàn kinh tế cho mọi hoàn cảnh không?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Có thể xác định một mức thu nhập cố định bảo đảm an toàn kinh tế cho mọi hoàn cảnh không?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gAKMusreQaVoe5tKWL",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01UVHwRc78NX8VfN3sJANmm9",
+            "name": "search_documents",
+            "input": {
+              "query": "fixed income threshold guarantees economic security for all circumstances"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01UVHwRc78NX8VfN3sJANmm9",
+          "name": "search_documents",
+          "input": {
+            "query": "fixed income threshold guarantees economic security for all circumstances"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1340,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 65,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001665,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1340,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.3979232909914572
+    },
+    {
+      "event": "search",
+      "query": "fixed income threshold guarantees economic security for all circumstances",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.8367831901570392
+        },
+        {
+          "id": "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.",
+          "metadata": {
+            "end": 603,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8356592655181885
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.833515932173488
+        }
+      ],
+      "context": "[de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.\n\n[617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\n20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.\n\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+      "context_candidates": [
+        {
+          "id": "de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.8367831901570392
+        },
+        {
+          "id": "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.",
+          "metadata": {
+            "end": 603,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8356592655181885
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.833515932173488
+        }
+      ],
+      "context_ids": [
+        "de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0",
+        "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017",
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+      ],
+      "elapsed_seconds": 0.03967224998632446
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Có thể xác định một mức thu nhập cố định bảo đảm an toàn kinh tế cho mọi hoàn cảnh không?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01UVHwRc78NX8VfN3sJANmm9",
+              "name": "search_documents",
+              "input": {
+                "query": "fixed income threshold guarantees economic security for all circumstances"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01UVHwRc78NX8VfN3sJANmm9",
+              "content": "{\"current_context\": \"[de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\n17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.\\n\\n[617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\n20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.\\n\\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\", \"current_context_ids\": [\"de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0\", \"617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017\", \"9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715\"], \"searched_queries\": [\"fixed income threshold guarantees economic security for all circumstances\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gAReSPQRhgsBqP9za5",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_011hG5SzFVoWMZye5XrJqVAw",
+            "name": "search_documents",
+            "input": {
+              "query": "economic security threshold varies across countries, no single income level, vulnerability to shocks"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_011hG5SzFVoWMZye5XrJqVAw",
+          "name": "search_documents",
+          "input": {
+            "query": "economic security threshold varies across countries, no single income level, vulnerability to shocks"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2673,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 118,
+          "output_tokens_details": {
+            "thinking_tokens": 46
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003263,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2673,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.632578916993225
+    },
+    {
+      "event": "search",
+      "query": "economic security threshold varies across countries, no single income level, vulnerability to shocks",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8841216965805065
+        },
+        {
+          "id": "612f67f6ff6dd55bcf6df6b0ce1ca296638b503ed4723e6ab98784e5b16c38d8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 59,
+          "text": "Bank 2025b). Global per capita income growth in low-income countries is projected to slow to its weakest pace since the COVID-19 pandemic, amid renewed energy-price shocks from the conflict in the Middle East (World Bank 2026c). Elsewhere, growth has remained stronger and more inclusive. South Asia, in particular, has shown strong, broad-based welfare gains across the distribution.4 Poverty is now concentrated in economies where progress has stopped Extreme poverty is highly concentrated geographically. More than half the extreme poor across the globe are concentrated in only 9 economies, and three-quarters are living in 20 economies (refer to figure 1.6).5 Of the nine economies, six are in Sub-Saharan Africa; the others are India, Pakistan, and the Republic of Y emen.",
+          "metadata": {
+            "end": 1679,
+            "start": 900,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 27,
+            "segment_start": 0
+          },
+          "score": 0.8599790501619579
+        },
+        {
+          "id": "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.",
+          "metadata": {
+            "end": 603,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.859722750219977
+        }
+      ],
+      "context": "[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\n\n[612f67f6ff6dd55bcf6df6b0ce1ca296638b503ed4723e6ab98784e5b16c38d8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 59]\nBank 2025b). Global per capita income growth in low-income countries is projected to slow to its weakest pace since the COVID-19 pandemic, amid renewed energy-price shocks from the conflict in the Middle East (World Bank 2026c). Elsewhere, growth has remained stronger and more inclusive. South Asia, in particular, has shown strong, broad-based welfare gains across the distribution.4 Poverty is now concentrated in economies where progress has stopped Extreme poverty is highly concentrated geographically. More than half the extreme poor across the globe are concentrated in only 9 economies, and three-quarters are living in 20 economies (refer to figure 1.6).5 Of the nine economies, six are in Sub-Saharan Africa; the others are India, Pakistan, and the Republic of Y emen.\n\n[617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\n20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.",
+      "context_candidates": [
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8841216965805065
+        },
+        {
+          "id": "612f67f6ff6dd55bcf6df6b0ce1ca296638b503ed4723e6ab98784e5b16c38d8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 59,
+          "text": "Bank 2025b). Global per capita income growth in low-income countries is projected to slow to its weakest pace since the COVID-19 pandemic, amid renewed energy-price shocks from the conflict in the Middle East (World Bank 2026c). Elsewhere, growth has remained stronger and more inclusive. South Asia, in particular, has shown strong, broad-based welfare gains across the distribution.4 Poverty is now concentrated in economies where progress has stopped Extreme poverty is highly concentrated geographically. More than half the extreme poor across the globe are concentrated in only 9 economies, and three-quarters are living in 20 economies (refer to figure 1.6).5 Of the nine economies, six are in Sub-Saharan Africa; the others are India, Pakistan, and the Republic of Y emen.",
+          "metadata": {
+            "end": 1679,
+            "start": 900,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 27,
+            "segment_start": 0
+          },
+          "score": 0.8599790501619579
+        },
+        {
+          "id": "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.",
+          "metadata": {
+            "end": 603,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.859722750219977
+        }
+      ],
+      "context_ids": [
+        "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+        "612f67f6ff6dd55bcf6df6b0ce1ca296638b503ed4723e6ab98784e5b16c38d8",
+        "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017"
+      ],
+      "elapsed_seconds": 0.037364584000897594
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Có thể xác định một mức thu nhập cố định bảo đảm an toàn kinh tế cho mọi hoàn cảnh không?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_011hG5SzFVoWMZye5XrJqVAw",
+              "name": "search_documents",
+              "input": {
+                "query": "economic security threshold varies across countries, no single income level, vulnerability to shocks"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_011hG5SzFVoWMZye5XrJqVAw",
+              "content": "{\"current_context\": \"[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\\n\\n[612f67f6ff6dd55bcf6df6b0ce1ca296638b503ed4723e6ab98784e5b16c38d8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 59]\\nBank 2025b). Global per capita income growth in low-income countries is projected to slow to its weakest pace since the COVID-19 pandemic, amid renewed energy-price shocks from the conflict in the Middle East (World Bank 2026c). Elsewhere, growth has remained stronger and more inclusive. South Asia, in particular, has shown strong, broad-based welfare gains across the distribution.4 Poverty is now concentrated in economies where progress has stopped Extreme poverty is highly concentrated geographically. More than half the extreme poor across the globe are concentrated in only 9 economies, and three-quarters are living in 20 economies (refer to figure 1.6).5 Of the nine economies, six are in Sub-Saharan Africa; the others are India, Pakistan, and the Republic of Y emen.\\n\\n[617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\n20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.\", \"current_context_ids\": [\"42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22\", \"612f67f6ff6dd55bcf6df6b0ce1ca296638b503ed4723e6ab98784e5b16c38d8\", \"617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017\"], \"searched_queries\": [\"fixed income threshold guarantees economic security for all circumstances\", \"economic security threshold varies across countries, no single income level, vulnerability to shocks\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gAZ1hNXyYzY2j4PrRH",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01CYdmMYpio4crUtrW5jNhqz",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Không. Kho tài liệu cho thấy không có mức thu nhập cố định nào đánh dấu điểm bắt đầu an toàn kinh tế. Theo cách tiếp cận dựa trên tính dễ tổn thương, các ngưỡng an toàn ước tính khoảng 6,00, 7,00 và 14,00 USD/ngày cho ba nhóm thu nhập, tức khoảng gấp đôi đường nghèo tương ứng, nhưng khác biệt rất lớn giữa các nền kinh tế [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Ngưỡng này cũng thay đổi theo rủi ro: ở Châu Âu và Trung Á, thu nhập cần thiết để duy trì xác suất rơi vào nghèo thấp tăng khoảng 10% theo giá thực từ 2008 đến 2018 khi các cú sốc lớn hơn [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Mức an toàn cũng phụ thuộc vào mức thu nhập bình quân của nền kinh tế: khi thu nhập trung bình tăng, tỷ lệ dân số đạt an toàn kinh tế cũng tăng [617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017].",
+              "citations": [
+                "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+                "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01CYdmMYpio4crUtrW5jNhqz",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Không. Kho tài liệu cho thấy không có mức thu nhập cố định nào đánh dấu điểm bắt đầu an toàn kinh tế. Theo cách tiếp cận dựa trên tính dễ tổn thương, các ngưỡng an toàn ước tính khoảng 6,00, 7,00 và 14,00 USD/ngày cho ba nhóm thu nhập, tức khoảng gấp đôi đường nghèo tương ứng, nhưng khác biệt rất lớn giữa các nền kinh tế [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Ngưỡng này cũng thay đổi theo rủi ro: ở Châu Âu và Trung Á, thu nhập cần thiết để duy trì xác suất rơi vào nghèo thấp tăng khoảng 10% theo giá thực từ 2008 đến 2018 khi các cú sốc lớn hơn [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Mức an toàn cũng phụ thuộc vào mức thu nhập bình quân của nền kinh tế: khi thu nhập trung bình tăng, tỷ lệ dân số đạt an toàn kinh tế cũng tăng [617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017].",
+            "citations": [
+              "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+              "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2686,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 690,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0006136,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2686,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 4.099002874994767
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Không. Kho tài liệu cho thấy không có mức thu nhập cố định nào đánh dấu điểm bắt đầu an toàn kinh tế. Theo cách tiếp cận dựa trên tính dễ tổn thương, các ngưỡng an toàn ước tính khoảng 6,00, 7,00 và 14,00 USD/ngày cho ba nhóm thu nhập, tức khoảng gấp đôi đường nghèo tương ứng, nhưng khác biệt rất lớn giữa các nền kinh tế [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Ngưỡng này cũng thay đổi theo rủi ro: ở Châu Âu và Trung Á, thu nhập cần thiết để duy trì xác suất rơi vào nghèo thấp tăng khoảng 10% theo giá thực từ 2008 đến 2018 khi các cú sốc lớn hơn [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Mức an toàn cũng phụ thuộc vào mức thu nhập bình quân của nền kinh tế: khi thu nhập trung bình tăng, tỷ lệ dân số đạt an toàn kinh tế cũng tăng [617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017].",
+      "citations": [
+        "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+        "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 2,
+  "model_calls": 3,
+  "usage": {
+    "input_tokens": 6699,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 873
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\n\n[612f67f6ff6dd55bcf6df6b0ce1ca296638b503ed4723e6ab98784e5b16c38d8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 59]\nBank 2025b). Global per capita income growth in low-income countries is projected to slow to its weakest pace since the COVID-19 pandemic, amid renewed energy-price shocks from the conflict in the Middle East (World Bank 2026c). Elsewhere, growth has remained stronger and more inclusive. South Asia, in particular, has shown strong, broad-based welfare gains across the distribution.4 Poverty is now concentrated in economies where progress has stopped Extreme poverty is highly concentrated geographically. More than half the extreme poor across the globe are concentrated in only 9 economies, and three-quarters are living in 20 economies (refer to figure 1.6).5 Of the nine economies, six are in Sub-Saharan Africa; the others are India, Pakistan, and the Republic of Y emen.\n\n[617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\n20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.",
+  "context_ids": [
+    "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+    "612f67f6ff6dd55bcf6df6b0ce1ca296638b503ed4723e6ab98784e5b16c38d8",
+    "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017"
+  ],
+  "context_chunks": [
+    {
+      "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 52,
+      "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+      "metadata": {
+        "end": 2469,
+        "start": 1571,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 20,
+        "segment_start": 0
+      },
+      "score": 0.8841216965805065
+    },
+    {
+      "id": "612f67f6ff6dd55bcf6df6b0ce1ca296638b503ed4723e6ab98784e5b16c38d8",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 59,
+      "text": "Bank 2025b). Global per capita income growth in low-income countries is projected to slow to its weakest pace since the COVID-19 pandemic, amid renewed energy-price shocks from the conflict in the Middle East (World Bank 2026c). Elsewhere, growth has remained stronger and more inclusive. South Asia, in particular, has shown strong, broad-based welfare gains across the distribution.4 Poverty is now concentrated in economies where progress has stopped Extreme poverty is highly concentrated geographically. More than half the extreme poor across the globe are concentrated in only 9 economies, and three-quarters are living in 20 economies (refer to figure 1.6).5 Of the nine economies, six are in Sub-Saharan Africa; the others are India, Pakistan, and the Republic of Y emen.",
+      "metadata": {
+        "end": 1679,
+        "start": 900,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 27,
+        "segment_start": 0
+      },
+      "score": 0.8599790501619579
+    },
+    {
+      "id": "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 52,
+      "text": "20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.",
+      "metadata": {
+        "end": 603,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 20,
+        "segment_start": 0
+      },
+      "score": 0.859722750219977
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 3,
+    "returned_calls": 3
+  },
+  "estimated_cost_usd": 0.0011064,
+  "answer": "Không. Kho tài liệu cho thấy không có mức thu nhập cố định nào đánh dấu điểm bắt đầu an toàn kinh tế. Theo cách tiếp cận dựa trên tính dễ tổn thương, các ngưỡng an toàn ước tính khoảng 6,00, 7,00 và 14,00 USD/ngày cho ba nhóm thu nhập, tức khoảng gấp đôi đường nghèo tương ứng, nhưng khác biệt rất lớn giữa các nền kinh tế [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Ngưỡng này cũng thay đổi theo rủi ro: ở Châu Âu và Trung Á, thu nhập cần thiết để duy trì xác suất rơi vào nghèo thấp tăng khoảng 10% theo giá thực từ 2008 đến 2018 khi các cú sốc lớn hơn [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Mức an toàn cũng phụ thuộc vào mức thu nhập bình quân của nền kinh tế: khi thu nhập trung bình tăng, tỷ lệ dân số đạt an toàn kinh tế cũng tăng [617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017].",
+  "citations": [
+    "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+    "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017"
+  ],
+  "elapsed_seconds": 7.206801832988276,
+  "answerable": true,
+  "context_strict_hit": false,
+  "context_set_hit": false,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

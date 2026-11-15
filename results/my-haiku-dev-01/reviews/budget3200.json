@@ -1,0 +1,339 @@
+[
+  {
+    "query_id": "q01",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:18:28.002688+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+        "supports": true,
+        "reason": "Có trong context và hỗ trợ cập nhật năm cơ sở từ 2017 sang 2021 vào tháng 6/2025, trang PDF 45."
+      },
+      {
+        "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+        "supports": true,
+        "reason": "Có trong context và hỗ trợ phát biểu các ngưỡng nghèo được điều chỉnh theo PPP 2021, trang PDF 45."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng 2017 sang 2021, context cuối đủ evidence và nguồn trang PDF 45; hai citation hỗ trợ đúng phát biểu tương ứng. Codex trình bày dẫn chứng và đề xuất điểm; Quách Ngọc Phúc xác nhận trong chat: ok."
+  },
+  {
+    "query_id": "q02",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:21:02.761947+07:00",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Gold trang PDF 45 yêu cầu trung vị các chuẩn nghèo quốc gia của nhóm thu nhập thấp. Context cuối chỉ chứa tỷ trọng người nghèo, bảng mức chuẩn nghèo và định nghĩa chuẩn nghèo xã hội; median ở trang 75 không phải thống kê định nghĩa chuẩn nghèo quốc tế. Agent từ chối câu có đáp án. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=0, context=0 trong chat: ok."
+  },
+  {
+    "query_id": "q03",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:22:46.166289+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+        "supports": true,
+        "reason": "Có trong context, trang PDF 45; hỗ trợ cải tiến khảo sát, dữ liệu tốt hơn về lương thực tối thiểu và phi lương thực thiết yếu, không phải định nghĩa nghèo rộng hơn."
+      },
+      {
+        "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+        "supports": true,
+        "reason": "Có trong context, trang PDF 45; hỗ trợ phần bổ sung về PPP 2021, chuẩn nghèo điều chỉnh và không dời mốc đo lường."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ lý do nâng chuẩn phản ánh dữ liệu nhu cầu cơ bản tốt hơn. Context cuối đủ evidence cùng nguồn và trang; hai citation hỗ trợ các phát biểu tương ứng. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và hai citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "q04",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:25:25.732567+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+        "supports": true,
+        "reason": "Có trong context trang PDF 46; hỗ trợ không có lợi ích ròng khi giá thực phẩm tăng do đầu vào, có thể thiệt hơn khi nhu cầu giảm, và các ví dụ về ngô, phân bón."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ kết luận cùng điều kiện chi phí đầu vào và nhu cầu giảm. Context có evidence cùng nguồn/trang; citation hỗ trợ cả phần chính và ví dụ. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "q05",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:27:41.619419+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+        "supports": true,
+        "reason": "Có trong context trang PDF 47; hỗ trợ baseline trung tính về phân phối và phân bổ đều cú sốc lạm phát."
+      },
+      {
+        "id": "069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec",
+        "supports": true,
+        "reason": "Có trong context trang PDF 47; hỗ trợ thu nhập mọi người tăng cùng tốc độ và dùng tăng trưởng GDP thực bình quân đầu người."
+      },
+      {
+        "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+        "supports": true,
+        "reason": "Có trong context trang PDF 48; hỗ trợ các kịch bản cú sốc thu nhập và giá xét tác động khác nhau giữa các hộ."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ giả định thu nhập tăng cùng tốc độ; phần bổ sung về phân phối, GDP và kịch bản cú sốc có bằng chứng trong context. Đủ nguồn/trang và ba citation hỗ trợ các phát biểu tương ứng. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận cách chấm trong chat: ok."
+  },
+  {
+    "query_id": "q06",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:29:48.279363+07:00",
+    "answer_grade": 1,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+        "supports": true,
+        "reason": "Có trong context trang PDF 47; hỗ trợ hộ nghèo chi tỷ trọng lớn hơn cho lương thực, năng lượng và chịu giảm thu nhập thực khi giá tăng."
+      },
+      {
+        "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+        "supports": true,
+        "reason": "Có trong context trang PDF 46; hỗ trợ tác động trực tiếp của giá năng lượng lên ngân sách và gián tiếp qua vận tải lương thực."
+      },
+      {
+        "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+        "supports": true,
+        "reason": "Có trong context trang PDF 52; hỗ trợ ngưỡng an toàn kinh tế thay đổi theo rủi ro, không có mức thu nhập cố định bắt đầu an toàn."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Phần chính đúng: hộ nghèo chi tỷ trọng lớn hơn cho lương thực và năng lượng. Context đủ evidence cùng nguồn/trang, ba citation hỗ trợ phát biểu tương ứng. Tuy nhiên câu bổ sung khẳng định tài liệu không có số liệu so sánh trong phần này chưa được chứng minh bởi các đoạn context, nên answer_grade=1. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=1, context=2 và ba citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "q07",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:32:27.282106+07:00",
+    "answer_grade": 0,
+    "context_grade": 1,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Gold trang PDF 47 yêu cầu tăng trưởng nông nghiệp năm 2026 thấp hơn dịch vụ/công nghiệp và người cực nghèo tập trung nhiều hơn trong nông nghiệp. Context có evidence một phần trang PDF 63 rằng tăng trưởng nông nghiệp giúp người nghèo nhất tương đối nhiều hơn, nhưng thiếu điều kiện năm 2026 và cơ chế đầy đủ nên context_grade=1. Agent từ chối câu có đáp án nên answer_grade=0. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=0, context=1 trong chat: ok."
+  },
+  {
+    "query_id": "q08",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:34:35.251788+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+        "supports": true,
+        "reason": "Có trong context trang PDF 49; hỗ trợ khoảng 7% năm 2026, thấp hơn thực tế khoảng 3 điểm phần trăm, khoảng cách khoảng 240 triệu người và so sánh xu hướng ở ngưỡng $3.00/$4.20."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ hai số liệu cùng điều kiện duy trì tốc độ giảm nghèo 2000–2013. Context đủ evidence, nguồn và trang; nội dung bổ sung cũng có trong cùng đoạn nguồn. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "q09",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:42:19.059464+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+        "supports": true,
+        "reason": "Có trong context trang PDF 49; hỗ trợ khác biệt chuẩn $3.00/$4.20, mức 7%, chênh lệch 3 điểm phần trăm và khoảng 240 triệu người."
+      },
+      {
+        "id": "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+        "supports": true,
+        "reason": "Có trong context trang PDF 50; hỗ trợ nowcast 2025–2026, projection 2019 và đường xu hướng log-linear 2000–2013 neo tại 2013."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ: chậm lại ở chuẩn $3.00, chuẩn $4.20 nhìn chung theo kịp xu hướng trước 2013. Context đủ evidence cùng nguồn/trang; số liệu và lưu ý bổ sung cũng có bằng chứng. Hai citation hỗ trợ phát biểu tương ứng. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận cách chấm trong chat: ok."
+  },
+  {
+    "query_id": "q10",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:44:37.605292+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+        "supports": true,
+        "reason": "Có trong context trang PDF 52; hỗ trợ trung lưu toàn cầu $8.30–$28.00/ngày, ý nghĩa hai ngưỡng và tính chất proxy/gần đúng."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ khoảng $8.30–$28.00/ngày. Context chứa evidence cùng nguồn/trang; phần giải thích ngưỡng và tính gần đúng cũng được hỗ trợ. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "q11",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:48:22.787342+07:00",
+    "answer_grade": 1,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+        "supports": true,
+        "reason": "Có trong context trang PDF 52; hỗ trợ không có thu nhập cố định bắt đầu an toàn, ngưỡng thay đổi theo rủi ro, các ngưỡng 6/7/14 USD và ví dụ tăng 10%."
+      },
+      {
+        "id": "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017",
+        "supports": false,
+        "reason": "Có trong context trang PDF 52 nhưng chỉ hỗ trợ tỷ lệ dân số đạt an toàn tăng theo thu nhập bình quân; không chứng minh ngưỡng thu nhập đạt an toàn phụ thuộc thu nhập bình quân như câu bổ sung."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Phần chính đúng: không có mức thu nhập cố định bảo đảm an toàn, ngưỡng thay đổi theo rủi ro; context đủ evidence nguồn/trang. Tuy nhiên phần bổ sung suy từ tỷ lệ dân số đạt an toàn sang mức/ngưỡng an toàn phụ thuộc thu nhập bình quân, chưa được nguồn chứng minh, nên answer_grade=1. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=1, context=2 và citation true/false trong chat: ok."
+  },
+  {
+    "query_id": "q12",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:50:28.537193+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "6155ca575388567c630552badf1515d018a372255d5ffec7f9d16b7c2bcca87e",
+        "supports": true,
+        "reason": "Có trong context trang PDF 54; trực tiếp hỗ trợ thu nhập trung vị toàn cầu $9.20/ngày năm 2024 và số liệu phụ nửa thế giới dưới $3.55/ngày năm 1990."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng chỉ tiêu, năm 2024 và mức $9.20/ngày. Context đủ evidence cùng nguồn/trang; số liệu bổ sung có trong cùng đoạn. Agent chỉ lưu ý chưa xác nhận tiêu đề mục từ trích đoạn, không kết luận đoạn không thuộc mục. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "q13",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:52:25.617554+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+        "supports": true,
+        "reason": "Có trong context trang PDF 65; trực tiếp hỗ trợ 57% năm 2026, tăng từ 12% năm 2010, và nguyên nhân tập trung nghèo ở FCS."
+      },
+      {
+        "id": "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38",
+        "supports": true,
+        "reason": "Có trong context trang PDF 43; xác nhận hai tỷ lệ/mốc năm và nguyên nhân nhiều nền kinh tế nghèo cao trở thành FCS, nghèo giảm nhanh hơn ngoài FCS."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ 57% năm 2026 so với 12% năm 2010 cho người nghèo cùng cực toàn cầu sống ở nền kinh tế FCS; phần nguyên nhân có trong nguồn. Context đủ evidence, nguồn và trang; hai citation hỗ trợ. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và hai citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "q14",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:56:39.696329+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38",
+        "supports": true,
+        "reason": "Có trong context trang PDF 43; hỗ trợ dự báo 87% năm 2030 ở châu Phi cận Sahara hoặc FCS hoặc cả hai, và số liệu bổ sung 12% năm 2010 tăng lên 57% năm 2026."
+      },
+      {
+        "id": "db1706f31fc54743458e490b391f566d87afeb3ea3af751d01ddc370ad78098a",
+        "supports": true,
+        "reason": "Có trong context trang PDF 65; hỗ trợ dự báo 87% người nghèo cùng cực toàn cầu sống ở châu Phi cận Sahara hoặc FCS năm 2030."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ 87%, năm 2030 và phạm vi hợp châu Phi cận Sahara/FCS; nội dung bổ sung 12%/57% có trong nguồn. Context đủ evidence cùng nguồn/trang; hai citation hỗ trợ. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và hai citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "q15",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T20:58:47.476092+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+        "supports": true,
+        "reason": "Có trong context trang PDF 63; hỗ trợ giữ bất bình đẳng trong nước ở mức hiện tại, tăng trưởng pro-poor làm tỷ lệ nghèo thấp hơn và ví dụ tăng trưởng nông nghiệp."
+      },
+      {
+        "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+        "supports": true,
+        "reason": "Có trong context trang PDF 48; hỗ trợ baseline năm 2026 dùng dự báo tăng trưởng trung tính về phân phối."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ hai ý: giữ bất bình đẳng trong nước ở mức hiện tại và pro-poor growth làm tỷ lệ nghèo dự báo thấp hơn. Context đủ evidence nguồn/trang; bổ sung có bằng chứng và giới hạn thiếu số liệu được diễn đạt trong phạm vi các đoạn tìm được. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và hai citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "dneg01",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:01:01.496312+07:00",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Benchmark dneg01 thiếu evidence về tỷ lệ nghèo cùng cực Quảng Ninh năm 2024, kiểm tra toàn corpus đã được học viên xác nhận. Agent tìm 4 lượt; context là thống kê/bản đồ quốc gia và nhóm dân số khác, không có số liệu Quảng Ninh. Agent từ chối, không bịa tỷ lệ hoặc dùng số liệu nơi khác thay thế. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận từ chối đúng trong chat: ok."
+  },
+  {
+    "query_id": "dneg02",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:03:18.492612+07:00",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Benchmark dneg02 thiếu evidence về mã định danh và thu nhập từng hộ. Agent tìm 3 lượt; context trang PDF 57/58/74 chỉ mô tả nguồn khảo sát, phương pháp và thống kê tổng hợp, không cung cấp bản ghi từng hộ. Agent từ chối rõ ràng, không tạo dữ liệu hộ giả. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận từ chối đúng trong chat: ok."
+  }
+]

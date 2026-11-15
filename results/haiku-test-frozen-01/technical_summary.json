@@ -1,0 +1,77 @@
+{
+  "shared_retriever_init_seconds": 6.09737641600077,
+  "configs": {
+    "baseline800": {
+      "scheduled": 7,
+      "status_counts": {
+        "answered": 2,
+        "abstain": 5
+      },
+      "tool_use": {
+        "n": 7,
+        "N": 7
+      },
+      "search_distribution": {
+        "1": 1,
+        "2": 1,
+        "4": 5
+      },
+      "model_calls": 31,
+      "elapsed_seconds": 48.97179808301735,
+      "usage": {
+        "input_tokens": 52515,
+        "output_tokens": 5019,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "known_estimated_cost_usd": 0.007761,
+      "cost_estimate_complete": true,
+      "context_evidence_exact": {
+        "n": 2,
+        "N": 5
+      },
+      "context_evidence_set": {
+        "n": 2,
+        "N": 5
+      },
+      "semantic_quality": "pending human review; status counts are not accuracy/abstention correctness",
+      "billing": "Estimate from returned usage only; not invoice or hardware cost."
+    },
+    "budget3200": {
+      "scheduled": 7,
+      "status_counts": {
+        "answered": 5,
+        "abstain": 2
+      },
+      "tool_use": {
+        "n": 7,
+        "N": 7
+      },
+      "search_distribution": {
+        "1": 4,
+        "2": 1,
+        "4": 2
+      },
+      "model_calls": 22,
+      "elapsed_seconds": 38.898683541003265,
+      "usage": {
+        "input_tokens": 51132,
+        "output_tokens": 4335,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "known_estimated_cost_usd": 0.0072807,
+      "cost_estimate_complete": true,
+      "context_evidence_exact": {
+        "n": 5,
+        "N": 5
+      },
+      "context_evidence_set": {
+        "n": 5,
+        "N": 5
+      },
+      "semantic_quality": "pending human review; status counts are not accuracy/abstention correctness",
+      "billing": "Estimate from returned usage only; not invoice or hardware cost."
+    }
+  }
+}

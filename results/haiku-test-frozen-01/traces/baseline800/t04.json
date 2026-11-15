@@ -1,0 +1,974 @@
+{
+  "created_at_utc": "2026-11-14T14:08:04.457814+00:00",
+  "stage": "agent_test",
+  "query_id": "t04",
+  "config_id": "baseline800",
+  "split": "test",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Chỉ số dissimilarity đo sự tập trung nghèo đói toàn cầu là bao nhiêu năm 2000 và năm 2024?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chỉ số dissimilarity đo sự tập trung nghèo đói toàn cầu là bao nhiêu năm 2000 và năm 2024?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2x9MaCtGeqqYp81oNFM",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01F6v7hhDFECxRzHpjKTsT95",
+            "name": "search_documents",
+            "input": {
+              "query": "dissimilarity index global poverty concentration 2000 2024"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01F6v7hhDFECxRzHpjKTsT95",
+          "name": "search_documents",
+          "input": {
+            "query": "dissimilarity index global poverty concentration 2000 2024"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1345,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 65,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.000167,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1345,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.0053352500108304
+    },
+    {
+      "event": "search",
+      "query": "dissimilarity index global poverty concentration 2000 2024",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "6ac6e5fb468044851eb34c0122cc5b524a94ce7a19d289005857664b6812663a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "This unevenness in the location of the poor partly reflects the size of populations across economies. A dissimilarity index has been developed to measure the extent to which the concentration of poverty exceeds estimates based on population size alone if poverty rates were evenly distributed across economies by population size (refer to annex 1D). If an economy has a share of the global poor that is equal to its share of the global population, the index is 0. The closer the index is to 1, the more skewed poverty is relative to an economy’s population size.\n\nGlobally, the index rose from 0.31 in 2000 to 0.33 in 2010 and 0.65 in 2024, more than doubling in a quarter century. The 20 percent of the global population living in the economies with the",
+          "metadata": {
+            "end": 2910,
+            "start": 2156,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.9152353405952454
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8974878787994385
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8966432275388717
+        }
+      ],
+      "context": "",
+      "context_candidates": [
+        {
+          "id": "6ac6e5fb468044851eb34c0122cc5b524a94ce7a19d289005857664b6812663a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "This unevenness in the location of the poor partly reflects the size of populations across economies. A dissimilarity index has been developed to measure the extent to which the concentration of poverty exceeds estimates based on population size alone if poverty rates were evenly distributed across economies by population size (refer to annex 1D). If an economy has a share of the global poor that is equal to its share of the global population, the index is 0. The closer the index is to 1, the more skewed poverty is relative to an economy’s population size.\n\nGlobally, the index rose from 0.31 in 2000 to 0.33 in 2010 and 0.65 in 2024, more than doubling in a quarter century. The 20 percent of the global population living in the economies with the",
+          "metadata": {
+            "end": 2910,
+            "start": 2156,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.9152353405952454
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8974878787994385
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8966432275388717
+        }
+      ],
+      "context_ids": [],
+      "elapsed_seconds": 0.04770345900033135
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chỉ số dissimilarity đo sự tập trung nghèo đói toàn cầu là bao nhiêu năm 2000 và năm 2024?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01F6v7hhDFECxRzHpjKTsT95",
+              "name": "search_documents",
+              "input": {
+                "query": "dissimilarity index global poverty concentration 2000 2024"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01F6v7hhDFECxRzHpjKTsT95",
+              "content": "{\"current_context\": \"\", \"current_context_ids\": [], \"searched_queries\": [\"dissimilarity index global poverty concentration 2000 2024\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2x9SCWpG2zLbTyCmP69",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_017odJxdxnEDSKZ3zjrXV8Kz",
+            "name": "search_documents",
+            "input": {
+              "query": "dissimilarity index poverty concentration"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_017odJxdxnEDSKZ3zjrXV8Kz",
+          "name": "search_documents",
+          "input": {
+            "query": "dissimilarity index poverty concentration"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1477,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 71,
+          "output_tokens_details": {
+            "thinking_tokens": 12
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001832,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1477,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 0.9917629590054275
+    },
+    {
+      "event": "search",
+      "query": "dissimilarity index poverty concentration",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "6ac6e5fb468044851eb34c0122cc5b524a94ce7a19d289005857664b6812663a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "This unevenness in the location of the poor partly reflects the size of populations across economies. A dissimilarity index has been developed to measure the extent to which the concentration of poverty exceeds estimates based on population size alone if poverty rates were evenly distributed across economies by population size (refer to annex 1D). If an economy has a share of the global poor that is equal to its share of the global population, the index is 0. The closer the index is to 1, the more skewed poverty is relative to an economy’s population size.\n\nGlobally, the index rose from 0.31 in 2000 to 0.33 in 2010 and 0.65 in 2024, more than doubling in a quarter century. The 20 percent of the global population living in the economies with the",
+          "metadata": {
+            "end": 2910,
+            "start": 2156,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.891004509269924
+        },
+        {
+          "id": "44fb2d3d888483cc3a8b71b6b2c82ee47431bff14378b4ff784def974b2ea1e5",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 59,
+          "text": "The concentration of poverty shifts at higher poverty lines (refer to annex 1B, figure 1B.2), and Sub-Saharan Africa becomes less dominant. More populous economies, notably India, make up a larger share of the global poor if poverty is measured at $4.20- or $8.30-a-person-a-day.",
+          "metadata": {
+            "end": 2819,
+            "start": 2540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 27,
+            "segment_start": 0
+          },
+          "score": 0.8819848965415436
+        },
+        {
+          "id": "2d3bb1fcb6051bcd4bb33784db356664dd83dc75a234114b0404500792f27386",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 78,
+          "text": "Note: each dot in the figure represents an individual economy. the rate of multidimensional poverty is the share of the population defined as multidimensionally poor. Panels b–f show the share of the population in each economy deprived along one of the five indicators used in the Multidimensional Poverty Measure (MPM). because the MPM is estimated for all economies that are covered by at least one indicator within each dimension, the number of economies in each of the six panels varies. the lowest number of economies covered by data refers to educational enrollment (available on 72 economies) (lara ibarra et al. 2026). the extreme poverty rate is based on the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). by definition, the MPM cannot be lower than the extreme poverty rate. iPl = international poverty line; MenaaP = Middle east, north africa, afghanistan, and",
+          "metadata": {
+            "end": 1982,
+            "start": 1083,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 46,
+            "segment_start": 0
+          },
+          "score": 0.8770762828497549
+        }
+      ],
+      "context": "[44fb2d3d888483cc3a8b71b6b2c82ee47431bff14378b4ff784def974b2ea1e5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 59]\nThe concentration of poverty shifts at higher poverty lines (refer to annex 1B, figure 1B.2), and Sub-Saharan Africa becomes less dominant. More populous economies, notably India, make up a larger share of the global poor if poverty is measured at $4.20- or $8.30-a-person-a-day.",
+      "context_candidates": [
+        {
+          "id": "6ac6e5fb468044851eb34c0122cc5b524a94ce7a19d289005857664b6812663a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "This unevenness in the location of the poor partly reflects the size of populations across economies. A dissimilarity index has been developed to measure the extent to which the concentration of poverty exceeds estimates based on population size alone if poverty rates were evenly distributed across economies by population size (refer to annex 1D). If an economy has a share of the global poor that is equal to its share of the global population, the index is 0. The closer the index is to 1, the more skewed poverty is relative to an economy’s population size.\n\nGlobally, the index rose from 0.31 in 2000 to 0.33 in 2010 and 0.65 in 2024, more than doubling in a quarter century. The 20 percent of the global population living in the economies with the",
+          "metadata": {
+            "end": 2910,
+            "start": 2156,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.891004509269924
+        },
+        {
+          "id": "44fb2d3d888483cc3a8b71b6b2c82ee47431bff14378b4ff784def974b2ea1e5",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 59,
+          "text": "The concentration of poverty shifts at higher poverty lines (refer to annex 1B, figure 1B.2), and Sub-Saharan Africa becomes less dominant. More populous economies, notably India, make up a larger share of the global poor if poverty is measured at $4.20- or $8.30-a-person-a-day.",
+          "metadata": {
+            "end": 2819,
+            "start": 2540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 27,
+            "segment_start": 0
+          },
+          "score": 0.8819848965415436
+        },
+        {
+          "id": "2d3bb1fcb6051bcd4bb33784db356664dd83dc75a234114b0404500792f27386",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 78,
+          "text": "Note: each dot in the figure represents an individual economy. the rate of multidimensional poverty is the share of the population defined as multidimensionally poor. Panels b–f show the share of the population in each economy deprived along one of the five indicators used in the Multidimensional Poverty Measure (MPM). because the MPM is estimated for all economies that are covered by at least one indicator within each dimension, the number of economies in each of the six panels varies. the lowest number of economies covered by data refers to educational enrollment (available on 72 economies) (lara ibarra et al. 2026). the extreme poverty rate is based on the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). by definition, the MPM cannot be lower than the extreme poverty rate. iPl = international poverty line; MenaaP = Middle east, north africa, afghanistan, and",
+          "metadata": {
+            "end": 1982,
+            "start": 1083,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 46,
+            "segment_start": 0
+          },
+          "score": 0.8770762828497549
+        }
+      ],
+      "context_ids": [
+        "44fb2d3d888483cc3a8b71b6b2c82ee47431bff14378b4ff784def974b2ea1e5"
+      ],
+      "elapsed_seconds": 0.04404545899888035
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chỉ số dissimilarity đo sự tập trung nghèo đói toàn cầu là bao nhiêu năm 2000 và năm 2024?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_017odJxdxnEDSKZ3zjrXV8Kz",
+              "name": "search_documents",
+              "input": {
+                "query": "dissimilarity index poverty concentration"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_017odJxdxnEDSKZ3zjrXV8Kz",
+              "content": "{\"current_context\": \"[44fb2d3d888483cc3a8b71b6b2c82ee47431bff14378b4ff784def974b2ea1e5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 59]\\nThe concentration of poverty shifts at higher poverty lines (refer to annex 1B, figure 1B.2), and Sub-Saharan Africa becomes less dominant. More populous economies, notably India, make up a larger share of the global poor if poverty is measured at $4.20- or $8.30-a-person-a-day.\", \"current_context_ids\": [\"44fb2d3d888483cc3a8b71b6b2c82ee47431bff14378b4ff784def974b2ea1e5\"], \"searched_queries\": [\"dissimilarity index global poverty concentration 2000 2024\", \"dissimilarity index poverty concentration\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2x9WZguTwP4wpkNY4fc",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01UUj5VdK5jMfC5SJT1FCkF3",
+            "name": "search_documents",
+            "input": {
+              "query": "dissimilarity index global poverty 2000 2024 value"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01UUj5VdK5jMfC5SJT1FCkF3",
+          "name": "search_documents",
+          "input": {
+            "query": "dissimilarity index global poverty 2000 2024 value"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1738,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 109,
+          "output_tokens_details": {
+            "thinking_tokens": 44
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002283,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1738,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.3331606249994365
+    },
+    {
+      "event": "search",
+      "query": "dissimilarity index global poverty 2000 2024 value",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "6ac6e5fb468044851eb34c0122cc5b524a94ce7a19d289005857664b6812663a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "This unevenness in the location of the poor partly reflects the size of populations across economies. A dissimilarity index has been developed to measure the extent to which the concentration of poverty exceeds estimates based on population size alone if poverty rates were evenly distributed across economies by population size (refer to annex 1D). If an economy has a share of the global poor that is equal to its share of the global population, the index is 0. The closer the index is to 1, the more skewed poverty is relative to an economy’s population size.\n\nGlobally, the index rose from 0.31 in 2000 to 0.33 in 2010 and 0.65 in 2024, more than doubling in a quarter century. The 20 percent of the global population living in the economies with the",
+          "metadata": {
+            "end": 2910,
+            "start": 2156,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.9042656535785676
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8924964794520823
+        },
+        {
+          "id": "44b537408ff58816c4c64ccf3c7027441b9d3c70e31b20205dc0a859204e25fe",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 61,
+          "text": "29 Global Poverty: Stalled Pro GreSS and riSinG Con Centration highest rates of poverty accounted for roughly 37 percent of the extreme poor in 2000; by 2024, the share had risen to around 85 percent.\n\nToday’s low-income economies face greater obstacles than their predecessors. In 2000, today’s low-income economies had per capita incomes around 60 percent of the mean per capita income in economies that have since graduated to middle-income status. By 2023, the ratio had fallen to 30 percent, as incomes in low-income economies stagnated, while those in economies that have since graduated continued to grow (World Bank 2025a).",
+          "metadata": {
+            "end": 631,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 29,
+            "segment_start": 0
+          },
+          "score": 0.8897778192361258
+        }
+      ],
+      "context": "[44fb2d3d888483cc3a8b71b6b2c82ee47431bff14378b4ff784def974b2ea1e5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 59]\nThe concentration of poverty shifts at higher poverty lines (refer to annex 1B, figure 1B.2), and Sub-Saharan Africa becomes less dominant. More populous economies, notably India, make up a larger share of the global poor if poverty is measured at $4.20- or $8.30-a-person-a-day.",
+      "context_candidates": [
+        {
+          "id": "6ac6e5fb468044851eb34c0122cc5b524a94ce7a19d289005857664b6812663a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "This unevenness in the location of the poor partly reflects the size of populations across economies. A dissimilarity index has been developed to measure the extent to which the concentration of poverty exceeds estimates based on population size alone if poverty rates were evenly distributed across economies by population size (refer to annex 1D). If an economy has a share of the global poor that is equal to its share of the global population, the index is 0. The closer the index is to 1, the more skewed poverty is relative to an economy’s population size.\n\nGlobally, the index rose from 0.31 in 2000 to 0.33 in 2010 and 0.65 in 2024, more than doubling in a quarter century. The 20 percent of the global population living in the economies with the",
+          "metadata": {
+            "end": 2910,
+            "start": 2156,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.9042656535785676
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8924964794520823
+        },
+        {
+          "id": "44b537408ff58816c4c64ccf3c7027441b9d3c70e31b20205dc0a859204e25fe",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 61,
+          "text": "29 Global Poverty: Stalled Pro GreSS and riSinG Con Centration highest rates of poverty accounted for roughly 37 percent of the extreme poor in 2000; by 2024, the share had risen to around 85 percent.\n\nToday’s low-income economies face greater obstacles than their predecessors. In 2000, today’s low-income economies had per capita incomes around 60 percent of the mean per capita income in economies that have since graduated to middle-income status. By 2023, the ratio had fallen to 30 percent, as incomes in low-income economies stagnated, while those in economies that have since graduated continued to grow (World Bank 2025a).",
+          "metadata": {
+            "end": 631,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 29,
+            "segment_start": 0
+          },
+          "score": 0.8897778192361258
+        }
+      ],
+      "context_ids": [
+        "44fb2d3d888483cc3a8b71b6b2c82ee47431bff14378b4ff784def974b2ea1e5"
+      ],
+      "elapsed_seconds": 0.046083041990641505
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chỉ số dissimilarity đo sự tập trung nghèo đói toàn cầu là bao nhiêu năm 2000 và năm 2024?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01UUj5VdK5jMfC5SJT1FCkF3",
+              "name": "search_documents",
+              "input": {
+                "query": "dissimilarity index global poverty 2000 2024 value"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01UUj5VdK5jMfC5SJT1FCkF3",
+              "content": "{\"current_context\": \"[44fb2d3d888483cc3a8b71b6b2c82ee47431bff14378b4ff784def974b2ea1e5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 59]\\nThe concentration of poverty shifts at higher poverty lines (refer to annex 1B, figure 1B.2), and Sub-Saharan Africa becomes less dominant. More populous economies, notably India, make up a larger share of the global poor if poverty is measured at $4.20- or $8.30-a-person-a-day.\", \"current_context_ids\": [\"44fb2d3d888483cc3a8b71b6b2c82ee47431bff14378b4ff784def974b2ea1e5\"], \"searched_queries\": [\"dissimilarity index global poverty concentration 2000 2024\", \"dissimilarity index poverty concentration\", \"dissimilarity index global poverty 2000 2024 value\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2x9dqjpnMdtNHMmvu8q",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01C4u6BLBh6QhdiG1zY4rLsW",
+            "name": "search_documents",
+            "input": {
+              "query": "dissimilarity index poverty concentration Sub-Saharan Africa 2000 2024 global poor"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01C4u6BLBh6QhdiG1zY4rLsW",
+          "name": "search_documents",
+          "input": {
+            "query": "dissimilarity index poverty concentration Sub-Saharan Africa 2000 2024 global poor"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1765,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 98,
+          "output_tokens_details": {
+            "thinking_tokens": 18
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002255,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1765,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.3947109169967007
+    },
+    {
+      "event": "search",
+      "query": "dissimilarity index poverty concentration Sub-Saharan Africa 2000 2024 global poor",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "6ac6e5fb468044851eb34c0122cc5b524a94ce7a19d289005857664b6812663a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "This unevenness in the location of the poor partly reflects the size of populations across economies. A dissimilarity index has been developed to measure the extent to which the concentration of poverty exceeds estimates based on population size alone if poverty rates were evenly distributed across economies by population size (refer to annex 1D). If an economy has a share of the global poor that is equal to its share of the global population, the index is 0. The closer the index is to 1, the more skewed poverty is relative to an economy’s population size.\n\nGlobally, the index rose from 0.31 in 2000 to 0.33 in 2010 and 0.65 in 2024, more than doubling in a quarter century. The 20 percent of the global population living in the economies with the",
+          "metadata": {
+            "end": 2910,
+            "start": 2156,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.9084765315055847
+        },
+        {
+          "id": "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 895,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.8932198286056519
+        },
+        {
+          "id": "c1543e633c6618b69e732b6a4c8663b3a71ca170f890ca99339f40a34c8ef732",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 69,
+          "text": "Trends in Sub-Saharan Africa differ slightly from the global pattern. There, households with children exhibit broadly similar poverty rates across household types, ranging from 46 percent to 50 percent in 2024, and barely changed over the preceding decade (refer to figure 1.14, panel b). The trends were mixed among households without children. Poverty among adult- only households was steady at near 14 percent, whereas rates among senior-only households without children fell from 21 percent to 16 percent.",
+          "metadata": {
+            "end": 2562,
+            "start": 2053,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 37,
+            "segment_start": 0
+          },
+          "score": 0.8918024962066132
+        }
+      ],
+      "context": "[c1543e633c6618b69e732b6a4c8663b3a71ca170f890ca99339f40a34c8ef732 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 69]\nTrends in Sub-Saharan Africa differ slightly from the global pattern. There, households with children exhibit broadly similar poverty rates across household types, ranging from 46 percent to 50 percent in 2024, and barely changed over the preceding decade (refer to figure 1.14, panel b). The trends were mixed among households without children. Poverty among adult- only households was steady at near 14 percent, whereas rates among senior-only households without children fell from 21 percent to 16 percent.",
+      "context_candidates": [
+        {
+          "id": "6ac6e5fb468044851eb34c0122cc5b524a94ce7a19d289005857664b6812663a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "This unevenness in the location of the poor partly reflects the size of populations across economies. A dissimilarity index has been developed to measure the extent to which the concentration of poverty exceeds estimates based on population size alone if poverty rates were evenly distributed across economies by population size (refer to annex 1D). If an economy has a share of the global poor that is equal to its share of the global population, the index is 0. The closer the index is to 1, the more skewed poverty is relative to an economy’s population size.\n\nGlobally, the index rose from 0.31 in 2000 to 0.33 in 2010 and 0.65 in 2024, more than doubling in a quarter century. The 20 percent of the global population living in the economies with the",
+          "metadata": {
+            "end": 2910,
+            "start": 2156,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.9084765315055847
+        },
+        {
+          "id": "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 895,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.8932198286056519
+        },
+        {
+          "id": "c1543e633c6618b69e732b6a4c8663b3a71ca170f890ca99339f40a34c8ef732",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 69,
+          "text": "Trends in Sub-Saharan Africa differ slightly from the global pattern. There, households with children exhibit broadly similar poverty rates across household types, ranging from 46 percent to 50 percent in 2024, and barely changed over the preceding decade (refer to figure 1.14, panel b). The trends were mixed among households without children. Poverty among adult- only households was steady at near 14 percent, whereas rates among senior-only households without children fell from 21 percent to 16 percent.",
+          "metadata": {
+            "end": 2562,
+            "start": 2053,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 37,
+            "segment_start": 0
+          },
+          "score": 0.8918024962066132
+        }
+      ],
+      "context_ids": [
+        "c1543e633c6618b69e732b6a4c8663b3a71ca170f890ca99339f40a34c8ef732"
+      ],
+      "elapsed_seconds": 0.032353458009311
+    },
+    {
+      "event": "model",
+      "step": 5,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chỉ số dissimilarity đo sự tập trung nghèo đói toàn cầu là bao nhiêu năm 2000 và năm 2024?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01C4u6BLBh6QhdiG1zY4rLsW",
+              "name": "search_documents",
+              "input": {
+                "query": "dissimilarity index poverty concentration Sub-Saharan Africa 2000 2024 global poor"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01C4u6BLBh6QhdiG1zY4rLsW",
+              "content": "{\"current_context\": \"[c1543e633c6618b69e732b6a4c8663b3a71ca170f890ca99339f40a34c8ef732 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 69]\\nTrends in Sub-Saharan Africa differ slightly from the global pattern. There, households with children exhibit broadly similar poverty rates across household types, ranging from 46 percent to 50 percent in 2024, and barely changed over the preceding decade (refer to figure 1.14, panel b). The trends were mixed among households without children. Poverty among adult- only households was steady at near 14 percent, whereas rates among senior-only households without children fell from 21 percent to 16 percent.\", \"current_context_ids\": [\"c1543e633c6618b69e732b6a4c8663b3a71ca170f890ca99339f40a34c8ef732\"], \"searched_queries\": [\"dissimilarity index global poverty concentration 2000 2024\", \"dissimilarity index poverty concentration\", \"dissimilarity index global poverty 2000 2024 value\", \"dissimilarity index poverty concentration Sub-Saharan Africa 2000 2024 global poor\"], \"searches_remaining\": 0}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2x9iiSffAgA26hVjXjR",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_016wm5C6ZvcNwwuTdHs5Q8eQ",
+            "name": "finish",
+            "input": {
+              "status": "abstain",
+              "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các lần tìm kiếm chỉ trả về đoạn về tỷ lệ nghèo của các loại hộ gia đình ở Châu Phi cận Sahara năm 2024, không có đoạn nào nêu chỉ số dissimilarity đo sự tập trung nghèo đói toàn cầu hay giá trị của nó năm 2000 và 2024. Đã hết lượt tìm kiếm, nên không thể nêu con số cụ thể.",
+              "citations": []
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_016wm5C6ZvcNwwuTdHs5Q8eQ",
+          "name": "finish",
+          "input": {
+            "status": "abstain",
+            "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các lần tìm kiếm chỉ trả về đoạn về tỷ lệ nghèo của các loại hộ gia đình ở Châu Phi cận Sahara năm 2024, không có đoạn nào nêu chỉ số dissimilarity đo sự tập trung nghèo đói toàn cầu hay giá trị của nó năm 2000 và 2024. Đã hết lượt tìm kiếm, nên không thể nêu con số cụ thể.",
+            "citations": []
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1862,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 372,
+          "output_tokens_details": {
+            "thinking_tokens": 99
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003722,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1862,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.284652125003049
+    },
+    {
+      "event": "finish",
+      "status": "abstain",
+      "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các lần tìm kiếm chỉ trả về đoạn về tỷ lệ nghèo của các loại hộ gia đình ở Châu Phi cận Sahara năm 2024, không có đoạn nào nêu chỉ số dissimilarity đo sự tập trung nghèo đói toàn cầu hay giá trị của nó năm 2000 và 2024. Đã hết lượt tìm kiếm, nên không thể nêu con số cụ thể.",
+      "citations": [],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 4,
+  "model_calls": 5,
+  "usage": {
+    "input_tokens": 8187,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 715
+  },
+  "cost_usd": null,
+  "status": "abstain",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 800,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[c1543e633c6618b69e732b6a4c8663b3a71ca170f890ca99339f40a34c8ef732 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 69]\nTrends in Sub-Saharan Africa differ slightly from the global pattern. There, households with children exhibit broadly similar poverty rates across household types, ranging from 46 percent to 50 percent in 2024, and barely changed over the preceding decade (refer to figure 1.14, panel b). The trends were mixed among households without children. Poverty among adult- only households was steady at near 14 percent, whereas rates among senior-only households without children fell from 21 percent to 16 percent.",
+  "context_ids": [
+    "c1543e633c6618b69e732b6a4c8663b3a71ca170f890ca99339f40a34c8ef732"
+  ],
+  "context_chunks": [
+    {
+      "id": "c1543e633c6618b69e732b6a4c8663b3a71ca170f890ca99339f40a34c8ef732",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 69,
+      "text": "Trends in Sub-Saharan Africa differ slightly from the global pattern. There, households with children exhibit broadly similar poverty rates across household types, ranging from 46 percent to 50 percent in 2024, and barely changed over the preceding decade (refer to figure 1.14, panel b). The trends were mixed among households without children. Poverty among adult- only households was steady at near 14 percent, whereas rates among senior-only households without children fell from 21 percent to 16 percent.",
+      "metadata": {
+        "end": 2562,
+        "start": 2053,
+        "section": "Poverty persists unevenly across people and places",
+        "chunking": "paragraph",
+        "printed_page": 37,
+        "segment_start": 0
+      },
+      "score": 0.8918024962066132
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 5,
+    "returned_calls": 5
+  },
+  "estimated_cost_usd": 0.0011762,
+  "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các lần tìm kiếm chỉ trả về đoạn về tỷ lệ nghèo của các loại hộ gia đình ở Châu Phi cận Sahara năm 2024, không có đoạn nào nêu chỉ số dissimilarity đo sự tập trung nghèo đói toàn cầu hay giá trị của nó năm 2000 và 2024. Đã hết lượt tìm kiếm, nên không thể nêu con số cụ thể.",
+  "citations": [],
+  "elapsed_seconds": 7.180141167002148,
+  "answerable": true,
+  "context_strict_hit": false,
+  "context_set_hit": false,
+  "first_search_hit3": true,
+  "first_search_is_original_query": false
+}

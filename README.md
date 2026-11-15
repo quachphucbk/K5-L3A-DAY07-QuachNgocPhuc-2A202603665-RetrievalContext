@@ -31,3 +31,26 @@ Index một tài liệu thực tế từ **100 trang** có bảng, ảnh và bi�
 ![Các bước thử nghiệm trên dev và đánh giá trên test](assets/experiment-loop.svg)
 
 Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo](report/individual/MSSV_HoTen.md). Thời gian ở [checkpoints](CHECKPOINTS.md) là gợi ý, có thể điều chỉnh theo lớp và phạm vi thử nghiệm.
+
+
+## Bài làm học viên — hướng dẫn theo đúng GUIDE.md
+
+Bắt đầu từ [mục lục thực hành](docs/README.md). Năm tài liệu 01–05 tương ứng
+đúng năm mục của GUIDE.md. Dùng `.venv` riêng Day 7; agent mặc định Haiku,
+embedding/vector store dùng lại Day 6.
+
+- [1. Chuẩn bị](docs/01-CHUAN-BI.md)
+- [2. Retrieval](docs/02-RETRIEVAL.md)
+- [3. Agent và context](docs/03-AGENT-CONTEXT.md)
+- [4. Đánh giá, hai cải thiện, review và chi phí](docs/04-DANH-GIA-CAI-THIEN.md)
+- [5. Nộp và trình bày](docs/05-NOP-VA-TRINH-BAY.md)
+
+Bài cơ bản đã có dev/test và nhãn được học viên xác nhận từng lượt sau khi Codex
+trình bày evidence. Cấu hình `budget3200` được chốt bằng dev trước test.
+
+- [Báo cáo cá nhân và bảng kết quả](report/individual/2A202603665_QuachNgocPhuc.md)
+- [Kết nối và tái tạo từ repo Day 6](docs/01-CHUAN-BI.md#16-tái-tạo-trên-máy-khác-từ-repo-day-6)
+- [Kết quả test đã review](results/haiku-test-frozen-01/REVIEWED_REPORT.md)
+
+Không cần chạy lại API để xem kết quả. Dữ liệu gốc/benchmark/trace có hash;
+model thật dùng Haiku, không dùng Opus. Không thực hiện phần bonus nâng cao.

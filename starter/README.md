@@ -9,6 +9,24 @@
 
 Starter **chưa phải solution hoàn chỉnh**. Bạn phải nối model và vector store thật, triển khai ít nhất 3 phương pháp retrieval do bạn chọn, gồm dense trên vector store Day 6. Mock chỉ dùng để test code.
 
+## Kết nối thực tế trong bài làm
+
+Bài làm hiện dùng trực tiếp `starter.agentic.run_agent`, đã mở rộng khung
+này bằng callbacks chọn context, kiểm tra citation và metadata trace.
+
+| Giao diện khung đề | Phần hiện thực thật |
+|---|---|
+| Controller.decide(question, history) | src.rag_agent.ClaudeAgentController; gọi Haiku qua ClaudeController rồi trả action search/answer/abstain |
+| Retriever.search(query, filters, top_k) | DenseRetriever, BM25Retriever hoặc HybridRetriever, dùng corpus/vector Day 6 |
+| run_agent | Vòng lặp trong starter/agentic.py; src/rag_agent.py chỉ nối adapter và CLI |
+
+Chạy từ root Day 7: `python -m src.rag_agent --question '...' --output results/new-agent.json`.
+Xem [GUIDE §3 thực hành](../docs/03-AGENT-CONTEXT.md). Mặc định agent thật dùng
+Haiku, có citation hoặc abstention; lỗi API/DB không thay bằng mock. Giới hạn
+production tách search/model call để không gọi hết vòng lặp là từ chối đúng.
+Cách gọi mặc định của ví dụ/test gốc vẫn tương thích. Phần dưới giữ hướng dẫn
+khung ban đầu và các tiện ích baseline/convert/metrics.
+
 ## 1. Kết nối agent
 
 Trong `agentic.py`, hiện thực:

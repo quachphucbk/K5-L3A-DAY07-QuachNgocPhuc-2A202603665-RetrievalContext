@@ -1,0 +1,609 @@
+{
+  "created_at_utc": "2026-11-14T10:41:33.841805+00:00",
+  "stage": "agent_dev",
+  "query_id": "q13",
+  "config_id": "neighbors3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Năm 2026, bao nhiêu phần trăm người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS, so với năm 2010?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Năm 2026, bao nhiêu phần trăm người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS, so với năm 2010?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gQ14U2rP8qLwNwy649",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01MChwLbYJ4VPmyt7axX4b1b",
+            "name": "search_documents",
+            "input": {
+              "query": "share of global extreme poor living in FCS economies 2026 compared to 2010"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01MChwLbYJ4VPmyt7axX4b1b",
+          "name": "search_documents",
+          "input": {
+            "query": "share of global extreme poor living in FCS economies 2026 compared to 2010"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1350,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 124,
+          "output_tokens_details": {
+            "thinking_tokens": 53
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.000197,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1350,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.6633757499948842
+    },
+    {
+      "event": "search",
+      "query": "share of global extreme poor living in FCS economies 2026 compared to 2010",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 65,
+          "text": "The global population living in FCS economies more than doubled between 2010 and 2025, rising from 6.0 percent to 13.5 percent. Over this period, a growing number of economies with large populations and high poverty rates became fragile or affected by conflict and violence.10 At the same time, poverty rates fell more rapidly in non-FCS economies, thereby increasing the share of FCS economies in the global total. As of 2026, more than half the extreme poor globally, 57 percent, were living in an FCS economy, up from 12 percent in 2010 (refer to figure 1.11, panel a).",
+          "metadata": {
+            "end": 1537,
+            "start": 965,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 33,
+            "segment_start": 0
+          },
+          "score": 0.9365646280905843
+        },
+        {
+          "id": "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 43,
+          "text": "this is still not the case in the Middle East, North Africa, Afghanistan, and Pakistan (MENAAP) region. • Fragility is the defining feature of global poverty. The share of the extreme poor living in a fragile and conflict-affected situation (FCS) rose from 12 percent in 2010 to 57 percent in 2026, as more high-poverty economies became fragile and because extreme poverty fell more quickly in non-FCS economies. By 2030, 87 percent of the extreme poor globally will be living in Sub-Saharan Africa or in an FCS economy or both. • If the per capita economic growth rates observed over 2015–24 persist, the global extreme poverty rate and the number of people living in extreme poverty will increase by 2030: an unprecedented reversal of the decades-long decline. Population growth in high-poverty economies is a key factor in the potential increase.",
+          "metadata": {
+            "end": 1747,
+            "start": 898,
+            "section": "Summary",
+            "chunking": "paragraph",
+            "printed_page": 11,
+            "segment_start": 0
+          },
+          "score": 0.9182474661918021
+        },
+        {
+          "id": "721fd8d8bc1fe8b39edc3e57289a75473ede5ad0bb52cb4fdeeedebfc7df26b7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "34 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.11 The concentration of extreme poverty in FCS economies and in Sub-Saharan Africa will increase a. Extreme poverty rate b. Population in poverty Projections 0 20 40 60 80 100 Non-FCS SSA FCS SSA FCS non-SSA Rest of the world Share of extremely poor globally (%) 2000 2005 2010 2015 2020 2025 2030 Projections 0 10 20 30 40 2000 2005 2010 2015 2020 2025 2030 Contribution to extremely poor globally (pps) Latin America and the Caribbean MENAAP South Asia Sub-Saharan Africa Europe and Central Asia East Asia and Paciﬁc North America Sources: iMF 2025; Un deSa 2024; World bank 2025b; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 790,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 34,
+            "segment_start": 0
+          },
+          "score": 0.9083365311221507
+        }
+      ],
+      "context": "[18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\nThe global population living in FCS economies more than doubled between 2010 and 2025, rising from 6.0 percent to 13.5 percent. Over this period, a growing number of economies with large populations and high poverty rates became fragile or affected by conflict and violence.10 At the same time, poverty rates fell more rapidly in non-FCS economies, thereby increasing the share of FCS economies in the global total. As of 2026, more than half the extreme poor globally, 57 percent, were living in an FCS economy, up from 12 percent in 2010 (refer to figure 1.11, panel a).\n\n[972837ea7dd76ddca19488bf7fe2502173c7c3a5f1d865217e3026daa7d17dc8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\nNote: each bubble in the figure represents an economy. the horizontal axis shows the rate of extreme poverty in 2024 at the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). bubble sizes reflect expected population numbers in 2050. economies are considered to be in fragile and conflict-affected situations (FCS) based on the World bank’s classification in 2025.\n\n[db1706f31fc54743458e490b391f566d87afeb3ea3af751d01ddc370ad78098a | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\nThe extreme poverty rate in Sub-Saharan Africa is projected to decline by about 3 percentage points by 2030. Y et, the region’s share of the global population is projected to rise over the period, thereby pushing the global poverty rate upward. The same holds for the MENAAP region, where poverty rates are projected to increase and the population continues to expand (refer to figure 1.11, panel b). By 2030, 87 percent of the extreme poor globally will be living either in Sub-Saharan Africa or in an FCS economy (refer to figure 1.11, panel a).\n\n[94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 43]\nthis is still not the case in the Middle East, North Africa, Afghanistan, and Pakistan (MENAAP) region. • Fragility is the defining feature of global poverty. The share of the extreme poor living in a fragile and conflict-affected situation (FCS) rose from 12 percent in 2010 to 57 percent in 2026, as more high-poverty economies became fragile and because extreme poverty fell more quickly in non-FCS economies. By 2030, 87 percent of the extreme poor globally will be living in Sub-Saharan Africa or in an FCS economy or both. • If the per capita economic growth rates observed over 2015–24 persist, the global extreme poverty rate and the number of people living in extreme poverty will increase by 2030: an unprecedented reversal of the decades-long decline. Population growth in high-poverty economies is a key factor in the potential increase.",
+      "context_candidates": [
+        {
+          "id": "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 65,
+          "text": "The global population living in FCS economies more than doubled between 2010 and 2025, rising from 6.0 percent to 13.5 percent. Over this period, a growing number of economies with large populations and high poverty rates became fragile or affected by conflict and violence.10 At the same time, poverty rates fell more rapidly in non-FCS economies, thereby increasing the share of FCS economies in the global total. As of 2026, more than half the extreme poor globally, 57 percent, were living in an FCS economy, up from 12 percent in 2010 (refer to figure 1.11, panel a).",
+          "metadata": {
+            "end": 1537,
+            "start": 965,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 33,
+            "segment_start": 0
+          },
+          "score": 0.9365646280905843
+        },
+        {
+          "id": "972837ea7dd76ddca19488bf7fe2502173c7c3a5f1d865217e3026daa7d17dc8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 65,
+          "text": "Note: each bubble in the figure represents an economy. the horizontal axis shows the rate of extreme poverty in 2024 at the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). bubble sizes reflect expected population numbers in 2050. economies are considered to be in fragile and conflict-affected situations (FCS) based on the World bank’s classification in 2025.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 33,
+            "segment_start": 0,
+            "start": 576,
+            "end": 963,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "db1706f31fc54743458e490b391f566d87afeb3ea3af751d01ddc370ad78098a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 65,
+          "text": "The extreme poverty rate in Sub-Saharan Africa is projected to decline by about 3 percentage points by 2030. Y et, the region’s share of the global population is projected to rise over the period, thereby pushing the global poverty rate upward. The same holds for the MENAAP region, where poverty rates are projected to increase and the population continues to expand (refer to figure 1.11, panel b). By 2030, 87 percent of the extreme poor globally will be living either in Sub-Saharan Africa or in an FCS economy (refer to figure 1.11, panel a).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 33,
+            "segment_start": 0,
+            "start": 1539,
+            "end": 2086,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 43,
+          "text": "this is still not the case in the Middle East, North Africa, Afghanistan, and Pakistan (MENAAP) region. • Fragility is the defining feature of global poverty. The share of the extreme poor living in a fragile and conflict-affected situation (FCS) rose from 12 percent in 2010 to 57 percent in 2026, as more high-poverty economies became fragile and because extreme poverty fell more quickly in non-FCS economies. By 2030, 87 percent of the extreme poor globally will be living in Sub-Saharan Africa or in an FCS economy or both. • If the per capita economic growth rates observed over 2015–24 persist, the global extreme poverty rate and the number of people living in extreme poverty will increase by 2030: an unprecedented reversal of the decades-long decline. Population growth in high-poverty economies is a key factor in the potential increase.",
+          "metadata": {
+            "end": 1747,
+            "start": 898,
+            "section": "Summary",
+            "chunking": "paragraph",
+            "printed_page": 11,
+            "segment_start": 0
+          },
+          "score": 0.9182474661918021
+        },
+        {
+          "id": "7a5ee0011af00ac51d26d8fc598f6eef8d35e1d0ebb4c52f81259a1fa270d36f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 43,
+          "text": "11 1 Summary • The global extreme poverty rate fell steadily for three decades, from 43 percent in 1990 to 11 percent in 2020. This was an incredible accomplishment. However, progress has since come to a standstill. The extreme poverty rate has remained essentially unchanged after an increase during the COVID pandemic and the subsequent recovery. In 2026, 811 million people—1 in 10 globally—were living in extreme poverty, defined as living on less than $3.00-a-person-a-day in 2021 purchasing power parity (PPP) terms. • Extreme poverty is increasingly concentrated. More than half the extreme poor globally are living in only nine economies, and three-quarters in 20 economies. Of the nine economies, six are in Sub-Saharan Africa, where the extreme poverty rate has remained near 44 percent since 2014. Only in 2026 did poverty rates in Sub-Saharan Africa return to prepandemic levels, while",
+          "metadata": {
+            "section": "Summary",
+            "printed_page": 11,
+            "segment_start": 0,
+            "start": 0,
+            "end": 897,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "680747f52f2cd3e4f9d515fa5776e37a4b2faf96e69f63e3ac6b3c6969d5439f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 43,
+          "text": "Global Poverty: Stalled Progress and Rising Concentration A reproducibility package is available for this book in the Reproducible Research Repository at https://reproducibility.worldbank.org/catalog/659.",
+          "metadata": {
+            "section": "Summary",
+            "printed_page": 11,
+            "segment_start": 0,
+            "start": 1749,
+            "end": 1953,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "721fd8d8bc1fe8b39edc3e57289a75473ede5ad0bb52cb4fdeeedebfc7df26b7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "34 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.11 The concentration of extreme poverty in FCS economies and in Sub-Saharan Africa will increase a. Extreme poverty rate b. Population in poverty Projections 0 20 40 60 80 100 Non-FCS SSA FCS SSA FCS non-SSA Rest of the world Share of extremely poor globally (%) 2000 2005 2010 2015 2020 2025 2030 Projections 0 10 20 30 40 2000 2005 2010 2015 2020 2025 2030 Contribution to extremely poor globally (pps) Latin America and the Caribbean MENAAP South Asia Sub-Saharan Africa Europe and Central Asia East Asia and Paciﬁc North America Sources: iMF 2025; Un deSa 2024; World bank 2025b; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 790,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 34,
+            "segment_start": 0
+          },
+          "score": 0.9083365311221507
+        },
+        {
+          "id": "62747ec152d5dcf88245fe6050b6de3cc7cc96f71f3d56b9cddb7bf160b9ed5a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "Note: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms).\n\nPoverty rate projections for 2025–30 are based on historical GdP per capita growth rates of economies in 2010–19 (refer to figure 1.9). economies are classified as FCS using the World bank classification of FCS from each year until 2025 (fiscal year 2026). the classification is fixed after 2025. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. FCS = fragile and conflict-affected situations; MenaaP = Middle east, north africa, afghanistan, and Pakistan; pps = percentage points; SSa = Sub-Saharan africa.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 34,
+            "segment_start": 0,
+            "start": 792,
+            "end": 1519,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+        "972837ea7dd76ddca19488bf7fe2502173c7c3a5f1d865217e3026daa7d17dc8",
+        "db1706f31fc54743458e490b391f566d87afeb3ea3af751d01ddc370ad78098a",
+        "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38"
+      ],
+      "elapsed_seconds": 0.018437083999742754
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Năm 2026, bao nhiêu phần trăm người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS, so với năm 2010?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01MChwLbYJ4VPmyt7axX4b1b",
+              "name": "search_documents",
+              "input": {
+                "query": "share of global extreme poor living in FCS economies 2026 compared to 2010"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01MChwLbYJ4VPmyt7axX4b1b",
+              "content": "{\"current_context\": \"[18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\\nThe global population living in FCS economies more than doubled between 2010 and 2025, rising from 6.0 percent to 13.5 percent. Over this period, a growing number of economies with large populations and high poverty rates became fragile or affected by conflict and violence.10 At the same time, poverty rates fell more rapidly in non-FCS economies, thereby increasing the share of FCS economies in the global total. As of 2026, more than half the extreme poor globally, 57 percent, were living in an FCS economy, up from 12 percent in 2010 (refer to figure 1.11, panel a).\\n\\n[972837ea7dd76ddca19488bf7fe2502173c7c3a5f1d865217e3026daa7d17dc8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\\nNote: each bubble in the figure represents an economy. the horizontal axis shows the rate of extreme poverty in 2024 at the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). bubble sizes reflect expected population numbers in 2050. economies are considered to be in fragile and conflict-affected situations (FCS) based on the World bank’s classification in 2025.\\n\\n[db1706f31fc54743458e490b391f566d87afeb3ea3af751d01ddc370ad78098a | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\\nThe extreme poverty rate in Sub-Saharan Africa is projected to decline by about 3 percentage points by 2030. Y et, the region’s share of the global population is projected to rise over the period, thereby pushing the global poverty rate upward. The same holds for the MENAAP region, where poverty rates are projected to increase and the population continues to expand (refer to figure 1.11, panel b). By 2030, 87 percent of the extreme poor globally will be living either in Sub-Saharan Africa or in an FCS economy (refer to figure 1.11, panel a).\\n\\n[94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 43]\\nthis is still not the case in the Middle East, North Africa, Afghanistan, and Pakistan (MENAAP) region. • Fragility is the defining feature of global poverty. The share of the extreme poor living in a fragile and conflict-affected situation (FCS) rose from 12 percent in 2010 to 57 percent in 2026, as more high-poverty economies became fragile and because extreme poverty fell more quickly in non-FCS economies. By 2030, 87 percent of the extreme poor globally will be living in Sub-Saharan Africa or in an FCS economy or both. • If the per capita economic growth rates observed over 2015–24 persist, the global extreme poverty rate and the number of people living in extreme poverty will increase by 2030: an unprecedented reversal of the decades-long decline. Population growth in high-poverty economies is a key factor in the potential increase.\", \"current_context_ids\": [\"18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75\", \"972837ea7dd76ddca19488bf7fe2502173c7c3a5f1d865217e3026daa7d17dc8\", \"db1706f31fc54743458e490b391f566d87afeb3ea3af751d01ddc370ad78098a\", \"94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38\"], \"searched_queries\": [\"share of global extreme poor living in FCS economies 2026 compared to 2010\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gQ88sPP6gXq3T5sU9T",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_013NnTNUbTWBw1vWbhr5pNFf",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Năm 2026, 57% người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS (dễ bị tổn thương/xung đột), tăng so với 12% năm 2010. Tỷ lệ này tăng chủ yếu vì nhiều economies có tỷ lệ nghèo cao trở thành FCS và vì nghèo cùng cực giảm nhanh hơn ở các economies non-FCS.",
+              "citations": [
+                "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+                "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_013NnTNUbTWBw1vWbhr5pNFf",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Năm 2026, 57% người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS (dễ bị tổn thương/xung đột), tăng so với 12% năm 2010. Tỷ lệ này tăng chủ yếu vì nhiều economies có tỷ lệ nghèo cao trở thành FCS và vì nghèo cùng cực giảm nhanh hơn ở các economies non-FCS.",
+            "citations": [
+              "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+              "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2871,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 327,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0004506,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2871,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.383100999999442
+    },
+    {
+      "event": "invalid_finish",
+      "error": "Citation phải khớp [chunk-id] trong answer và context hiện hành"
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Năm 2026, bao nhiêu phần trăm người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS, so với năm 2010?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_013NnTNUbTWBw1vWbhr5pNFf",
+              "name": "finish",
+              "input": {
+                "status": "answered",
+                "answer": "Năm 2026, 57% người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS (dễ bị tổn thương/xung đột), tăng so với 12% năm 2010. Tỷ lệ này tăng chủ yếu vì nhiều economies có tỷ lệ nghèo cao trở thành FCS và vì nghèo cùng cực giảm nhanh hơn ở các economies non-FCS.",
+                "citations": [
+                  "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+                  "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38"
+                ]
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_013NnTNUbTWBw1vWbhr5pNFf",
+              "content": "{\"current_context\": \"[18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\\nThe global population living in FCS economies more than doubled between 2010 and 2025, rising from 6.0 percent to 13.5 percent. Over this period, a growing number of economies with large populations and high poverty rates became fragile or affected by conflict and violence.10 At the same time, poverty rates fell more rapidly in non-FCS economies, thereby increasing the share of FCS economies in the global total. As of 2026, more than half the extreme poor globally, 57 percent, were living in an FCS economy, up from 12 percent in 2010 (refer to figure 1.11, panel a).\\n\\n[972837ea7dd76ddca19488bf7fe2502173c7c3a5f1d865217e3026daa7d17dc8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\\nNote: each bubble in the figure represents an economy. the horizontal axis shows the rate of extreme poverty in 2024 at the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). bubble sizes reflect expected population numbers in 2050. economies are considered to be in fragile and conflict-affected situations (FCS) based on the World bank’s classification in 2025.\\n\\n[db1706f31fc54743458e490b391f566d87afeb3ea3af751d01ddc370ad78098a | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\\nThe extreme poverty rate in Sub-Saharan Africa is projected to decline by about 3 percentage points by 2030. Y et, the region’s share of the global population is projected to rise over the period, thereby pushing the global poverty rate upward. The same holds for the MENAAP region, where poverty rates are projected to increase and the population continues to expand (refer to figure 1.11, panel b). By 2030, 87 percent of the extreme poor globally will be living either in Sub-Saharan Africa or in an FCS economy (refer to figure 1.11, panel a).\\n\\n[94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 43]\\nthis is still not the case in the Middle East, North Africa, Afghanistan, and Pakistan (MENAAP) region. • Fragility is the defining feature of global poverty. The share of the extreme poor living in a fragile and conflict-affected situation (FCS) rose from 12 percent in 2010 to 57 percent in 2026, as more high-poverty economies became fragile and because extreme poverty fell more quickly in non-FCS economies. By 2030, 87 percent of the extreme poor globally will be living in Sub-Saharan Africa or in an FCS economy or both. • If the per capita economic growth rates observed over 2015–24 persist, the global extreme poverty rate and the number of people living in extreme poverty will increase by 2030: an unprecedented reversal of the decades-long decline. Population growth in high-poverty economies is a key factor in the potential increase.\", \"current_context_ids\": [\"18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75\", \"972837ea7dd76ddca19488bf7fe2502173c7c3a5f1d865217e3026daa7d17dc8\", \"db1706f31fc54743458e490b391f566d87afeb3ea3af751d01ddc370ad78098a\", \"94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38\"], \"searched_queries\": [\"share of global extreme poor living in FCS economies 2026 compared to 2010\"], \"searches_remaining\": 3, \"error\": \"Citation phải khớp [chunk-id] trong answer và context hiện hành\"}",
+              "is_error": true
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gQKENVe3X99BVaeb8Q",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01TnEBPo9HZELBs95HdQB9ke",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Năm 2026, 57% người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS, tăng từ 12% năm 2010 [18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75]. Nguyên nhân: nhiều economies có tỷ lệ nghèo cao trở thành FCS, và tỷ lệ nghèo giảm nhanh hơn ở các economies non-FCS [94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38].",
+              "citations": [
+                "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+                "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01TnEBPo9HZELBs95HdQB9ke",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Năm 2026, 57% người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS, tăng từ 12% năm 2010 [18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75]. Nguyên nhân: nhiều economies có tỷ lệ nghèo cao trở thành FCS, và tỷ lệ nghèo giảm nhanh hơn ở các economies non-FCS [94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38].",
+            "citations": [
+              "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+              "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 3166,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 549,
+          "output_tokens_details": {
+            "thinking_tokens": 159
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0005911,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 3166,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 3.0192692080017878
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Năm 2026, 57% người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS, tăng từ 12% năm 2010 [18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75]. Nguyên nhân: nhiều economies có tỷ lệ nghèo cao trở thành FCS, và tỷ lệ nghèo giảm nhanh hơn ở các economies non-FCS [94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38].",
+      "citations": [
+        "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+        "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 1,
+  "model_calls": 3,
+  "usage": {
+    "input_tokens": 7387,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1000
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "neighbors"
+  },
+  "context": "[18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\nThe global population living in FCS economies more than doubled between 2010 and 2025, rising from 6.0 percent to 13.5 percent. Over this period, a growing number of economies with large populations and high poverty rates became fragile or affected by conflict and violence.10 At the same time, poverty rates fell more rapidly in non-FCS economies, thereby increasing the share of FCS economies in the global total. As of 2026, more than half the extreme poor globally, 57 percent, were living in an FCS economy, up from 12 percent in 2010 (refer to figure 1.11, panel a).\n\n[972837ea7dd76ddca19488bf7fe2502173c7c3a5f1d865217e3026daa7d17dc8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\nNote: each bubble in the figure represents an economy. the horizontal axis shows the rate of extreme poverty in 2024 at the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). bubble sizes reflect expected population numbers in 2050. economies are considered to be in fragile and conflict-affected situations (FCS) based on the World bank’s classification in 2025.\n\n[db1706f31fc54743458e490b391f566d87afeb3ea3af751d01ddc370ad78098a | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\nThe extreme poverty rate in Sub-Saharan Africa is projected to decline by about 3 percentage points by 2030. Y et, the region’s share of the global population is projected to rise over the period, thereby pushing the global poverty rate upward. The same holds for the MENAAP region, where poverty rates are projected to increase and the population continues to expand (refer to figure 1.11, panel b). By 2030, 87 percent of the extreme poor globally will be living either in Sub-Saharan Africa or in an FCS economy (refer to figure 1.11, panel a).\n\n[94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 43]\nthis is still not the case in the Middle East, North Africa, Afghanistan, and Pakistan (MENAAP) region. • Fragility is the defining feature of global poverty. The share of the extreme poor living in a fragile and conflict-affected situation (FCS) rose from 12 percent in 2010 to 57 percent in 2026, as more high-poverty economies became fragile and because extreme poverty fell more quickly in non-FCS economies. By 2030, 87 percent of the extreme poor globally will be living in Sub-Saharan Africa or in an FCS economy or both. • If the per capita economic growth rates observed over 2015–24 persist, the global extreme poverty rate and the number of people living in extreme poverty will increase by 2030: an unprecedented reversal of the decades-long decline. Population growth in high-poverty economies is a key factor in the potential increase.",
+  "context_ids": [
+    "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+    "972837ea7dd76ddca19488bf7fe2502173c7c3a5f1d865217e3026daa7d17dc8",
+    "db1706f31fc54743458e490b391f566d87afeb3ea3af751d01ddc370ad78098a",
+    "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38"
+  ],
+  "context_chunks": [
+    {
+      "id": "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 65,
+      "text": "The global population living in FCS economies more than doubled between 2010 and 2025, rising from 6.0 percent to 13.5 percent. Over this period, a growing number of economies with large populations and high poverty rates became fragile or affected by conflict and violence.10 At the same time, poverty rates fell more rapidly in non-FCS economies, thereby increasing the share of FCS economies in the global total. As of 2026, more than half the extreme poor globally, 57 percent, were living in an FCS economy, up from 12 percent in 2010 (refer to figure 1.11, panel a).",
+      "metadata": {
+        "end": 1537,
+        "start": 965,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 33,
+        "segment_start": 0
+      },
+      "score": 0.9365646280905843
+    },
+    {
+      "id": "972837ea7dd76ddca19488bf7fe2502173c7c3a5f1d865217e3026daa7d17dc8",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 65,
+      "text": "Note: each bubble in the figure represents an economy. the horizontal axis shows the rate of extreme poverty in 2024 at the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). bubble sizes reflect expected population numbers in 2050. economies are considered to be in fragile and conflict-affected situations (FCS) based on the World bank’s classification in 2025.",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 33,
+        "segment_start": 0,
+        "start": 576,
+        "end": 963,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "db1706f31fc54743458e490b391f566d87afeb3ea3af751d01ddc370ad78098a",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 65,
+      "text": "The extreme poverty rate in Sub-Saharan Africa is projected to decline by about 3 percentage points by 2030. Y et, the region’s share of the global population is projected to rise over the period, thereby pushing the global poverty rate upward. The same holds for the MENAAP region, where poverty rates are projected to increase and the population continues to expand (refer to figure 1.11, panel b). By 2030, 87 percent of the extreme poor globally will be living either in Sub-Saharan Africa or in an FCS economy (refer to figure 1.11, panel a).",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 33,
+        "segment_start": 0,
+        "start": 1539,
+        "end": 2086,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 43,
+      "text": "this is still not the case in the Middle East, North Africa, Afghanistan, and Pakistan (MENAAP) region. • Fragility is the defining feature of global poverty. The share of the extreme poor living in a fragile and conflict-affected situation (FCS) rose from 12 percent in 2010 to 57 percent in 2026, as more high-poverty economies became fragile and because extreme poverty fell more quickly in non-FCS economies. By 2030, 87 percent of the extreme poor globally will be living in Sub-Saharan Africa or in an FCS economy or both. • If the per capita economic growth rates observed over 2015–24 persist, the global extreme poverty rate and the number of people living in extreme poverty will increase by 2030: an unprecedented reversal of the decades-long decline. Population growth in high-poverty economies is a key factor in the potential increase.",
+      "metadata": {
+        "end": 1747,
+        "start": 898,
+        "section": "Summary",
+        "chunking": "paragraph",
+        "printed_page": 11,
+        "segment_start": 0
+      },
+      "score": 0.9182474661918021
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 3,
+    "returned_calls": 3
+  },
+  "estimated_cost_usd": 0.0012387,
+  "answer": "Năm 2026, 57% người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS, tăng từ 12% năm 2010 [18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75]. Nguyên nhân: nhiều economies có tỷ lệ nghèo cao trở thành FCS, và tỷ lệ nghèo giảm nhanh hơn ở các economies non-FCS [94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38].",
+  "citations": [
+    "18c8b2db34697b7cf8bd8492dff472e8de71aeac90869187a1bc4febf6abfa75",
+    "94626deb4d6139d93f9d6db2f42ee3d6b180c0d709004340efc7a63f4e811c38"
+  ],
+  "elapsed_seconds": 7.084473374998197,
+  "answerable": true,
+  "context_strict_hit": true,
+  "context_set_hit": true,
+  "first_search_hit3": true,
+  "first_search_is_original_query": false
+}

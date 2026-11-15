@@ -1,0 +1,730 @@
+{
+  "created_at_utc": "2026-11-14T10:41:03.692309+00:00",
+  "stage": "agent_dev",
+  "query_id": "q10",
+  "config_id": "neighbors3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Trong phân loại gần đúng của báo cáo, nhóm trung lưu toàn cầu sống trong khoảng thu nhập hoặc tiêu dùng bao nhiêu USD mỗi ngày?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong phân loại gần đúng của báo cáo, nhóm trung lưu toàn cầu sống trong khoảng thu nhập hoặc tiêu dùng bao nhiêu USD mỗi ngày?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gMmzMmkiNHH2w9KK9P",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_017UC8Wc4rDpYg3JzKh5i9tF",
+            "name": "search_documents",
+            "input": {
+              "query": "global middle class daily income or consumption range USD per day approximate classification"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_017UC8Wc4rDpYg3JzKh5i9tF",
+          "name": "search_documents",
+          "input": {
+            "query": "global middle class daily income or consumption range USD per day approximate classification"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1367,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 66,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001697,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1367,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.2364491670014104
+    },
+    {
+      "event": "search",
+      "query": "global middle class daily income or consumption range USD per day approximate classification",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+          "metadata": {
+            "end": 3083,
+            "start": 2470,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8974988704922509
+        },
+        {
+          "id": "113b2b40603ec15c2ceadfb49206131c6ceda819f5e59af328a3bf0ea7979fe7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "31 Global Poverty: Stalled Pro GreSS and riSinG Con Centration (refer to annex 1B, figure 1B.2). Across all poverty lines, the shares of the poor have risen in low-income economies, while they have fallen in upper-middle-income economies. Continued progress in middle-income economies, where structural growth challenges can impede sustained poverty reduction (World Bank 2024b), therefore remains pivotal to reducing global poverty. Many of the people who have escaped extreme poverty in middle-income economies are still living close to the $3.00 line. Incomes are clustered between $3.00 and $4.20 a day, well short of the economic security that defines the middle class (refer to box 1.3 and figure 1.3).",
+          "metadata": {
+            "end": 708,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8966399081611852
+        },
+        {
+          "id": "49dcfa6ca670b8450d6a587cc8490bfb359e85f93edc9831c6d1751417dcfdc1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 53,
+          "text": "$28.00 and above Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the distribution of the population across four welfare groups in 2000–26. the groups are defined by the $3.00-, $8.30-, and $28.00-a-person-a-day lines (expressed in 2021 purchasing power parity terms). economies are grouped according to the World bank income classification in 2024, and the grouping is held fixed over the period. because economies are classified by their status at the end of the period, those in the upper-middle- income group are the ones that grew most quickly over these years, and the improvement shown for this group partly reflects this selection. data for 2025 and 2026 are nowcasts (refer to annex 1a).",
+          "metadata": {
+            "end": 1729,
+            "start": 899,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 21,
+            "segment_start": 0
+          },
+          "score": 0.896605742382325
+        }
+      ],
+      "context": "[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nmiddle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\n\n[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\n\n[113b2b40603ec15c2ceadfb49206131c6ceda819f5e59af328a3bf0ea7979fe7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\n31 Global Poverty: Stalled Pro GreSS and riSinG Con Centration (refer to annex 1B, figure 1B.2). Across all poverty lines, the shares of the poor have risen in low-income economies, while they have fallen in upper-middle-income economies. Continued progress in middle-income economies, where structural growth challenges can impede sustained poverty reduction (World Bank 2024b), therefore remains pivotal to reducing global poverty. Many of the people who have escaped extreme poverty in middle-income economies are still living close to the $3.00 line. Incomes are clustered between $3.00 and $4.20 a day, well short of the economic security that defines the middle class (refer to box 1.3 and figure 1.3).\n\n[37c84adc454195e89209378dc9572516f156e79500fe298281369f515dba4e5f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\nThis concentration means that the recent gains are fragile. Economic downturns, climate shocks, or conflict could push large numbers of people back into poverty, as the COVID-19 pandemic demonstrated (Mahler et al. 2022).",
+      "context_candidates": [
+        {
+          "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+          "metadata": {
+            "end": 3083,
+            "start": 2470,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8974988704922509
+        },
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 20,
+            "segment_start": 0,
+            "start": 1571,
+            "end": 2469,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "113b2b40603ec15c2ceadfb49206131c6ceda819f5e59af328a3bf0ea7979fe7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "31 Global Poverty: Stalled Pro GreSS and riSinG Con Centration (refer to annex 1B, figure 1B.2). Across all poverty lines, the shares of the poor have risen in low-income economies, while they have fallen in upper-middle-income economies. Continued progress in middle-income economies, where structural growth challenges can impede sustained poverty reduction (World Bank 2024b), therefore remains pivotal to reducing global poverty. Many of the people who have escaped extreme poverty in middle-income economies are still living close to the $3.00 line. Incomes are clustered between $3.00 and $4.20 a day, well short of the economic security that defines the middle class (refer to box 1.3 and figure 1.3).",
+          "metadata": {
+            "end": 708,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8966399081611852
+        },
+        {
+          "id": "37c84adc454195e89209378dc9572516f156e79500fe298281369f515dba4e5f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "This concentration means that the recent gains are fragile. Economic downturns, climate shocks, or conflict could push large numbers of people back into poverty, as the COVID-19 pandemic demonstrated (Mahler et al. 2022).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 31,
+            "segment_start": 0,
+            "start": 710,
+            "end": 931,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "49dcfa6ca670b8450d6a587cc8490bfb359e85f93edc9831c6d1751417dcfdc1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 53,
+          "text": "$28.00 and above Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the distribution of the population across four welfare groups in 2000–26. the groups are defined by the $3.00-, $8.30-, and $28.00-a-person-a-day lines (expressed in 2021 purchasing power parity terms). economies are grouped according to the World bank income classification in 2024, and the grouping is held fixed over the period. because economies are classified by their status at the end of the period, those in the upper-middle- income group are the ones that grew most quickly over these years, and the improvement shown for this group partly reflects this selection. data for 2025 and 2026 are nowcasts (refer to annex 1a).",
+          "metadata": {
+            "end": 1729,
+            "start": 899,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 21,
+            "segment_start": 0
+          },
+          "score": 0.896605742382325
+        },
+        {
+          "id": "13aa0054ee7188919476ad8b180447ca042fe08d77be397b4d74b80970fa7972",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 53,
+          "text": "21 Global Poverty: Stalled Pro GreSS and riSinG Con Centration The expansion of the middle class has been concentrated in middle-income economies (refer to figure B1.3.1, panels b and c). In today’s upper-middle-income economies, the middle class has grown from a small minority of the population BOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued) FIGURE B1.3.1 The global middle class has grown, mostly in middle-income economies 0 20 40 60 80 100 Share of population (%) 2000 2005 2010 2015 2020 2025 a. Low income Share of population (%) 0 20 40 60 80 100 2000 2005 2010 2015 2020 2025 c. Upper-middle income Share of population (%) 0 20 40 60 80 100 2000 2005 2010 2015 2020 2025 b. Lower-middle income Share of population (%) 0 20 40 60 80 100 2000 2005 2010 2015 2020 2025 d. High income Below $3.00 $3.00–$8.30 $8.30–$28.00",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 21,
+            "segment_start": 0,
+            "start": 0,
+            "end": 898,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+        "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+        "113b2b40603ec15c2ceadfb49206131c6ceda819f5e59af328a3bf0ea7979fe7",
+        "37c84adc454195e89209378dc9572516f156e79500fe298281369f515dba4e5f"
+      ],
+      "elapsed_seconds": 0.040747792008914985
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong phân loại gần đúng của báo cáo, nhóm trung lưu toàn cầu sống trong khoảng thu nhập hoặc tiêu dùng bao nhiêu USD mỗi ngày?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_017UC8Wc4rDpYg3JzKh5i9tF",
+              "name": "search_documents",
+              "input": {
+                "query": "global middle class daily income or consumption range USD per day approximate classification"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_017UC8Wc4rDpYg3JzKh5i9tF",
+              "content": "{\"current_context\": \"[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nmiddle class shifts with the environment in which households live.\\n\\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\\n\\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\\n\\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\\n\\n[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\\n\\n[113b2b40603ec15c2ceadfb49206131c6ceda819f5e59af328a3bf0ea7979fe7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\\n31 Global Poverty: Stalled Pro GreSS and riSinG Con Centration (refer to annex 1B, figure 1B.2). Across all poverty lines, the shares of the poor have risen in low-income economies, while they have fallen in upper-middle-income economies. Continued progress in middle-income economies, where structural growth challenges can impede sustained poverty reduction (World Bank 2024b), therefore remains pivotal to reducing global poverty. Many of the people who have escaped extreme poverty in middle-income economies are still living close to the $3.00 line. Incomes are clustered between $3.00 and $4.20 a day, well short of the economic security that defines the middle class (refer to box 1.3 and figure 1.3).\\n\\n[37c84adc454195e89209378dc9572516f156e79500fe298281369f515dba4e5f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\\nThis concentration means that the recent gains are fragile. Economic downturns, climate shocks, or conflict could push large numbers of people back into poverty, as the COVID-19 pandemic demonstrated (Mahler et al. 2022).\", \"current_context_ids\": [\"38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1\", \"42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22\", \"113b2b40603ec15c2ceadfb49206131c6ceda819f5e59af328a3bf0ea7979fe7\", \"37c84adc454195e89209378dc9572516f156e79500fe298281369f515dba4e5f\"], \"searched_queries\": [\"global middle class daily income or consumption range USD per day approximate classification\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gMsZig5b2wiAkS9vrp",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01895x5jLUmWCvycTeJahRHt",
+            "name": "search_documents",
+            "input": {
+              "query": "middle class defined as living between $3.00 and $8.30 a day 2017 PPP"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01895x5jLUmWCvycTeJahRHt",
+          "name": "search_documents",
+          "input": {
+            "query": "middle class defined as living between $3.00 and $8.30 a day 2017 PPP"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2857,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 235,
+          "output_tokens_details": {
+            "thinking_tokens": 161
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0004032,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2857,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.929315667002811
+    },
+    {
+      "event": "search",
+      "query": "middle class defined as living between $3.00 and $8.30 a day 2017 PPP",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+          "metadata": {
+            "end": 3083,
+            "start": 2470,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8966996258438319
+        },
+        {
+          "id": "3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 54,
+          "text": "22 POVERTY , PROSPERITY , AND PLANET REPORT 2026 in 2000 to a majority by 2026, and extreme poverty has all but disappeared. In today’s lower-middle-income economies, the group living on between $3.00 and $8.30 a day is now the largest, and the middle class, though growing, remains a minority. In low-income economies, the distribution has barely shifted. About half the population is still living on less than $3.00 a day, and the middle class is negligible. High-income economies, by contrast, are composed almost entirely of households living on more than $8.30 a day, and the majority are above the prosperity standard.",
+          "metadata": {
+            "end": 624,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 22,
+            "segment_start": 0
+          },
+          "score": 0.8925897543078823
+        },
+        {
+          "id": "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "The thresholds used in this report can serve as approximate class boundaries. Each of the three poverty lines is the typical national poverty line of an income group: $3.00 a day for low-income economies, $4.20 for lower-middle-income economies, and $8.30 for upper-middle-income economies (refer to box 1.1). Households living on less than $3.00 a day are extremely poor by any standard. Those living on between $3.00 and $8.30 are above the extreme poverty line, but would count as poor in a middle-income economy and, for the most part, remain short of economic security. Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class; and those above $28.00 a day exceed the prosperity standard this report uses to gauge shared prosperity (refer to chapter 2). These thresholds are proxies. Ongoing work indicates that",
+          "metadata": {
+            "end": 1503,
+            "start": 605,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8870719277134087
+        }
+      ],
+      "context": "[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nmiddle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\n\n[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\n\n[3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 54]\n22 POVERTY , PROSPERITY , AND PLANET REPORT 2026 in 2000 to a majority by 2026, and extreme poverty has all but disappeared. In today’s lower-middle-income economies, the group living on between $3.00 and $8.30 a day is now the largest, and the middle class, though growing, remains a minority. In low-income economies, the distribution has barely shifted. About half the population is still living on less than $3.00 a day, and the middle class is negligible. High-income economies, by contrast, are composed almost entirely of households living on more than $8.30 a day, and the majority are above the prosperity standard.\n\n[244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nthe income required for security is higher than any poverty line.",
+      "context_candidates": [
+        {
+          "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+          "metadata": {
+            "end": 3083,
+            "start": 2470,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8966996258438319
+        },
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 20,
+            "segment_start": 0,
+            "start": 1571,
+            "end": 2469,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 54,
+          "text": "22 POVERTY , PROSPERITY , AND PLANET REPORT 2026 in 2000 to a majority by 2026, and extreme poverty has all but disappeared. In today’s lower-middle-income economies, the group living on between $3.00 and $8.30 a day is now the largest, and the middle class, though growing, remains a minority. In low-income economies, the distribution has barely shifted. About half the population is still living on less than $3.00 a day, and the middle class is negligible. High-income economies, by contrast, are composed almost entirely of households living on more than $8.30 a day, and the majority are above the prosperity standard.",
+          "metadata": {
+            "end": 624,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 22,
+            "segment_start": 0
+          },
+          "score": 0.8925897543078823
+        },
+        {
+          "id": "6e79576a0542ae1097aa894bb0b6d846f8e1a405a476af506e2cf7d8ec7a7495",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 54,
+          "text": "These patterns connect the report’s monitoring to the concerns of middle-income economies. More work and better-paying work help people escape poverty (refer to chapter 4). Stable, well-paid jobs also protect against falling back into poverty, and they therefore help households climb from vulnerability to security, an agenda that has particular force in locations where the vulnerable group is largest. Vulnerability to climate-related hazards—a distinct concept, reflecting the lack of the means to cope if a hazard strikes rather than the risk of falling back into poverty—extends well above the poverty line (refer to chapter 3). Vulnerability in this case means that middle-class households are also exposed to risk if social protection and financial services are lacking. The $8.30 line and the $28.00 prosperity standard are precisely the boundaries within which the middle class is found.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 22,
+            "segment_start": 0,
+            "start": 626,
+            "end": 1523,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "The thresholds used in this report can serve as approximate class boundaries. Each of the three poverty lines is the typical national poverty line of an income group: $3.00 a day for low-income economies, $4.20 for lower-middle-income economies, and $8.30 for upper-middle-income economies (refer to box 1.1). Households living on less than $3.00 a day are extremely poor by any standard. Those living on between $3.00 and $8.30 are above the extreme poverty line, but would count as poor in a middle-income economy and, for the most part, remain short of economic security. Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class; and those above $28.00 a day exceed the prosperity standard this report uses to gauge shared prosperity (refer to chapter 2). These thresholds are proxies. Ongoing work indicates that",
+          "metadata": {
+            "end": 1503,
+            "start": 605,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8870719277134087
+        },
+        {
+          "id": "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 20,
+            "segment_start": 0,
+            "start": 0,
+            "end": 603,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "the income required for security is higher than any poverty line.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 20,
+            "segment_start": 0,
+            "start": 1504,
+            "end": 1569,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+        "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+        "3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e",
+        "244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c"
+      ],
+      "elapsed_seconds": 0.03834358399035409
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong phân loại gần đúng của báo cáo, nhóm trung lưu toàn cầu sống trong khoảng thu nhập hoặc tiêu dùng bao nhiêu USD mỗi ngày?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01895x5jLUmWCvycTeJahRHt",
+              "name": "search_documents",
+              "input": {
+                "query": "middle class defined as living between $3.00 and $8.30 a day 2017 PPP"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01895x5jLUmWCvycTeJahRHt",
+              "content": "{\"current_context\": \"[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nmiddle class shifts with the environment in which households live.\\n\\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\\n\\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\\n\\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\\n\\n[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\\n\\n[3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 54]\\n22 POVERTY , PROSPERITY , AND PLANET REPORT 2026 in 2000 to a majority by 2026, and extreme poverty has all but disappeared. In today’s lower-middle-income economies, the group living on between $3.00 and $8.30 a day is now the largest, and the middle class, though growing, remains a minority. In low-income economies, the distribution has barely shifted. About half the population is still living on less than $3.00 a day, and the middle class is negligible. High-income economies, by contrast, are composed almost entirely of households living on more than $8.30 a day, and the majority are above the prosperity standard.\\n\\n[244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nthe income required for security is higher than any poverty line.\", \"current_context_ids\": [\"38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1\", \"42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22\", \"3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e\", \"244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c\"], \"searched_queries\": [\"global middle class daily income or consumption range USD per day approximate classification\", \"middle class defined as living between $3.00 and $8.30 a day 2017 PPP\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gN1zE9gZw3Z286WNfW",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_016h42HNvRTk1ftgQUWt9wJL",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Theo báo cáo, nhóm trung lưu toàn cầu là những người sống với mức thu nhập hoặc tiêu dùng từ 3,00 USD đến 8,30 USD mỗi ngày. Báo cáo ghi nhóm này gần như chiếm một phần ba dân số thế giới trong suốt giai đoạn từ năm 2000 trở đi [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+              "citations": [
+                "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_016h42HNvRTk1ftgQUWt9wJL",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Theo báo cáo, nhóm trung lưu toàn cầu là những người sống với mức thu nhập hoặc tiêu dùng từ 3,00 USD đến 8,30 USD mỗi ngày. Báo cáo ghi nhóm này gần như chiếm một phần ba dân số thế giới trong suốt giai đoạn từ năm 2000 trở đi [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+            "citations": [
+              "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2803,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 445,
+          "output_tokens_details": {
+            "thinking_tokens": 130
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0005028,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2803,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.842743333996623
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Theo báo cáo, nhóm trung lưu toàn cầu là những người sống với mức thu nhập hoặc tiêu dùng từ 3,00 USD đến 8,30 USD mỗi ngày. Báo cáo ghi nhóm này gần như chiếm một phần ba dân số thế giới trong suốt giai đoạn từ năm 2000 trở đi [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+      "citations": [
+        "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 2,
+  "model_calls": 3,
+  "usage": {
+    "input_tokens": 7027,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 746
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "neighbors"
+  },
+  "context": "[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nmiddle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\n\n[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\n\n[3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 54]\n22 POVERTY , PROSPERITY , AND PLANET REPORT 2026 in 2000 to a majority by 2026, and extreme poverty has all but disappeared. In today’s lower-middle-income economies, the group living on between $3.00 and $8.30 a day is now the largest, and the middle class, though growing, remains a minority. In low-income economies, the distribution has barely shifted. About half the population is still living on less than $3.00 a day, and the middle class is negligible. High-income economies, by contrast, are composed almost entirely of households living on more than $8.30 a day, and the majority are above the prosperity standard.\n\n[244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nthe income required for security is higher than any poverty line.",
+  "context_ids": [
+    "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+    "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+    "3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e",
+    "244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c"
+  ],
+  "context_chunks": [
+    {
+      "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 52,
+      "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+      "metadata": {
+        "end": 3083,
+        "start": 2470,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 20,
+        "segment_start": 0
+      },
+      "score": 0.8966996258438319
+    },
+    {
+      "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 52,
+      "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 20,
+        "segment_start": 0,
+        "start": 1571,
+        "end": 2469,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 54,
+      "text": "22 POVERTY , PROSPERITY , AND PLANET REPORT 2026 in 2000 to a majority by 2026, and extreme poverty has all but disappeared. In today’s lower-middle-income economies, the group living on between $3.00 and $8.30 a day is now the largest, and the middle class, though growing, remains a minority. In low-income economies, the distribution has barely shifted. About half the population is still living on less than $3.00 a day, and the middle class is negligible. High-income economies, by contrast, are composed almost entirely of households living on more than $8.30 a day, and the majority are above the prosperity standard.",
+      "metadata": {
+        "end": 624,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 22,
+        "segment_start": 0
+      },
+      "score": 0.8925897543078823
+    },
+    {
+      "id": "244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 52,
+      "text": "the income required for security is higher than any poverty line.",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 20,
+        "segment_start": 0,
+        "start": 1504,
+        "end": 1569,
+        "chunking": "paragraph"
+      }
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 3,
+    "returned_calls": 3
+  },
+  "estimated_cost_usd": 0.0010757,
+  "answer": "Theo báo cáo, nhóm trung lưu toàn cầu là những người sống với mức thu nhập hoặc tiêu dùng từ 3,00 USD đến 8,30 USD mỗi ngày. Báo cáo ghi nhóm này gần như chiếm một phần ba dân số thế giới trong suốt giai đoạn từ năm 2000 trở đi [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+  "citations": [
+    "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+  ],
+  "elapsed_seconds": 6.087838917010231,
+  "answerable": true,
+  "context_strict_hit": false,
+  "context_set_hit": false,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

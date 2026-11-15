@@ -1,0 +1,458 @@
+{
+  "created_at_utc": "2026-11-14T10:40:51.753408+00:00",
+  "stage": "agent_dev",
+  "query_id": "q08",
+  "config_id": "neighbors3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Nếu tốc độ giảm nghèo giai đoạn 2000–2013 được duy trì, tỷ lệ nghèo cùng cực năm 2026 sẽ khoảng bao nhiêu và thấp hơn thực tế bao nhiêu điểm phần trăm?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Nếu tốc độ giảm nghèo giai đoạn 2000–2013 được duy trì, tỷ lệ nghèo cùng cực năm 2026 sẽ khoảng bao nhiêu và thấp hơn thực tế bao nhiêu điểm phần trăm?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gLu4Ug1Fk8JNPUn6xa",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_0167hDkyTLeY1Pmrj5sTuhYT",
+            "name": "search_documents",
+            "input": {
+              "query": "poverty reduction rate 2000-2013 extreme poverty projection 2026"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_0167hDkyTLeY1Pmrj5sTuhYT",
+          "name": "search_documents",
+          "input": {
+            "query": "poverty reduction rate 2000-2013 extreme poverty projection 2026"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1391,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 108,
+          "output_tokens_details": {
+            "thinking_tokens": 36
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001931,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1391,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.5364556250133319
+    },
+    {
+      "event": "search",
+      "query": "poverty reduction rate 2000-2013 extreme poverty projection 2026",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "extreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\n\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.",
+          "metadata": {
+            "end": 2506,
+            "start": 1803,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.9300912341448334
+        },
+        {
+          "id": "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,",
+          "metadata": {
+            "end": 900,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.9290751537956289
+        },
+        {
+          "id": "eedf2c38dfce2c9903fa0f3a2c597d3597306157689436ca06155c5b4202d150",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "The baseline using projections of Global Economic Prospects, June 2026 (World Bank 2026c) provides estimates of the number of people living in extreme poverty at 811 million people in 2026 (refer to figure B1.2.1). This is an increase of 2.5 million people relative to the preconflict growth projections of Global Economic Prospects, January 2026 (World Bank 2026b). While these differences are not solely attributable to the conflict, the numbers confirm a worsening outlook.",
+          "metadata": {
+            "end": 1897,
+            "start": 1421,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.9193269932470658
+        }
+      ],
+      "context": "[2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\nextreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\n\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.\n\n[409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) The speed of extreme poverty reduction has shifted markedly over time. Between 1990 and 2004, the global rate of extreme poverty fell from 43 percent to 30 percent, with hundreds of millions of people pulled out of extreme poverty. As the fight against extreme poverty gained momentum in populous economies, most notably China, the global rate of extreme poverty fell starkly in the years after 2004, delivering substantial progress toward the goal of reducing extreme poverty across the globe. However, the momentum shifted in the late 2010s, even before the onset of the COVID-19 pandemic. The slowdown reflected persistently low economic growth in low-income economies leading to an increasing concentration of the global poor in these economies (World Bank 2018, 2024a). After a rise in the incidence of\n\n[3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 64]\n32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,",
+      "context_candidates": [
+        {
+          "id": "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "extreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\n\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.",
+          "metadata": {
+            "end": 2506,
+            "start": 1803,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.9300912341448334
+        },
+        {
+          "id": "409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "BOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) The speed of extreme poverty reduction has shifted markedly over time. Between 1990 and 2004, the global rate of extreme poverty fell from 43 percent to 30 percent, with hundreds of millions of people pulled out of extreme poverty. As the fight against extreme poverty gained momentum in populous economies, most notably China, the global rate of extreme poverty fell starkly in the years after 2004, delivering substantial progress toward the goal of reducing extreme poverty across the globe. However, the momentum shifted in the late 2010s, even before the onset of the COVID-19 pandemic. The slowdown reflected persistently low economic growth in low-income economies leading to an increasing concentration of the global poor in these economies (World Bank 2018, 2024a). After a rise in the incidence of",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 17,
+            "segment_start": 0,
+            "start": 909,
+            "end": 1802,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,",
+          "metadata": {
+            "end": 900,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.9290751537956289
+        },
+        {
+          "id": "cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "https://datacatalog.worldbank.org/int/search /dataset/0067066 /pip_poverty_projections.\n\nNote: the figure reports extreme poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). Historical growth scenarios apply each economy’s observed GdP per capita growth during the stated period. GdP per capita growth forecasts use each economy’s projected GdP growth in the coming years from Global Economic Prospects, June 2026 (World bank 2026c) for 2026–27, combined with growth projections from the international Monetary Fund for 2028–30 (iMF 2025, 2026). the 2 percent and 4 percent GdP per capita growth scenarios assume growth in all economies at 2 percent or 4 percent a year.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 32,
+            "segment_start": 0,
+            "start": 901,
+            "end": 1616,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "eedf2c38dfce2c9903fa0f3a2c597d3597306157689436ca06155c5b4202d150",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "The baseline using projections of Global Economic Prospects, June 2026 (World Bank 2026c) provides estimates of the number of people living in extreme poverty at 811 million people in 2026 (refer to figure B1.2.1). This is an increase of 2.5 million people relative to the preconflict growth projections of Global Economic Prospects, January 2026 (World Bank 2026b). While these differences are not solely attributable to the conflict, the numbers confirm a worsening outlook.",
+          "metadata": {
+            "end": 1897,
+            "start": 1421,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.9193269932470658
+        },
+        {
+          "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 15,
+            "segment_start": 0,
+            "start": 589,
+            "end": 1419,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "59e5ff495ab17586b2ec22b12b96b0cfe804b34e994b69adb02444083d382e81",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "Allowing for distributional impacts either from uneven income shocks or price shocks leads to a further increase compared with the preconflict projections and essentially a stagnation in extreme poverty relative to 2025 (when the number was 816.9 million people). Taking the differential impact of sectoral growth rates into consideration reveals that 816.6 million people were estimated to be living in extreme poverty in 2026. One of the main reasons is that projected agricultural growth is much lower than the growth projected in the service and industrial sectors in 2026. Because a larger share of the extreme poor work in the agricultural sector, poverty reduction is muted because of the low agricultural growth. This also highlights that it is important for the poor to engage in resilient high-growth sectors to favor poverty reduction (refer to chapter 4).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 15,
+            "segment_start": 0,
+            "start": 1899,
+            "end": 2766,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+        "409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c",
+        "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2"
+      ],
+      "elapsed_seconds": 0.04004062499734573
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Nếu tốc độ giảm nghèo giai đoạn 2000–2013 được duy trì, tỷ lệ nghèo cùng cực năm 2026 sẽ khoảng bao nhiêu và thấp hơn thực tế bao nhiêu điểm phần trăm?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_0167hDkyTLeY1Pmrj5sTuhYT",
+              "name": "search_documents",
+              "input": {
+                "query": "poverty reduction rate 2000-2013 extreme poverty projection 2026"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_0167hDkyTLeY1Pmrj5sTuhYT",
+              "content": "{\"current_context\": \"[2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\nextreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\\n\\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.\\n\\n[409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) The speed of extreme poverty reduction has shifted markedly over time. Between 1990 and 2004, the global rate of extreme poverty fell from 43 percent to 30 percent, with hundreds of millions of people pulled out of extreme poverty. As the fight against extreme poverty gained momentum in populous economies, most notably China, the global rate of extreme poverty fell starkly in the years after 2004, delivering substantial progress toward the goal of reducing extreme poverty across the globe. However, the momentum shifted in the late 2010s, even before the onset of the COVID-19 pandemic. The slowdown reflected persistently low economic growth in low-income economies leading to an increasing concentration of the global poor in these economies (World Bank 2018, 2024a). After a rise in the incidence of\\n\\n[3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 64]\\n32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,\", \"current_context_ids\": [\"2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7\", \"409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c\", \"3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2\"], \"searched_queries\": [\"poverty reduction rate 2000-2013 extreme poverty projection 2026\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gM1zhhU8etkZzTdeD8",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01NXuBiZJ5YN4YsiwbXkfsia",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Nếu giảm nghèo tiếp tục theo tốc độ giai đoạn 2000–2013, tỷ lệ nghèo cùng cực năm 2026 khoảng 7%, thấp hơn tỷ lệ thực tế khoảng 3 điểm phần trăm [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Tương đương khoảng 240 triệu người ít rơi vào nghèo cùng cực hơn so với quỹ đạo cũ [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Lưu ý: sự chậm lại so với xu hướng 2000–2013 chỉ quan sát rõ ở ngưỡng 3,00 USD; ở ngưỡng cao hơn (ví dụ 4,20 USD), mức giảm nghèo về cơ bản vẫn theo kịp xu hướng trước 2013 [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7].",
+              "citations": [
+                "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01NXuBiZJ5YN4YsiwbXkfsia",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Nếu giảm nghèo tiếp tục theo tốc độ giai đoạn 2000–2013, tỷ lệ nghèo cùng cực năm 2026 khoảng 7%, thấp hơn tỷ lệ thực tế khoảng 3 điểm phần trăm [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Tương đương khoảng 240 triệu người ít rơi vào nghèo cùng cực hơn so với quỹ đạo cũ [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Lưu ý: sự chậm lại so với xu hướng 2000–2013 chỉ quan sát rõ ở ngưỡng 3,00 USD; ở ngưỡng cao hơn (ví dụ 4,20 USD), mức giảm nghèo về cơ bản vẫn theo kịp xu hướng trước 2013 [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7].",
+            "citations": [
+              "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2874,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 597,
+          "output_tokens_details": {
+            "thinking_tokens": 71
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0005859,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2874,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 3.923433333999128
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Nếu giảm nghèo tiếp tục theo tốc độ giai đoạn 2000–2013, tỷ lệ nghèo cùng cực năm 2026 khoảng 7%, thấp hơn tỷ lệ thực tế khoảng 3 điểm phần trăm [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Tương đương khoảng 240 triệu người ít rơi vào nghèo cùng cực hơn so với quỹ đạo cũ [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Lưu ý: sự chậm lại so với xu hướng 2000–2013 chỉ quan sát rõ ở ngưỡng 3,00 USD; ở ngưỡng cao hơn (ví dụ 4,20 USD), mức giảm nghèo về cơ bản vẫn theo kịp xu hướng trước 2013 [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7].",
+      "citations": [
+        "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "usage": {
+    "input_tokens": 4265,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 705
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "neighbors"
+  },
+  "context": "[2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\nextreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\n\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.\n\n[409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) The speed of extreme poverty reduction has shifted markedly over time. Between 1990 and 2004, the global rate of extreme poverty fell from 43 percent to 30 percent, with hundreds of millions of people pulled out of extreme poverty. As the fight against extreme poverty gained momentum in populous economies, most notably China, the global rate of extreme poverty fell starkly in the years after 2004, delivering substantial progress toward the goal of reducing extreme poverty across the globe. However, the momentum shifted in the late 2010s, even before the onset of the COVID-19 pandemic. The slowdown reflected persistently low economic growth in low-income economies leading to an increasing concentration of the global poor in these economies (World Bank 2018, 2024a). After a rise in the incidence of\n\n[3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 64]\n32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,",
+  "context_ids": [
+    "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+    "409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c",
+    "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2"
+  ],
+  "context_chunks": [
+    {
+      "id": "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 49,
+      "text": "extreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\n\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.",
+      "metadata": {
+        "end": 2506,
+        "start": 1803,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 17,
+        "segment_start": 0
+      },
+      "score": 0.9300912341448334
+    },
+    {
+      "id": "409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 49,
+      "text": "BOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) The speed of extreme poverty reduction has shifted markedly over time. Between 1990 and 2004, the global rate of extreme poverty fell from 43 percent to 30 percent, with hundreds of millions of people pulled out of extreme poverty. As the fight against extreme poverty gained momentum in populous economies, most notably China, the global rate of extreme poverty fell starkly in the years after 2004, delivering substantial progress toward the goal of reducing extreme poverty across the globe. However, the momentum shifted in the late 2010s, even before the onset of the COVID-19 pandemic. The slowdown reflected persistently low economic growth in low-income economies leading to an increasing concentration of the global poor in these economies (World Bank 2018, 2024a). After a rise in the incidence of",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 17,
+        "segment_start": 0,
+        "start": 909,
+        "end": 1802,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 64,
+      "text": "32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,",
+      "metadata": {
+        "end": 900,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 32,
+        "segment_start": 0
+      },
+      "score": 0.9290751537956289
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 2,
+    "returned_calls": 2
+  },
+  "estimated_cost_usd": 0.000779,
+  "answer": "Nếu giảm nghèo tiếp tục theo tốc độ giai đoạn 2000–2013, tỷ lệ nghèo cùng cực năm 2026 khoảng 7%, thấp hơn tỷ lệ thực tế khoảng 3 điểm phần trăm [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Tương đương khoảng 240 triệu người ít rơi vào nghèo cùng cực hơn so với quỹ đạo cũ [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Lưu ý: sự chậm lại so với xu hướng 2000–2013 chỉ quan sát rõ ở ngưỡng 3,00 USD; ở ngưỡng cao hơn (ví dụ 4,20 USD), mức giảm nghèo về cơ bản vẫn theo kịp xu hướng trước 2013 [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7].",
+  "citations": [
+    "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7"
+  ],
+  "elapsed_seconds": 5.500143625002238,
+  "answerable": true,
+  "context_strict_hit": true,
+  "context_set_hit": true,
+  "first_search_hit3": true,
+  "first_search_is_original_query": false
+}

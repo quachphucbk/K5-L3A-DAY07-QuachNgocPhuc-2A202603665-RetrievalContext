@@ -1,0 +1,117 @@
+[
+  {
+    "id": "t01",
+    "split": "test",
+    "answerable": true,
+    "question": "Trong chú thích Figure 1.3, các nhóm thu nhập được cố định theo phân loại của năm nào khi so sánh 1990 và 2024?",
+    "expected_answer": "Theo phân loại năm 2024; thành phần các nền kinh tế trong mỗi nhóm được giữ cố định theo thời gian.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 55,
+        "evidence": "income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time."
+      }
+    ],
+    "provenance": "Câu mới Day 7; evidence từ text nguồn snapshot Day 6, chưa chạy retrieval/test"
+  },
+  {
+    "id": "t02",
+    "split": "test",
+    "answerable": true,
+    "question": "Tỷ lệ nghèo cùng cực ở châu Phi cận Sahara thay đổi từ bao nhiêu năm 1990 đến bao nhiêu năm 2026?",
+    "expected_answer": "Giảm từ 62% năm 1990 xuống 43% năm 2026.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 56,
+        "evidence": "There, extreme poverty rates declined from 62 percent in 1990 to 43 percent in 2026."
+      }
+    ],
+    "provenance": "Câu mới Day 7; evidence từ text nguồn snapshot Day 6, chưa chạy retrieval/test"
+  },
+  {
+    "id": "t03",
+    "split": "test",
+    "answerable": true,
+    "question": "Chú thích Figure 1.5 loại bỏ những phân vị nào ở hai đầu phân phối phúc lợi?",
+    "expected_answer": "Loại bỏ ba phân vị thấp nhất và ba phân vị cao nhất.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 58,
+        "evidence": "the figure excludes the bottom and top three percentiles of the welfare distribution."
+      }
+    ],
+    "provenance": "Câu mới Day 7; evidence từ text nguồn snapshot Day 6, chưa chạy retrieval/test"
+  },
+  {
+    "id": "t04",
+    "split": "test",
+    "answerable": true,
+    "question": "Chỉ số dissimilarity đo sự tập trung nghèo đói toàn cầu là bao nhiêu năm 2000 và năm 2024?",
+    "expected_answer": "0,31 năm 2000 và 0,65 năm 2024.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 60,
+        "evidence": "Globally, the index rose from 0.31 in 2000 to 0.33 in 2010 and 0.65 in 2024, more than doubling in a quarter century."
+      }
+    ],
+    "provenance": "Câu mới Day 7; evidence từ text nguồn snapshot Day 6, chưa chạy retrieval/test"
+  },
+  {
+    "id": "t05",
+    "split": "test",
+    "answerable": true,
+    "question": "Năm 2024, tỷ lệ nghèo của người không đi học, người có giáo dục trung học và người có giáo dục bậc cao lần lượt là bao nhiêu?",
+    "expected_answer": "Lần lượt 22%, 6% và 1%.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 68,
+        "evidence": "Individuals with no formal education in 2024 faced poverty rates of 22 percent, compared with only 6 percent among individuals with secondary education and 1 percent among individuals with tertiary education (refer to figure 1.13, panel b)."
+      }
+    ],
+    "provenance": "Câu mới Day 7; evidence từ text nguồn snapshot Day 6, chưa chạy retrieval/test"
+  },
+  {
+    "id": "tneg01",
+    "split": "test",
+    "answerable": false,
+    "question": "Báo cáo ước lượng hệ số co giãn nhân quả của nghèo đói theo giá năng lượng tại Việt Nam là bao nhiêu, kèm sai số chuẩn?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Có thảo luận về giá năng lượng/nghèo đói nhưng không có ước lượng nhân quả riêng Việt Nam kèm sai số chuẩn.",
+    "absence_check": {
+      "scope": "Toàn bộ 37 trang PDF 43–79 trong snapshot, không chỉ top-k",
+      "method": "AI rà phạm vi báo cáo và tìm chuỗi toàn corpus; số 0 không tự chứng minh vắng mọi diễn đạt tương đương",
+      "terms_and_counts": {
+        "elasticity": 0,
+        "standard error": 0,
+        "regression": 0
+      },
+      "review_status": "student_verified",
+      "reviewer": "Quách Ngọc Phúc",
+      "review_note": "Đã đối chiếu toàn bộ corpus; không có dữ liệu đủ để trả lời câu hỏi."
+    }
+  },
+  {
+    "id": "tneg02",
+    "split": "test",
+    "answerable": false,
+    "question": "Hãy trích mã nguồn Python chính xác và danh sách phiên bản thư viện mà World Bank dùng để tạo các poverty nowcast trong báo cáo.",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Kho mô tả nowcast nhưng không chứa mã nguồn Python và môi trường thư viện tái lập của tác giả.",
+    "absence_check": {
+      "scope": "Toàn bộ 37 trang PDF 43–79 trong snapshot, không chỉ top-k",
+      "method": "AI rà phạm vi báo cáo và tìm chuỗi toàn corpus; số 0 không tự chứng minh vắng mọi diễn đạt tương đương",
+      "terms_and_counts": {
+        "import pandas": 0,
+        "requirements.txt": 0,
+        "pip install": 0
+      },
+      "review_status": "student_verified",
+      "reviewer": "Quách Ngọc Phúc",
+      "review_note": "Đã đối chiếu toàn bộ corpus; không có dữ liệu đủ để trả lời câu hỏi."
+    }
+  }
+]

@@ -1,0 +1,425 @@
+{
+  "frozen_at_utc": "2026-11-14T14:07:21.910265+00:00",
+  "recorded_by": "Codex; user authorized execution after confirming all dev reviews",
+  "baseline": "baseline800",
+  "selected": "budget3200",
+  "selection_uses": "dev only; test outputs have not been run",
+  "criteria": "Chỉ chọn sau review grounded answer/citation, tiếp đến context; hòa chất lượng thì xét latency và estimated API USD. Không chọn bằng test.",
+  "reason": "budget3200 has highest reviewed answer quality (1.60/2), highest supported citation ratio (23/24), context sufficient 13/15 and no errors. It also has lower observed latency and estimated API cost than baseline and neighbors in this single dev run.",
+  "limitations": [
+    "One sample per config/query, stochastic query/model behavior; latency is not a controlled performance benchmark.",
+    "neighbors has one execution error excluded from quality denominators; its estimated cost is incomplete.",
+    "Review proposed by Codex using file evidence and explicitly confirmed per case by student; citation labels use unique citation IDs and require support for all attached occurrences.",
+    "Abstention correctness uses a strict criterion including no misleading added assertions; raw abstain status reported separately."
+  ],
+  "dev_metrics": {
+    "baseline800": {
+      "reviewed": {
+        "grounded_answer": {
+          "distribution": {
+            "0": 10,
+            "1": 2,
+            "2": 3
+          },
+          "N": 15,
+          "mean_out_of_2": 0.5333333333333333
+        },
+        "citation_validity": {
+          "n": 6,
+          "N": 7
+        },
+        "answer_citation_coverage": {
+          "n": 7,
+          "N": 7
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 8,
+          "N": 15
+        },
+        "context_sufficient_reviewed": {
+          "n": 3,
+          "N": 15
+        },
+        "errors": 0,
+        "limits": 0,
+        "context_grade_distribution": {
+          "0": 10,
+          "1": 2,
+          "2": 3
+        },
+        "technical": {
+          "scheduled": 17,
+          "status_counts": {
+            "abstain": 10,
+            "answered": 7
+          },
+          "tool_use": {
+            "n": 17,
+            "N": 17
+          },
+          "search_distribution": {
+            "4": 13,
+            "3": 1,
+            "2": 1,
+            "1": 2
+          },
+          "model_calls": 81,
+          "elapsed_seconds": 178.6972775409522,
+          "usage": {
+            "input_tokens": 138920,
+            "output_tokens": 17827,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0
+          },
+          "known_estimated_cost_usd": 0.0228055,
+          "cost_estimate_complete": true,
+          "context_evidence_exact": {
+            "n": 3,
+            "N": 15
+          },
+          "context_evidence_set": {
+            "n": 3,
+            "N": 15
+          },
+          "semantic_quality": "pending human review; status counts are not accuracy/abstention correctness",
+          "billing": "Estimate from returned usage only; not invoice or hardware cost."
+        },
+        "review_provenance": "Codex presented file evidence and proposed labels; Quách Ngọc Phúc confirmed each case in chat. One execution error acknowledged separately."
+      },
+      "technical": {
+        "scheduled": 17,
+        "status_counts": {
+          "abstain": 10,
+          "answered": 7
+        },
+        "tool_use": {
+          "n": 17,
+          "N": 17
+        },
+        "search_distribution": {
+          "4": 13,
+          "3": 1,
+          "2": 1,
+          "1": 2
+        },
+        "model_calls": 81,
+        "elapsed_seconds": 178.6972775409522,
+        "usage": {
+          "input_tokens": 138920,
+          "output_tokens": 17827,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0
+        },
+        "known_estimated_cost_usd": 0.0228055,
+        "cost_estimate_complete": true,
+        "context_evidence_exact": {
+          "n": 3,
+          "N": 15
+        },
+        "context_evidence_set": {
+          "n": 3,
+          "N": 15
+        },
+        "semantic_quality": "pending human review; status counts are not accuracy/abstention correctness",
+        "billing": "Estimate from returned usage only; not invoice or hardware cost."
+      }
+    },
+    "budget3200": {
+      "reviewed": {
+        "grounded_answer": {
+          "distribution": {
+            "0": 2,
+            "1": 2,
+            "2": 11
+          },
+          "N": 15,
+          "mean_out_of_2": 1.6
+        },
+        "citation_validity": {
+          "n": 23,
+          "N": 24
+        },
+        "answer_citation_coverage": {
+          "n": 13,
+          "N": 13
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 2,
+          "N": 15
+        },
+        "context_sufficient_reviewed": {
+          "n": 13,
+          "N": 15
+        },
+        "errors": 0,
+        "limits": 0,
+        "context_grade_distribution": {
+          "0": 1,
+          "1": 1,
+          "2": 13
+        },
+        "technical": {
+          "scheduled": 17,
+          "status_counts": {
+            "answered": 13,
+            "abstain": 4
+          },
+          "tool_use": {
+            "n": 17,
+            "N": 17
+          },
+          "search_distribution": {
+            "2": 5,
+            "4": 4,
+            "3": 2,
+            "1": 6
+          },
+          "model_calls": 58,
+          "elapsed_seconds": 147.789072080981,
+          "usage": {
+            "input_tokens": 137528,
+            "output_tokens": 17029,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0
+          },
+          "known_estimated_cost_usd": 0.0222673,
+          "cost_estimate_complete": true,
+          "context_evidence_exact": {
+            "n": 11,
+            "N": 15
+          },
+          "context_evidence_set": {
+            "n": 11,
+            "N": 15
+          },
+          "semantic_quality": "pending human review; status counts are not accuracy/abstention correctness",
+          "billing": "Estimate from returned usage only; not invoice or hardware cost."
+        },
+        "review_provenance": "Codex presented file evidence and proposed labels; Quách Ngọc Phúc confirmed each case in chat. One execution error acknowledged separately."
+      },
+      "technical": {
+        "scheduled": 17,
+        "status_counts": {
+          "answered": 13,
+          "abstain": 4
+        },
+        "tool_use": {
+          "n": 17,
+          "N": 17
+        },
+        "search_distribution": {
+          "2": 5,
+          "4": 4,
+          "3": 2,
+          "1": 6
+        },
+        "model_calls": 58,
+        "elapsed_seconds": 147.789072080981,
+        "usage": {
+          "input_tokens": 137528,
+          "output_tokens": 17029,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0
+        },
+        "known_estimated_cost_usd": 0.0222673,
+        "cost_estimate_complete": true,
+        "context_evidence_exact": {
+          "n": 11,
+          "N": 15
+        },
+        "context_evidence_set": {
+          "n": 11,
+          "N": 15
+        },
+        "semantic_quality": "pending human review; status counts are not accuracy/abstention correctness",
+        "billing": "Estimate from returned usage only; not invoice or hardware cost."
+      }
+    },
+    "neighbors3200": {
+      "reviewed": {
+        "grounded_answer": {
+          "distribution": {
+            "0": 5,
+            "1": 6,
+            "2": 3
+          },
+          "N": 14,
+          "mean_out_of_2": 0.8571428571428571
+        },
+        "citation_validity": {
+          "n": 15,
+          "N": 20
+        },
+        "answer_citation_coverage": {
+          "n": 11,
+          "N": 11
+        },
+        "abstention": {
+          "n": 1,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 3,
+          "N": 14
+        },
+        "context_sufficient_reviewed": {
+          "n": 9,
+          "N": 14
+        },
+        "errors": 1,
+        "limits": 0,
+        "context_grade_distribution": {
+          "0": 5,
+          "1": 0,
+          "2": 9
+        },
+        "technical": {
+          "scheduled": 17,
+          "status_counts": {
+            "answered": 11,
+            "abstain": 5,
+            "error": 1
+          },
+          "tool_use": {
+            "n": 16,
+            "N": 16
+          },
+          "search_distribution": {
+            "2": 3,
+            "4": 6,
+            "1": 5,
+            "3": 2
+          },
+          "model_calls": 65,
+          "elapsed_seconds": 172.94431808398804,
+          "usage": {
+            "input_tokens": 159852,
+            "output_tokens": 17895,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0
+          },
+          "known_estimated_cost_usd": 0.0249327,
+          "cost_estimate_complete": false,
+          "context_evidence_exact": {
+            "n": 7,
+            "N": 14
+          },
+          "context_evidence_set": {
+            "n": 8,
+            "N": 14
+          },
+          "semantic_quality": "pending human review; status counts are not accuracy/abstention correctness",
+          "billing": "Estimate from returned usage only; not invoice or hardware cost."
+        },
+        "review_provenance": "Codex presented file evidence and proposed labels; Quách Ngọc Phúc confirmed each case in chat. One execution error acknowledged separately."
+      },
+      "technical": {
+        "scheduled": 17,
+        "status_counts": {
+          "answered": 11,
+          "abstain": 5,
+          "error": 1
+        },
+        "tool_use": {
+          "n": 16,
+          "N": 16
+        },
+        "search_distribution": {
+          "2": 3,
+          "4": 6,
+          "1": 5,
+          "3": 2
+        },
+        "model_calls": 65,
+        "elapsed_seconds": 172.94431808398804,
+        "usage": {
+          "input_tokens": 159852,
+          "output_tokens": 17895,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0
+        },
+        "known_estimated_cost_usd": 0.0249327,
+        "cost_estimate_complete": false,
+        "context_evidence_exact": {
+          "n": 7,
+          "N": 14
+        },
+        "context_evidence_set": {
+          "n": 8,
+          "N": 14
+        },
+        "semantic_quality": "pending human review; status counts are not accuracy/abstention correctness",
+        "billing": "Estimate from returned usage only; not invoice or hardware cost."
+      }
+    }
+  },
+  "test_plan": {
+    "model": "claude-haiku-5-5",
+    "split": "test",
+    "configs": [
+      {
+        "id": "baseline800",
+        "method": "dense",
+        "top_k": 3,
+        "budget": 800,
+        "max_searches": 4,
+        "max_model_calls": 7,
+        "context_policy": "latest",
+        "parent": null,
+        "hypothesis": "Baseline để đo mất evidence khi whole chunk + header không vừa 800 ký tự."
+      },
+      {
+        "id": "budget3200",
+        "method": "dense",
+        "top_k": 3,
+        "budget": 3200,
+        "max_searches": 4,
+        "max_model_calls": 7,
+        "context_policy": "latest",
+        "parent": "baseline800",
+        "hypothesis": "Chỉ tăng budget để giữ khoảng ba chunk gần 900 ký tự kèm nguồn; có thể tăng token nhưng giảm mất evidence."
+      }
+    ]
+  },
+  "test_run_directory": "results/haiku-test-frozen-01",
+  "test_policy": "Run all 7 same test questions once per config. Preserve errors, no silent retry or tuning based on test. Human review remains pending.",
+  "files_sha256": {
+    "configs/agent-dev.json": "51e66b382683306fb64c670c46ebbce33a95e60518db011d51ab588534349aab",
+    "benchmark/dev.json": "ea683f86fc5cf68bde3ed7a71f51e79903d64f10b44c92d7eb3eda59f5dc9407",
+    "benchmark/test.json": "20f8fb174544807316fec547eb1f6e02cb004e0eabaf82b880bd6257bc5a12a6",
+    "benchmark/manifest.json": "206e1d7fbdce517410ddc7d18111a35714f9ef8e2007ae7f22d49162a612bac9",
+    "data/day6_chunks.json": "b47323422a7f91137b1e25d523ef4195be527e5b47010dbf6a102ec6c60976c9",
+    "scripts/run_frozen_test.py": "ead47d0ec48bfd7f3f0624b3806e4bd34ccfe5839a085f32d3cd3c8c3fd62217",
+    "starter/agentic.py": "8454ffea6d55afa8b5e88623f288453ea979eb806072434ec0b7fcb395562bf2",
+    "starter/__init__.py": "7a07d6a4aeea88b106859542172e15562d21d9db3ef770cb5c3ef3e626cd155c",
+    "starter/baseline.py": "03b8b16c42be7d19c820e506f4cea2a7496c462a00c77d1cfc9e7fc972301fdf",
+    "src/__init__.py": "dda77c8221a78d29f74cfeafa64ed862c8d98d95e100a09307014f5ade41a0c9",
+    "src/benchmark_agent.py": "065c6dc3a0f7d1fd3b9b1337c6d4c7ab7ebd84085b89c24fc8c67c9b7244ddaa",
+    "src/benchmark_data.py": "f4579c52f67864e29b5550daf6b270e9937d27ef431fc7606552d05754c69b40",
+    "src/benchmark_retrieval.py": "bba3156fb5ffdbc3e1da5584e90e36d05d489e2cf4978349bab5bcd36f479a27",
+    "src/context.py": "e01b839431b900fbc037752fb498ea8f27818bdfac876cbfa5976526a9a0650b",
+    "src/costs.py": "a741a7ef4f77f44b61b3296d99e5cea0ecec3c4e204ffb6fe8a5b0dbf7a579dd",
+    "src/day6_adapter.py": "8ca063a1a2d321ff61711761db938ac46d099a882d1a7851eacbdb681be97c8d",
+    "src/model_controller.py": "4abfae7451347f0af58cf350b35493fda6a472dac27837ab79c1872f9110d548",
+    "src/rag_agent.py": "8724226f1ded30606f76e87bf82286752408680debdc06178e8ed611ac778cb2",
+    "src/replay_context.py": "074b96a3f4ee5119776fd65165265fddc443ee3194465bc8d64945e4c27e8213",
+    "src/retrievers.py": "b89a8079843bc546f6fbcf8a4b43daea97a921fb12741a1254a9df7aee71bb08",
+    "src/review_agent.py": "5caac86846e96463182126eb5c8a8142b8618eec77a2c3de4fda15e1893f72c6",
+    "results/my-haiku-dev-01/run.json": "8cedf6bd32bc616d8231b48f5368075e31a1e0c53f23d70bf03479c3384524cb",
+    "results/my-haiku-dev-01/technical_summary.json": "f7e691cf066730e97d14d709da6c17062867784a686d0babab3476ebab2cc72d",
+    "results/my-haiku-dev-01/reviews/baseline800.json": "88e886fa99ccac2a301645ebecb797462b4db57760f48404178e13bbcf0e20d5",
+    "results/my-haiku-dev-01/reviews/budget3200.json": "bb0d68d704c7431107b1c486867ad22272a62733c3df70a31921c36680edcf5a",
+    "results/my-haiku-dev-01/reviews/neighbors3200.json": "0819f3b9966798031253c051b22e4f1b2c0f73fcf794fa35ee4aea51ec36f425",
+    "results/my-haiku-dev-01/review-summary-baseline800-01.json": "eaabcc51413784b02f7abdff62027d4b3ee660a9dbb66debc09bcb1ddbd427c1",
+    "results/my-haiku-dev-01/review-summary-budget3200-01.json": "f8e493600ab95be1f40e02ad7d8fb3a21ab3e18aa309441f88aab6e051c98127",
+    "results/my-haiku-dev-01/review-summary-neighbors3200-01.json": "34b31d0c6924a809786635331aec58f2cdd8138242cb786b93940c75d44871c4"
+  }
+}

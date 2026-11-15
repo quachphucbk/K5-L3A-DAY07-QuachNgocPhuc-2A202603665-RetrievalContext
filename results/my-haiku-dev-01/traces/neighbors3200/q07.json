@@ -1,0 +1,1232 @@
+{
+  "created_at_utc": "2026-11-14T10:40:42.221029+00:00",
+  "stage": "agent_dev",
+  "query_id": "q07",
+  "config_id": "neighbors3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Vì sao tăng trưởng nông nghiệp thấp trong dự báo năm 2026 làm giảm tốc độ giảm nghèo?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao tăng trưởng nông nghiệp thấp trong dự báo năm 2026 làm giảm tốc độ giảm nghèo?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gLD1hT3EwVimc8shz1",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01WigP8YRmbRLfuaPdTWXmJx",
+            "name": "search_documents",
+            "input": {
+              "query": "agricultural growth slowdown poverty reduction forecast 2026"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01WigP8YRmbRLfuaPdTWXmJx",
+          "name": "search_documents",
+          "input": {
+            "query": "agricultural growth slowdown poverty reduction forecast 2026"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1344,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 67,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001679,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1344,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.4743640829983633
+    },
+    {
+      "event": "search",
+      "query": "agricultural growth slowdown poverty reduction forecast 2026",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "forecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)",
+          "metadata": {
+            "end": 2055,
+            "start": 1428,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8908201586222523
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8884664840420338
+        },
+        {
+          "id": "de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.878014116760703
+        }
+      ],
+      "context": "[638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nforecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)\n\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\n\n[cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\n16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.\n\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n(2022).",
+      "context_candidates": [
+        {
+          "id": "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "forecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)",
+          "metadata": {
+            "end": 2055,
+            "start": 1428,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8908201586222523
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 531,
+            "end": 1427,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 0,
+            "end": 529,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.878014116760703
+        },
+        {
+          "id": "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "(2022).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 17,
+            "segment_start": 0,
+            "start": 900,
+            "end": 907,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+        "cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd",
+        "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42"
+      ],
+      "elapsed_seconds": 0.04485079200821929
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao tăng trưởng nông nghiệp thấp trong dự báo năm 2026 làm giảm tốc độ giảm nghèo?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01WigP8YRmbRLfuaPdTWXmJx",
+              "name": "search_documents",
+              "input": {
+                "query": "agricultural growth slowdown poverty reduction forecast 2026"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01WigP8YRmbRLfuaPdTWXmJx",
+              "content": "{\"current_context\": \"[638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nforecast of the World bank in June 2026 (World bank 2026c).\\n\\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\\n\\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)\\n\\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\\n\\n[cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\n16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.\\n\\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\n(2022).\", \"current_context_ids\": [\"638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6\", \"9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715\", \"cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd\", \"3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42\"], \"searched_queries\": [\"agricultural growth slowdown poverty reduction forecast 2026\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gLJzsHnLoKJCfvMgBG",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01CjnHf8uAtLrV62m6HYboDN",
+            "name": "search_documents",
+            "input": {
+              "query": "low agricultural growth slows poverty reduction because agriculture employs poor households"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01CjnHf8uAtLrV62m6HYboDN",
+          "name": "search_documents",
+          "input": {
+            "query": "low agricultural growth slows poverty reduction because agriculture employs poor households"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2781,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 101,
+          "output_tokens_details": {
+            "thinking_tokens": 30
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003286,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2781,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.4954172500001732
+    },
+    {
+      "event": "search",
+      "query": "low agricultural growth slows poverty reduction because agriculture employs poor households",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "Record maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)",
+          "metadata": {
+            "end": 2742,
+            "start": 1903,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.866406226204714
+        },
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8634701533949193
+        },
+        {
+          "id": "5b44acfbe7485f6eb4153c33d4a2f7d24f9c554b4e856070392cb635445fc7d5",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "and Prydz 2021).\n\nRegional patterns in societal poverty, as measured by the societal poverty line, mirror the patterns observed in extreme poverty rates. Although the measure is only weakly relative (refer to figure 1.17, panel a), economies with high societal poverty lines tend to exhibit lower societal poverty rates. Sub-Saharan Africa accounts for most economies with high societal poverty rates, consistent with the concentration of extreme poverty in the region (refer to figure 1.17, panel b). Higher-income economies typically exhibit lower societal poverty rates, despite their higher societal poverty lines. These comparisons depend on the level of inequality in an economy and, in particular, the concentration of people at the bottom tail (refer to chapter 2).",
+          "metadata": {
+            "end": 2653,
+            "start": 1880,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 43,
+            "segment_start": 63
+          },
+          "score": 0.8604109966509955
+        }
+      ],
+      "context": "[01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nRecord maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)\n\n[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\n\n[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\n\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n(2022).",
+      "context_candidates": [
+        {
+          "id": "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "Record maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)",
+          "metadata": {
+            "end": 2742,
+            "start": 1903,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.866406226204714
+        },
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 14,
+            "segment_start": 0,
+            "start": 1416,
+            "end": 1901,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8634701533949193
+        },
+        {
+          "id": "f91568cb14ed898d513d6b23dbf0daf9d39a36a527353145aa6496e285dd3524",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "After decades of progress, global extreme poverty is projected to rise That poverty is now concentrated in economies where progress has stalled has profound implications for the outlook on extreme poverty. Because the population is also growing most rapidly in these same economies, the rising share of the global population in these economies is pulling the global poverty rate upward, even if national rates do not worsen. The stalled reduction in poverty may not merely be a temporary setback.6 If per capita growth in these economies continues at the pace observed over 2015–24, the global extreme poverty rate and the number of people living in extreme poverty will increase by 2030 (refer to figure 1.9). This would represent an unprecedented reversal of the decades-long decline in the global number of the extreme poor.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 31,
+            "segment_start": 0,
+            "start": 933,
+            "end": 1760,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "70811f9bce64edfb0a779ee6ceed892564a26f6021871fe28723630685577428",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "Poverty rates in many low-income economies, particularly those in a fragile and conflict- affected situation, are projected to decline only marginally.8 These same economies are projected to experience substantial population growth (refer to figure 1.10).9 Thus, it is the growing population in economies with high poverty rates, not the rising poverty rates, that give these economies greater weight in the aggregate poverty rate and that is driving the projections of rising global poverty rates. Fragile economies that are involved in conflict are at the center of this pattern. Economies such as the Central African Republic, the Democratic Republic of Congo, Mozambique, Niger, Sudan, and the Federal Republic of Somalia combine some of the highest current poverty rates with some of the most rapid projected population growth.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 31,
+            "segment_start": 0,
+            "start": 2603,
+            "end": 3435,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "5b44acfbe7485f6eb4153c33d4a2f7d24f9c554b4e856070392cb635445fc7d5",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "and Prydz 2021).\n\nRegional patterns in societal poverty, as measured by the societal poverty line, mirror the patterns observed in extreme poverty rates. Although the measure is only weakly relative (refer to figure 1.17, panel a), economies with high societal poverty lines tend to exhibit lower societal poverty rates. Sub-Saharan Africa accounts for most economies with high societal poverty rates, consistent with the concentration of extreme poverty in the region (refer to figure 1.17, panel b). Higher-income economies typically exhibit lower societal poverty rates, despite their higher societal poverty lines. These comparisons depend on the level of inequality in an economy and, in particular, the concentration of people at the bottom tail (refer to chapter 2).",
+          "metadata": {
+            "end": 2653,
+            "start": 1880,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 43,
+            "segment_start": 63
+          },
+          "score": 0.8604109966509955
+        },
+        {
+          "id": "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "The societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe",
+          "metadata": {
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "printed_page": 43,
+            "segment_start": 63,
+            "start": 980,
+            "end": 1879,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+        "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+        "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+        "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42"
+      ],
+      "elapsed_seconds": 0.035460583996609785
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao tăng trưởng nông nghiệp thấp trong dự báo năm 2026 làm giảm tốc độ giảm nghèo?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01CjnHf8uAtLrV62m6HYboDN",
+              "name": "search_documents",
+              "input": {
+                "query": "low agricultural growth slows poverty reduction because agriculture employs poor households"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01CjnHf8uAtLrV62m6HYboDN",
+              "content": "{\"current_context\": \"[01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\\nRecord maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\\n\\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)\\n\\n[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\\n\\n[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\\n\\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\n(2022).\", \"current_context_ids\": [\"01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4\", \"1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f\", \"a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242\", \"3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42\"], \"searched_queries\": [\"agricultural growth slowdown poverty reduction forecast 2026\", \"low agricultural growth slows poverty reduction because agriculture employs poor households\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gLRhCMjy7bj7DzBocn",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_019nPoWihFV1Eqjrq6kgvN21",
+            "name": "search_documents",
+            "input": {
+              "query": "agricultural value added growth forecast 2026 poverty reduction slowdown"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_019nPoWihFV1Eqjrq6kgvN21",
+          "name": "search_documents",
+          "input": {
+            "query": "agricultural value added growth forecast 2026 poverty reduction slowdown"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2791,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 110,
+          "output_tokens_details": {
+            "thinking_tokens": 39
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003341,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2791,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.59350054099923
+    },
+    {
+      "event": "search",
+      "query": "agricultural value added growth forecast 2026 poverty reduction slowdown",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.885422103728183
+        },
+        {
+          "id": "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "forecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)",
+          "metadata": {
+            "end": 2055,
+            "start": 1428,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8850128054618835
+        },
+        {
+          "id": "de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.8765272645321831
+        }
+      ],
+      "context": "[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\n\n[cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\n16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.\n\n[638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nforecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)\n\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n(2022).",
+      "context_candidates": [
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.885422103728183
+        },
+        {
+          "id": "cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 0,
+            "end": 529,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "forecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 1428,
+            "end": 2055,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.8765272645321831
+        },
+        {
+          "id": "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "(2022).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 17,
+            "segment_start": 0,
+            "start": 900,
+            "end": 907,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+        "cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd",
+        "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+        "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42"
+      ],
+      "elapsed_seconds": 0.04277041699970141
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao tăng trưởng nông nghiệp thấp trong dự báo năm 2026 làm giảm tốc độ giảm nghèo?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_019nPoWihFV1Eqjrq6kgvN21",
+              "name": "search_documents",
+              "input": {
+                "query": "agricultural value added growth forecast 2026 poverty reduction slowdown"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_019nPoWihFV1Eqjrq6kgvN21",
+              "content": "{\"current_context\": \"[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\\n\\n[cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\n16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.\\n\\n[638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nforecast of the World bank in June 2026 (World bank 2026c).\\n\\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\\n\\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)\\n\\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\n(2022).\", \"current_context_ids\": [\"9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715\", \"cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd\", \"638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6\", \"3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42\"], \"searched_queries\": [\"agricultural growth slowdown poverty reduction forecast 2026\", \"low agricultural growth slows poverty reduction because agriculture employs poor households\", \"agricultural value added growth forecast 2026 poverty reduction slowdown\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gLYQGRmETPvCH1jgcp",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01FNn1nfPJAMXjgmY1e4vgxJ",
+            "name": "search_documents",
+            "input": {
+              "query": "agriculture sector growth weak poor households employment income poverty 2026 Poverty, Prosperity, and Planet"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01FNn1nfPJAMXjgmY1e4vgxJ",
+          "name": "search_documents",
+          "input": {
+            "query": "agriculture sector growth weak poor households employment income poverty 2026 Poverty, Prosperity, and Planet"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2838,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 123,
+          "output_tokens_details": {
+            "thinking_tokens": 39
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003453,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2838,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.5811312079895288
+    },
+    {
+      "event": "search",
+      "query": "agriculture sector growth weak poor households employment income poverty 2026 Poverty, Prosperity, and Planet",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.",
+          "metadata": {
+            "end": 139,
+            "start": 0,
+            "section": "Summary",
+            "chunking": "paragraph",
+            "printed_page": 12,
+            "segment_start": 0
+          },
+          "score": 0.8915029103459663
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8886972201909489
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8884131510627111
+        }
+      ],
+      "context": "[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\n\n[30bdc821421a0b45ec2ca7c23550284b8020fb98e893bdca75e99831b44f8081 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\nEighteen percent of children under the age of 18 are living in extreme poverty, compared with 6 percent among adults, and individuals with no formal education have a poverty rate of 22 percent. Extreme poverty rates in rural areas are more than three times higher than urban rates. Although extreme poverty declined across most demographic groups between 2013 and 2023, progress was slowest among households caring for children in which none or only one working-age adult was working. • Subnational data reveal that poverty is concentrated not only in specific economies, but in specific regions within these economies. Poverty has been stagnating or rising in many regions within economies in Sub-Saharan Africa and MENAAP over the past decade. • Broadening measurement beyond absolute monetary thresholds—to relative poverty lines and to multidimensional deprivation—reinforces the existence of\n\n[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\n\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\n\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n(2022).",
+      "context_candidates": [
+        {
+          "id": "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.",
+          "metadata": {
+            "end": 139,
+            "start": 0,
+            "section": "Summary",
+            "chunking": "paragraph",
+            "printed_page": 12,
+            "segment_start": 0
+          },
+          "score": 0.8915029103459663
+        },
+        {
+          "id": "30bdc821421a0b45ec2ca7c23550284b8020fb98e893bdca75e99831b44f8081",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "Eighteen percent of children under the age of 18 are living in extreme poverty, compared with 6 percent among adults, and individuals with no formal education have a poverty rate of 22 percent. Extreme poverty rates in rural areas are more than three times higher than urban rates. Although extreme poverty declined across most demographic groups between 2013 and 2023, progress was slowest among households caring for children in which none or only one working-age adult was working. • Subnational data reveal that poverty is concentrated not only in specific economies, but in specific regions within these economies. Poverty has been stagnating or rising in many regions within economies in Sub-Saharan Africa and MENAAP over the past decade. • Broadening measurement beyond absolute monetary thresholds—to relative poverty lines and to multidimensional deprivation—reinforces the existence of",
+          "metadata": {
+            "section": "Summary",
+            "printed_page": 12,
+            "segment_start": 0,
+            "start": 141,
+            "end": 1037,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8886972201909489
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 514,
+            "end": 1281,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8884131510627111
+        },
+        {
+          "id": "cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 0,
+            "end": 529,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "forecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 1428,
+            "end": 2055,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+        "30bdc821421a0b45ec2ca7c23550284b8020fb98e893bdca75e99831b44f8081",
+        "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+        "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+        "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42"
+      ],
+      "elapsed_seconds": 0.045112959007383324
+    },
+    {
+      "event": "model",
+      "step": 5,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao tăng trưởng nông nghiệp thấp trong dự báo năm 2026 làm giảm tốc độ giảm nghèo?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01FNn1nfPJAMXjgmY1e4vgxJ",
+              "name": "search_documents",
+              "input": {
+                "query": "agriculture sector growth weak poor households employment income poverty 2026 Poverty, Prosperity, and Planet"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01FNn1nfPJAMXjgmY1e4vgxJ",
+              "content": "{\"current_context\": \"[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\\n\\n[30bdc821421a0b45ec2ca7c23550284b8020fb98e893bdca75e99831b44f8081 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\nEighteen percent of children under the age of 18 are living in extreme poverty, compared with 6 percent among adults, and individuals with no formal education have a poverty rate of 22 percent. Extreme poverty rates in rural areas are more than three times higher than urban rates. Although extreme poverty declined across most demographic groups between 2013 and 2023, progress was slowest among households caring for children in which none or only one working-age adult was working. • Subnational data reveal that poverty is concentrated not only in specific economies, but in specific regions within these economies. Poverty has been stagnating or rising in many regions within economies in Sub-Saharan Africa and MENAAP over the past decade. • Broadening measurement beyond absolute monetary thresholds—to relative poverty lines and to multidimensional deprivation—reinforces the existence of\\n\\n[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\\n\\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\\n\\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\n(2022).\", \"current_context_ids\": [\"4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d\", \"30bdc821421a0b45ec2ca7c23550284b8020fb98e893bdca75e99831b44f8081\", \"bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55\", \"21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4\", \"3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42\"], \"searched_queries\": [\"agricultural growth slowdown poverty reduction forecast 2026\", \"low agricultural growth slows poverty reduction because agriculture employs poor households\", \"agricultural value added growth forecast 2026 poverty reduction slowdown\", \"agriculture sector growth weak poor households employment income poverty 2026 Poverty, Prosperity, and Planet\"], \"searches_remaining\": 0}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gLfNDKgakeWRb83JJ1",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01DSryPFg3WViY2C4zJVDX8b",
+            "name": "finish",
+            "input": {
+              "status": "abstain",
+              "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các đoạn tìm được (trang 44 và 74 của báo cáo Poverty, Prosperity, and Planet 2026) chỉ cho thấy người nghèo tập trung ở nông thôn, ít học, trẻ em và hộ có ít người trong độ tuổi lao động làm việc; tỷ lệ nghèo cùng cực ở nông thôn cao hơn thành thị hơn ba lần; và giảm nghèo cùng cực 2013–2023 chậm nhất ở hộ có trẻ em mà không có hoặc chỉ có một người trong độ tuổi lao động làm việc. Tuy nhiên, không có đoạn nào nêu dự báo tăng trưởng nông nghiệp năm 2026 hay giải thích cơ chế nông nghiệp tăng trưởng thấp làm chậm giảm nghèo. Không suy diễn thêm từ kiến thức ngoài kho.",
+              "citations": []
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01DSryPFg3WViY2C4zJVDX8b",
+          "name": "finish",
+          "input": {
+            "status": "abstain",
+            "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các đoạn tìm được (trang 44 và 74 của báo cáo Poverty, Prosperity, and Planet 2026) chỉ cho thấy người nghèo tập trung ở nông thôn, ít học, trẻ em và hộ có ít người trong độ tuổi lao động làm việc; tỷ lệ nghèo cùng cực ở nông thôn cao hơn thành thị hơn ba lần; và giảm nghèo cùng cực 2013–2023 chậm nhất ở hộ có trẻ em mà không có hoặc chỉ có một người trong độ tuổi lao động làm việc. Tuy nhiên, không có đoạn nào nêu dự báo tăng trưởng nông nghiệp năm 2026 hay giải thích cơ chế nông nghiệp tăng trưởng thấp làm chậm giảm nghèo. Không suy diễn thêm từ kiến thức ngoài kho.",
+            "citations": []
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 3124,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 526,
+          "output_tokens_details": {
+            "thinking_tokens": 91
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0005754,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 3124,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 3.2145421669993084
+    },
+    {
+      "event": "finish",
+      "status": "abstain",
+      "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các đoạn tìm được (trang 44 và 74 của báo cáo Poverty, Prosperity, and Planet 2026) chỉ cho thấy người nghèo tập trung ở nông thôn, ít học, trẻ em và hộ có ít người trong độ tuổi lao động làm việc; tỷ lệ nghèo cùng cực ở nông thôn cao hơn thành thị hơn ba lần; và giảm nghèo cùng cực 2013–2023 chậm nhất ở hộ có trẻ em mà không có hoặc chỉ có một người trong độ tuổi lao động làm việc. Tuy nhiên, không có đoạn nào nêu dự báo tăng trưởng nông nghiệp năm 2026 hay giải thích cơ chế nông nghiệp tăng trưởng thấp làm chậm giảm nghèo. Không suy diễn thêm từ kiến thức ngoài kho.",
+      "citations": [],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 4,
+  "model_calls": 5,
+  "usage": {
+    "input_tokens": 12878,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 927
+  },
+  "cost_usd": null,
+  "status": "abstain",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "neighbors"
+  },
+  "context": "[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\n\n[30bdc821421a0b45ec2ca7c23550284b8020fb98e893bdca75e99831b44f8081 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\nEighteen percent of children under the age of 18 are living in extreme poverty, compared with 6 percent among adults, and individuals with no formal education have a poverty rate of 22 percent. Extreme poverty rates in rural areas are more than three times higher than urban rates. Although extreme poverty declined across most demographic groups between 2013 and 2023, progress was slowest among households caring for children in which none or only one working-age adult was working. • Subnational data reveal that poverty is concentrated not only in specific economies, but in specific regions within these economies. Poverty has been stagnating or rising in many regions within economies in Sub-Saharan Africa and MENAAP over the past decade. • Broadening measurement beyond absolute monetary thresholds—to relative poverty lines and to multidimensional deprivation—reinforces the existence of\n\n[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\n\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\n\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n(2022).",
+  "context_ids": [
+    "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+    "30bdc821421a0b45ec2ca7c23550284b8020fb98e893bdca75e99831b44f8081",
+    "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+    "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+    "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42"
+  ],
+  "context_chunks": [
+    {
+      "id": "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 44,
+      "text": "12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.",
+      "metadata": {
+        "end": 139,
+        "start": 0,
+        "section": "Summary",
+        "chunking": "paragraph",
+        "printed_page": 12,
+        "segment_start": 0
+      },
+      "score": 0.8915029103459663
+    },
+    {
+      "id": "30bdc821421a0b45ec2ca7c23550284b8020fb98e893bdca75e99831b44f8081",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 44,
+      "text": "Eighteen percent of children under the age of 18 are living in extreme poverty, compared with 6 percent among adults, and individuals with no formal education have a poverty rate of 22 percent. Extreme poverty rates in rural areas are more than three times higher than urban rates. Although extreme poverty declined across most demographic groups between 2013 and 2023, progress was slowest among households caring for children in which none or only one working-age adult was working. • Subnational data reveal that poverty is concentrated not only in specific economies, but in specific regions within these economies. Poverty has been stagnating or rising in many regions within economies in Sub-Saharan Africa and MENAAP over the past decade. • Broadening measurement beyond absolute monetary thresholds—to relative poverty lines and to multidimensional deprivation—reinforces the existence of",
+      "metadata": {
+        "section": "Summary",
+        "printed_page": 12,
+        "segment_start": 0,
+        "start": 141,
+        "end": 1037,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 74,
+      "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+      "metadata": {
+        "end": 512,
+        "start": 0,
+        "section": "Poverty persists unevenly across people and places",
+        "chunking": "paragraph",
+        "printed_page": 42,
+        "segment_start": 0
+      },
+      "score": 0.8886972201909489
+    },
+    {
+      "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 74,
+      "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+      "metadata": {
+        "section": "Poverty persists unevenly across people and places",
+        "printed_page": 42,
+        "segment_start": 0,
+        "start": 514,
+        "end": 1281,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 49,
+      "text": "(2022).",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 17,
+        "segment_start": 0,
+        "start": 900,
+        "end": 907,
+        "chunking": "paragraph"
+      }
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 5,
+    "returned_calls": 5
+  },
+  "estimated_cost_usd": 0.0017513,
+  "answer": "Chưa đủ bằng chứng trong kho để trả lời. Các đoạn tìm được (trang 44 và 74 của báo cáo Poverty, Prosperity, and Planet 2026) chỉ cho thấy người nghèo tập trung ở nông thôn, ít học, trẻ em và hộ có ít người trong độ tuổi lao động làm việc; tỷ lệ nghèo cùng cực ở nông thôn cao hơn thành thị hơn ba lần; và giảm nghèo cùng cực 2013–2023 chậm nhất ở hộ có trẻ em mà không có hoặc chỉ có một người trong độ tuổi lao động làm việc. Tuy nhiên, không có đoạn nào nêu dự báo tăng trưởng nông nghiệp năm 2026 hay giải thích cơ chế nông nghiệp tăng trưởng thấp làm chậm giảm nghèo. Không suy diễn thêm từ kiến thức ngoài kho.",
+  "citations": [],
+  "elapsed_seconds": 9.527571667000302,
+  "answerable": true,
+  "context_strict_hit": false,
+  "context_set_hit": false,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

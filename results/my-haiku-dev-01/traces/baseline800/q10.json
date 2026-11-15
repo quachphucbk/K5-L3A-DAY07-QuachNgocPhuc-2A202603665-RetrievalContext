@@ -1,0 +1,682 @@
+{
+  "created_at_utc": "2026-11-14T10:35:47.947115+00:00",
+  "stage": "agent_dev",
+  "query_id": "q10",
+  "config_id": "baseline800",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Trong phân loại gần đúng của báo cáo, nhóm trung lưu toàn cầu sống trong khoảng thu nhập hoặc tiêu dùng bao nhiêu USD mỗi ngày?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong phân loại gần đúng của báo cáo, nhóm trung lưu toàn cầu sống trong khoảng thu nhập hoặc tiêu dùng bao nhiêu USD mỗi ngày?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2fxWqeYeKgoyjudmZAr",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_014hWDLLN4q61A4cjbYE1Vnr",
+            "name": "search_documents",
+            "input": {
+              "query": "global middle class daily income consumption range USD per day classification"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_014hWDLLN4q61A4cjbYE1Vnr",
+          "name": "search_documents",
+          "input": {
+            "query": "global middle class daily income consumption range USD per day classification"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1367,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 62,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001677,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1367,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.4966566250077449
+    },
+    {
+      "event": "search",
+      "query": "global middle class daily income consumption range USD per day classification",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+          "metadata": {
+            "end": 3083,
+            "start": 2470,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.898826074740169
+        },
+        {
+          "id": "113b2b40603ec15c2ceadfb49206131c6ceda819f5e59af328a3bf0ea7979fe7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "31 Global Poverty: Stalled Pro GreSS and riSinG Con Centration (refer to annex 1B, figure 1B.2). Across all poverty lines, the shares of the poor have risen in low-income economies, while they have fallen in upper-middle-income economies. Continued progress in middle-income economies, where structural growth challenges can impede sustained poverty reduction (World Bank 2024b), therefore remains pivotal to reducing global poverty. Many of the people who have escaped extreme poverty in middle-income economies are still living close to the $3.00 line. Incomes are clustered between $3.00 and $4.20 a day, well short of the economic security that defines the middle class (refer to box 1.3 and figure 1.3).",
+          "metadata": {
+            "end": 708,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8917586932470035
+        },
+        {
+          "id": "49dcfa6ca670b8450d6a587cc8490bfb359e85f93edc9831c6d1751417dcfdc1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 53,
+          "text": "$28.00 and above Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the distribution of the population across four welfare groups in 2000–26. the groups are defined by the $3.00-, $8.30-, and $28.00-a-person-a-day lines (expressed in 2021 purchasing power parity terms). economies are grouped according to the World bank income classification in 2024, and the grouping is held fixed over the period. because economies are classified by their status at the end of the period, those in the upper-middle- income group are the ones that grew most quickly over these years, and the improvement shown for this group partly reflects this selection. data for 2025 and 2026 are nowcasts (refer to annex 1a).",
+          "metadata": {
+            "end": 1729,
+            "start": 899,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 21,
+            "segment_start": 0
+          },
+          "score": 0.8889690637588501
+        }
+      ],
+      "context": "[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nmiddle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+      "context_candidates": [
+        {
+          "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+          "metadata": {
+            "end": 3083,
+            "start": 2470,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.898826074740169
+        },
+        {
+          "id": "113b2b40603ec15c2ceadfb49206131c6ceda819f5e59af328a3bf0ea7979fe7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "31 Global Poverty: Stalled Pro GreSS and riSinG Con Centration (refer to annex 1B, figure 1B.2). Across all poverty lines, the shares of the poor have risen in low-income economies, while they have fallen in upper-middle-income economies. Continued progress in middle-income economies, where structural growth challenges can impede sustained poverty reduction (World Bank 2024b), therefore remains pivotal to reducing global poverty. Many of the people who have escaped extreme poverty in middle-income economies are still living close to the $3.00 line. Incomes are clustered between $3.00 and $4.20 a day, well short of the economic security that defines the middle class (refer to box 1.3 and figure 1.3).",
+          "metadata": {
+            "end": 708,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8917586932470035
+        },
+        {
+          "id": "49dcfa6ca670b8450d6a587cc8490bfb359e85f93edc9831c6d1751417dcfdc1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 53,
+          "text": "$28.00 and above Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the distribution of the population across four welfare groups in 2000–26. the groups are defined by the $3.00-, $8.30-, and $28.00-a-person-a-day lines (expressed in 2021 purchasing power parity terms). economies are grouped according to the World bank income classification in 2024, and the grouping is held fixed over the period. because economies are classified by their status at the end of the period, those in the upper-middle- income group are the ones that grew most quickly over these years, and the improvement shown for this group partly reflects this selection. data for 2025 and 2026 are nowcasts (refer to annex 1a).",
+          "metadata": {
+            "end": 1729,
+            "start": 899,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 21,
+            "segment_start": 0
+          },
+          "score": 0.8889690637588501
+        }
+      ],
+      "context_ids": [
+        "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+      ],
+      "elapsed_seconds": 0.02978216699557379
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong phân loại gần đúng của báo cáo, nhóm trung lưu toàn cầu sống trong khoảng thu nhập hoặc tiêu dùng bao nhiêu USD mỗi ngày?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_014hWDLLN4q61A4cjbYE1Vnr",
+              "name": "search_documents",
+              "input": {
+                "query": "global middle class daily income consumption range USD per day classification"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_014hWDLLN4q61A4cjbYE1Vnr",
+              "content": "{\"current_context\": \"[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nmiddle class shifts with the environment in which households live.\\n\\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\\n\\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\\n\\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\", \"current_context_ids\": [\"38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1\"], \"searched_queries\": [\"global middle class daily income consumption range USD per day classification\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2fxd8R2jx8ERwDcTF5x",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_0171BHxtrEfQNYBV2p2K42W4",
+            "name": "search_documents",
+            "input": {
+              "query": "middle class defined as living on between $3 and $8.30 per day 2011 PPP thresholds"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_0171BHxtrEfQNYBV2p2K42W4",
+          "name": "search_documents",
+          "input": {
+            "query": "middle class defined as living on between $3 and $8.30 per day 2011 PPP thresholds"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1833,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 262,
+          "output_tokens_details": {
+            "thinking_tokens": 185
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003143,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1833,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.1778430410049623
+    },
+    {
+      "event": "search",
+      "query": "middle class defined as living on between $3 and $8.30 per day 2011 PPP thresholds",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "The thresholds used in this report can serve as approximate class boundaries. Each of the three poverty lines is the typical national poverty line of an income group: $3.00 a day for low-income economies, $4.20 for lower-middle-income economies, and $8.30 for upper-middle-income economies (refer to box 1.1). Households living on less than $3.00 a day are extremely poor by any standard. Those living on between $3.00 and $8.30 are above the extreme poverty line, but would count as poor in a middle-income economy and, for the most part, remain short of economic security. Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class; and those above $28.00 a day exceed the prosperity standard this report uses to gauge shared prosperity (refer to chapter 2). These thresholds are proxies. Ongoing work indicates that",
+          "metadata": {
+            "end": 1503,
+            "start": 605,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.890739175953313
+        },
+        {
+          "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+          "metadata": {
+            "end": 3083,
+            "start": 2470,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8877500031069113
+        },
+        {
+          "id": "3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 54,
+          "text": "22 POVERTY , PROSPERITY , AND PLANET REPORT 2026 in 2000 to a majority by 2026, and extreme poverty has all but disappeared. In today’s lower-middle-income economies, the group living on between $3.00 and $8.30 a day is now the largest, and the middle class, though growing, remains a minority. In low-income economies, the distribution has barely shifted. About half the population is still living on less than $3.00 a day, and the middle class is negligible. High-income economies, by contrast, are composed almost entirely of households living on more than $8.30 a day, and the majority are above the prosperity standard.",
+          "metadata": {
+            "end": 624,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 22,
+            "segment_start": 0
+          },
+          "score": 0.8772117087732328
+        }
+      ],
+      "context": "[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nmiddle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+      "context_candidates": [
+        {
+          "id": "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "The thresholds used in this report can serve as approximate class boundaries. Each of the three poverty lines is the typical national poverty line of an income group: $3.00 a day for low-income economies, $4.20 for lower-middle-income economies, and $8.30 for upper-middle-income economies (refer to box 1.1). Households living on less than $3.00 a day are extremely poor by any standard. Those living on between $3.00 and $8.30 are above the extreme poverty line, but would count as poor in a middle-income economy and, for the most part, remain short of economic security. Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class; and those above $28.00 a day exceed the prosperity standard this report uses to gauge shared prosperity (refer to chapter 2). These thresholds are proxies. Ongoing work indicates that",
+          "metadata": {
+            "end": 1503,
+            "start": 605,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.890739175953313
+        },
+        {
+          "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+          "metadata": {
+            "end": 3083,
+            "start": 2470,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8877500031069113
+        },
+        {
+          "id": "3fac16b8c36e67393af2577c13d1120cc3b0eafe580768da97b3a4b63640439e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 54,
+          "text": "22 POVERTY , PROSPERITY , AND PLANET REPORT 2026 in 2000 to a majority by 2026, and extreme poverty has all but disappeared. In today’s lower-middle-income economies, the group living on between $3.00 and $8.30 a day is now the largest, and the middle class, though growing, remains a minority. In low-income economies, the distribution has barely shifted. About half the population is still living on less than $3.00 a day, and the middle class is negligible. High-income economies, by contrast, are composed almost entirely of households living on more than $8.30 a day, and the majority are above the prosperity standard.",
+          "metadata": {
+            "end": 624,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 22,
+            "segment_start": 0
+          },
+          "score": 0.8772117087732328
+        }
+      ],
+      "context_ids": [
+        "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+      ],
+      "elapsed_seconds": 0.040124250008375384
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong phân loại gần đúng của báo cáo, nhóm trung lưu toàn cầu sống trong khoảng thu nhập hoặc tiêu dùng bao nhiêu USD mỗi ngày?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_0171BHxtrEfQNYBV2p2K42W4",
+              "name": "search_documents",
+              "input": {
+                "query": "middle class defined as living on between $3 and $8.30 per day 2011 PPP thresholds"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_0171BHxtrEfQNYBV2p2K42W4",
+              "content": "{\"current_context\": \"[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nmiddle class shifts with the environment in which households live.\\n\\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\\n\\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\\n\\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\", \"current_context_ids\": [\"38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1\"], \"searched_queries\": [\"global middle class daily income consumption range USD per day classification\", \"middle class defined as living on between $3 and $8.30 per day 2011 PPP thresholds\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2fxnJowK3FBKMTDh93Y",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01LgcUvbuda6SRUaBMtTTqVD",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Theo đoạn trích, nhóm trung lưu toàn cầu được xác định là người sống với khoảng 3,00 đến 8,30 USD mỗi ngày. Đoạn này cũng nói nhóm này gần một phần ba dân số thế giới trong suốt giai đoạn từ 2000 trở đi. Đoạn trích không nêu rõ cơ sở PPP của ngưỡng này nên tôi không suy thêm.",
+              "citations": [
+                "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01LgcUvbuda6SRUaBMtTTqVD",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Theo đoạn trích, nhóm trung lưu toàn cầu được xác định là người sống với khoảng 3,00 đến 8,30 USD mỗi ngày. Đoạn này cũng nói nhóm này gần một phần ba dân số thế giới trong suốt giai đoạn từ 2000 trở đi. Đoạn trích không nêu rõ cơ sở PPP của ngưỡng này nên tôi không suy thêm.",
+            "citations": [
+              "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1880,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 505,
+          "output_tokens_details": {
+            "thinking_tokens": 214
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0004405,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1880,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 3.641298500006087
+    },
+    {
+      "event": "invalid_finish",
+      "error": "Citation phải khớp [chunk-id] trong answer và context hiện hành"
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong phân loại gần đúng của báo cáo, nhóm trung lưu toàn cầu sống trong khoảng thu nhập hoặc tiêu dùng bao nhiêu USD mỗi ngày?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01LgcUvbuda6SRUaBMtTTqVD",
+              "name": "finish",
+              "input": {
+                "status": "answered",
+                "answer": "Theo đoạn trích, nhóm trung lưu toàn cầu được xác định là người sống với khoảng 3,00 đến 8,30 USD mỗi ngày. Đoạn này cũng nói nhóm này gần một phần ba dân số thế giới trong suốt giai đoạn từ 2000 trở đi. Đoạn trích không nêu rõ cơ sở PPP của ngưỡng này nên tôi không suy thêm.",
+                "citations": [
+                  "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+                ]
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01LgcUvbuda6SRUaBMtTTqVD",
+              "content": "{\"current_context\": \"[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nmiddle class shifts with the environment in which households live.\\n\\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\\n\\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\\n\\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\", \"current_context_ids\": [\"38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1\"], \"searched_queries\": [\"global middle class daily income consumption range USD per day classification\", \"middle class defined as living on between $3 and $8.30 per day 2011 PPP thresholds\"], \"searches_remaining\": 2, \"error\": \"Citation phải khớp [chunk-id] trong answer và context hiện hành\"}",
+              "is_error": true
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2fy3oULFC452iB4VZUr",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01FGawgiTVoRT6qmusw7xJi8",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Theo đoạn trích, nhóm trung lưu toàn cầu được xác định là người sống với khoảng 3,00 đến 8,30 USD mỗi ngày [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1]. Đoạn này cũng nêu nhóm sống với 3,00–8,30 USD mỗi ngày vẫn gần một phần ba dân số thế giới trong suốt giai đoạn từ năm 2000 [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+              "citations": [
+                "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01FGawgiTVoRT6qmusw7xJi8",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Theo đoạn trích, nhóm trung lưu toàn cầu được xác định là người sống với khoảng 3,00 đến 8,30 USD mỗi ngày [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1]. Đoạn này cũng nêu nhóm sống với 3,00–8,30 USD mỗi ngày vẫn gần một phần ba dân số thế giới trong suốt giai đoạn từ năm 2000 [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+            "citations": [
+              "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2132,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 509,
+          "output_tokens_details": {
+            "thinking_tokens": 142
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0004677,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2132,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.765680959011661
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Theo đoạn trích, nhóm trung lưu toàn cầu được xác định là người sống với khoảng 3,00 đến 8,30 USD mỗi ngày [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1]. Đoạn này cũng nêu nhóm sống với 3,00–8,30 USD mỗi ngày vẫn gần một phần ba dân số thế giới trong suốt giai đoạn từ năm 2000 [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+      "citations": [
+        "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 2,
+  "model_calls": 4,
+  "usage": {
+    "input_tokens": 7212,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1338
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 800,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nmiddle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+  "context_ids": [
+    "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+  ],
+  "context_chunks": [
+    {
+      "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 52,
+      "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+      "metadata": {
+        "end": 3083,
+        "start": 2470,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 20,
+        "segment_start": 0
+      },
+      "score": 0.8877500031069113
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 4,
+    "returned_calls": 4
+  },
+  "estimated_cost_usd": 0.0013902,
+  "answer": "Theo đoạn trích, nhóm trung lưu toàn cầu được xác định là người sống với khoảng 3,00 đến 8,30 USD mỗi ngày [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1]. Đoạn này cũng nêu nhóm sống với 3,00–8,30 USD mỗi ngày vẫn gần một phần ba dân số thế giới trong suốt giai đoạn từ năm 2000 [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+  "citations": [
+    "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+  ],
+  "elapsed_seconds": 10.151719833011157,
+  "answerable": true,
+  "context_strict_hit": false,
+  "context_set_hit": false,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

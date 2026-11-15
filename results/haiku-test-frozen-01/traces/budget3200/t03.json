@@ -1,0 +1,608 @@
+{
+  "created_at_utc": "2026-11-14T14:08:43.666570+00:00",
+  "stage": "agent_test",
+  "query_id": "t03",
+  "config_id": "budget3200",
+  "split": "test",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Chú thích Figure 1.5 loại bỏ những phân vị nào ở hai đầu phân phối phúc lợi?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chú thích Figure 1.5 loại bỏ những phân vị nào ở hai đầu phân phối phúc lợi?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xCFNxppYXSfJGLBhhn",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01X3j69ArCcbN7uYr9e8bzbN",
+            "name": "search_documents",
+            "input": {
+              "query": "Figure 1.5 note excludes percentiles tails of welfare distribution"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01X3j69ArCcbN7uYr9e8bzbN",
+          "name": "search_documents",
+          "input": {
+            "query": "Figure 1.5 note excludes percentiles tails of welfare distribution"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1336,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 70,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001686,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1336,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.0533614160085563
+    },
+    {
+      "event": "search",
+      "query": "Figure 1.5 note excludes percentiles tails of welfare distribution",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "FIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,",
+          "metadata": {
+            "end": 1597,
+            "start": 697,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.875179782488372
+        },
+        {
+          "id": "552122d69f81219d6dfa96987310304da7f3c31406c5082d1dbce1e05885f665",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "living in households with one female adult and children, and fewer than 1 percent in households in which senior adults alone cared for children (refer to figure 1.12, panel b).",
+          "metadata": {
+            "end": 1076,
+            "start": 900,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 34,
+            "segment_start": 1521
+          },
+          "score": 0.8511305540126247
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8422398065185677
+        }
+      ],
+      "context": "[d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\nFIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,\n\n[552122d69f81219d6dfa96987310304da7f3c31406c5082d1dbce1e05885f665 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 66]\nliving in households with one female adult and children, and fewer than 1 percent in households in which senior adults alone cared for children (refer to figure 1.12, panel b).\n\n[94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\n23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+      "context_candidates": [
+        {
+          "id": "d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "FIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,",
+          "metadata": {
+            "end": 1597,
+            "start": 697,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.875179782488372
+        },
+        {
+          "id": "552122d69f81219d6dfa96987310304da7f3c31406c5082d1dbce1e05885f665",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "living in households with one female adult and children, and fewer than 1 percent in households in which senior adults alone cared for children (refer to figure 1.12, panel b).",
+          "metadata": {
+            "end": 1076,
+            "start": 900,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 34,
+            "segment_start": 1521
+          },
+          "score": 0.8511305540126247
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8422398065185677
+        }
+      ],
+      "context_ids": [
+        "d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6",
+        "552122d69f81219d6dfa96987310304da7f3c31406c5082d1dbce1e05885f665",
+        "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce"
+      ],
+      "elapsed_seconds": 0.030101707990979776
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chú thích Figure 1.5 loại bỏ những phân vị nào ở hai đầu phân phối phúc lợi?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01X3j69ArCcbN7uYr9e8bzbN",
+              "name": "search_documents",
+              "input": {
+                "query": "Figure 1.5 note excludes percentiles tails of welfare distribution"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01X3j69ArCcbN7uYr9e8bzbN",
+              "content": "{\"current_context\": \"[d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\\nFIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,\\n\\n[552122d69f81219d6dfa96987310304da7f3c31406c5082d1dbce1e05885f665 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 66]\\nliving in households with one female adult and children, and fewer than 1 percent in households in which senior adults alone cared for children (refer to figure 1.12, panel b).\\n\\n[94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\\n23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,\", \"current_context_ids\": [\"d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6\", \"552122d69f81219d6dfa96987310304da7f3c31406c5082d1dbce1e05885f665\", \"94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce\"], \"searched_queries\": [\"Figure 1.5 note excludes percentiles tails of welfare distribution\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xCL5zALsg2TdbBtCKw",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_016hrxtD9asFV5fWB9Faf8j6",
+            "name": "search_documents",
+            "input": {
+              "query": "figure 1.5 welfare growth by percentile note bottom and top percentiles excluded binned distribution"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_016hrxtD9asFV5fWB9Faf8j6",
+          "name": "search_documents",
+          "input": {
+            "query": "figure 1.5 welfare growth by percentile note bottom and top percentiles excluded binned distribution"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2806,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 118,
+          "output_tokens_details": {
+            "thinking_tokens": 38
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003396,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2806,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.3729767089971574
+    },
+    {
+      "event": "search",
+      "query": "figure 1.5 welfare growth by percentile note bottom and top percentiles excluded binned distribution",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "FIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,",
+          "metadata": {
+            "end": 1597,
+            "start": 697,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8999336421529284
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8803860020407452
+        },
+        {
+          "id": "1d9e96b4d73c13712d83920ba5bfd219d5f61092df412dcbea97b5e5327758ab",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 59,
+          "text": "27 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Welfare growth in MENAAP has shown a concerning pattern. Between 2000 and 2019, welfare grew modestly, at around 1.5 percent annually, across most of the distribution. However, welfare growth among the poorest percentiles has turned negative since 2020, even as incomes higher in the distribution have continued to grow modestly. This means that the poorest are not only failing to escape poverty, but are falling farther behind. Both insufficient growth and high levels of inequality limit how effectively growth translates into poverty reduction. Since 2010, per capita incomes in low-income economies have barely risen, averaging less than 0.1 percent growth annually (World Bank 2025a). The sustained growth accelerations that have historically driven large poverty reductions in low-income economies have largely disappeared (World",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 27,
+            "segment_start": 0
+          },
+          "score": 0.8666206081735741
+        }
+      ],
+      "context": "[d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\nFIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,\n\n[f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\n1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.\n\n[1d9e96b4d73c13712d83920ba5bfd219d5f61092df412dcbea97b5e5327758ab | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 59]\n27 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Welfare growth in MENAAP has shown a concerning pattern. Between 2000 and 2019, welfare grew modestly, at around 1.5 percent annually, across most of the distribution. However, welfare growth among the poorest percentiles has turned negative since 2020, even as incomes higher in the distribution have continued to grow modestly. This means that the poorest are not only failing to escape poverty, but are falling farther behind. Both insufficient growth and high levels of inequality limit how effectively growth translates into poverty reduction. Since 2010, per capita incomes in low-income economies have barely risen, averaging less than 0.1 percent growth annually (World Bank 2025a). The sustained growth accelerations that have historically driven large poverty reductions in low-income economies have largely disappeared (World",
+      "context_candidates": [
+        {
+          "id": "d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "FIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,",
+          "metadata": {
+            "end": 1597,
+            "start": 697,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8999336421529284
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8803860020407452
+        },
+        {
+          "id": "1d9e96b4d73c13712d83920ba5bfd219d5f61092df412dcbea97b5e5327758ab",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 59,
+          "text": "27 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Welfare growth in MENAAP has shown a concerning pattern. Between 2000 and 2019, welfare grew modestly, at around 1.5 percent annually, across most of the distribution. However, welfare growth among the poorest percentiles has turned negative since 2020, even as incomes higher in the distribution have continued to grow modestly. This means that the poorest are not only failing to escape poverty, but are falling farther behind. Both insufficient growth and high levels of inequality limit how effectively growth translates into poverty reduction. Since 2010, per capita incomes in low-income economies have barely risen, averaging less than 0.1 percent growth annually (World Bank 2025a). The sustained growth accelerations that have historically driven large poverty reductions in low-income economies have largely disappeared (World",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 27,
+            "segment_start": 0
+          },
+          "score": 0.8666206081735741
+        }
+      ],
+      "context_ids": [
+        "d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6",
+        "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+        "1d9e96b4d73c13712d83920ba5bfd219d5f61092df412dcbea97b5e5327758ab"
+      ],
+      "elapsed_seconds": 0.030167082994012162
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chú thích Figure 1.5 loại bỏ những phân vị nào ở hai đầu phân phối phúc lợi?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_016hrxtD9asFV5fWB9Faf8j6",
+              "name": "search_documents",
+              "input": {
+                "query": "figure 1.5 welfare growth by percentile note bottom and top percentiles excluded binned distribution"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_016hrxtD9asFV5fWB9Faf8j6",
+              "content": "{\"current_context\": \"[d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\\nFIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,\\n\\n[f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\\n1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\\n\\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.\\n\\n[1d9e96b4d73c13712d83920ba5bfd219d5f61092df412dcbea97b5e5327758ab | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 59]\\n27 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Welfare growth in MENAAP has shown a concerning pattern. Between 2000 and 2019, welfare grew modestly, at around 1.5 percent annually, across most of the distribution. However, welfare growth among the poorest percentiles has turned negative since 2020, even as incomes higher in the distribution have continued to grow modestly. This means that the poorest are not only failing to escape poverty, but are falling farther behind. Both insufficient growth and high levels of inequality limit how effectively growth translates into poverty reduction. Since 2010, per capita incomes in low-income economies have barely risen, averaging less than 0.1 percent growth annually (World Bank 2025a). The sustained growth accelerations that have historically driven large poverty reductions in low-income economies have largely disappeared (World\", \"current_context_ids\": [\"d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6\", \"f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913\", \"1d9e96b4d73c13712d83920ba5bfd219d5f61092df412dcbea97b5e5327758ab\"], \"searched_queries\": [\"Figure 1.5 note excludes percentiles tails of welfare distribution\", \"figure 1.5 welfare growth by percentile note bottom and top percentiles excluded binned distribution\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xCRwxv1nTJMhMrvC1N",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_014dox8cyeNpXfT8Nitf6ekq",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Chú thích Figure 1.5 cho biết hình này loại bỏ ba phân vị thấp nhất và ba phân vị cao nhất của phân phối phúc lợi (bottom three percentiles và top three percentiles). Các đường growth incidence được tính cho giai đoạn 2000–2019 và 2019–2025 dựa trên phân phối phúc lợi của từng khu vực [f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913].",
+              "citations": [
+                "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_014dox8cyeNpXfT8Nitf6ekq",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Chú thích Figure 1.5 cho biết hình này loại bỏ ba phân vị thấp nhất và ba phân vị cao nhất của phân phối phúc lợi (bottom three percentiles và top three percentiles). Các đường growth incidence được tính cho giai đoạn 2000–2019 và 2019–2025 dựa trên phân phối phúc lợi của từng khu vực [f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913].",
+            "citations": [
+              "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2932,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 307,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0004467,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2932,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.9290820419992087
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Chú thích Figure 1.5 cho biết hình này loại bỏ ba phân vị thấp nhất và ba phân vị cao nhất của phân phối phúc lợi (bottom three percentiles và top three percentiles). Các đường growth incidence được tính cho giai đoạn 2000–2019 và 2019–2025 dựa trên phân phối phúc lợi của từng khu vực [f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913].",
+      "citations": [
+        "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 2,
+  "model_calls": 3,
+  "usage": {
+    "input_tokens": 7074,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 495
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\nFIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,\n\n[f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\n1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.\n\n[1d9e96b4d73c13712d83920ba5bfd219d5f61092df412dcbea97b5e5327758ab | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 59]\n27 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Welfare growth in MENAAP has shown a concerning pattern. Between 2000 and 2019, welfare grew modestly, at around 1.5 percent annually, across most of the distribution. However, welfare growth among the poorest percentiles has turned negative since 2020, even as incomes higher in the distribution have continued to grow modestly. This means that the poorest are not only failing to escape poverty, but are falling farther behind. Both insufficient growth and high levels of inequality limit how effectively growth translates into poverty reduction. Since 2010, per capita incomes in low-income economies have barely risen, averaging less than 0.1 percent growth annually (World Bank 2025a). The sustained growth accelerations that have historically driven large poverty reductions in low-income economies have largely disappeared (World",
+  "context_ids": [
+    "d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6",
+    "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+    "1d9e96b4d73c13712d83920ba5bfd219d5f61092df412dcbea97b5e5327758ab"
+  ],
+  "context_chunks": [
+    {
+      "id": "d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 58,
+      "text": "FIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,",
+      "metadata": {
+        "end": 1597,
+        "start": 697,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 26,
+        "segment_start": 0
+      },
+      "score": 0.8999336421529284
+    },
+    {
+      "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 58,
+      "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+      "metadata": {
+        "end": 2394,
+        "start": 1598,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 26,
+        "segment_start": 0
+      },
+      "score": 0.8803860020407452
+    },
+    {
+      "id": "1d9e96b4d73c13712d83920ba5bfd219d5f61092df412dcbea97b5e5327758ab",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 59,
+      "text": "27 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Welfare growth in MENAAP has shown a concerning pattern. Between 2000 and 2019, welfare grew modestly, at around 1.5 percent annually, across most of the distribution. However, welfare growth among the poorest percentiles has turned negative since 2020, even as incomes higher in the distribution have continued to grow modestly. This means that the poorest are not only failing to escape poverty, but are falling farther behind. Both insufficient growth and high levels of inequality limit how effectively growth translates into poverty reduction. Since 2010, per capita incomes in low-income economies have barely risen, averaging less than 0.1 percent growth annually (World Bank 2025a). The sustained growth accelerations that have historically driven large poverty reductions in low-income economies have largely disappeared (World",
+      "metadata": {
+        "end": 899,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 27,
+        "segment_start": 0
+      },
+      "score": 0.8666206081735741
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 3,
+    "returned_calls": 3
+  },
+  "estimated_cost_usd": 0.0009549,
+  "answer": "Chú thích Figure 1.5 cho biết hình này loại bỏ ba phân vị thấp nhất và ba phân vị cao nhất của phân phối phúc lợi (bottom three percentiles và top three percentiles). Các đường growth incidence được tính cho giai đoạn 2000–2019 và 2019–2025 dựa trên phân phối phúc lợi của từng khu vực [f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913].",
+  "citations": [
+    "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913"
+  ],
+  "elapsed_seconds": 4.415924916000222,
+  "answerable": true,
+  "context_strict_hit": true,
+  "context_set_hit": true,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

@@ -1,0 +1,115 @@
+{
+  "created_at_utc": "2026-11-14T10:33:56.819882+00:00",
+  "split": "dev",
+  "model": "claude-haiku-5-5",
+  "plan": {
+    "model": "claude-haiku-5-5",
+    "split": "dev",
+    "purpose": "Chọn/thử trên dev, không phải cấu hình cuối và không chạy test mới.",
+    "configs": [
+      {
+        "id": "baseline800",
+        "method": "dense",
+        "top_k": 3,
+        "budget": 800,
+        "max_searches": 4,
+        "max_model_calls": 7,
+        "context_policy": "latest",
+        "parent": null,
+        "hypothesis": "Baseline để đo mất evidence khi whole chunk + header không vừa 800 ký tự."
+      },
+      {
+        "id": "budget3200",
+        "method": "dense",
+        "top_k": 3,
+        "budget": 3200,
+        "max_searches": 4,
+        "max_model_calls": 7,
+        "context_policy": "latest",
+        "parent": "baseline800",
+        "hypothesis": "Chỉ tăng budget để giữ khoảng ba chunk gần 900 ký tự kèm nguồn; có thể tăng token nhưng giảm mất evidence."
+      },
+      {
+        "id": "neighbors3200",
+        "method": "dense",
+        "top_k": 3,
+        "budget": 3200,
+        "max_searches": 4,
+        "max_model_calls": 7,
+        "context_policy": "neighbors",
+        "parent": "budget3200",
+        "hypothesis": "Chỉ đổi chọn context: thêm hàng xóm cùng trang/section theo offset để nối evidence bị tách; có thể đẩy mất đoạn khác."
+      }
+    ],
+    "rationale": {
+      "top_k": "3 để xuất cùng cutoff benchmark ranking và hạn chế context nhiễu.",
+      "max_searches": "4 cho phép query gốc, viết lại/tiếng Anh và lượt tìm bổ sung; là giới hạn vận hành, chưa chứng minh tối ưu.",
+      "max_model_calls": "7 để có lượt finish/sửa citation ngoài lượt search; limit tách khỏi abstain.",
+      "common_conditions": "Cùng model, prompt, corpus, dev, top-k và giới hạn. Native auto, không ép temperature mà API đã báo deprecated.",
+      "controlled_context": "Đo context offline từ cùng retrieval trace ở bước 2 để cô lập packing. Agent có thể viết query khác giữa các run, cần báo riêng.",
+      "selection": "Chỉ chọn sau review grounded answer/citation, tiếp đến context; hòa chất lượng thì xét latency và estimated API USD. Không chọn bằng test."
+    }
+  },
+  "plan_sha256": "51e66b382683306fb64c670c46ebbce33a95e60518db011d51ab588534349aab",
+  "configs_executed": [
+    "baseline800",
+    "budget3200",
+    "neighbors3200"
+  ],
+  "query_ids": [
+    "q01",
+    "q02",
+    "q03",
+    "q04",
+    "q05",
+    "q06",
+    "q07",
+    "q08",
+    "q09",
+    "q10",
+    "q11",
+    "q12",
+    "q13",
+    "q14",
+    "q15",
+    "dneg01",
+    "dneg02"
+  ],
+  "full_dev": true,
+  "input_code_hashes": {
+    "benchmark/dev.json": "ea683f86fc5cf68bde3ed7a71f51e79903d64f10b44c92d7eb3eda59f5dc9407",
+    "benchmark/manifest.json": "206e1d7fbdce517410ddc7d18111a35714f9ef8e2007ae7f22d49162a612bac9",
+    "data/day6_chunks.json": "b47323422a7f91137b1e25d523ef4195be527e5b47010dbf6a102ec6c60976c9",
+    "starter/agentic.py": "8454ffea6d55afa8b5e88623f288453ea979eb806072434ec0b7fcb395562bf2",
+    "starter/__init__.py": "7a07d6a4aeea88b106859542172e15562d21d9db3ef770cb5c3ef3e626cd155c",
+    "starter/baseline.py": "03b8b16c42be7d19c820e506f4cea2a7496c462a00c77d1cfc9e7fc972301fdf",
+    "src/__init__.py": "dda77c8221a78d29f74cfeafa64ed862c8d98d95e100a09307014f5ade41a0c9",
+    "src/benchmark_agent.py": "065c6dc3a0f7d1fd3b9b1337c6d4c7ab7ebd84085b89c24fc8c67c9b7244ddaa",
+    "src/benchmark_data.py": "f4579c52f67864e29b5550daf6b270e9937d27ef431fc7606552d05754c69b40",
+    "src/benchmark_retrieval.py": "bba3156fb5ffdbc3e1da5584e90e36d05d489e2cf4978349bab5bcd36f479a27",
+    "src/context.py": "e01b839431b900fbc037752fb498ea8f27818bdfac876cbfa5976526a9a0650b",
+    "src/costs.py": "a741a7ef4f77f44b61b3296d99e5cea0ecec3c4e204ffb6fe8a5b0dbf7a579dd",
+    "src/day6_adapter.py": "8ca063a1a2d321ff61711761db938ac46d099a882d1a7851eacbdb681be97c8d",
+    "src/model_controller.py": "4abfae7451347f0af58cf350b35493fda6a472dac27837ab79c1872f9110d548",
+    "src/rag_agent.py": "8724226f1ded30606f76e87bf82286752408680debdc06178e8ed611ac778cb2",
+    "src/replay_context.py": "074b96a3f4ee5119776fd65165265fddc443ee3194465bc8d64945e4c27e8213",
+    "src/retrievers.py": "b89a8079843bc546f6fbcf8a4b43daea97a921fb12741a1254a9df7aee71bb08",
+    "src/review_agent.py": "5caac86846e96463182126eb5c8a8142b8618eec77a2c3de4fda15e1893f72c6"
+  },
+  "embedding": {
+    "model": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "dimensions": 384,
+    "device": "cpu",
+    "normalized": true,
+    "document_prefix": "passage: ",
+    "query_prefix": "query: ",
+    "max_tokens": 512,
+    "seed": 42
+  },
+  "source_snapshot_sha256": "9c68b613738b6d04882c2d069c760b974e78473b5a1a3dda32e8f74da66586d7",
+  "pricing_source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+  "pricing_checked_on": "2026-11-14",
+  "quality_status": "unreviewed; no automatic semantic grades",
+  "notes": "Sequential fixed config order, no temperature control, one sample per config/query; cache/model variability can affect timings and query choices."
+}

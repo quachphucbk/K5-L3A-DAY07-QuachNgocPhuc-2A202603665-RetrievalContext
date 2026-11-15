@@ -1,0 +1,98 @@
+[
+  {
+    "query_id": "t01",
+    "config_id": "baseline800",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:10:44.153649+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17",
+        "supports": true,
+        "reason": "Có trong context trang PDF 55; hỗ trợ phân loại nhóm thu nhập theo năm 2024, giữ cố định thành phần quốc gia khi so sánh 1990/2024, và số liệu phúc lợi theo PPP 2021."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ năm phân loại 2024 và ý giữ cố định thành phần quốc gia. Context đủ evidence, nguồn và trang; phần PPP 2021 cũng có trong nguồn. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "t02",
+    "config_id": "baseline800",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:12:08.475658+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0",
+        "supports": true,
+        "reason": "Có trong context trang PDF 56; hỗ trợ giảm từ 62% năm 1990 xuống 43% năm 2026 tại châu Phi cận Sahara và tỷ lệ giảm ít kể từ 2014."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng hai tỷ lệ, mốc năm và khu vực. Context đủ evidence cùng nguồn/trang; phần bổ sung về giảm ít từ năm 2014 cũng có trong nguồn. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "t03",
+    "config_id": "baseline800",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:13:42.992814+07:00",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Gold trang PDF 58 nêu Figure 1.5 loại bỏ ba phân vị thấp nhất và ba phân vị cao nhất. Context cuối chỉ có trang PDF 66 về cấu trúc hộ gia đình, không có evidence phân vị bị loại. Agent từ chối câu có đáp án. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=0, context=0 trong chat: ok."
+  },
+  {
+    "query_id": "t04",
+    "config_id": "baseline800",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:16:34.730311+07:00",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Gold trang PDF 60 nêu dissimilarity toàn cầu 0.31 năm 2000 và 0.65 năm 2024. Context cuối trang PDF 69 chỉ có tỷ lệ nghèo theo loại hộ gia đình tại châu Phi cận Sahara, không có chỉ số/giá trị được hỏi. Agent từ chối câu có đáp án. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=0, context=0 trong chat: ok."
+  },
+  {
+    "query_id": "t05",
+    "config_id": "baseline800",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:18:03.721924+07:00",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Gold trang PDF 68 nêu tỷ lệ nghèo năm 2024 lần lượt 22%, 6%, 1% cho không có giáo dục chính quy, trung học, bậc cao. Context cuối trang PDF 44 chỉ nhận xét chung người nghèo thường trẻ, nông thôn, ít học, không có ba tỷ lệ. Agent từ chối câu có đáp án. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=0, context=0 trong chat: ok."
+  },
+  {
+    "query_id": "tneg01",
+    "config_id": "baseline800",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:19:29.999199+07:00",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Benchmark tneg01 thiếu evidence về hệ số co giãn nhân quả nghèo theo giá năng lượng tại Việt Nam kèm sai số chuẩn; kiểm tra toàn corpus đã được học viên xác nhận. Agent tìm 4 lượt, context chỉ có chú thích biểu đồ nghèo, không có hệ số/sai số chuẩn. Agent từ chối và không bịa số hay dùng chỉ tiêu khác thay thế. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận từ chối đúng trong chat: ok."
+  },
+  {
+    "query_id": "tneg02",
+    "config_id": "baseline800",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:20:54.429160+07:00",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Benchmark tneg02 thiếu evidence về mã Python và phiên bản thư viện World Bank dùng cho nowcast; kiểm tra toàn corpus đã được học viên xác nhận. Agent tìm 4 lượt; context chỉ mô tả nowcast trong biểu đồ và tham chiếu annex 1a. Agent từ chối, không tạo code/phiên bản giả; gợi ý kiểm tra phụ lục không khẳng định chắc có mã. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận từ chối đúng trong chat: ok."
+  }
+]

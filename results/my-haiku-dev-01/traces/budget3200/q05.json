@@ -1,0 +1,616 @@
+{
+  "created_at_utc": "2026-11-14T10:37:39.761919+00:00",
+  "stage": "agent_dev",
+  "query_id": "q05",
+  "config_id": "budget3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Ước tính cơ sở của báo cáo giả định thu nhập của mọi người trong một quốc gia tăng như thế nào?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Ước tính cơ sở của báo cáo giả định thu nhập của mọi người trong một quốc gia tăng như thế nào?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g6m1exvhqDFKQDH1Tu",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01Kztg6BCyrnKdKaYNQfxwSX",
+            "name": "search_documents",
+            "input": {
+              "query": "assumption income growth of people in a country baseline estimate"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01Kztg6BCyrnKdKaYNQfxwSX",
+          "name": "search_documents",
+          "input": {
+            "query": "assumption income growth of people in a country baseline estimate"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1338,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 141,
+          "output_tokens_details": {
+            "thinking_tokens": 78
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002043,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1338,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 3.555832874990301
+    },
+    {
+      "event": "search",
+      "query": "assumption income growth of people in a country baseline estimate",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "https://datacatalog.worldbank.org/int/search /dataset/0067066 /pip_poverty_projections.\n\nNote: the figure reports extreme poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). Historical growth scenarios apply each economy’s observed GdP per capita growth during the stated period. GdP per capita growth forecasts use each economy’s projected GdP growth in the coming years from Global Economic Prospects, June 2026 (World bank 2026c) for 2026–27, combined with growth projections from the international Monetary Fund for 2028–30 (iMF 2025, 2026). the 2 percent and 4 percent GdP per capita growth scenarios assume growth in all economies at 2 percent or 4 percent a year.",
+          "metadata": {
+            "end": 1616,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.879291854031352
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8783980229381297
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8771110250287777
+        }
+      ],
+      "context": "[cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 64]\nhttps://datacatalog.worldbank.org/int/search /dataset/0067066 /pip_poverty_projections.\n\nNote: the figure reports extreme poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). Historical growth scenarios apply each economy’s observed GdP per capita growth during the stated period. GdP per capita growth forecasts use each economy’s projected GdP growth in the coming years from Global Economic Prospects, June 2026 (World bank 2026c) for 2026–27, combined with growth projections from the international Monetary Fund for 2028–30 (iMF 2025, 2026). the 2 percent and 4 percent GdP per capita growth scenarios assume growth in all economies at 2 percent or 4 percent a year.\n\n[f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\n1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.\n\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+      "context_candidates": [
+        {
+          "id": "cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "https://datacatalog.worldbank.org/int/search /dataset/0067066 /pip_poverty_projections.\n\nNote: the figure reports extreme poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). Historical growth scenarios apply each economy’s observed GdP per capita growth during the stated period. GdP per capita growth forecasts use each economy’s projected GdP growth in the coming years from Global Economic Prospects, June 2026 (World bank 2026c) for 2026–27, combined with growth projections from the international Monetary Fund for 2028–30 (iMF 2025, 2026). the 2 percent and 4 percent GdP per capita growth scenarios assume growth in all economies at 2 percent or 4 percent a year.",
+          "metadata": {
+            "end": 1616,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.879291854031352
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8783980229381297
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8771110250287777
+        }
+      ],
+      "context_ids": [
+        "cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52",
+        "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+      ],
+      "elapsed_seconds": 0.03702591700130142
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Ước tính cơ sở của báo cáo giả định thu nhập của mọi người trong một quốc gia tăng như thế nào?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01Kztg6BCyrnKdKaYNQfxwSX",
+              "name": "search_documents",
+              "input": {
+                "query": "assumption income growth of people in a country baseline estimate"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01Kztg6BCyrnKdKaYNQfxwSX",
+              "content": "{\"current_context\": \"[cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 64]\\nhttps://datacatalog.worldbank.org/int/search /dataset/0067066 /pip_poverty_projections.\\n\\nNote: the figure reports extreme poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). Historical growth scenarios apply each economy’s observed GdP per capita growth during the stated period. GdP per capita growth forecasts use each economy’s projected GdP growth in the coming years from Global Economic Prospects, June 2026 (World bank 2026c) for 2026–27, combined with growth projections from the international Monetary Fund for 2028–30 (iMF 2025, 2026). the 2 percent and 4 percent GdP per capita growth scenarios assume growth in all economies at 2 percent or 4 percent a year.\\n\\n[f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\\n1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\\n\\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.\\n\\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\", \"current_context_ids\": [\"cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52\", \"f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913\", \"9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715\"], \"searched_queries\": [\"assumption income growth of people in a country baseline estimate\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g71hhDxsRCcRmEn66X",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_017Q1tqT1L4NuU31Sdahcoaq",
+            "name": "search_documents",
+            "input": {
+              "query": "distribution-neutral growth assumption every household income grows same rate"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_017Q1tqT1L4NuU31Sdahcoaq",
+          "name": "search_documents",
+          "input": {
+            "query": "distribution-neutral growth assumption every household income grows same rate"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2709,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 156,
+          "output_tokens_details": {
+            "thinking_tokens": 90
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003489,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2709,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 3.484097334003309
+    },
+    {
+      "event": "search",
+      "query": "distribution-neutral growth assumption every household income grows same rate",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+          "metadata": {
+            "end": 1419,
+            "start": 589,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8831091259983478
+        },
+        {
+          "id": "069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "15 Global Poverty: Stalled Pro GreSS and riSinG Con Centration The 2026 nowcasts for poverty presented throughout this report use the growth rates in real per capita gross domestic product (GDP) of Global Economic Prospects, June 2026 (World Bank 2026c).a The baseline estimates assume that the incomes of everyone in the country grow at the same rate. However, higher prices for food and energy will affect households to a varying degree. Typically, poorer households spend a larger share of their budgets on food and energy and are thus more sensitive to price changes for these items.",
+          "metadata": {
+            "end": 587,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.868876498740042
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8680598319822403
+        }
+      ],
+      "context": "[c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\nTo investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.\n\n[069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\n15 Global Poverty: Stalled Pro GreSS and riSinG Con Centration The 2026 nowcasts for poverty presented throughout this report use the growth rates in real per capita gross domestic product (GDP) of Global Economic Prospects, June 2026 (World Bank 2026c).a The baseline estimates assume that the incomes of everyone in the country grow at the same rate. However, higher prices for food and energy will affect households to a varying degree. Typically, poorer households spend a larger share of their budgets on food and energy and are thus more sensitive to price changes for these items.\n\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+      "context_candidates": [
+        {
+          "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+          "metadata": {
+            "end": 1419,
+            "start": 589,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8831091259983478
+        },
+        {
+          "id": "069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "15 Global Poverty: Stalled Pro GreSS and riSinG Con Centration The 2026 nowcasts for poverty presented throughout this report use the growth rates in real per capita gross domestic product (GDP) of Global Economic Prospects, June 2026 (World Bank 2026c).a The baseline estimates assume that the incomes of everyone in the country grow at the same rate. However, higher prices for food and energy will affect households to a varying degree. Typically, poorer households spend a larger share of their budgets on food and energy and are thus more sensitive to price changes for these items.",
+          "metadata": {
+            "end": 587,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.868876498740042
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8680598319822403
+        }
+      ],
+      "context_ids": [
+        "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+        "069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec",
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+      ],
+      "elapsed_seconds": 0.04222795799432788
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Ước tính cơ sở của báo cáo giả định thu nhập của mọi người trong một quốc gia tăng như thế nào?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_017Q1tqT1L4NuU31Sdahcoaq",
+              "name": "search_documents",
+              "input": {
+                "query": "distribution-neutral growth assumption every household income grows same rate"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_017Q1tqT1L4NuU31Sdahcoaq",
+              "content": "{\"current_context\": \"[c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\\nTo investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.\\n\\n[069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\\n15 Global Poverty: Stalled Pro GreSS and riSinG Con Centration The 2026 nowcasts for poverty presented throughout this report use the growth rates in real per capita gross domestic product (GDP) of Global Economic Prospects, June 2026 (World Bank 2026c).a The baseline estimates assume that the incomes of everyone in the country grow at the same rate. However, higher prices for food and energy will affect households to a varying degree. Typically, poorer households spend a larger share of their budgets on food and energy and are thus more sensitive to price changes for these items.\\n\\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\", \"current_context_ids\": [\"c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8\", \"069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec\", \"9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715\"], \"searched_queries\": [\"assumption income growth of people in a country baseline estimate\", \"distribution-neutral growth assumption every household income grows same rate\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g7GskuQKXi9nSEDCTy",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01McRirYc8AMBxSgxBnaBbDY",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Ước tính cơ sở (baseline) giả định thu nhập của mọi người trong một quốc gia tăng cùng một tốc độ, tức là giả định \"trung tính về phân phối\" (distribution-neutral): các cú sốc lạm phát được phân bổ bằng nhau cho mọi hộ gia đình. Tốc độ tăng được lấy từ tốc độ tăng GDP thực bình quân đầu người trong Global Economic Prospects, June 2026 [c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8] [069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec]. Giả định này được xem là chưa phản ánh việc giá lương thực và năng lượng tăng ảnh hưởng khác nhau giữa các hộ: hộ nghèo thường chi tỷ trọng lớn hơn cho lương thực và năng lượng nên nhạy cảm hơn với thay đổi giá, do đó báo cáo còn có các kịch bản cú sốc thu nhập và cú sốc giá để phân bổ không đều [9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715].",
+              "citations": [
+                "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+                "069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec",
+                "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01McRirYc8AMBxSgxBnaBbDY",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Ước tính cơ sở (baseline) giả định thu nhập của mọi người trong một quốc gia tăng cùng một tốc độ, tức là giả định \"trung tính về phân phối\" (distribution-neutral): các cú sốc lạm phát được phân bổ bằng nhau cho mọi hộ gia đình. Tốc độ tăng được lấy từ tốc độ tăng GDP thực bình quân đầu người trong Global Economic Prospects, June 2026 [c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8] [069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec]. Giả định này được xem là chưa phản ánh việc giá lương thực và năng lượng tăng ảnh hưởng khác nhau giữa các hộ: hộ nghèo thường chi tỷ trọng lớn hơn cho lương thực và năng lượng nên nhạy cảm hơn với thay đổi giá, do đó báo cáo còn có các kịch bản cú sốc thu nhập và cú sốc giá để phân bổ không đều [9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715].",
+            "citations": [
+              "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+              "069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec",
+              "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2647,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 671,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0006002,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2647,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 5.429687666008249
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Ước tính cơ sở (baseline) giả định thu nhập của mọi người trong một quốc gia tăng cùng một tốc độ, tức là giả định \"trung tính về phân phối\" (distribution-neutral): các cú sốc lạm phát được phân bổ bằng nhau cho mọi hộ gia đình. Tốc độ tăng được lấy từ tốc độ tăng GDP thực bình quân đầu người trong Global Economic Prospects, June 2026 [c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8] [069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec]. Giả định này được xem là chưa phản ánh việc giá lương thực và năng lượng tăng ảnh hưởng khác nhau giữa các hộ: hộ nghèo thường chi tỷ trọng lớn hơn cho lương thực và năng lượng nên nhạy cảm hơn với thay đổi giá, do đó báo cáo còn có các kịch bản cú sốc thu nhập và cú sốc giá để phân bổ không đều [9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715].",
+      "citations": [
+        "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+        "069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec",
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 2,
+  "model_calls": 3,
+  "usage": {
+    "input_tokens": 6694,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 968
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\nTo investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.\n\n[069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\n15 Global Poverty: Stalled Pro GreSS and riSinG Con Centration The 2026 nowcasts for poverty presented throughout this report use the growth rates in real per capita gross domestic product (GDP) of Global Economic Prospects, June 2026 (World Bank 2026c).a The baseline estimates assume that the incomes of everyone in the country grow at the same rate. However, higher prices for food and energy will affect households to a varying degree. Typically, poorer households spend a larger share of their budgets on food and energy and are thus more sensitive to price changes for these items.\n\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+  "context_ids": [
+    "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+    "069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec",
+    "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+  ],
+  "context_chunks": [
+    {
+      "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 47,
+      "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+      "metadata": {
+        "end": 1419,
+        "start": 589,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 15,
+        "segment_start": 0
+      },
+      "score": 0.8831091259983478
+    },
+    {
+      "id": "069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 47,
+      "text": "15 Global Poverty: Stalled Pro GreSS and riSinG Con Centration The 2026 nowcasts for poverty presented throughout this report use the growth rates in real per capita gross domestic product (GDP) of Global Economic Prospects, June 2026 (World Bank 2026c).a The baseline estimates assume that the incomes of everyone in the country grow at the same rate. However, higher prices for food and energy will affect households to a varying degree. Typically, poorer households spend a larger share of their budgets on food and energy and are thus more sensitive to price changes for these items.",
+      "metadata": {
+        "end": 587,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 15,
+        "segment_start": 0
+      },
+      "score": 0.868876498740042
+    },
+    {
+      "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 48,
+      "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+      "metadata": {
+        "end": 1427,
+        "start": 531,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 16,
+        "segment_start": 0
+      },
+      "score": 0.8680598319822403
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 3,
+    "returned_calls": 3
+  },
+  "estimated_cost_usd": 0.0011534,
+  "answer": "Ước tính cơ sở (baseline) giả định thu nhập của mọi người trong một quốc gia tăng cùng một tốc độ, tức là giả định \"trung tính về phân phối\" (distribution-neutral): các cú sốc lạm phát được phân bổ bằng nhau cho mọi hộ gia đình. Tốc độ tăng được lấy từ tốc độ tăng GDP thực bình quân đầu người trong Global Economic Prospects, June 2026 [c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8] [069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec]. Giả định này được xem là chưa phản ánh việc giá lương thực và năng lượng tăng ảnh hưởng khác nhau giữa các hộ: hộ nghèo thường chi tỷ trọng lớn hơn cho lương thực và năng lượng nên nhạy cảm hơn với thay đổi giá, do đó báo cáo còn có các kịch bản cú sốc thu nhập và cú sốc giá để phân bổ không đều [9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715].",
+  "citations": [
+    "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+    "069d15dae0269bfe433f315844d13886f96a06f46c88d5adfc6eabb7c47e66ec",
+    "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+  ],
+  "elapsed_seconds": 12.54909845799557,
+  "answerable": true,
+  "context_strict_hit": true,
+  "context_set_hit": true,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

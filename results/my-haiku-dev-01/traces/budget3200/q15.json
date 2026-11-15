@@ -1,0 +1,1030 @@
+{
+  "created_at_utc": "2026-11-14T10:38:55.245411+00:00",
+  "stage": "agent_dev",
+  "query_id": "q15",
+  "config_id": "budget3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Các mô phỏng dự báo nghèo giả định gì về bất bình đẳng trong từng quốc gia, và kết quả sẽ thay đổi thế nào nếu tăng trưởng có lợi cho người nghèo?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Các mô phỏng dự báo nghèo giả định gì về bất bình đẳng trong từng quốc gia, và kết quả sẽ thay đổi thế nào nếu tăng trưởng có lợi cho người nghèo?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gCJqiuHBmgk78Tski5",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_019idpU3Dni6VDVLcdCjVWJM",
+            "name": "search_documents",
+            "input": {
+              "query": "poverty projections assumptions inequality within countries pro-poor growth simulations"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_019idpU3Dni6VDVLcdCjVWJM",
+          "name": "search_documents",
+          "input": {
+            "query": "poverty projections assumptions inequality within countries pro-poor growth simulations"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1372,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 70,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001722,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1372,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.5758352499979082
+    },
+    {
+      "event": "search",
+      "query": "poverty projections assumptions inequality within countries pro-poor growth simulations",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8907120889000856
+        },
+        {
+          "id": "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,",
+          "metadata": {
+            "end": 900,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.8800782632781126
+        },
+        {
+          "id": "cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "https://datacatalog.worldbank.org/int/search /dataset/0067066 /pip_poverty_projections.\n\nNote: the figure reports extreme poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). Historical growth scenarios apply each economy’s observed GdP per capita growth during the stated period. GdP per capita growth forecasts use each economy’s projected GdP growth in the coming years from Global Economic Prospects, June 2026 (World bank 2026c) for 2026–27, combined with growth projections from the international Monetary Fund for 2028–30 (iMF 2025, 2026). the 2 percent and 4 percent GdP per capita growth scenarios assume growth in all economies at 2 percent or 4 percent a year.",
+          "metadata": {
+            "end": 1616,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.8754725530461951
+        }
+      ],
+      "context": "[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\n\n[3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 64]\n32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,\n\n[cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 64]\nhttps://datacatalog.worldbank.org/int/search /dataset/0067066 /pip_poverty_projections.\n\nNote: the figure reports extreme poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). Historical growth scenarios apply each economy’s observed GdP per capita growth during the stated period. GdP per capita growth forecasts use each economy’s projected GdP growth in the coming years from Global Economic Prospects, June 2026 (World bank 2026c) for 2026–27, combined with growth projections from the international Monetary Fund for 2028–30 (iMF 2025, 2026). the 2 percent and 4 percent GdP per capita growth scenarios assume growth in all economies at 2 percent or 4 percent a year.",
+      "context_candidates": [
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8907120889000856
+        },
+        {
+          "id": "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,",
+          "metadata": {
+            "end": 900,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.8800782632781126
+        },
+        {
+          "id": "cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "https://datacatalog.worldbank.org/int/search /dataset/0067066 /pip_poverty_projections.\n\nNote: the figure reports extreme poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). Historical growth scenarios apply each economy’s observed GdP per capita growth during the stated period. GdP per capita growth forecasts use each economy’s projected GdP growth in the coming years from Global Economic Prospects, June 2026 (World bank 2026c) for 2026–27, combined with growth projections from the international Monetary Fund for 2028–30 (iMF 2025, 2026). the 2 percent and 4 percent GdP per capita growth scenarios assume growth in all economies at 2 percent or 4 percent a year.",
+          "metadata": {
+            "end": 1616,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.8754725530461951
+        }
+      ],
+      "context_ids": [
+        "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+        "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2",
+        "cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52"
+      ],
+      "elapsed_seconds": 0.04349979200924281
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Các mô phỏng dự báo nghèo giả định gì về bất bình đẳng trong từng quốc gia, và kết quả sẽ thay đổi thế nào nếu tăng trưởng có lợi cho người nghèo?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_019idpU3Dni6VDVLcdCjVWJM",
+              "name": "search_documents",
+              "input": {
+                "query": "poverty projections assumptions inequality within countries pro-poor growth simulations"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_019idpU3Dni6VDVLcdCjVWJM",
+              "content": "{\"current_context\": \"[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\\n\\n[3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 64]\\n32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,\\n\\n[cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 64]\\nhttps://datacatalog.worldbank.org/int/search /dataset/0067066 /pip_poverty_projections.\\n\\nNote: the figure reports extreme poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). Historical growth scenarios apply each economy’s observed GdP per capita growth during the stated period. GdP per capita growth forecasts use each economy’s projected GdP growth in the coming years from Global Economic Prospects, June 2026 (World bank 2026c) for 2026–27, combined with growth projections from the international Monetary Fund for 2028–30 (iMF 2025, 2026). the 2 percent and 4 percent GdP per capita growth scenarios assume growth in all economies at 2 percent or 4 percent a year.\", \"current_context_ids\": [\"a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242\", \"3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2\", \"cc8687f4b86531f08030e3c169c633d42182a3cf92506e880c9ea6aed51e7f52\"], \"searched_queries\": [\"poverty projections assumptions inequality within countries pro-poor growth simulations\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gCWHnXds1LYrweUT3y",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01Jvnkh58YW4k1ucVbG67zoQ",
+            "name": "search_documents",
+            "input": {
+              "query": "pro-poor growth scenario lower poverty projection inequality reduction 2030 extreme poverty simulation"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01Jvnkh58YW4k1ucVbG67zoQ",
+          "name": "search_documents",
+          "input": {
+            "query": "pro-poor growth scenario lower poverty projection inequality reduction 2030 extreme poverty simulation"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2860,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 205,
+          "output_tokens_details": {
+            "thinking_tokens": 123
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003885,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2860,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.044320166009129
+    },
+    {
+      "event": "search",
+      "query": "pro-poor growth scenario lower poverty projection inequality reduction 2030 extreme poverty simulation",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.9133756808414666
+        },
+        {
+          "id": "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,",
+          "metadata": {
+            "end": 900,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.9003458082469832
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8986026584269217
+        }
+      ],
+      "context": "[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\n\n[3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 64]\n32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,\n\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+      "context_candidates": [
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.9133756808414666
+        },
+        {
+          "id": "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 64,
+          "text": "32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,",
+          "metadata": {
+            "end": 900,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 32,
+            "segment_start": 0
+          },
+          "score": 0.9003458082469832
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8986026584269217
+        }
+      ],
+      "context_ids": [
+        "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+        "3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2",
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+      ],
+      "elapsed_seconds": 0.022035916001186706
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Các mô phỏng dự báo nghèo giả định gì về bất bình đẳng trong từng quốc gia, và kết quả sẽ thay đổi thế nào nếu tăng trưởng có lợi cho người nghèo?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01Jvnkh58YW4k1ucVbG67zoQ",
+              "name": "search_documents",
+              "input": {
+                "query": "pro-poor growth scenario lower poverty projection inequality reduction 2030 extreme poverty simulation"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01Jvnkh58YW4k1ucVbG67zoQ",
+              "content": "{\"current_context\": \"[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\\n\\n[3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 64]\\n32 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.9 Extreme poverty is projected to increase under current conditions 8.5 9.0 9.5 10.0 10.5 Population in extreme poverty (%) Population in poverty (millions) 2025 2026 2027 2028 2029 2030 a. Extreme poverty rate 700 750 800 850 900 2025 2026 2027 2028 2029 2030 b. Population in poverty Historical growth (2000−09) GDP per capita growth forecast Historical growth (2015−24) 2% GDP per capita growth Historical growth (2010−19) 4% GDP per capita growth Sources: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org /home; Poverty and inequality Platform Poverty Projections, World bank,\\n\\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\", \"current_context_ids\": [\"a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242\", \"3a8975e288c78713c5b7b31594b081bf3894bf6b139a051bf0c915529220acd2\", \"9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715\"], \"searched_queries\": [\"poverty projections assumptions inequality within countries pro-poor growth simulations\", \"pro-poor growth scenario lower poverty projection inequality reduction 2030 extreme poverty simulation\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gCf4P91CdaYEZ5XH39",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_019DgLJK6apZ1z1n5rD3RT1n",
+            "name": "search_documents",
+            "input": {
+              "query": "poverty projections country level distribution-neutral assumption within-country inequality constant growth incidence curve"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_019DgLJK6apZ1z1n5rD3RT1n",
+          "name": "search_documents",
+          "input": {
+            "query": "poverty projections country level distribution-neutral assumption within-country inequality constant growth incidence curve"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2927,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 215,
+          "output_tokens_details": {
+            "thinking_tokens": 137
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0004002,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2927,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.0381422079954064
+    },
+    {
+      "event": "search",
+      "query": "poverty projections country level distribution-neutral assumption within-country inequality constant growth incidence curve",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8779062628746095
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8754439205460454
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8723925948143068
+        }
+      ],
+      "context": "[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\n\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\n\n[f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\n1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+      "context_candidates": [
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8779062628746095
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8754439205460454
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8723925948143068
+        }
+      ],
+      "context_ids": [
+        "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+        "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913"
+      ],
+      "elapsed_seconds": 0.04714479099493474
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Các mô phỏng dự báo nghèo giả định gì về bất bình đẳng trong từng quốc gia, và kết quả sẽ thay đổi thế nào nếu tăng trưởng có lợi cho người nghèo?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_019DgLJK6apZ1z1n5rD3RT1n",
+              "name": "search_documents",
+              "input": {
+                "query": "poverty projections country level distribution-neutral assumption within-country inequality constant growth incidence curve"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_019DgLJK6apZ1z1n5rD3RT1n",
+              "content": "{\"current_context\": \"[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\\n\\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\\n\\n[f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\\n1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\\n\\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.\", \"current_context_ids\": [\"a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242\", \"9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715\", \"f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913\"], \"searched_queries\": [\"poverty projections assumptions inequality within countries pro-poor growth simulations\", \"pro-poor growth scenario lower poverty projection inequality reduction 2030 extreme poverty simulation\", \"poverty projections country level distribution-neutral assumption within-country inequality constant growth incidence curve\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gCpe7BpCZmASxYrPKn",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01MA6mEqtRCx2G4UQMaDCxiC",
+            "name": "search_documents",
+            "input": {
+              "query": "pro-poor growth scenario reduces poverty rate projection 2030 compared with distribution-neutral baseline"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01MA6mEqtRCx2G4UQMaDCxiC",
+          "name": "search_documents",
+          "input": {
+            "query": "pro-poor growth scenario reduces poverty rate projection 2030 compared with distribution-neutral baseline"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2841,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 246,
+          "output_tokens_details": {
+            "thinking_tokens": 163
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0004071,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2841,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.376544874990941
+    },
+    {
+      "event": "search",
+      "query": "pro-poor growth scenario reduces poverty rate projection 2030 compared with distribution-neutral baseline",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.9093288129168058
+        },
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.895906394964077
+        },
+        {
+          "id": "27a273530e9c674a6fbfeceedc214689842a4f534c37820348d6d5ba85172ed2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 51,
+          "text": "Note: the figure reports poverty rates using 2021 purchasing power parities (refer to box 1.1). in panel a, the horizontal dashed line is drawn at 3 percent in 2030, which is the World bank’s target for ending extreme poverty. in panel b, the horizontal dashed line is drawn at 256 million, which represents 3 percent of the global population projected for 2030. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population in low-income and lower-middle-income economies (refer to box 1.4 and annex 1a).",
+          "metadata": {
+            "end": 1200,
+            "start": 530,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 19,
+            "segment_start": 0
+          },
+          "score": 0.8878269195556641
+        }
+      ],
+      "context": "[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\n\n[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\n\n[27a273530e9c674a6fbfeceedc214689842a4f534c37820348d6d5ba85172ed2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 51]\nNote: the figure reports poverty rates using 2021 purchasing power parities (refer to box 1.1). in panel a, the horizontal dashed line is drawn at 3 percent in 2030, which is the World bank’s target for ending extreme poverty. in panel b, the horizontal dashed line is drawn at 256 million, which represents 3 percent of the global population projected for 2030. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population in low-income and lower-middle-income economies (refer to box 1.4 and annex 1a).",
+      "context_candidates": [
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.9093288129168058
+        },
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.895906394964077
+        },
+        {
+          "id": "27a273530e9c674a6fbfeceedc214689842a4f534c37820348d6d5ba85172ed2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 51,
+          "text": "Note: the figure reports poverty rates using 2021 purchasing power parities (refer to box 1.1). in panel a, the horizontal dashed line is drawn at 3 percent in 2030, which is the World bank’s target for ending extreme poverty. in panel b, the horizontal dashed line is drawn at 256 million, which represents 3 percent of the global population projected for 2030. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population in low-income and lower-middle-income economies (refer to box 1.4 and annex 1a).",
+          "metadata": {
+            "end": 1200,
+            "start": 530,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 19,
+            "segment_start": 0
+          },
+          "score": 0.8878269195556641
+        }
+      ],
+      "context_ids": [
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+        "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+        "27a273530e9c674a6fbfeceedc214689842a4f534c37820348d6d5ba85172ed2"
+      ],
+      "elapsed_seconds": 0.022653292005998082
+    },
+    {
+      "event": "model",
+      "step": 5,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Các mô phỏng dự báo nghèo giả định gì về bất bình đẳng trong từng quốc gia, và kết quả sẽ thay đổi thế nào nếu tăng trưởng có lợi cho người nghèo?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01MA6mEqtRCx2G4UQMaDCxiC",
+              "name": "search_documents",
+              "input": {
+                "query": "pro-poor growth scenario reduces poverty rate projection 2030 compared with distribution-neutral baseline"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01MA6mEqtRCx2G4UQMaDCxiC",
+              "content": "{\"current_context\": \"[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\\n\\n[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\\n\\n[27a273530e9c674a6fbfeceedc214689842a4f534c37820348d6d5ba85172ed2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 51]\\nNote: the figure reports poverty rates using 2021 purchasing power parities (refer to box 1.1). in panel a, the horizontal dashed line is drawn at 3 percent in 2030, which is the World bank’s target for ending extreme poverty. in panel b, the horizontal dashed line is drawn at 256 million, which represents 3 percent of the global population projected for 2030. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population in low-income and lower-middle-income economies (refer to box 1.4 and annex 1a).\", \"current_context_ids\": [\"9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715\", \"a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242\", \"27a273530e9c674a6fbfeceedc214689842a4f534c37820348d6d5ba85172ed2\"], \"searched_queries\": [\"poverty projections assumptions inequality within countries pro-poor growth simulations\", \"pro-poor growth scenario lower poverty projection inequality reduction 2030 extreme poverty simulation\", \"poverty projections country level distribution-neutral assumption within-country inequality constant growth incidence curve\", \"pro-poor growth scenario reduces poverty rate projection 2030 compared with distribution-neutral baseline\"], \"searches_remaining\": 0}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gCzdcvjhSCqPFhj3vY",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01NH3KRfBdsnGBcsthpWQ78m",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Theo bằng chứng tìm được, các mô phỏng dự báo nghèo giả định bất bình đẳng trong từng quốc gia không đổi: các mô phỏng này giữ bất bình đẳng trong nội bộ quốc gia ở mức hiện tại [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242]. Kịch bản nền cho năm 2026 dùng dự báo tăng trưởng \"distribution-neutral\" (không phân phối lại), tức tăng trưởng không thay đổi phân phối thu nhập [9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715].\n\nNếu tăng trưởng có lợi cho người nghèo, tài liệu nói tỷ lệ nghèo dự báo sẽ thấp hơn [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242]. Tài liệu cũng nêu tăng trưởng nông nghiệp thường có lợi cho người nghèo nhiều hơn, nhưng hiệu ứng này giảm dần khi nền kinh tế giàu lên [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242].\n\nHạn chế: các đoạn tìm được không định lượng mức giảm nghèo khi tăng trưởng có lợi cho người nghèo, và không nêu kết quả theo từng quốc gia. Các con số 8% và trên 9% trong đoạn nguồn áp dụng cho tỷ lệ nghèo toàn cầu năm 2030 dưới giả định bất bình đẳng không đổi, không phải kết quả của kịch bản pro-poor.",
+              "citations": [
+                "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+                "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01NH3KRfBdsnGBcsthpWQ78m",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Theo bằng chứng tìm được, các mô phỏng dự báo nghèo giả định bất bình đẳng trong từng quốc gia không đổi: các mô phỏng này giữ bất bình đẳng trong nội bộ quốc gia ở mức hiện tại [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242]. Kịch bản nền cho năm 2026 dùng dự báo tăng trưởng \"distribution-neutral\" (không phân phối lại), tức tăng trưởng không thay đổi phân phối thu nhập [9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715].\n\nNếu tăng trưởng có lợi cho người nghèo, tài liệu nói tỷ lệ nghèo dự báo sẽ thấp hơn [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242]. Tài liệu cũng nêu tăng trưởng nông nghiệp thường có lợi cho người nghèo nhiều hơn, nhưng hiệu ứng này giảm dần khi nền kinh tế giàu lên [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242].\n\nHạn chế: các đoạn tìm được không định lượng mức giảm nghèo khi tăng trưởng có lợi cho người nghèo, và không nêu kết quả theo từng quốc gia. Các con số 8% và trên 9% trong đoạn nguồn áp dụng cho tỷ lệ nghèo toàn cầu năm 2030 dưới giả định bất bình đẳng không đổi, không phải kết quả của kịch bản pro-poor.",
+            "citations": [
+              "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+              "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2857,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1213,
+          "output_tokens_details": {
+            "thinking_tokens": 392
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0008922,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2857,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 7.151716417007265
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Theo bằng chứng tìm được, các mô phỏng dự báo nghèo giả định bất bình đẳng trong từng quốc gia không đổi: các mô phỏng này giữ bất bình đẳng trong nội bộ quốc gia ở mức hiện tại [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242]. Kịch bản nền cho năm 2026 dùng dự báo tăng trưởng \"distribution-neutral\" (không phân phối lại), tức tăng trưởng không thay đổi phân phối thu nhập [9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715].\n\nNếu tăng trưởng có lợi cho người nghèo, tài liệu nói tỷ lệ nghèo dự báo sẽ thấp hơn [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242]. Tài liệu cũng nêu tăng trưởng nông nghiệp thường có lợi cho người nghèo nhiều hơn, nhưng hiệu ứng này giảm dần khi nền kinh tế giàu lên [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242].\n\nHạn chế: các đoạn tìm được không định lượng mức giảm nghèo khi tăng trưởng có lợi cho người nghèo, và không nêu kết quả theo từng quốc gia. Các con số 8% và trên 9% trong đoạn nguồn áp dụng cho tỷ lệ nghèo toàn cầu năm 2030 dưới giả định bất bình đẳng không đổi, không phải kết quả của kịch bản pro-poor.",
+      "citations": [
+        "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 4,
+  "model_calls": 5,
+  "usage": {
+    "input_tokens": 12857,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1949
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\n\n[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\n\n[27a273530e9c674a6fbfeceedc214689842a4f534c37820348d6d5ba85172ed2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 51]\nNote: the figure reports poverty rates using 2021 purchasing power parities (refer to box 1.1). in panel a, the horizontal dashed line is drawn at 3 percent in 2030, which is the World bank’s target for ending extreme poverty. in panel b, the horizontal dashed line is drawn at 256 million, which represents 3 percent of the global population projected for 2030. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population in low-income and lower-middle-income economies (refer to box 1.4 and annex 1a).",
+  "context_ids": [
+    "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+    "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+    "27a273530e9c674a6fbfeceedc214689842a4f534c37820348d6d5ba85172ed2"
+  ],
+  "context_chunks": [
+    {
+      "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 48,
+      "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+      "metadata": {
+        "end": 1427,
+        "start": 531,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 16,
+        "segment_start": 0
+      },
+      "score": 0.9093288129168058
+    },
+    {
+      "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 63,
+      "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+      "metadata": {
+        "end": 2601,
+        "start": 1762,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 31,
+        "segment_start": 0
+      },
+      "score": 0.895906394964077
+    },
+    {
+      "id": "27a273530e9c674a6fbfeceedc214689842a4f534c37820348d6d5ba85172ed2",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 51,
+      "text": "Note: the figure reports poverty rates using 2021 purchasing power parities (refer to box 1.1). in panel a, the horizontal dashed line is drawn at 3 percent in 2030, which is the World bank’s target for ending extreme poverty. in panel b, the horizontal dashed line is drawn at 256 million, which represents 3 percent of the global population projected for 2030. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population in low-income and lower-middle-income economies (refer to box 1.4 and annex 1a).",
+      "metadata": {
+        "end": 1200,
+        "start": 530,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 19,
+        "segment_start": 0
+      },
+      "score": 0.8878269195556641
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 5,
+    "returned_calls": 5
+  },
+  "estimated_cost_usd": 0.0022602,
+  "answer": "Theo bằng chứng tìm được, các mô phỏng dự báo nghèo giả định bất bình đẳng trong từng quốc gia không đổi: các mô phỏng này giữ bất bình đẳng trong nội bộ quốc gia ở mức hiện tại [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242]. Kịch bản nền cho năm 2026 dùng dự báo tăng trưởng \"distribution-neutral\" (không phân phối lại), tức tăng trưởng không thay đổi phân phối thu nhập [9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715].\n\nNếu tăng trưởng có lợi cho người nghèo, tài liệu nói tỷ lệ nghèo dự báo sẽ thấp hơn [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242]. Tài liệu cũng nêu tăng trưởng nông nghiệp thường có lợi cho người nghèo nhiều hơn, nhưng hiệu ứng này giảm dần khi nền kinh tế giàu lên [a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242].\n\nHạn chế: các đoạn tìm được không định lượng mức giảm nghèo khi tăng trưởng có lợi cho người nghèo, và không nêu kết quả theo từng quốc gia. Các con số 8% và trên 9% trong đoạn nguồn áp dụng cho tỷ lệ nghèo toàn cầu năm 2030 dưới giả định bất bình đẳng không đổi, không phải kết quả của kịch bản pro-poor.",
+  "citations": [
+    "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+    "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715"
+  ],
+  "elapsed_seconds": 16.322263875001227,
+  "answerable": true,
+  "context_strict_hit": true,
+  "context_set_hit": true,
+  "first_search_hit3": true,
+  "first_search_is_original_query": false
+}

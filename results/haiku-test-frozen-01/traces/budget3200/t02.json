@@ -1,0 +1,399 @@
+{
+  "created_at_utc": "2026-11-14T14:08:40.115686+00:00",
+  "stage": "agent_test",
+  "query_id": "t02",
+  "config_id": "budget3200",
+  "split": "test",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Tỷ lệ nghèo cùng cực ở châu Phi cận Sahara thay đổi từ bao nhiêu năm 1990 đến bao nhiêu năm 2026?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Tỷ lệ nghèo cùng cực ở châu Phi cận Sahara thay đổi từ bao nhiêu năm 1990 đến bao nhiêu năm 2026?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xBz6Tidh7hTkwPHCv6",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01FMM2z4n7mGYN7HG9mDGqVJ",
+            "name": "search_documents",
+            "input": {
+              "query": "extreme poverty rate Sub-Saharan Africa 1990 2026"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01FMM2z4n7mGYN7HG9mDGqVJ",
+          "name": "search_documents",
+          "input": {
+            "query": "extreme poverty rate Sub-Saharan Africa 1990 2026"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1357,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 123,
+          "output_tokens_details": {
+            "thinking_tokens": 52
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001972,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1357,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.4433255420008209
+    },
+    {
+      "event": "search",
+      "query": "extreme poverty rate Sub-Saharan Africa 1990 2026",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "7e109e5dafa9e728cb073534d6f2f73b11245a4edc9590d66b598345a7aae33f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 56,
+          "text": "24 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.4 The rate of extreme poverty remains high in Sub-Saharan Africa and has stagnated in the Middle East, North Africa, Afghanistan, and Pakistan 0 20 40 60 80 Extreme poverty rate (%) 1990 1995 2000 2005 2010 2015 2020 20302025 Europe and Central Asia South Asia MENAAP East Asia and Pacific North America Latin America and the Caribbean Sub-Saharan Africa Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 569,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 24,
+            "segment_start": 0
+          },
+          "score": 0.9177027344703674
+        },
+        {
+          "id": "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 895,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.9173676371574402
+        },
+        {
+          "id": "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 56,
+          "text": "Sub-Saharan Africa, in contrast, experienced much more modest improvement.2 There, extreme poverty rates declined from 62 percent in 1990 to 43 percent in 2026. The extreme poverty rate has declined little in the region since 2014. In the Middle East, North Africa, Afghanistan, and Pakistan region (refer to box 1.4 for information on World Bank regional classifications), extreme poverty has been increasing in recent years. In both regions, low rates of per capita economic growth have undermined efforts to reduce poverty (Beegle et al. 2016).",
+          "metadata": {
+            "end": 1681,
+            "start": 1134,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 24,
+            "segment_start": 0
+          },
+          "score": 0.9170551349487837
+        }
+      ],
+      "context": "[7e109e5dafa9e728cb073534d6f2f73b11245a4edc9590d66b598345a7aae33f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 56]\n24 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.4 The rate of extreme poverty remains high in Sub-Saharan Africa and has stagnated in the Middle East, North Africa, Afghanistan, and Pakistan 0 20 40 60 80 Extreme poverty rate (%) 1990 1995 2000 2005 2010 2015 2020 20302025 Europe and Central Asia South Asia MENAAP East Asia and Pacific North America Latin America and the Caribbean Sub-Saharan Africa Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\n[61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 60]\n28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\n[51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 56]\nSub-Saharan Africa, in contrast, experienced much more modest improvement.2 There, extreme poverty rates declined from 62 percent in 1990 to 43 percent in 2026. The extreme poverty rate has declined little in the region since 2014. In the Middle East, North Africa, Afghanistan, and Pakistan region (refer to box 1.4 for information on World Bank regional classifications), extreme poverty has been increasing in recent years. In both regions, low rates of per capita economic growth have undermined efforts to reduce poverty (Beegle et al. 2016).",
+      "context_candidates": [
+        {
+          "id": "7e109e5dafa9e728cb073534d6f2f73b11245a4edc9590d66b598345a7aae33f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 56,
+          "text": "24 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.4 The rate of extreme poverty remains high in Sub-Saharan Africa and has stagnated in the Middle East, North Africa, Afghanistan, and Pakistan 0 20 40 60 80 Extreme poverty rate (%) 1990 1995 2000 2005 2010 2015 2020 20302025 Europe and Central Asia South Asia MENAAP East Asia and Pacific North America Latin America and the Caribbean Sub-Saharan Africa Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 569,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 24,
+            "segment_start": 0
+          },
+          "score": 0.9177027344703674
+        },
+        {
+          "id": "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 895,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.9173676371574402
+        },
+        {
+          "id": "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 56,
+          "text": "Sub-Saharan Africa, in contrast, experienced much more modest improvement.2 There, extreme poverty rates declined from 62 percent in 1990 to 43 percent in 2026. The extreme poverty rate has declined little in the region since 2014. In the Middle East, North Africa, Afghanistan, and Pakistan region (refer to box 1.4 for information on World Bank regional classifications), extreme poverty has been increasing in recent years. In both regions, low rates of per capita economic growth have undermined efforts to reduce poverty (Beegle et al. 2016).",
+          "metadata": {
+            "end": 1681,
+            "start": 1134,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 24,
+            "segment_start": 0
+          },
+          "score": 0.9170551349487837
+        }
+      ],
+      "context_ids": [
+        "7e109e5dafa9e728cb073534d6f2f73b11245a4edc9590d66b598345a7aae33f",
+        "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+        "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0"
+      ],
+      "elapsed_seconds": 0.031353750004200265
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Tỷ lệ nghèo cùng cực ở châu Phi cận Sahara thay đổi từ bao nhiêu năm 1990 đến bao nhiêu năm 2026?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01FMM2z4n7mGYN7HG9mDGqVJ",
+              "name": "search_documents",
+              "input": {
+                "query": "extreme poverty rate Sub-Saharan Africa 1990 2026"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01FMM2z4n7mGYN7HG9mDGqVJ",
+              "content": "{\"current_context\": \"[7e109e5dafa9e728cb073534d6f2f73b11245a4edc9590d66b598345a7aae33f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 56]\\n24 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.4 The rate of extreme poverty remains high in Sub-Saharan Africa and has stagnated in the Middle East, North Africa, Afghanistan, and Pakistan 0 20 40 60 80 Extreme poverty rate (%) 1990 1995 2000 2005 2010 2015 2020 20302025 Europe and Central Asia South Asia MENAAP East Asia and Pacific North America Latin America and the Caribbean Sub-Saharan Africa Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\\n\\n[61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 60]\\n28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\\n\\n[51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 56]\\nSub-Saharan Africa, in contrast, experienced much more modest improvement.2 There, extreme poverty rates declined from 62 percent in 1990 to 43 percent in 2026. The extreme poverty rate has declined little in the region since 2014. In the Middle East, North Africa, Afghanistan, and Pakistan region (refer to box 1.4 for information on World Bank regional classifications), extreme poverty has been increasing in recent years. In both regions, low rates of per capita economic growth have undermined efforts to reduce poverty (Beegle et al. 2016).\", \"current_context_ids\": [\"7e109e5dafa9e728cb073534d6f2f73b11245a4edc9590d66b598345a7aae33f\", \"61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33\", \"51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0\"], \"searched_queries\": [\"extreme poverty rate Sub-Saharan Africa 1990 2026\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xC6YtyLBj4yUtNQs1T",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01TUCQuFvpiDeQiwer41yAAh",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Theo báo cáo, tỷ lệ nghèo cùng cực ở châu Phi cận Sahara giảm từ 62% năm 1990 xuống 43% năm 2026 [51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0]. Mức giảm này khá khiêm tốn và tỷ lệ gần như không giảm thêm đáng kể kể từ năm 2014 [51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0].",
+              "citations": [
+                "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01TUCQuFvpiDeQiwer41yAAh",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Theo báo cáo, tỷ lệ nghèo cùng cực ở châu Phi cận Sahara giảm từ 62% năm 1990 xuống 43% năm 2026 [51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0]. Mức giảm này khá khiêm tốn và tỷ lệ gần như không giảm thêm đáng kể kể từ năm 2014 [51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0].",
+            "citations": [
+              "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2855,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 334,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0004525,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2855,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.0731891250034096
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Theo báo cáo, tỷ lệ nghèo cùng cực ở châu Phi cận Sahara giảm từ 62% năm 1990 xuống 43% năm 2026 [51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0]. Mức giảm này khá khiêm tốn và tỷ lệ gần như không giảm thêm đáng kể kể từ năm 2014 [51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0].",
+      "citations": [
+        "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "usage": {
+    "input_tokens": 4212,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 457
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[7e109e5dafa9e728cb073534d6f2f73b11245a4edc9590d66b598345a7aae33f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 56]\n24 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.4 The rate of extreme poverty remains high in Sub-Saharan Africa and has stagnated in the Middle East, North Africa, Afghanistan, and Pakistan 0 20 40 60 80 Extreme poverty rate (%) 1990 1995 2000 2005 2010 2015 2020 20302025 Europe and Central Asia South Asia MENAAP East Asia and Pacific North America Latin America and the Caribbean Sub-Saharan Africa Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\n[61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 60]\n28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\n[51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 56]\nSub-Saharan Africa, in contrast, experienced much more modest improvement.2 There, extreme poverty rates declined from 62 percent in 1990 to 43 percent in 2026. The extreme poverty rate has declined little in the region since 2014. In the Middle East, North Africa, Afghanistan, and Pakistan region (refer to box 1.4 for information on World Bank regional classifications), extreme poverty has been increasing in recent years. In both regions, low rates of per capita economic growth have undermined efforts to reduce poverty (Beegle et al. 2016).",
+  "context_ids": [
+    "7e109e5dafa9e728cb073534d6f2f73b11245a4edc9590d66b598345a7aae33f",
+    "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+    "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0"
+  ],
+  "context_chunks": [
+    {
+      "id": "7e109e5dafa9e728cb073534d6f2f73b11245a4edc9590d66b598345a7aae33f",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 56,
+      "text": "24 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.4 The rate of extreme poverty remains high in Sub-Saharan Africa and has stagnated in the Middle East, North Africa, Afghanistan, and Pakistan 0 20 40 60 80 Extreme poverty rate (%) 1990 1995 2000 2005 2010 2015 2020 20302025 Europe and Central Asia South Asia MENAAP East Asia and Pacific North America Latin America and the Caribbean Sub-Saharan Africa Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+      "metadata": {
+        "end": 569,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 24,
+        "segment_start": 0
+      },
+      "score": 0.9177027344703674
+    },
+    {
+      "id": "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 60,
+      "text": "28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+      "metadata": {
+        "end": 895,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 28,
+        "segment_start": 0
+      },
+      "score": 0.9173676371574402
+    },
+    {
+      "id": "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 56,
+      "text": "Sub-Saharan Africa, in contrast, experienced much more modest improvement.2 There, extreme poverty rates declined from 62 percent in 1990 to 43 percent in 2026. The extreme poverty rate has declined little in the region since 2014. In the Middle East, North Africa, Afghanistan, and Pakistan region (refer to box 1.4 for information on World Bank regional classifications), extreme poverty has been increasing in recent years. In both regions, low rates of per capita economic growth have undermined efforts to reduce poverty (Beegle et al. 2016).",
+      "metadata": {
+        "end": 1681,
+        "start": 1134,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 24,
+        "segment_start": 0
+      },
+      "score": 0.9170551349487837
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 2,
+    "returned_calls": 2
+  },
+  "estimated_cost_usd": 0.0006497,
+  "answer": "Theo báo cáo, tỷ lệ nghèo cùng cực ở châu Phi cận Sahara giảm từ 62% năm 1990 xuống 43% năm 2026 [51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0]. Mức giảm này khá khiêm tốn và tỷ lệ gần như không giảm thêm đáng kể kể từ năm 2014 [51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0].",
+  "citations": [
+    "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0"
+  ],
+  "elapsed_seconds": 3.5480256250011735,
+  "answerable": true,
+  "context_strict_hit": true,
+  "context_set_hit": true,
+  "first_search_hit3": true,
+  "first_search_is_original_query": false
+}

@@ -1,0 +1,976 @@
+{
+  "created_at_utc": "2026-11-14T14:08:18.625830+00:00",
+  "stage": "agent_test",
+  "query_id": "tneg01",
+  "config_id": "baseline800",
+  "split": "test",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Báo cáo ước lượng hệ số co giãn nhân quả của nghèo đói theo giá năng lượng tại Việt Nam là bao nhiêu, kèm sai số chuẩn?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Báo cáo ước lượng hệ số co giãn nhân quả của nghèo đói theo giá năng lượng tại Việt Nam là bao nhiêu, kèm sai số chuẩn?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xAQGx6DbmjcrXQQkx9",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01YSztttuyJDZkb7KXoYHqby",
+            "name": "search_documents",
+            "input": {
+              "query": "elasticity of poverty with respect to energy prices Vietnam standard error"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01YSztttuyJDZkb7KXoYHqby",
+          "name": "search_documents",
+          "input": {
+            "query": "elasticity of poverty with respect to energy prices Vietnam standard error"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1361,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 69,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001706,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1361,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.1014822910074145
+    },
+    {
+      "event": "search",
+      "query": "elasticity of poverty with respect to energy prices Vietnam standard error",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 72,
+          "text": "Note: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 1115,
+            "start": 601,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 40,
+            "segment_start": 0
+          },
+          "score": 0.8586251308172846
+        },
+        {
+          "id": "80abf3874dfb17ca00d1c502ca8a676dae7880db640517bd620ae109ca493ba2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 79,
+          "text": "FIGURE 1.19 Nonmonetary deprivations provide a broader view of poverty 0 20 40 60 Share of population deprived (%) Share of population deprived (%) a. MENAAP 0 20 40 60 MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM b. South Asia Monetary Education Basic infrastructure service Share of population deprived (%) Share of population deprived (%) MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM 0 20 40 60 c. Sub-Saharan Africa 0 20 40 60 d. World Source: World bank calculations based on data from the Multidimensional Poverty Measure database (September 2026), World bank, https://www.worldbank.org/en/topic/poverty/brief/multidimensional-poverty-measure.",
+          "metadata": {
+            "end": 1446,
+            "start": 615,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 47,
+            "segment_start": 0
+          },
+          "score": 0.8557728614942529
+        },
+        {
+          "id": "785ccab0a67d073e417391bf5e609416a915ff034ace34f930c90cb5ccc35bd0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 78,
+          "text": "46 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.18 Extreme poverty often, but not always, tracks with multidimensional deprivation Extreme poverty (IPL, %) 0 20 40 60 80 100 20 40 60 80 100 Multidimensional poverty (%) 0 020 40 60 80 100 Extreme poverty (IPL, %) a. Multidimensional poverty 0 0 Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) d. Electricity 20 40 60 80 100 20 40 60 80 100 Share deprived (%) 020 40 60 80 100 Extreme poverty (IPL, %) b. Educational attainment Share deprived (%) 20 40 60 80 100 e. Sanitation 20 40 60 80 100 20 40 60 80 100 Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) c. Educational enrollment Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) f. Drinking water Europe and Central Asia North America East Asia and Paciﬁc MENAAP Latin America and the Caribbean South Asia Sub-Saharan Africa Source: World bank",
+          "metadata": {
+            "end": 890,
+            "start": 0,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 46,
+            "segment_start": 0
+          },
+          "score": 0.8550560647182448
+        }
+      ],
+      "context": "[90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 72]\nNote: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+      "context_candidates": [
+        {
+          "id": "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 72,
+          "text": "Note: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 1115,
+            "start": 601,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 40,
+            "segment_start": 0
+          },
+          "score": 0.8586251308172846
+        },
+        {
+          "id": "80abf3874dfb17ca00d1c502ca8a676dae7880db640517bd620ae109ca493ba2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 79,
+          "text": "FIGURE 1.19 Nonmonetary deprivations provide a broader view of poverty 0 20 40 60 Share of population deprived (%) Share of population deprived (%) a. MENAAP 0 20 40 60 MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM b. South Asia Monetary Education Basic infrastructure service Share of population deprived (%) Share of population deprived (%) MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM 0 20 40 60 c. Sub-Saharan Africa 0 20 40 60 d. World Source: World bank calculations based on data from the Multidimensional Poverty Measure database (September 2026), World bank, https://www.worldbank.org/en/topic/poverty/brief/multidimensional-poverty-measure.",
+          "metadata": {
+            "end": 1446,
+            "start": 615,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 47,
+            "segment_start": 0
+          },
+          "score": 0.8557728614942529
+        },
+        {
+          "id": "785ccab0a67d073e417391bf5e609416a915ff034ace34f930c90cb5ccc35bd0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 78,
+          "text": "46 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.18 Extreme poverty often, but not always, tracks with multidimensional deprivation Extreme poverty (IPL, %) 0 20 40 60 80 100 20 40 60 80 100 Multidimensional poverty (%) 0 020 40 60 80 100 Extreme poverty (IPL, %) a. Multidimensional poverty 0 0 Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) d. Electricity 20 40 60 80 100 20 40 60 80 100 Share deprived (%) 020 40 60 80 100 Extreme poverty (IPL, %) b. Educational attainment Share deprived (%) 20 40 60 80 100 e. Sanitation 20 40 60 80 100 20 40 60 80 100 Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) c. Educational enrollment Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) f. Drinking water Europe and Central Asia North America East Asia and Paciﬁc MENAAP Latin America and the Caribbean South Asia Sub-Saharan Africa Source: World bank",
+          "metadata": {
+            "end": 890,
+            "start": 0,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 46,
+            "segment_start": 0
+          },
+          "score": 0.8550560647182448
+        }
+      ],
+      "context_ids": [
+        "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85"
+      ],
+      "elapsed_seconds": 0.033820374999777414
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Báo cáo ước lượng hệ số co giãn nhân quả của nghèo đói theo giá năng lượng tại Việt Nam là bao nhiêu, kèm sai số chuẩn?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01YSztttuyJDZkb7KXoYHqby",
+              "name": "search_documents",
+              "input": {
+                "query": "elasticity of poverty with respect to energy prices Vietnam standard error"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01YSztttuyJDZkb7KXoYHqby",
+              "content": "{\"current_context\": \"[90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 72]\\nNote: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\\n\\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.\", \"current_context_ids\": [\"90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85\"], \"searched_queries\": [\"elasticity of poverty with respect to energy prices Vietnam standard error\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xAV8eW18YyHfZVZE5Z",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01WgL3Wp6gt1RgG1Np5iaGMB",
+            "name": "search_documents",
+            "input": {
+              "query": "Vietnam energy price shock poverty elasticity estimate"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01WgL3Wp6gt1RgG1Np5iaGMB",
+          "name": "search_documents",
+          "input": {
+            "query": "Vietnam energy price shock poverty elasticity estimate"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1826,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 65,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002151,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1826,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.121497708998504
+    },
+    {
+      "event": "search",
+      "query": "Vietnam energy price shock poverty elasticity estimate",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 72,
+          "text": "Note: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 1115,
+            "start": 601,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 40,
+            "segment_start": 0
+          },
+          "score": 0.8585451413935316
+        },
+        {
+          "id": "0a1bc1b0e9013dd41470fe0ea3b5a4dda6ac082d191ac6716b0597f553357361",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 77,
+          "text": "Note: the table includes only economies on which data are available for at least one year in 2020–26. the international poverty line measures poverty rates at $3.00-a-person-a-day (in 2021 purchasing power parity terms). the Multidimensional Poverty Measure (MPM) expresses rates of multidimensional poverty. an economy is considered covered (that is, data are available on the rate) in a particular reference year if a nationally representative survey has been conducted within three years on either side of the reference year. Population values for survey years have been used to aggregate monetary and multidimensional poverty rates across countries. For the region highlighted in gray, population coverage is below 50 percent, which is the threshold used for coverage throughout the report. Columns may not sum to the exact total of the constituent data elements because of rounding.",
+          "metadata": {
+            "end": 2679,
+            "start": 1792,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 45,
+            "segment_start": 0
+          },
+          "score": 0.8558298435312618
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8543123516030536
+        }
+      ],
+      "context": "[90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 72]\nNote: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+      "context_candidates": [
+        {
+          "id": "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 72,
+          "text": "Note: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 1115,
+            "start": 601,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 40,
+            "segment_start": 0
+          },
+          "score": 0.8585451413935316
+        },
+        {
+          "id": "0a1bc1b0e9013dd41470fe0ea3b5a4dda6ac082d191ac6716b0597f553357361",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 77,
+          "text": "Note: the table includes only economies on which data are available for at least one year in 2020–26. the international poverty line measures poverty rates at $3.00-a-person-a-day (in 2021 purchasing power parity terms). the Multidimensional Poverty Measure (MPM) expresses rates of multidimensional poverty. an economy is considered covered (that is, data are available on the rate) in a particular reference year if a nationally representative survey has been conducted within three years on either side of the reference year. Population values for survey years have been used to aggregate monetary and multidimensional poverty rates across countries. For the region highlighted in gray, population coverage is below 50 percent, which is the threshold used for coverage throughout the report. Columns may not sum to the exact total of the constituent data elements because of rounding.",
+          "metadata": {
+            "end": 2679,
+            "start": 1792,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 45,
+            "segment_start": 0
+          },
+          "score": 0.8558298435312618
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8543123516030536
+        }
+      ],
+      "context_ids": [
+        "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85"
+      ],
+      "elapsed_seconds": 0.029545541998231784
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Báo cáo ước lượng hệ số co giãn nhân quả của nghèo đói theo giá năng lượng tại Việt Nam là bao nhiêu, kèm sai số chuẩn?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01WgL3Wp6gt1RgG1Np5iaGMB",
+              "name": "search_documents",
+              "input": {
+                "query": "Vietnam energy price shock poverty elasticity estimate"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01WgL3Wp6gt1RgG1Np5iaGMB",
+              "content": "{\"current_context\": \"[90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 72]\\nNote: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\\n\\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.\", \"current_context_ids\": [\"90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85\"], \"searched_queries\": [\"elasticity of poverty with respect to energy prices Vietnam standard error\", \"Vietnam energy price shock poverty elasticity estimate\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xAbFkXsaDQeu313qkY",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01DiaJzDFGK446hxjMY6yu2e",
+            "name": "search_documents",
+            "input": {
+              "query": "causal elasticity of poverty to energy prices Vietnam standard error"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01DiaJzDFGK446hxjMY6yu2e",
+          "name": "search_documents",
+          "input": {
+            "query": "causal elasticity of poverty to energy prices Vietnam standard error"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1844,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 113,
+          "output_tokens_details": {
+            "thinking_tokens": 44
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002409,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1844,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.4558143750036834
+    },
+    {
+      "event": "search",
+      "query": "causal elasticity of poverty to energy prices Vietnam standard error",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 72,
+          "text": "Note: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 1115,
+            "start": 601,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 40,
+            "segment_start": 0
+          },
+          "score": 0.8545664039512768
+        },
+        {
+          "id": "785ccab0a67d073e417391bf5e609416a915ff034ace34f930c90cb5ccc35bd0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 78,
+          "text": "46 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.18 Extreme poverty often, but not always, tracks with multidimensional deprivation Extreme poverty (IPL, %) 0 20 40 60 80 100 20 40 60 80 100 Multidimensional poverty (%) 0 020 40 60 80 100 Extreme poverty (IPL, %) a. Multidimensional poverty 0 0 Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) d. Electricity 20 40 60 80 100 20 40 60 80 100 Share deprived (%) 020 40 60 80 100 Extreme poverty (IPL, %) b. Educational attainment Share deprived (%) 20 40 60 80 100 e. Sanitation 20 40 60 80 100 20 40 60 80 100 Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) c. Educational enrollment Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) f. Drinking water Europe and Central Asia North America East Asia and Paciﬁc MENAAP Latin America and the Caribbean South Asia Sub-Saharan Africa Source: World bank",
+          "metadata": {
+            "end": 890,
+            "start": 0,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 46,
+            "segment_start": 0
+          },
+          "score": 0.8532065836664227
+        },
+        {
+          "id": "80abf3874dfb17ca00d1c502ca8a676dae7880db640517bd620ae109ca493ba2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 79,
+          "text": "FIGURE 1.19 Nonmonetary deprivations provide a broader view of poverty 0 20 40 60 Share of population deprived (%) Share of population deprived (%) a. MENAAP 0 20 40 60 MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM b. South Asia Monetary Education Basic infrastructure service Share of population deprived (%) Share of population deprived (%) MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM 0 20 40 60 c. Sub-Saharan Africa 0 20 40 60 d. World Source: World bank calculations based on data from the Multidimensional Poverty Measure database (September 2026), World bank, https://www.worldbank.org/en/topic/poverty/brief/multidimensional-poverty-measure.",
+          "metadata": {
+            "end": 1446,
+            "start": 615,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 47,
+            "segment_start": 0
+          },
+          "score": 0.8501575589180053
+        }
+      ],
+      "context": "[90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 72]\nNote: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+      "context_candidates": [
+        {
+          "id": "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 72,
+          "text": "Note: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 1115,
+            "start": 601,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 40,
+            "segment_start": 0
+          },
+          "score": 0.8545664039512768
+        },
+        {
+          "id": "785ccab0a67d073e417391bf5e609416a915ff034ace34f930c90cb5ccc35bd0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 78,
+          "text": "46 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.18 Extreme poverty often, but not always, tracks with multidimensional deprivation Extreme poverty (IPL, %) 0 20 40 60 80 100 20 40 60 80 100 Multidimensional poverty (%) 0 020 40 60 80 100 Extreme poverty (IPL, %) a. Multidimensional poverty 0 0 Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) d. Electricity 20 40 60 80 100 20 40 60 80 100 Share deprived (%) 020 40 60 80 100 Extreme poverty (IPL, %) b. Educational attainment Share deprived (%) 20 40 60 80 100 e. Sanitation 20 40 60 80 100 20 40 60 80 100 Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) c. Educational enrollment Share deprived (%) 20 40 60 80 100 Extreme poverty (IPL, %) f. Drinking water Europe and Central Asia North America East Asia and Paciﬁc MENAAP Latin America and the Caribbean South Asia Sub-Saharan Africa Source: World bank",
+          "metadata": {
+            "end": 890,
+            "start": 0,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 46,
+            "segment_start": 0
+          },
+          "score": 0.8532065836664227
+        },
+        {
+          "id": "80abf3874dfb17ca00d1c502ca8a676dae7880db640517bd620ae109ca493ba2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 79,
+          "text": "FIGURE 1.19 Nonmonetary deprivations provide a broader view of poverty 0 20 40 60 Share of population deprived (%) Share of population deprived (%) a. MENAAP 0 20 40 60 MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM b. South Asia Monetary Education Basic infrastructure service Share of population deprived (%) Share of population deprived (%) MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM MonetaryAttainmentEnrollmentElectricitySanitationDrinking water MPM 0 20 40 60 c. Sub-Saharan Africa 0 20 40 60 d. World Source: World bank calculations based on data from the Multidimensional Poverty Measure database (September 2026), World bank, https://www.worldbank.org/en/topic/poverty/brief/multidimensional-poverty-measure.",
+          "metadata": {
+            "end": 1446,
+            "start": 615,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 47,
+            "segment_start": 0
+          },
+          "score": 0.8501575589180053
+        }
+      ],
+      "context_ids": [
+        "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85"
+      ],
+      "elapsed_seconds": 0.03475179200177081
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Báo cáo ước lượng hệ số co giãn nhân quả của nghèo đói theo giá năng lượng tại Việt Nam là bao nhiêu, kèm sai số chuẩn?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01DiaJzDFGK446hxjMY6yu2e",
+              "name": "search_documents",
+              "input": {
+                "query": "causal elasticity of poverty to energy prices Vietnam standard error"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01DiaJzDFGK446hxjMY6yu2e",
+              "content": "{\"current_context\": \"[90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 72]\\nNote: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\\n\\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.\", \"current_context_ids\": [\"90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85\"], \"searched_queries\": [\"elasticity of poverty with respect to energy prices Vietnam standard error\", \"Vietnam energy price shock poverty elasticity estimate\", \"causal elasticity of poverty to energy prices Vietnam standard error\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xAgzHpM7zJcv1SpvFT",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01WqemsNZZ7aRitZHwAL7fnx",
+            "name": "search_documents",
+            "input": {
+              "query": "energy price shock poverty elasticity causal estimate Vietnam household survey"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01WqemsNZZ7aRitZHwAL7fnx",
+          "name": "search_documents",
+          "input": {
+            "query": "energy price shock poverty elasticity causal estimate Vietnam household survey"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1872,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 125,
+          "output_tokens_details": {
+            "thinking_tokens": 54
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002497,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1872,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.3746961660071975
+    },
+    {
+      "event": "search",
+      "query": "energy price shock poverty elasticity causal estimate Vietnam household survey",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8757016397803569
+        },
+        {
+          "id": "b887257ea9ac313047e0a71b429c78e9bc171e307178b7cc9d4a0f1eebcb92b0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "Note: the figure reports the number of people living in extreme poverty, that is, below the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms) and the global share of extreme poverty. the 20 economies with the largest share of poor people are labeled. the figure reports the estimates that underlie the global and regional aggregates. these have been extrapolated or interpolated to a common year if a survey is unavailable in 2024 (refer to annex 1a). For example, in the case of the republic of yemen, the latest available survey has been extrapolated from 2014. Furthermore, countries without any available surveys in the Poverty and inequality Platform, such as afghanistan and the Federal republic of Somalia, have been imputed following the method of Mahler et al. (2026). the Philippines collects survey data on both household income and consumption expenditure. World",
+          "metadata": {
+            "end": 1795,
+            "start": 897,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.868045651666109
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8663437525816259
+        }
+      ],
+      "context": "[90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 72]\nNote: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+      "context_candidates": [
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8757016397803569
+        },
+        {
+          "id": "b887257ea9ac313047e0a71b429c78e9bc171e307178b7cc9d4a0f1eebcb92b0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "Note: the figure reports the number of people living in extreme poverty, that is, below the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms) and the global share of extreme poverty. the 20 economies with the largest share of poor people are labeled. the figure reports the estimates that underlie the global and regional aggregates. these have been extrapolated or interpolated to a common year if a survey is unavailable in 2024 (refer to annex 1a). For example, in the case of the republic of yemen, the latest available survey has been extrapolated from 2014. Furthermore, countries without any available surveys in the Poverty and inequality Platform, such as afghanistan and the Federal republic of Somalia, have been imputed following the method of Mahler et al. (2026). the Philippines collects survey data on both household income and consumption expenditure. World",
+          "metadata": {
+            "end": 1795,
+            "start": 897,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.868045651666109
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8663437525816259
+        }
+      ],
+      "context_ids": [
+        "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85"
+      ],
+      "elapsed_seconds": 0.03183624999655876
+    },
+    {
+      "event": "model",
+      "step": 5,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Báo cáo ước lượng hệ số co giãn nhân quả của nghèo đói theo giá năng lượng tại Việt Nam là bao nhiêu, kèm sai số chuẩn?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01WqemsNZZ7aRitZHwAL7fnx",
+              "name": "search_documents",
+              "input": {
+                "query": "energy price shock poverty elasticity causal estimate Vietnam household survey"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01WqemsNZZ7aRitZHwAL7fnx",
+              "content": "{\"current_context\": \"[90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 72]\\nNote: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\\n\\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.\", \"current_context_ids\": [\"90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85\"], \"searched_queries\": [\"elasticity of poverty with respect to energy prices Vietnam standard error\", \"Vietnam energy price shock poverty elasticity estimate\", \"causal elasticity of poverty to energy prices Vietnam standard error\", \"energy price shock poverty elasticity causal estimate Vietnam household survey\"], \"searches_remaining\": 0}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xAnUgdDm3c8mR8iTTx",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01JEHrfhYSK9B7wgUdb5KAUk",
+            "name": "finish",
+            "input": {
+              "status": "abstain",
+              "answer": "Chưa đủ bằng chứng trong kho để trả lời. Bốn lần tìm kiếm (kể cả truy vấn tiếng Anh về hệ số co giãn nghèo đói theo giá năng lượng ở Việt Nam) chỉ trả về một đoạn ghi chú biểu đồ về tỷ lệ nghèo ở mức 3,00 USD/người/ngày (PPP 2021) và nhóm kinh tế MENAAP; đoạn này không chứa ước lượng hệ số co giãn nhân quả, cũng không có sai số chuẩn cho Việt Nam. Đã hết lượt tìm kiếm nên không thể tiếp tục tìm.",
+              "citations": []
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01JEHrfhYSK9B7wgUdb5KAUk",
+          "name": "finish",
+          "input": {
+            "status": "abstain",
+            "answer": "Chưa đủ bằng chứng trong kho để trả lời. Bốn lần tìm kiếm (kể cả truy vấn tiếng Anh về hệ số co giãn nghèo đói theo giá năng lượng ở Việt Nam) chỉ trả về một đoạn ghi chú biểu đồ về tỷ lệ nghèo ở mức 3,00 USD/người/ngày (PPP 2021) và nhóm kinh tế MENAAP; đoạn này không chứa ước lượng hệ số co giãn nhân quả, cũng không có sai số chuẩn cho Việt Nam. Đã hết lượt tìm kiếm nên không thể tiếp tục tìm.",
+            "citations": []
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1901,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 370,
+          "output_tokens_details": {
+            "thinking_tokens": 37
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003751,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1901,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.045436125001288
+    },
+    {
+      "event": "finish",
+      "status": "abstain",
+      "answer": "Chưa đủ bằng chứng trong kho để trả lời. Bốn lần tìm kiếm (kể cả truy vấn tiếng Anh về hệ số co giãn nghèo đói theo giá năng lượng ở Việt Nam) chỉ trả về một đoạn ghi chú biểu đồ về tỷ lệ nghèo ở mức 3,00 USD/người/ngày (PPP 2021) và nhóm kinh tế MENAAP; đoạn này không chứa ước lượng hệ số co giãn nhân quả, cũng không có sai số chuẩn cho Việt Nam. Đã hết lượt tìm kiếm nên không thể tiếp tục tìm.",
+      "citations": [],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 4,
+  "model_calls": 5,
+  "usage": {
+    "input_tokens": 8804,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 742
+  },
+  "cost_usd": null,
+  "status": "abstain",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 800,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 72]\nNote: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+  "context_ids": [
+    "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85"
+  ],
+  "context_chunks": [
+    {
+      "id": "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 72,
+      "text": "Note: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+      "metadata": {
+        "end": 1115,
+        "start": 601,
+        "section": "Poverty persists unevenly across people and places",
+        "chunking": "paragraph",
+        "printed_page": 40,
+        "segment_start": 0
+      },
+      "score": 0.8545664039512768
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 5,
+    "returned_calls": 5
+  },
+  "estimated_cost_usd": 0.0012514,
+  "answer": "Chưa đủ bằng chứng trong kho để trả lời. Bốn lần tìm kiếm (kể cả truy vấn tiếng Anh về hệ số co giãn nghèo đói theo giá năng lượng ở Việt Nam) chỉ trả về một đoạn ghi chú biểu đồ về tỷ lệ nghèo ở mức 3,00 USD/người/ngày (PPP 2021) và nhóm kinh tế MENAAP; đoạn này không chứa ước lượng hệ số co giãn nhân quả, cũng không có sai số chuẩn cho Việt Nam. Đã hết lượt tìm kiếm nên không thể tiếp tục tìm.",
+  "citations": [],
+  "elapsed_seconds": 7.229112667002482,
+  "answerable": false,
+  "context_strict_hit": null,
+  "context_set_hit": null,
+  "first_search_hit3": null,
+  "first_search_is_original_query": false
+}

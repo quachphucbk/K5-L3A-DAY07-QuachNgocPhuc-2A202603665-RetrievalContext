@@ -1,0 +1,403 @@
+{
+  "created_at_utc": "2026-11-14T10:38:16.861404+00:00",
+  "stage": "agent_dev",
+  "query_id": "q09",
+  "config_id": "budget3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Việc giảm nghèo chậm hơn xu hướng 2000–2013 có xảy ra tương tự ở chuẩn $3,00 và các chuẩn cao hơn như $4,20 không?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Việc giảm nghèo chậm hơn xu hướng 2000–2013 có xảy ra tương tự ở chuẩn $3,00 và các chuẩn cao hơn như $4,20 không?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g9UuceyehQvrb7Ciae",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_013v1UgjVV7qithLKPqHerYK",
+            "name": "search_documents",
+            "input": {
+              "query": "poverty reduction slowed relative to 2000-2013 trend $3.00 $4.20 poverty line"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_013v1UgjVV7qithLKPqHerYK",
+          "name": "search_documents",
+          "input": {
+            "query": "poverty reduction slowed relative to 2000-2013 trend $3.00 $4.20 poverty line"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1362,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 152,
+          "output_tokens_details": {
+            "thinking_tokens": 71
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002122,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1362,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.6634437080065254
+    },
+    {
+      "event": "search",
+      "query": "poverty reduction slowed relative to 2000-2013 trend $3.00 $4.20 poverty line",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "extreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\n\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.",
+          "metadata": {
+            "end": 2506,
+            "start": 1803,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.8801595640087403
+        },
+        {
+          "id": "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 50,
+          "text": "Note: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.",
+          "metadata": {
+            "end": 1242,
+            "start": 547,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 18,
+            "segment_start": 0
+          },
+          "score": 0.8792231822939957
+        },
+        {
+          "id": "16237c693af95edf382b317b992ac5d00ba6a2f8ed9b4bea4f3ebefec9238eab",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 61,
+          "text": "While extreme poverty is increasingly concentrated in low-income economies, half the world’s poor continue to live in middle-income economies. In 2025, low-income economies accounted for 49 percent of the world’s extreme poor at the $3.00 line, up from 18 percent in 2010. This shift was driven largely by rapid poverty reduction in large middle-income economies, particularly China and India. The share of the extreme poor in today’s lower- middle-income economies declined by 8 percentage points, to 44 percent, in 2010–25 (refer to figure 1.8). At higher poverty lines, poverty is even more highly concentrated in middle-income FIGURE 1.7 Progress in reducing extreme poverty has stalled in low-income economies −2.0 −1.5 −2.5 −1.0 −0.5 0.0 0.5 Annualized change in the poverty rate (%) 1990−99 2000−09 2010−19 2015−24 1990−99 2000−09 2010−19 2015−24 a. Poverty rate −1.0 0.0 1.0 2.0 3.0",
+          "metadata": {
+            "end": 2108,
+            "start": 1218,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 29,
+            "segment_start": 0
+          },
+          "score": 0.8683023970307364
+        }
+      ],
+      "context": "[2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\nextreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\n\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.\n\n[d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 50]\nNote: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.\n\n[16237c693af95edf382b317b992ac5d00ba6a2f8ed9b4bea4f3ebefec9238eab | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 61]\nWhile extreme poverty is increasingly concentrated in low-income economies, half the world’s poor continue to live in middle-income economies. In 2025, low-income economies accounted for 49 percent of the world’s extreme poor at the $3.00 line, up from 18 percent in 2010. This shift was driven largely by rapid poverty reduction in large middle-income economies, particularly China and India. The share of the extreme poor in today’s lower- middle-income economies declined by 8 percentage points, to 44 percent, in 2010–25 (refer to figure 1.8). At higher poverty lines, poverty is even more highly concentrated in middle-income FIGURE 1.7 Progress in reducing extreme poverty has stalled in low-income economies −2.0 −1.5 −2.5 −1.0 −0.5 0.0 0.5 Annualized change in the poverty rate (%) 1990−99 2000−09 2010−19 2015−24 1990−99 2000−09 2010−19 2015−24 a. Poverty rate −1.0 0.0 1.0 2.0 3.0",
+      "context_candidates": [
+        {
+          "id": "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "extreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\n\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.",
+          "metadata": {
+            "end": 2506,
+            "start": 1803,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.8801595640087403
+        },
+        {
+          "id": "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 50,
+          "text": "Note: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.",
+          "metadata": {
+            "end": 1242,
+            "start": 547,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 18,
+            "segment_start": 0
+          },
+          "score": 0.8792231822939957
+        },
+        {
+          "id": "16237c693af95edf382b317b992ac5d00ba6a2f8ed9b4bea4f3ebefec9238eab",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 61,
+          "text": "While extreme poverty is increasingly concentrated in low-income economies, half the world’s poor continue to live in middle-income economies. In 2025, low-income economies accounted for 49 percent of the world’s extreme poor at the $3.00 line, up from 18 percent in 2010. This shift was driven largely by rapid poverty reduction in large middle-income economies, particularly China and India. The share of the extreme poor in today’s lower- middle-income economies declined by 8 percentage points, to 44 percent, in 2010–25 (refer to figure 1.8). At higher poverty lines, poverty is even more highly concentrated in middle-income FIGURE 1.7 Progress in reducing extreme poverty has stalled in low-income economies −2.0 −1.5 −2.5 −1.0 −0.5 0.0 0.5 Annualized change in the poverty rate (%) 1990−99 2000−09 2010−19 2015−24 1990−99 2000−09 2010−19 2015−24 a. Poverty rate −1.0 0.0 1.0 2.0 3.0",
+          "metadata": {
+            "end": 2108,
+            "start": 1218,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 29,
+            "segment_start": 0
+          },
+          "score": 0.8683023970307364
+        }
+      ],
+      "context_ids": [
+        "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+        "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+        "16237c693af95edf382b317b992ac5d00ba6a2f8ed9b4bea4f3ebefec9238eab"
+      ],
+      "elapsed_seconds": 0.0362780839932384
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Việc giảm nghèo chậm hơn xu hướng 2000–2013 có xảy ra tương tự ở chuẩn $3,00 và các chuẩn cao hơn như $4,20 không?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_013v1UgjVV7qithLKPqHerYK",
+              "name": "search_documents",
+              "input": {
+                "query": "poverty reduction slowed relative to 2000-2013 trend $3.00 $4.20 poverty line"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_013v1UgjVV7qithLKPqHerYK",
+              "content": "{\"current_context\": \"[2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\nextreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\\n\\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.\\n\\n[d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 50]\\nNote: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.\\n\\n[16237c693af95edf382b317b992ac5d00ba6a2f8ed9b4bea4f3ebefec9238eab | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 61]\\nWhile extreme poverty is increasingly concentrated in low-income economies, half the world’s poor continue to live in middle-income economies. In 2025, low-income economies accounted for 49 percent of the world’s extreme poor at the $3.00 line, up from 18 percent in 2010. This shift was driven largely by rapid poverty reduction in large middle-income economies, particularly China and India. The share of the extreme poor in today’s lower- middle-income economies declined by 8 percentage points, to 44 percent, in 2010–25 (refer to figure 1.8). At higher poverty lines, poverty is even more highly concentrated in middle-income FIGURE 1.7 Progress in reducing extreme poverty has stalled in low-income economies −2.0 −1.5 −2.5 −1.0 −0.5 0.0 0.5 Annualized change in the poverty rate (%) 1990−99 2000−09 2010−19 2015−24 1990−99 2000−09 2010−19 2015−24 a. Poverty rate −1.0 0.0 1.0 2.0 3.0\", \"current_context_ids\": [\"2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7\", \"d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141\", \"16237c693af95edf382b317b992ac5d00ba6a2f8ed9b4bea4f3ebefec9238eab\"], \"searched_queries\": [\"poverty reduction slowed relative to 2000-2013 trend $3.00 $4.20 poverty line\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g9c9vhxWmQnEU5D1oV",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01AJWZg8sLZSDEazKSkjo8x5",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Không. Theo tài liệu, sự chậm lại so với xu hướng 2000–2013 chỉ quan sát được ở chuẩn $3,00. Ở các chuẩn cao hơn, ví dụ $4,20, mức giảm nghèo thực tế về cơ bản vẫn theo kịp xu hướng trước 2013 [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Với chuẩn $3,00, nếu nghèo cùng cùng tốc độ 2000–2013, tỷ lệ nghèo cùng cực có thể khoảng 7% vào 2026, thấp hơn khoảng 3 điểm phần trăm so với thực tế, tương đương khoảng 240 triệu người [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Lưu ý: số liệu 2025–2026 là nowcast và 2019 là projection; đường xu hướng được neo tại giá trị 2013 và dựa trên xu hướng log-linear 2000–2013 [d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141].",
+              "citations": [
+                "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+                "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01AJWZg8sLZSDEazKSkjo8x5",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Không. Theo tài liệu, sự chậm lại so với xu hướng 2000–2013 chỉ quan sát được ở chuẩn $3,00. Ở các chuẩn cao hơn, ví dụ $4,20, mức giảm nghèo thực tế về cơ bản vẫn theo kịp xu hướng trước 2013 [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Với chuẩn $3,00, nếu nghèo cùng cùng tốc độ 2000–2013, tỷ lệ nghèo cùng cực có thể khoảng 7% vào 2026, thấp hơn khoảng 3 điểm phần trăm so với thực tế, tương đương khoảng 240 triệu người [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Lưu ý: số liệu 2025–2026 là nowcast và 2019 là projection; đường xu hướng được neo tại giá trị 2013 và dựa trên xu hướng log-linear 2000–2013 [d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141].",
+            "citations": [
+              "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+              "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2811,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 696,
+          "output_tokens_details": {
+            "thinking_tokens": 88
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0006291,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2811,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 4.210258457998862
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Không. Theo tài liệu, sự chậm lại so với xu hướng 2000–2013 chỉ quan sát được ở chuẩn $3,00. Ở các chuẩn cao hơn, ví dụ $4,20, mức giảm nghèo thực tế về cơ bản vẫn theo kịp xu hướng trước 2013 [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Với chuẩn $3,00, nếu nghèo cùng cùng tốc độ 2000–2013, tỷ lệ nghèo cùng cực có thể khoảng 7% vào 2026, thấp hơn khoảng 3 điểm phần trăm so với thực tế, tương đương khoảng 240 triệu người [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Lưu ý: số liệu 2025–2026 là nowcast và 2019 là projection; đường xu hướng được neo tại giá trị 2013 và dựa trên xu hướng log-linear 2000–2013 [d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141].",
+      "citations": [
+        "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+        "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "usage": {
+    "input_tokens": 4173,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 848
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\nextreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\n\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.\n\n[d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 50]\nNote: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.\n\n[16237c693af95edf382b317b992ac5d00ba6a2f8ed9b4bea4f3ebefec9238eab | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 61]\nWhile extreme poverty is increasingly concentrated in low-income economies, half the world’s poor continue to live in middle-income economies. In 2025, low-income economies accounted for 49 percent of the world’s extreme poor at the $3.00 line, up from 18 percent in 2010. This shift was driven largely by rapid poverty reduction in large middle-income economies, particularly China and India. The share of the extreme poor in today’s lower- middle-income economies declined by 8 percentage points, to 44 percent, in 2010–25 (refer to figure 1.8). At higher poverty lines, poverty is even more highly concentrated in middle-income FIGURE 1.7 Progress in reducing extreme poverty has stalled in low-income economies −2.0 −1.5 −2.5 −1.0 −0.5 0.0 0.5 Annualized change in the poverty rate (%) 1990−99 2000−09 2010−19 2015−24 1990−99 2000−09 2010−19 2015−24 a. Poverty rate −1.0 0.0 1.0 2.0 3.0",
+  "context_ids": [
+    "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+    "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+    "16237c693af95edf382b317b992ac5d00ba6a2f8ed9b4bea4f3ebefec9238eab"
+  ],
+  "context_chunks": [
+    {
+      "id": "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 49,
+      "text": "extreme poverty in 2020, poverty rates began to decline, though at a slower pace than previously.\n\nHad poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1). In absolute terms, this gap represents approximately 240 million more people living in extreme poverty than would have been the case under the earlier trajectory of poverty reduction. The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend.",
+      "metadata": {
+        "end": 2506,
+        "start": 1803,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 17,
+        "segment_start": 0
+      },
+      "score": 0.8801595640087403
+    },
+    {
+      "id": "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 50,
+      "text": "Note: the figure reports poverty rates and the number of poor for the $3.00-a-person-a-day and $4.20-a-person- a-day poverty lines (in 2021 purchasing power parity terms). dashed lines show counterfactual projections based on the log-linear trend observed between 2000 and 2013, anchored at 2013 values. For the full 1990–2026 series over which the pre-2013 trend can be observed, refer to annex 1b, figure 1b.6. data for 2025 and 2026 are nowcasts (refer to annex 1a). values for 2019 are considered projections because survey data in 2019 represent less than 50 percent of the population of low-income and lower-middle-income economies (refer to box 1.4 and annex 1a). pps = percentage points.",
+      "metadata": {
+        "end": 1242,
+        "start": 547,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 18,
+        "segment_start": 0
+      },
+      "score": 0.8792231822939957
+    },
+    {
+      "id": "16237c693af95edf382b317b992ac5d00ba6a2f8ed9b4bea4f3ebefec9238eab",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 61,
+      "text": "While extreme poverty is increasingly concentrated in low-income economies, half the world’s poor continue to live in middle-income economies. In 2025, low-income economies accounted for 49 percent of the world’s extreme poor at the $3.00 line, up from 18 percent in 2010. This shift was driven largely by rapid poverty reduction in large middle-income economies, particularly China and India. The share of the extreme poor in today’s lower- middle-income economies declined by 8 percentage points, to 44 percent, in 2010–25 (refer to figure 1.8). At higher poverty lines, poverty is even more highly concentrated in middle-income FIGURE 1.7 Progress in reducing extreme poverty has stalled in low-income economies −2.0 −1.5 −2.5 −1.0 −0.5 0.0 0.5 Annualized change in the poverty rate (%) 1990−99 2000−09 2010−19 2015−24 1990−99 2000−09 2010−19 2015−24 a. Poverty rate −1.0 0.0 1.0 2.0 3.0",
+      "metadata": {
+        "end": 2108,
+        "start": 1218,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 29,
+        "segment_start": 0
+      },
+      "score": 0.8683023970307364
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 2,
+    "returned_calls": 2
+  },
+  "estimated_cost_usd": 0.0008413,
+  "answer": "Không. Theo tài liệu, sự chậm lại so với xu hướng 2000–2013 chỉ quan sát được ở chuẩn $3,00. Ở các chuẩn cao hơn, ví dụ $4,20, mức giảm nghèo thực tế về cơ bản vẫn theo kịp xu hướng trước 2013 [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Với chuẩn $3,00, nếu nghèo cùng cùng tốc độ 2000–2013, tỷ lệ nghèo cùng cực có thể khoảng 7% vào 2026, thấp hơn khoảng 3 điểm phần trăm so với thực tế, tương đương khoảng 240 triệu người [2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7]. Lưu ý: số liệu 2025–2026 là nowcast và 2019 là projection; đường xu hướng được neo tại giá trị 2013 và dựa trên xu hướng log-linear 2000–2013 [d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141].",
+  "citations": [
+    "2d9b64aea6d198df62637089fd15e5010ef03c720a7e0509ed208dcea05b48c7",
+    "d37e7719f3dc2635ebcf4e805981e936059ad138fa2ed3522aab4792cc212141"
+  ],
+  "elapsed_seconds": 5.910142083987012,
+  "answerable": true,
+  "context_strict_hit": true,
+  "context_set_hit": true,
+  "first_search_hit3": true,
+  "first_search_is_original_query": false
+}

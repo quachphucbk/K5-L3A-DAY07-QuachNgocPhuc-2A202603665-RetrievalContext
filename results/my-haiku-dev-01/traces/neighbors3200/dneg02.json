@@ -1,0 +1,1306 @@
+{
+  "created_at_utc": "2026-11-14T10:42:11.413506+00:00",
+  "stage": "agent_dev",
+  "query_id": "dneg02",
+  "config_id": "neighbors3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Hãy liệt kê mã định danh và thu nhập của từng hộ gia đình trong dữ liệu gốc dùng cho báo cáo.",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Hãy liệt kê mã định danh và thu nhập của từng hộ gia đình trong dữ liệu gốc dùng cho báo cáo.\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gSmeQaw1SWLBgDtgcn",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01NAMuudpGixPZziP7qxBCXJ",
+            "name": "search_documents",
+            "input": {
+              "query": "household identifier income raw data survey"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01NAMuudpGixPZziP7qxBCXJ",
+          "name": "search_documents",
+          "input": {
+            "query": "household identifier income raw data survey"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1344,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 124,
+          "output_tokens_details": {
+            "thinking_tokens": 68
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001964,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1344,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.5431972920050612
+    },
+    {
+      "event": "search",
+      "query": "household identifier income raw data survey",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8658357600618707
+        },
+        {
+          "id": "8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 57,
+          "text": "25 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.4 The Poverty and Inequality Platform has been updated with new data and revised regional classifications The data on poverty and inequality used throughout the report are available through the World Bank’s online tool for statistics on poverty, inequality, and shared prosperity: the Poverty and Inequality Platform (PIP). The PIP data build primarily on national household surveys and are usually updated twice a year as national statistical offices around the world make new data available. The availability of recent survey data is crucial for the accuracy and reliability of the platform’s estimates of poverty and shared prosperity.",
+          "metadata": {
+            "end": 707,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 25,
+            "segment_start": 0
+          },
+          "score": 0.8636897544953335
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8491620168339639
+        }
+      ],
+      "context": "[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\n\n[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\n\n[e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nMAP 1.1 Subnational poverty trends vary widely, ranging from broad-based declines in the Kyrgyz Republic and the Philippines to stagnation or reversal in Guatemala and Nigeria (continued)\n\n[8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 57]\n25 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.4 The Poverty and Inequality Platform has been updated with new data and revised regional classifications The data on poverty and inequality used throughout the report are available through the World Bank’s online tool for statistics on poverty, inequality, and shared prosperity: the Poverty and Inequality Platform (PIP). The PIP data build primarily on national household surveys and are usually updated twice a year as national statistical offices around the world make new data available. The availability of recent survey data is crucial for the accuracy and reliability of the platform’s estimates of poverty and shared prosperity.",
+      "context_candidates": [
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8658357600618707
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 0,
+            "end": 512,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "MAP 1.1 Subnational poverty trends vary widely, ranging from broad-based declines in the Kyrgyz Republic and the Philippines to stagnation or reversal in Guatemala and Nigeria (continued)",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 1283,
+            "end": 1470,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 57,
+          "text": "25 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.4 The Poverty and Inequality Platform has been updated with new data and revised regional classifications The data on poverty and inequality used throughout the report are available through the World Bank’s online tool for statistics on poverty, inequality, and shared prosperity: the Poverty and Inequality Platform (PIP). The PIP data build primarily on national household surveys and are usually updated twice a year as national statistical offices around the world make new data available. The availability of recent survey data is crucial for the accuracy and reliability of the platform’s estimates of poverty and shared prosperity.",
+          "metadata": {
+            "end": 707,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 25,
+            "segment_start": 0
+          },
+          "score": 0.8636897544953335
+        },
+        {
+          "id": "5bfcc3f9066571cfd6de2d5af79c8f228986b082dbfb554019bc981c7850d9e2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 57,
+          "text": "Any specific region is considered covered by data in a given year if the economies with at least one survey within a three-year window on either side of the year account for at least 50 percent of the region’s population. Because of a lack of data, neither the Middle East and North Africa nor Sub-Saharan Africa were included among the post-2020 data in Poverty, Prosperity, and Planet Report 2024 (World Bank 2024a). Since then, more recent data have become available for a number of populous economies, greatly increasing the regional and global coverage in the post-COVID years. The updates include data on Ethiopia (2021) and Nigeria (2022/23), which results in coverage for Sub-Saharan Africa up to 2024, as well as new data for the Arab Republic of Egypt (2021/22), India (2022/23, 2023/24), and Pakistan (2024/25).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 25,
+            "segment_start": 0,
+            "start": 709,
+            "end": 1531,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8491620168339639
+        },
+        {
+          "id": "d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "FIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 26,
+            "segment_start": 0,
+            "start": 697,
+            "end": 1597,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+        "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+        "e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1",
+        "8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710"
+      ],
+      "elapsed_seconds": 0.03960854100296274
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Hãy liệt kê mã định danh và thu nhập của từng hộ gia đình trong dữ liệu gốc dùng cho báo cáo.\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01NAMuudpGixPZziP7qxBCXJ",
+              "name": "search_documents",
+              "input": {
+                "query": "household identifier income raw data survey"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01NAMuudpGixPZziP7qxBCXJ",
+              "content": "{\"current_context\": \"[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\\n\\n[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\\n\\n[e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\nMAP 1.1 Subnational poverty trends vary widely, ranging from broad-based declines in the Kyrgyz Republic and the Philippines to stagnation or reversal in Guatemala and Nigeria (continued)\\n\\n[8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 57]\\n25 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.4 The Poverty and Inequality Platform has been updated with new data and revised regional classifications The data on poverty and inequality used throughout the report are available through the World Bank’s online tool for statistics on poverty, inequality, and shared prosperity: the Poverty and Inequality Platform (PIP). The PIP data build primarily on national household surveys and are usually updated twice a year as national statistical offices around the world make new data available. The availability of recent survey data is crucial for the accuracy and reliability of the platform’s estimates of poverty and shared prosperity.\", \"current_context_ids\": [\"21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4\", \"bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55\", \"e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1\", \"8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710\"], \"searched_queries\": [\"household identifier income raw data survey\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gStYea6pAfuoBfssT8",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_017b2hpFXQg9oNavKctx2Nys",
+            "name": "search_documents",
+            "input": {
+              "query": "household-level microdata list of households with ID and income"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_017b2hpFXQg9oNavKctx2Nys",
+          "name": "search_documents",
+          "input": {
+            "query": "household-level microdata list of households with ID and income"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2793,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 129,
+          "output_tokens_details": {
+            "thinking_tokens": 69
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003438,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2793,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.1735946249973495
+    },
+    {
+      "event": "search",
+      "query": "household-level microdata list of households with ID and income",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8775115682177816
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8636275015099361
+        },
+        {
+          "id": "7f7aee681220dcfe6dcded040090093b0cdb83a60095490c4c8c73cb8f71780e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 67,
+          "text": "Note: the analysis uses data aligned with 2013 and 2024 (refer to annex 1 a). Panel a: Population shares by age-group do not sum to 100 percent because the children and youth categories overlap slightly. Panel b: Households are grouped into six types based on the age and sex of adult members and the presence of children following de la Flor Giuffra et al. (2025). Households not falling into any of the six types account for less than 1 percent in the data. the household typology data show less coverage (refer to annex 1 a), notably among high- income economies, than the data used to construct profiles in panel a. Child = ages 0–17. adult = ages 25–64.\n\nSenior adult = ages 65+.",
+          "metadata": {
+            "end": 1446,
+            "start": 762,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 35,
+            "segment_start": 0
+          },
+          "score": 0.860717670831964
+        }
+      ],
+      "context": "[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\n\n[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\n\n[e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nMAP 1.1 Subnational poverty trends vary widely, ranging from broad-based declines in the Kyrgyz Republic and the Philippines to stagnation or reversal in Guatemala and Nigeria (continued)\n\n[f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\n1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+      "context_candidates": [
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8775115682177816
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 0,
+            "end": 512,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "MAP 1.1 Subnational poverty trends vary widely, ranging from broad-based declines in the Kyrgyz Republic and the Philippines to stagnation or reversal in Guatemala and Nigeria (continued)",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 1283,
+            "end": 1470,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8636275015099361
+        },
+        {
+          "id": "d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "FIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 26,
+            "segment_start": 0,
+            "start": 697,
+            "end": 1597,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "7f7aee681220dcfe6dcded040090093b0cdb83a60095490c4c8c73cb8f71780e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 67,
+          "text": "Note: the analysis uses data aligned with 2013 and 2024 (refer to annex 1 a). Panel a: Population shares by age-group do not sum to 100 percent because the children and youth categories overlap slightly. Panel b: Households are grouped into six types based on the age and sex of adult members and the presence of children following de la Flor Giuffra et al. (2025). Households not falling into any of the six types account for less than 1 percent in the data. the household typology data show less coverage (refer to annex 1 a), notably among high- income economies, than the data used to construct profiles in panel a. Child = ages 0–17. adult = ages 25–64.\n\nSenior adult = ages 65+.",
+          "metadata": {
+            "end": 1446,
+            "start": 762,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 35,
+            "segment_start": 0
+          },
+          "score": 0.860717670831964
+        },
+        {
+          "id": "8097c6d4e1f83c7fae20e2e0fd5027938c81d0b43488f7ec5ed3735507dc22cf",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 67,
+          "text": "35 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.12 Global populations are becoming more educated Education Age Tertiary Secondary Primary No education Adult (25+) Youth (15−24) Child (<18) a. Population profiles Two adults with children Only senior adults with children Only senior adults One female adult with children Multiple adults with children Only adults b. Household types 0 20 40 60 Share of global population (%) 0 10 20 30 40 Share of global population (%) 2013 2024 Sources: Panels a and b: Global Monitoring database (version September 2026), internal database, World bank.\n\nPanel a: luxembourg income Study database (May 2026 vintage), liS Cross-national data Center, https://www .lisdatacenter.org/our-data/lis-database/.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 35,
+            "segment_start": 0,
+            "start": 0,
+            "end": 760,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "ffceeb09a1ac0a578b0ddbee9b4dc724f3a5cf36cf8fbf96ffdc825cbc751097",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 67,
+          "text": "Poverty varies sharply across these groups, even within economies at similar income levels (World Bank 2018). Children under age 18 face the highest rates of extreme poverty of any age-group. Individuals with no formal education face the highest rates of any educational group. Across these groups, rates of extreme poverty vary substantially, though all groups experienced declining poverty rates between 2013 and 2024. Age represents a stark divide.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 35,
+            "segment_start": 0,
+            "start": 1448,
+            "end": 1899,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+        "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+        "e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1",
+        "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913"
+      ],
+      "elapsed_seconds": 0.03947829100070521
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Hãy liệt kê mã định danh và thu nhập của từng hộ gia đình trong dữ liệu gốc dùng cho báo cáo.\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_017b2hpFXQg9oNavKctx2Nys",
+              "name": "search_documents",
+              "input": {
+                "query": "household-level microdata list of households with ID and income"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_017b2hpFXQg9oNavKctx2Nys",
+              "content": "{\"current_context\": \"[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\\n\\n[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\\n\\n[e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\nMAP 1.1 Subnational poverty trends vary widely, ranging from broad-based declines in the Kyrgyz Republic and the Philippines to stagnation or reversal in Guatemala and Nigeria (continued)\\n\\n[f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 58]\\n1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\\n\\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.\", \"current_context_ids\": [\"21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4\", \"bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55\", \"e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1\", \"f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913\"], \"searched_queries\": [\"household identifier income raw data survey\", \"household-level microdata list of households with ID and income\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gT3nG9wHfsj6EoHhdL",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01RYXK94Yq97JgehHf3Q68N8",
+            "name": "search_documents",
+            "input": {
+              "query": "household survey dataset household ID income raw data table appendix"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01RYXK94Yq97JgehHf3Q68N8",
+          "name": "search_documents",
+          "input": {
+            "query": "household survey dataset household ID income raw data table appendix"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2853,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 108,
+          "output_tokens_details": {
+            "thinking_tokens": 45
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003393,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2853,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.8826270829886198
+    },
+    {
+      "event": "search",
+      "query": "household survey dataset household ID income raw data table appendix",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 57,
+          "text": "25 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.4 The Poverty and Inequality Platform has been updated with new data and revised regional classifications The data on poverty and inequality used throughout the report are available through the World Bank’s online tool for statistics on poverty, inequality, and shared prosperity: the Poverty and Inequality Platform (PIP). The PIP data build primarily on national household surveys and are usually updated twice a year as national statistical offices around the world make new data available. The availability of recent survey data is crucial for the accuracy and reliability of the platform’s estimates of poverty and shared prosperity.",
+          "metadata": {
+            "end": 707,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 25,
+            "segment_start": 0
+          },
+          "score": 0.8596677267749487
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8596139633885659
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8586276853902542
+        }
+      ],
+      "context": "[8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 57]\n25 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.4 The Poverty and Inequality Platform has been updated with new data and revised regional classifications The data on poverty and inequality used throughout the report are available through the World Bank’s online tool for statistics on poverty, inequality, and shared prosperity: the Poverty and Inequality Platform (PIP). The PIP data build primarily on national household surveys and are usually updated twice a year as national statistical offices around the world make new data available. The availability of recent survey data is crucial for the accuracy and reliability of the platform’s estimates of poverty and shared prosperity.\n\n[5bfcc3f9066571cfd6de2d5af79c8f228986b082dbfb554019bc981c7850d9e2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 57]\nAny specific region is considered covered by data in a given year if the economies with at least one survey within a three-year window on either side of the year account for at least 50 percent of the region’s population. Because of a lack of data, neither the Middle East and North Africa nor Sub-Saharan Africa were included among the post-2020 data in Poverty, Prosperity, and Planet Report 2024 (World Bank 2024a). Since then, more recent data have become available for a number of populous economies, greatly increasing the regional and global coverage in the post-COVID years. The updates include data on Ethiopia (2021) and Nigeria (2022/23), which results in coverage for Sub-Saharan Africa up to 2024, as well as new data for the Arab Republic of Egypt (2021/22), India (2022/23, 2023/24), and Pakistan (2024/25).\n\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\n\n[e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nMAP 1.1 Subnational poverty trends vary widely, ranging from broad-based declines in the Kyrgyz Republic and the Philippines to stagnation or reversal in Guatemala and Nigeria (continued)",
+      "context_candidates": [
+        {
+          "id": "8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 57,
+          "text": "25 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.4 The Poverty and Inequality Platform has been updated with new data and revised regional classifications The data on poverty and inequality used throughout the report are available through the World Bank’s online tool for statistics on poverty, inequality, and shared prosperity: the Poverty and Inequality Platform (PIP). The PIP data build primarily on national household surveys and are usually updated twice a year as national statistical offices around the world make new data available. The availability of recent survey data is crucial for the accuracy and reliability of the platform’s estimates of poverty and shared prosperity.",
+          "metadata": {
+            "end": 707,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 25,
+            "segment_start": 0
+          },
+          "score": 0.8596677267749487
+        },
+        {
+          "id": "5bfcc3f9066571cfd6de2d5af79c8f228986b082dbfb554019bc981c7850d9e2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 57,
+          "text": "Any specific region is considered covered by data in a given year if the economies with at least one survey within a three-year window on either side of the year account for at least 50 percent of the region’s population. Because of a lack of data, neither the Middle East and North Africa nor Sub-Saharan Africa were included among the post-2020 data in Poverty, Prosperity, and Planet Report 2024 (World Bank 2024a). Since then, more recent data have become available for a number of populous economies, greatly increasing the regional and global coverage in the post-COVID years. The updates include data on Ethiopia (2021) and Nigeria (2022/23), which results in coverage for Sub-Saharan Africa up to 2024, as well as new data for the Arab Republic of Egypt (2021/22), India (2022/23, 2023/24), and Pakistan (2024/25).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 25,
+            "segment_start": 0,
+            "start": 709,
+            "end": 1531,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8596139633885659
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 0,
+            "end": 512,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "MAP 1.1 Subnational poverty trends vary widely, ranging from broad-based declines in the Kyrgyz Republic and the Philippines to stagnation or reversal in Guatemala and Nigeria (continued)",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 1283,
+            "end": 1470,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "1990–2026 (version September 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global -distribution.\n\nNote: the growth incidence curves depicted in this figure are calculated between 2000 and 2019 and between 2019 and 2025 based on the welfare distribution in each region. they reflect the growth reported in household surveys, which may not coincide with national accounts. the panels do not account for any breaks in comparability in the surveys during 2000–25. the figure excludes the bottom and top three percentiles of the welfare distribution. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 2394,
+            "start": 1598,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 26,
+            "segment_start": 0
+          },
+          "score": 0.8586276853902542
+        },
+        {
+          "id": "d3884ce37ebe2e35c91b3906f4bb4f0fba11c2c8d1dde39a0f138c80ccc106b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 58,
+          "text": "FIGURE 1.5 Welfare growth varies across welfare distribution in all regions −4 −2 0 2 4 6 0 25 50 75 100 a. Sub-Saharan Africa Annualized welfare growth (%) Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 Annualized welfare growth (%) d. Latin America and the Caribbean Percentile of the welfare distribution −4 −2 0 2 4 6 8 0 25 50 75 100 c. East Asia and Pacific Annualized welfare growth (%) Percentile of the welfare distribution Annualized welfare growth (%) −4 −2 0 2 4 6 0 25 50 75 100 f. MENAAP Percentile of the welfare distribution Percentile of the welfare distribution −4 −2 0 2 4 6 0 25 50 75 100 b. South Asia Annualized welfare growth (%) Percentile of the welfare distribution 2000–19 2019–25 −4 −2 0 2 4 6 8 0 25 50 75 100 Annualized welfare growth (%) e. Europe and Central Asia Source: World bank calculations based on data from 1000 binned Global distribution,",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 26,
+            "segment_start": 0,
+            "start": 697,
+            "end": 1597,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710",
+        "5bfcc3f9066571cfd6de2d5af79c8f228986b082dbfb554019bc981c7850d9e2",
+        "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+        "e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1"
+      ],
+      "elapsed_seconds": 0.03946775000076741
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Hãy liệt kê mã định danh và thu nhập của từng hộ gia đình trong dữ liệu gốc dùng cho báo cáo.\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01RYXK94Yq97JgehHf3Q68N8",
+              "name": "search_documents",
+              "input": {
+                "query": "household survey dataset household ID income raw data table appendix"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01RYXK94Yq97JgehHf3Q68N8",
+              "content": "{\"current_context\": \"[8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 57]\\n25 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.4 The Poverty and Inequality Platform has been updated with new data and revised regional classifications The data on poverty and inequality used throughout the report are available through the World Bank’s online tool for statistics on poverty, inequality, and shared prosperity: the Poverty and Inequality Platform (PIP). The PIP data build primarily on national household surveys and are usually updated twice a year as national statistical offices around the world make new data available. The availability of recent survey data is crucial for the accuracy and reliability of the platform’s estimates of poverty and shared prosperity.\\n\\n[5bfcc3f9066571cfd6de2d5af79c8f228986b082dbfb554019bc981c7850d9e2 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 57]\\nAny specific region is considered covered by data in a given year if the economies with at least one survey within a three-year window on either side of the year account for at least 50 percent of the region’s population. Because of a lack of data, neither the Middle East and North Africa nor Sub-Saharan Africa were included among the post-2020 data in Poverty, Prosperity, and Planet Report 2024 (World Bank 2024a). Since then, more recent data have become available for a number of populous economies, greatly increasing the regional and global coverage in the post-COVID years. The updates include data on Ethiopia (2021) and Nigeria (2022/23), which results in coverage for Sub-Saharan Africa up to 2024, as well as new data for the Arab Republic of Egypt (2021/22), India (2022/23, 2023/24), and Pakistan (2024/25).\\n\\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\\n\\n[e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\nMAP 1.1 Subnational poverty trends vary widely, ranging from broad-based declines in the Kyrgyz Republic and the Philippines to stagnation or reversal in Guatemala and Nigeria (continued)\", \"current_context_ids\": [\"8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710\", \"5bfcc3f9066571cfd6de2d5af79c8f228986b082dbfb554019bc981c7850d9e2\", \"21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4\", \"e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1\"], \"searched_queries\": [\"household identifier income raw data survey\", \"household-level microdata list of households with ID and income\", \"household survey dataset household ID income raw data table appendix\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gTCLDsdcWtMzLE5TNT",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01KMF5QgndJqkeLbhWNSBsF1",
+            "name": "search_documents",
+            "input": {
+              "query": "list of individual households with identifiers and income values"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01KMF5QgndJqkeLbhWNSBsF1",
+          "name": "search_documents",
+          "input": {
+            "query": "list of individual households with identifiers and income values"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2867,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 136,
+          "output_tokens_details": {
+            "thinking_tokens": 77
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003547,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2867,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.799418708003941
+    },
+    {
+      "event": "search",
+      "query": "list of individual households with identifiers and income values",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "7f7aee681220dcfe6dcded040090093b0cdb83a60095490c4c8c73cb8f71780e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 67,
+          "text": "Note: the analysis uses data aligned with 2013 and 2024 (refer to annex 1 a). Panel a: Population shares by age-group do not sum to 100 percent because the children and youth categories overlap slightly. Panel b: Households are grouped into six types based on the age and sex of adult members and the presence of children following de la Flor Giuffra et al. (2025). Households not falling into any of the six types account for less than 1 percent in the data. the household typology data show less coverage (refer to annex 1 a), notably among high- income economies, than the data used to construct profiles in panel a. Child = ages 0–17. adult = ages 25–64.\n\nSenior adult = ages 65+.",
+          "metadata": {
+            "end": 1446,
+            "start": 762,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 35,
+            "segment_start": 0
+          },
+          "score": 0.8535500597760123
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8527283414385252
+        },
+        {
+          "id": "8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 57,
+          "text": "25 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.4 The Poverty and Inequality Platform has been updated with new data and revised regional classifications The data on poverty and inequality used throughout the report are available through the World Bank’s online tool for statistics on poverty, inequality, and shared prosperity: the Poverty and Inequality Platform (PIP). The PIP data build primarily on national household surveys and are usually updated twice a year as national statistical offices around the world make new data available. The availability of recent survey data is crucial for the accuracy and reliability of the platform’s estimates of poverty and shared prosperity.",
+          "metadata": {
+            "end": 707,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 25,
+            "segment_start": 0
+          },
+          "score": 0.8479318962117498
+        }
+      ],
+      "context": "[7f7aee681220dcfe6dcded040090093b0cdb83a60095490c4c8c73cb8f71780e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 67]\nNote: the analysis uses data aligned with 2013 and 2024 (refer to annex 1 a). Panel a: Population shares by age-group do not sum to 100 percent because the children and youth categories overlap slightly. Panel b: Households are grouped into six types based on the age and sex of adult members and the presence of children following de la Flor Giuffra et al. (2025). Households not falling into any of the six types account for less than 1 percent in the data. the household typology data show less coverage (refer to annex 1 a), notably among high- income economies, than the data used to construct profiles in panel a. Child = ages 0–17. adult = ages 25–64.\n\nSenior adult = ages 65+.\n\n[8097c6d4e1f83c7fae20e2e0fd5027938c81d0b43488f7ec5ed3735507dc22cf | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 67]\n35 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.12 Global populations are becoming more educated Education Age Tertiary Secondary Primary No education Adult (25+) Youth (15−24) Child (<18) a. Population profiles Two adults with children Only senior adults with children Only senior adults One female adult with children Multiple adults with children Only adults b. Household types 0 20 40 60 Share of global population (%) 0 10 20 30 40 Share of global population (%) 2013 2024 Sources: Panels a and b: Global Monitoring database (version September 2026), internal database, World bank.\n\nPanel a: luxembourg income Study database (May 2026 vintage), liS Cross-national data Center, https://www .lisdatacenter.org/our-data/lis-database/.\n\n[ffceeb09a1ac0a578b0ddbee9b4dc724f3a5cf36cf8fbf96ffdc825cbc751097 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 67]\nPoverty varies sharply across these groups, even within economies at similar income levels (World Bank 2018). Children under age 18 face the highest rates of extreme poverty of any age-group. Individuals with no formal education face the highest rates of any educational group. Across these groups, rates of extreme poverty vary substantially, though all groups experienced declining poverty rates between 2013 and 2024. Age represents a stark divide.\n\n[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+      "context_candidates": [
+        {
+          "id": "7f7aee681220dcfe6dcded040090093b0cdb83a60095490c4c8c73cb8f71780e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 67,
+          "text": "Note: the analysis uses data aligned with 2013 and 2024 (refer to annex 1 a). Panel a: Population shares by age-group do not sum to 100 percent because the children and youth categories overlap slightly. Panel b: Households are grouped into six types based on the age and sex of adult members and the presence of children following de la Flor Giuffra et al. (2025). Households not falling into any of the six types account for less than 1 percent in the data. the household typology data show less coverage (refer to annex 1 a), notably among high- income economies, than the data used to construct profiles in panel a. Child = ages 0–17. adult = ages 25–64.\n\nSenior adult = ages 65+.",
+          "metadata": {
+            "end": 1446,
+            "start": 762,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 35,
+            "segment_start": 0
+          },
+          "score": 0.8535500597760123
+        },
+        {
+          "id": "8097c6d4e1f83c7fae20e2e0fd5027938c81d0b43488f7ec5ed3735507dc22cf",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 67,
+          "text": "35 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.12 Global populations are becoming more educated Education Age Tertiary Secondary Primary No education Adult (25+) Youth (15−24) Child (<18) a. Population profiles Two adults with children Only senior adults with children Only senior adults One female adult with children Multiple adults with children Only adults b. Household types 0 20 40 60 Share of global population (%) 0 10 20 30 40 Share of global population (%) 2013 2024 Sources: Panels a and b: Global Monitoring database (version September 2026), internal database, World bank.\n\nPanel a: luxembourg income Study database (May 2026 vintage), liS Cross-national data Center, https://www .lisdatacenter.org/our-data/lis-database/.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 35,
+            "segment_start": 0,
+            "start": 0,
+            "end": 760,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "ffceeb09a1ac0a578b0ddbee9b4dc724f3a5cf36cf8fbf96ffdc825cbc751097",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 67,
+          "text": "Poverty varies sharply across these groups, even within economies at similar income levels (World Bank 2018). Children under age 18 face the highest rates of extreme poverty of any age-group. Individuals with no formal education face the highest rates of any educational group. Across these groups, rates of extreme poverty vary substantially, though all groups experienced declining poverty rates between 2013 and 2024. Age represents a stark divide.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 35,
+            "segment_start": 0,
+            "start": 1448,
+            "end": 1899,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "end": 1281,
+            "start": 514,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8527283414385252
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 0,
+            "end": 512,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "e5baa5b57f3ae828b7822739128e4b5def9f13c1ea40d36985b28557918c6be1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "MAP 1.1 Subnational poverty trends vary widely, ranging from broad-based declines in the Kyrgyz Republic and the Philippines to stagnation or reversal in Guatemala and Nigeria (continued)",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 1283,
+            "end": 1470,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "8f6cef1deeec3c960153428246d39c0295744c58aae0be71d4c25e4029bb3710",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 57,
+          "text": "25 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.4 The Poverty and Inequality Platform has been updated with new data and revised regional classifications The data on poverty and inequality used throughout the report are available through the World Bank’s online tool for statistics on poverty, inequality, and shared prosperity: the Poverty and Inequality Platform (PIP). The PIP data build primarily on national household surveys and are usually updated twice a year as national statistical offices around the world make new data available. The availability of recent survey data is crucial for the accuracy and reliability of the platform’s estimates of poverty and shared prosperity.",
+          "metadata": {
+            "end": 707,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 25,
+            "segment_start": 0
+          },
+          "score": 0.8479318962117498
+        },
+        {
+          "id": "5bfcc3f9066571cfd6de2d5af79c8f228986b082dbfb554019bc981c7850d9e2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 57,
+          "text": "Any specific region is considered covered by data in a given year if the economies with at least one survey within a three-year window on either side of the year account for at least 50 percent of the region’s population. Because of a lack of data, neither the Middle East and North Africa nor Sub-Saharan Africa were included among the post-2020 data in Poverty, Prosperity, and Planet Report 2024 (World Bank 2024a). Since then, more recent data have become available for a number of populous economies, greatly increasing the regional and global coverage in the post-COVID years. The updates include data on Ethiopia (2021) and Nigeria (2022/23), which results in coverage for Sub-Saharan Africa up to 2024, as well as new data for the Arab Republic of Egypt (2021/22), India (2022/23, 2023/24), and Pakistan (2024/25).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 25,
+            "segment_start": 0,
+            "start": 709,
+            "end": 1531,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "7f7aee681220dcfe6dcded040090093b0cdb83a60095490c4c8c73cb8f71780e",
+        "8097c6d4e1f83c7fae20e2e0fd5027938c81d0b43488f7ec5ed3735507dc22cf",
+        "ffceeb09a1ac0a578b0ddbee9b4dc724f3a5cf36cf8fbf96ffdc825cbc751097",
+        "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55"
+      ],
+      "elapsed_seconds": 0.0386900410085218
+    },
+    {
+      "event": "model",
+      "step": 5,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Hãy liệt kê mã định danh và thu nhập của từng hộ gia đình trong dữ liệu gốc dùng cho báo cáo.\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01KMF5QgndJqkeLbhWNSBsF1",
+              "name": "search_documents",
+              "input": {
+                "query": "list of individual households with identifiers and income values"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01KMF5QgndJqkeLbhWNSBsF1",
+              "content": "{\"current_context\": \"[7f7aee681220dcfe6dcded040090093b0cdb83a60095490c4c8c73cb8f71780e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 67]\\nNote: the analysis uses data aligned with 2013 and 2024 (refer to annex 1 a). Panel a: Population shares by age-group do not sum to 100 percent because the children and youth categories overlap slightly. Panel b: Households are grouped into six types based on the age and sex of adult members and the presence of children following de la Flor Giuffra et al. (2025). Households not falling into any of the six types account for less than 1 percent in the data. the household typology data show less coverage (refer to annex 1 a), notably among high- income economies, than the data used to construct profiles in panel a. Child = ages 0–17. adult = ages 25–64.\\n\\nSenior adult = ages 65+.\\n\\n[8097c6d4e1f83c7fae20e2e0fd5027938c81d0b43488f7ec5ed3735507dc22cf | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 67]\\n35 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.12 Global populations are becoming more educated Education Age Tertiary Secondary Primary No education Adult (25+) Youth (15−24) Child (<18) a. Population profiles Two adults with children Only senior adults with children Only senior adults One female adult with children Multiple adults with children Only adults b. Household types 0 20 40 60 Share of global population (%) 0 10 20 30 40 Share of global population (%) 2013 2024 Sources: Panels a and b: Global Monitoring database (version September 2026), internal database, World bank.\\n\\nPanel a: luxembourg income Study database (May 2026 vintage), liS Cross-national data Center, https://www .lisdatacenter.org/our-data/lis-database/.\\n\\n[ffceeb09a1ac0a578b0ddbee9b4dc724f3a5cf36cf8fbf96ffdc825cbc751097 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 67]\\nPoverty varies sharply across these groups, even within economies at similar income levels (World Bank 2018). Children under age 18 face the highest rates of extreme poverty of any age-group. Individuals with no formal education face the highest rates of any educational group. Across these groups, rates of extreme poverty vary substantially, though all groups experienced declining poverty rates between 2013 and 2024. Age represents a stark divide.\\n\\n[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\", \"current_context_ids\": [\"7f7aee681220dcfe6dcded040090093b0cdb83a60095490c4c8c73cb8f71780e\", \"8097c6d4e1f83c7fae20e2e0fd5027938c81d0b43488f7ec5ed3735507dc22cf\", \"ffceeb09a1ac0a578b0ddbee9b4dc724f3a5cf36cf8fbf96ffdc825cbc751097\", \"bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55\"], \"searched_queries\": [\"household identifier income raw data survey\", \"household-level microdata list of households with ID and income\", \"household survey dataset household ID income raw data table appendix\", \"list of individual households with identifiers and income values\"], \"searches_remaining\": 0}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gTLniV1DFhZwNeUCVD",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01M4xKEUQL1QV8aFkVuJRWFt",
+            "name": "finish",
+            "input": {
+              "status": "abstain",
+              "answer": "Chưa đủ bằng chứng trong kho để liệt kê mã định danh và thu nhập của từng hộ gia đình. Các đoạn tìm được (trang 67 và 74 của chương 1) chỉ nói về tỷ lệ dân số theo nhóm tuổi, các kiểu hộ gia đình theo cấu trúc thành viên, tỷ lệ nghèo cùng cực theo nhóm, và bản đồ tỷ lệ nghèo cấp địa phương. Không có bảng dữ liệu vi mô hay danh sách hộ gia đình kèm mã và thu nhập. Đã thử 4 truy vấn khác nhau và đã hết lượt tìm kiếm.",
+              "citations": []
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01M4xKEUQL1QV8aFkVuJRWFt",
+          "name": "finish",
+          "input": {
+            "status": "abstain",
+            "answer": "Chưa đủ bằng chứng trong kho để liệt kê mã định danh và thu nhập của từng hộ gia đình. Các đoạn tìm được (trang 67 và 74 của chương 1) chỉ nói về tỷ lệ dân số theo nhóm tuổi, các kiểu hộ gia đình theo cấu trúc thành viên, tỷ lệ nghèo cùng cực theo nhóm, và bản đồ tỷ lệ nghèo cấp địa phương. Không có bảng dữ liệu vi mô hay danh sách hộ gia đình kèm mã và thu nhập. Đã thử 4 truy vấn khác nhau và đã hết lượt tìm kiếm.",
+            "citations": []
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2996,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 369,
+          "output_tokens_details": {
+            "thinking_tokens": 31
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0004841,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2996,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.807967959000962
+    },
+    {
+      "event": "finish",
+      "status": "abstain",
+      "answer": "Chưa đủ bằng chứng trong kho để liệt kê mã định danh và thu nhập của từng hộ gia đình. Các đoạn tìm được (trang 67 và 74 của chương 1) chỉ nói về tỷ lệ dân số theo nhóm tuổi, các kiểu hộ gia đình theo cấu trúc thành viên, tỷ lệ nghèo cùng cực theo nhóm, và bản đồ tỷ lệ nghèo cấp địa phương. Không có bảng dữ liệu vi mô hay danh sách hộ gia đình kèm mã và thu nhập. Đã thử 4 truy vấn khác nhau và đã hết lượt tìm kiếm.",
+      "citations": [],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 4,
+  "model_calls": 5,
+  "usage": {
+    "input_tokens": 12853,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 866
+  },
+  "cost_usd": null,
+  "status": "abstain",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "neighbors"
+  },
+  "context": "[7f7aee681220dcfe6dcded040090093b0cdb83a60095490c4c8c73cb8f71780e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 67]\nNote: the analysis uses data aligned with 2013 and 2024 (refer to annex 1 a). Panel a: Population shares by age-group do not sum to 100 percent because the children and youth categories overlap slightly. Panel b: Households are grouped into six types based on the age and sex of adult members and the presence of children following de la Flor Giuffra et al. (2025). Households not falling into any of the six types account for less than 1 percent in the data. the household typology data show less coverage (refer to annex 1 a), notably among high- income economies, than the data used to construct profiles in panel a. Child = ages 0–17. adult = ages 25–64.\n\nSenior adult = ages 65+.\n\n[8097c6d4e1f83c7fae20e2e0fd5027938c81d0b43488f7ec5ed3735507dc22cf | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 67]\n35 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.12 Global populations are becoming more educated Education Age Tertiary Secondary Primary No education Adult (25+) Youth (15−24) Child (<18) a. Population profiles Two adults with children Only senior adults with children Only senior adults One female adult with children Multiple adults with children Only adults b. Household types 0 20 40 60 Share of global population (%) 0 10 20 30 40 Share of global population (%) 2013 2024 Sources: Panels a and b: Global Monitoring database (version September 2026), internal database, World bank.\n\nPanel a: luxembourg income Study database (May 2026 vintage), liS Cross-national data Center, https://www .lisdatacenter.org/our-data/lis-database/.\n\n[ffceeb09a1ac0a578b0ddbee9b4dc724f3a5cf36cf8fbf96ffdc825cbc751097 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 67]\nPoverty varies sharply across these groups, even within economies at similar income levels (World Bank 2018). Children under age 18 face the highest rates of extreme poverty of any age-group. Individuals with no formal education face the highest rates of any educational group. Across these groups, rates of extreme poverty vary substantially, though all groups experienced declining poverty rates between 2013 and 2024. Age represents a stark divide.\n\n[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+  "context_ids": [
+    "7f7aee681220dcfe6dcded040090093b0cdb83a60095490c4c8c73cb8f71780e",
+    "8097c6d4e1f83c7fae20e2e0fd5027938c81d0b43488f7ec5ed3735507dc22cf",
+    "ffceeb09a1ac0a578b0ddbee9b4dc724f3a5cf36cf8fbf96ffdc825cbc751097",
+    "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55"
+  ],
+  "context_chunks": [
+    {
+      "id": "7f7aee681220dcfe6dcded040090093b0cdb83a60095490c4c8c73cb8f71780e",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 67,
+      "text": "Note: the analysis uses data aligned with 2013 and 2024 (refer to annex 1 a). Panel a: Population shares by age-group do not sum to 100 percent because the children and youth categories overlap slightly. Panel b: Households are grouped into six types based on the age and sex of adult members and the presence of children following de la Flor Giuffra et al. (2025). Households not falling into any of the six types account for less than 1 percent in the data. the household typology data show less coverage (refer to annex 1 a), notably among high- income economies, than the data used to construct profiles in panel a. Child = ages 0–17. adult = ages 25–64.\n\nSenior adult = ages 65+.",
+      "metadata": {
+        "end": 1446,
+        "start": 762,
+        "section": "Poverty persists unevenly across people and places",
+        "chunking": "paragraph",
+        "printed_page": 35,
+        "segment_start": 0
+      },
+      "score": 0.8535500597760123
+    },
+    {
+      "id": "8097c6d4e1f83c7fae20e2e0fd5027938c81d0b43488f7ec5ed3735507dc22cf",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 67,
+      "text": "35 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.12 Global populations are becoming more educated Education Age Tertiary Secondary Primary No education Adult (25+) Youth (15−24) Child (<18) a. Population profiles Two adults with children Only senior adults with children Only senior adults One female adult with children Multiple adults with children Only adults b. Household types 0 20 40 60 Share of global population (%) 0 10 20 30 40 Share of global population (%) 2013 2024 Sources: Panels a and b: Global Monitoring database (version September 2026), internal database, World bank.\n\nPanel a: luxembourg income Study database (May 2026 vintage), liS Cross-national data Center, https://www .lisdatacenter.org/our-data/lis-database/.",
+      "metadata": {
+        "section": "Poverty persists unevenly across people and places",
+        "printed_page": 35,
+        "segment_start": 0,
+        "start": 0,
+        "end": 760,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "ffceeb09a1ac0a578b0ddbee9b4dc724f3a5cf36cf8fbf96ffdc825cbc751097",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 67,
+      "text": "Poverty varies sharply across these groups, even within economies at similar income levels (World Bank 2018). Children under age 18 face the highest rates of extreme poverty of any age-group. Individuals with no formal education face the highest rates of any educational group. Across these groups, rates of extreme poverty vary substantially, though all groups experienced declining poverty rates between 2013 and 2024. Age represents a stark divide.",
+      "metadata": {
+        "section": "Poverty persists unevenly across people and places",
+        "printed_page": 35,
+        "segment_start": 0,
+        "start": 1448,
+        "end": 1899,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 74,
+      "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+      "metadata": {
+        "section": "Poverty persists unevenly across people and places",
+        "printed_page": 42,
+        "segment_start": 0,
+        "start": 0,
+        "end": 512,
+        "chunking": "paragraph"
+      }
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 5,
+    "returned_calls": 5
+  },
+  "estimated_cost_usd": 0.0017183,
+  "answer": "Chưa đủ bằng chứng trong kho để liệt kê mã định danh và thu nhập của từng hộ gia đình. Các đoạn tìm được (trang 67 và 74 của chương 1) chỉ nói về tỷ lệ dân số theo nhóm tuổi, các kiểu hộ gia đình theo cấu trúc thành viên, tỷ lệ nghèo cùng cực theo nhóm, và bản đồ tỷ lệ nghèo cấp địa phương. Không có bảng dữ liệu vi mô hay danh sách hộ gia đình kèm mã và thu nhập. Đã thử 4 truy vấn khác nhau và đã hết lượt tìm kiếm.",
+  "citations": [],
+  "elapsed_seconds": 10.36452683400421,
+  "answerable": false,
+  "context_strict_hit": null,
+  "context_set_hit": null,
+  "first_search_hit3": null,
+  "first_search_is_original_query": false
+}

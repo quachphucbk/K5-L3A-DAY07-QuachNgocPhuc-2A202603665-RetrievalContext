@@ -1,0 +1,399 @@
+{
+  "created_at_utc": "2026-11-14T14:08:35.286219+00:00",
+  "stage": "agent_test",
+  "query_id": "t01",
+  "config_id": "budget3200",
+  "split": "test",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Trong chú thích Figure 1.3, các nhóm thu nhập được cố định theo phân loại của năm nào khi so sánh 1990 và 2024?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong chú thích Figure 1.3, các nhóm thu nhập được cố định theo phân loại của năm nào khi so sánh 1990 và 2024?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xBeVEpMks5q5fu9RYG",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_015LVXzquG8FmWYHZ6DMp1JC",
+            "name": "search_documents",
+            "input": {
+              "query": "Figure 1.3 income groups classification fixed year 1990 2024"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_015LVXzquG8FmWYHZ6DMp1JC",
+          "name": "search_documents",
+          "input": {
+            "query": "Figure 1.3 income groups classification fixed year 1990 2024"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1347,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 68,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001687,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1347,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.8469848749955418
+    },
+    {
+      "event": "search",
+      "query": "Figure 1.3 income groups classification fixed year 1990 2024",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "6155ca575388567c630552badf1515d018a372255d5ffec7f9d16b7c2bcca87e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 54,
+          "text": "BOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) The upward shift in the global distribution of welfare between 1990 and 2024 that resulted in poverty declines was highly uneven across income groups (refer to figure 1.3). In 1990, the global distribution was heavily concentrated at the lowest income levels. Half the world was living on less than $3.55 a day. By 2024, however, many people had moved above the international poverty line, and the median income had risen to $9.20 a day, reflecting substantive improvements in living standards across much of the globe. Y et, in today’s low- income economies, the welfare distribution has shifted only slightly in a more positive direction over the past three decades. Meanwhile, in the lower- and upper-middle-income economies of today, populations that were clustered around or even below",
+          "metadata": {
+            "end": 2422,
+            "start": 1525,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 22,
+            "segment_start": 0
+          },
+          "score": 0.8815708827036108
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8804739117622375
+        },
+        {
+          "id": "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\n\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.",
+          "metadata": {
+            "end": 1331,
+            "start": 869,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8746928125986146
+        }
+      ],
+      "context": "[6155ca575388567c630552badf1515d018a372255d5ffec7f9d16b7c2bcca87e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 54]\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) The upward shift in the global distribution of welfare between 1990 and 2024 that resulted in poverty declines was highly uneven across income groups (refer to figure 1.3). In 1990, the global distribution was heavily concentrated at the lowest income levels. Half the world was living on less than $3.55 a day. By 2024, however, many people had moved above the international poverty line, and the median income had risen to $9.20 a day, reflecting substantive improvements in living standards across much of the globe. Y et, in today’s low- income economies, the welfare distribution has shifted only slightly in a more positive direction over the past three decades. Meanwhile, in the lower- and upper-middle-income economies of today, populations that were clustered around or even below\n\n[94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\n23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,\n\n[1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\nhttps://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\n\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.",
+      "context_candidates": [
+        {
+          "id": "6155ca575388567c630552badf1515d018a372255d5ffec7f9d16b7c2bcca87e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 54,
+          "text": "BOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) The upward shift in the global distribution of welfare between 1990 and 2024 that resulted in poverty declines was highly uneven across income groups (refer to figure 1.3). In 1990, the global distribution was heavily concentrated at the lowest income levels. Half the world was living on less than $3.55 a day. By 2024, however, many people had moved above the international poverty line, and the median income had risen to $9.20 a day, reflecting substantive improvements in living standards across much of the globe. Y et, in today’s low- income economies, the welfare distribution has shifted only slightly in a more positive direction over the past three decades. Meanwhile, in the lower- and upper-middle-income economies of today, populations that were clustered around or even below",
+          "metadata": {
+            "end": 2422,
+            "start": 1525,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 22,
+            "segment_start": 0
+          },
+          "score": 0.8815708827036108
+        },
+        {
+          "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+          "metadata": {
+            "end": 868,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8804739117622375
+        },
+        {
+          "id": "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 55,
+          "text": "https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\n\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.",
+          "metadata": {
+            "end": 1331,
+            "start": 869,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 23,
+            "segment_start": 0
+          },
+          "score": 0.8746928125986146
+        }
+      ],
+      "context_ids": [
+        "6155ca575388567c630552badf1515d018a372255d5ffec7f9d16b7c2bcca87e",
+        "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+        "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17"
+      ],
+      "elapsed_seconds": 0.030719040994881652
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong chú thích Figure 1.3, các nhóm thu nhập được cố định theo phân loại của năm nào khi so sánh 1990 và 2024?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_015LVXzquG8FmWYHZ6DMp1JC",
+              "name": "search_documents",
+              "input": {
+                "query": "Figure 1.3 income groups classification fixed year 1990 2024"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_015LVXzquG8FmWYHZ6DMp1JC",
+              "content": "{\"current_context\": \"[6155ca575388567c630552badf1515d018a372255d5ffec7f9d16b7c2bcca87e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 54]\\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) The upward shift in the global distribution of welfare between 1990 and 2024 that resulted in poverty declines was highly uneven across income groups (refer to figure 1.3). In 1990, the global distribution was heavily concentrated at the lowest income levels. Half the world was living on less than $3.55 a day. By 2024, however, many people had moved above the international poverty line, and the median income had risen to $9.20 a day, reflecting substantive improvements in living standards across much of the globe. Y et, in today’s low- income economies, the welfare distribution has shifted only slightly in a more positive direction over the past three decades. Meanwhile, in the lower- and upper-middle-income economies of today, populations that were clustered around or even below\\n\\n[94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\\n23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,\\n\\n[1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\\nhttps://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\\n\\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.\", \"current_context_ids\": [\"6155ca575388567c630552badf1515d018a372255d5ffec7f9d16b7c2bcca87e\", \"94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce\", \"1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17\"], \"searched_queries\": [\"Figure 1.3 income groups classification fixed year 1990 2024\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xBmXfEUkXMp46yV6jE",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01FLXpDP7gsn8jRX9tD9xj2T",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Theo chú thích Figure 1.3, các nhóm thu nhập được cố định theo phân loại của năm 2024: phân loại phản ánh tình trạng của mỗi nền kinh tế trong năm 2024, nên danh sách quốc gia trong mỗi nhóm không đổi giữa 1990 và 2024 [1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17]. Hình so sánh phân bố phúc lợi của dân số gộp trong bốn nhóm, cho cả năm 1990 và 2024, và dùng đô la PPP 2021 [1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17].",
+              "citations": [
+                "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01FLXpDP7gsn8jRX9tD9xj2T",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Theo chú thích Figure 1.3, các nhóm thu nhập được cố định theo phân loại của năm 2024: phân loại phản ánh tình trạng của mỗi nền kinh tế trong năm 2024, nên danh sách quốc gia trong mỗi nhóm không đổi giữa 1990 và 2024 [1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17]. Hình so sánh phân bố phúc lợi của dân số gộp trong bốn nhóm, cho cả năm 1990 và 2024, và dùng đô la PPP 2021 [1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17].",
+            "citations": [
+              "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2756,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 487,
+          "output_tokens_details": {
+            "thinking_tokens": 80
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0005191,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2756,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.946117708008387
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Theo chú thích Figure 1.3, các nhóm thu nhập được cố định theo phân loại của năm 2024: phân loại phản ánh tình trạng của mỗi nền kinh tế trong năm 2024, nên danh sách quốc gia trong mỗi nhóm không đổi giữa 1990 và 2024 [1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17]. Hình so sánh phân bố phúc lợi của dân số gộp trong bốn nhóm, cho cả năm 1990 và 2024, và dùng đô la PPP 2021 [1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17].",
+      "citations": [
+        "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "usage": {
+    "input_tokens": 4103,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 555
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[6155ca575388567c630552badf1515d018a372255d5ffec7f9d16b7c2bcca87e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 54]\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) The upward shift in the global distribution of welfare between 1990 and 2024 that resulted in poverty declines was highly uneven across income groups (refer to figure 1.3). In 1990, the global distribution was heavily concentrated at the lowest income levels. Half the world was living on less than $3.55 a day. By 2024, however, many people had moved above the international poverty line, and the median income had risen to $9.20 a day, reflecting substantive improvements in living standards across much of the globe. Y et, in today’s low- income economies, the welfare distribution has shifted only slightly in a more positive direction over the past three decades. Meanwhile, in the lower- and upper-middle-income economies of today, populations that were clustered around or even below\n\n[94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\n23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,\n\n[1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 55]\nhttps://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\n\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.",
+  "context_ids": [
+    "6155ca575388567c630552badf1515d018a372255d5ffec7f9d16b7c2bcca87e",
+    "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+    "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17"
+  ],
+  "context_chunks": [
+    {
+      "id": "6155ca575388567c630552badf1515d018a372255d5ffec7f9d16b7c2bcca87e",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 54,
+      "text": "BOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) The upward shift in the global distribution of welfare between 1990 and 2024 that resulted in poverty declines was highly uneven across income groups (refer to figure 1.3). In 1990, the global distribution was heavily concentrated at the lowest income levels. Half the world was living on less than $3.55 a day. By 2024, however, many people had moved above the international poverty line, and the median income had risen to $9.20 a day, reflecting substantive improvements in living standards across much of the globe. Y et, in today’s low- income economies, the welfare distribution has shifted only slightly in a more positive direction over the past three decades. Meanwhile, in the lower- and upper-middle-income economies of today, populations that were clustered around or even below",
+      "metadata": {
+        "end": 2422,
+        "start": 1525,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 22,
+        "segment_start": 0
+      },
+      "score": 0.8815708827036108
+    },
+    {
+      "id": "94017ee814dd39831227d43f6bf550c0866cfb02210bc8d69fccf6b72aecedce",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 55,
+      "text": "23 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.3 The welfare distribution in low-income economies shifted little between 1990 and 2024 0 1 2 3 4 5 Share of global population (%) 0.5 1 2 5 10 20 50 $3.00 $4.20 $8.30 100 Welfare per person ($ per day) a. Low income in 2024 0 1 2 3 4 5 Share of global population (%) c. Upper-middle income in 2024 $3.00 $4.20 $8.30 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) Share of global population (%) 0.5 1 2 5 10 20 50 100 Welfare per person ($ per day) b. Lower-middle income in 2024 Share of global population (%) Welfare per person ($ per day) d. High income in 2024 $3.00 $4.20 $8.30 0 1 2 3 4 5 0.5 1 2 5 10 20 50 100 $3.00 $4.20 $8.30 0 1 2 3 4 5 1990 2024 Source: World bank calculations based on data from 1000 binned Global distribution, 1990–2026 (version September 2026), World bank,",
+      "metadata": {
+        "end": 868,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 23,
+        "segment_start": 0
+      },
+      "score": 0.8804739117622375
+    },
+    {
+      "id": "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 55,
+      "text": "https://datacatalog.worldbank.org/search/dataset/0064304/1000-binned-global-distribution.\n\nNote: the figure shows the welfare distribution of the combined population of the economies in each of the four income classification groups in 1990 and in 2024. income group classifications reflect each economy’s status in 2024. So, the countries considered in each group is held constant over time. the figure reports welfare using 2021 purchasing power parity dollars.",
+      "metadata": {
+        "end": 1331,
+        "start": 869,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 23,
+        "segment_start": 0
+      },
+      "score": 0.8746928125986146
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 2,
+    "returned_calls": 2
+  },
+  "estimated_cost_usd": 0.0006878,
+  "answer": "Theo chú thích Figure 1.3, các nhóm thu nhập được cố định theo phân loại của năm 2024: phân loại phản ánh tình trạng của mỗi nền kinh tế trong năm 2024, nên danh sách quốc gia trong mỗi nhóm không đổi giữa 1990 và 2024 [1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17]. Hình so sánh phân bố phúc lợi của dân số gộp trong bốn nhóm, cho cả năm 1990 và 2024, và dùng đô la PPP 2021 [1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17].",
+  "citations": [
+    "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17"
+  ],
+  "elapsed_seconds": 4.823965542003862,
+  "answerable": true,
+  "context_strict_hit": true,
+  "context_set_hit": true,
+  "first_search_hit3": true,
+  "first_search_is_original_query": false
+}

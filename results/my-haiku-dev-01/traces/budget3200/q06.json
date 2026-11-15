@@ -1,0 +1,407 @@
+{
+  "created_at_utc": "2026-11-14T10:37:52.313653+00:00",
+  "stage": "agent_dev",
+  "query_id": "q06",
+  "config_id": "budget3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Vì sao hộ nghèo thường nhạy cảm hơn trước biến động giá lương thực và năng lượng?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao hộ nghèo thường nhạy cảm hơn trước biến động giá lương thực và năng lượng?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g7gP7rJrrghSZwVeuV",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01QLs8amRhWxz4Z2PwDTrk16",
+            "name": "search_documents",
+            "input": {
+              "query": "why poor households are more vulnerable to food and energy price shocks"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01QLs8amRhWxz4Z2PwDTrk16",
+          "name": "search_documents",
+          "input": {
+            "query": "why poor households are more vulnerable to food and energy price shocks"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1334,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 65,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001659,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1334,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.5586736249970272
+    },
+    {
+      "event": "search",
+      "query": "why poor households are more vulnerable to food and energy price shocks",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.886993765831
+        },
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8760468102679643
+        },
+        {
+          "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+          "metadata": {
+            "end": 1419,
+            "start": 589,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8736861498730004
+        }
+      ],
+      "context": "[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\n\n[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\n\n[c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\nTo investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+      "context_candidates": [
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.886993765831
+        },
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8760468102679643
+        },
+        {
+          "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+          "metadata": {
+            "end": 1419,
+            "start": 589,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8736861498730004
+        }
+      ],
+      "context_ids": [
+        "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+        "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+        "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8"
+      ],
+      "elapsed_seconds": 0.021246707998216152
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Vì sao hộ nghèo thường nhạy cảm hơn trước biến động giá lương thực và năng lượng?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01QLs8amRhWxz4Z2PwDTrk16",
+              "name": "search_documents",
+              "input": {
+                "query": "why poor households are more vulnerable to food and energy price shocks"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01QLs8amRhWxz4Z2PwDTrk16",
+              "content": "{\"current_context\": \"[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\\n\\n[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\\n\\n[c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\\nTo investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.\", \"current_context_ids\": [\"1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f\", \"42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22\", \"c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8\"], \"searched_queries\": [\"why poor households are more vulnerable to food and energy price shocks\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g7oF83Tu2pdHmeBVeX",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01Y64SHrhu9dk8mDWJxaKRwg",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Theo kho tài liệu, hộ nghèo thường chi một tỷ trọng lớn hơn cho lương thực và năng lượng, nên khi giá hai nhóm này tăng, thu nhập thực tế của họ giảm nhiều hơn [c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8]. Cú sốc năng lượng tác động trực tiếp lên ngân sách hộ gia đình và gián tiếp qua chi phí vận tải hàng hóa, trong đó có lương thực [1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f]. Ngoài ra, mức thu nhập đủ để giữ xác suất rơi vào nghèo ở mức thấp cũng thay đổi theo rủi ro, tức là không có ngưỡng thu nhập cố định nào đảm bảo an toàn [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Lưu ý: kho chỉ cung cấp cơ chế chung; tài liệu không đưa ra con số cụ thể so sánh mức độ nhạy cảm giữa các nhóm trong phần này.",
+              "citations": [
+                "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+                "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+                "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01Y64SHrhu9dk8mDWJxaKRwg",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Theo kho tài liệu, hộ nghèo thường chi một tỷ trọng lớn hơn cho lương thực và năng lượng, nên khi giá hai nhóm này tăng, thu nhập thực tế của họ giảm nhiều hơn [c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8]. Cú sốc năng lượng tác động trực tiếp lên ngân sách hộ gia đình và gián tiếp qua chi phí vận tải hàng hóa, trong đó có lương thực [1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f]. Ngoài ra, mức thu nhập đủ để giữ xác suất rơi vào nghèo ở mức thấp cũng thay đổi theo rủi ro, tức là không có ngưỡng thu nhập cố định nào đảm bảo an toàn [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Lưu ý: kho chỉ cung cấp cơ chế chung; tài liệu không đưa ra con số cụ thể so sánh mức độ nhạy cảm giữa các nhóm trong phần này.",
+            "citations": [
+              "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+              "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+              "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2544,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 762,
+          "output_tokens_details": {
+            "thinking_tokens": 97
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0006354,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2544,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 4.319525790997432
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Theo kho tài liệu, hộ nghèo thường chi một tỷ trọng lớn hơn cho lương thực và năng lượng, nên khi giá hai nhóm này tăng, thu nhập thực tế của họ giảm nhiều hơn [c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8]. Cú sốc năng lượng tác động trực tiếp lên ngân sách hộ gia đình và gián tiếp qua chi phí vận tải hàng hóa, trong đó có lương thực [1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f]. Ngoài ra, mức thu nhập đủ để giữ xác suất rơi vào nghèo ở mức thấp cũng thay đổi theo rủi ro, tức là không có ngưỡng thu nhập cố định nào đảm bảo an toàn [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Lưu ý: kho chỉ cung cấp cơ chế chung; tài liệu không đưa ra con số cụ thể so sánh mức độ nhạy cảm giữa các nhóm trong phần này.",
+      "citations": [
+        "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+        "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+        "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "usage": {
+    "input_tokens": 3878,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 827
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\n\n[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\n\n[c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\nTo investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+  "context_ids": [
+    "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+    "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+    "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8"
+  ],
+  "context_chunks": [
+    {
+      "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 46,
+      "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+      "metadata": {
+        "end": 1901,
+        "start": 1416,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 14,
+        "segment_start": 0
+      },
+      "score": 0.886993765831
+    },
+    {
+      "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 52,
+      "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+      "metadata": {
+        "end": 2469,
+        "start": 1571,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 20,
+        "segment_start": 0
+      },
+      "score": 0.8760468102679643
+    },
+    {
+      "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 47,
+      "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+      "metadata": {
+        "end": 1419,
+        "start": 589,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 15,
+        "segment_start": 0
+      },
+      "score": 0.8736861498730004
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 2,
+    "returned_calls": 2
+  },
+  "estimated_cost_usd": 0.0008013,
+  "answer": "Theo kho tài liệu, hộ nghèo thường chi một tỷ trọng lớn hơn cho lương thực và năng lượng, nên khi giá hai nhóm này tăng, thu nhập thực tế của họ giảm nhiều hơn [c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8]. Cú sốc năng lượng tác động trực tiếp lên ngân sách hộ gia đình và gián tiếp qua chi phí vận tải hàng hóa, trong đó có lương thực [1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f]. Ngoài ra, mức thu nhập đủ để giữ xác suất rơi vào nghèo ở mức thấp cũng thay đổi theo rủi ro, tức là không có ngưỡng thu nhập cố định nào đảm bảo an toàn [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Lưu ý: kho chỉ cung cấp cơ chế chung; tài liệu không đưa ra con số cụ thể so sánh mức độ nhạy cảm giữa các nhóm trong phần này.",
+  "citations": [
+    "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+    "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+    "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22"
+  ],
+  "elapsed_seconds": 5.899612207998871,
+  "answerable": true,
+  "context_strict_hit": false,
+  "context_set_hit": false,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

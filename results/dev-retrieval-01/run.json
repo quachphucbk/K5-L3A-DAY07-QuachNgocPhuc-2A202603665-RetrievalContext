@@ -1,0 +1,57 @@
+{
+  "created_at_utc": "2026-11-14T09:34:29.913555+00:00",
+  "stage": "retrieval_only",
+  "split": "dev",
+  "benchmark_hashes": {
+    "benchmark/dev.json": "ea683f86fc5cf68bde3ed7a71f51e79903d64f10b44c92d7eb3eda59f5dc9407",
+    "benchmark/manifest.json": "206e1d7fbdce517410ddc7d18111a35714f9ef8e2007ae7f22d49162a612bac9",
+    "data/day6_chunks.json": "b47323422a7f91137b1e25d523ef4195be527e5b47010dbf6a102ec6c60976c9",
+    "src/day6_adapter.py": "8ca063a1a2d321ff61711761db938ac46d099a882d1a7851eacbdb681be97c8d",
+    "src/retrievers.py": "b89a8079843bc546f6fbcf8a4b43daea97a921fb12741a1254a9df7aee71bb08",
+    "src/benchmark_data.py": "f4579c52f67864e29b5550daf6b270e9937d27ef431fc7606552d05754c69b40",
+    "src/context.py": "3a9fd07cdeef9ceb2544a7f836bbf16bab5546eeb484314be380c8e63b5df87c",
+    "src/benchmark_retrieval.py": "bba3156fb5ffdbc3e1da5584e90e36d05d489e2cf4978349bab5bcd36f479a27"
+  },
+  "source_snapshot_sha256": "9c68b613738b6d04882c2d069c760b974e78473b5a1a3dda32e8f74da66586d7",
+  "python": "3.12.16",
+  "versions": {
+    "sentence-transformers": "5.7.0",
+    "torch": "2.15.0",
+    "transformers": "5.22.2",
+    "psycopg": "3.3.8",
+    "python-dotenv": "1.2.4"
+  },
+  "embedding": {
+    "model": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "dimensions": 384,
+    "device": "cpu",
+    "normalized": true,
+    "document_prefix": "passage: ",
+    "query_prefix": "query: ",
+    "max_tokens": 512,
+    "seed": 42
+  },
+  "configuration": {
+    "methods": [
+      "dense",
+      "bm25",
+      "hybrid"
+    ],
+    "ranking_cutoff": 3,
+    "candidate_window": 140,
+    "budget_chars": 800,
+    "packing": "whole chunks in rank order; skip those not fitting; include source headers",
+    "query_translation": false,
+    "rrf_constant": 60,
+    "bm25_k1": 1.2,
+    "bm25_b": 0.75
+  },
+  "limitations": [
+    "Literal normalized evidence proxy; semantic equivalents need separate human review.",
+    "Packed context is a candidate context, not yet sent to a model; no grounded answer/citation/abstention metrics.",
+    "Quality denominator excludes retrieval errors; report errors, total and scored counts together.",
+    "Shared branch rankings: hybrid search time equals BM25 + dense + fusion; initialization reported separately.",
+    "Local inference API USD=0, excludes hardware/electricity; one measurement, fixed branch order, cache may matter."
+  ]
+}

@@ -1,0 +1,303 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "answerable": true,
+    "question": "Trong mục “Gains in global poverty reduction could be reversed in coming decades”, đợt cập nhật tháng 6/2025 đổi năm cơ sở so sánh mức giá từ năm nào sang năm nào?",
+    "expected_answer": "Từ năm 2017 sang năm 2021.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 45,
+        "evidence": "In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025)."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold",
+    "filter": {
+      "section": "Gains in global poverty reduction could be reversed in coming decades"
+    }
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "answerable": true,
+    "question": "Chuẩn nghèo quốc tế được xác định từ các chuẩn nghèo quốc gia của nhóm nền kinh tế nào, và dùng thống kê nào?",
+    "expected_answer": "Là trung vị các chuẩn nghèo quốc gia của những nền kinh tế thu nhập thấp.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 45,
+        "evidence": "The international poverty line is the median national poverty line among low-income economies."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold",
+    "evidence_sets": [
+      [
+        {
+          "source_id": "worldbank-ppp-2026-ch1",
+          "page": 45,
+          "evidence": "The international poverty line is the median national poverty"
+        },
+        {
+          "source_id": "worldbank-ppp-2026-ch1",
+          "page": 45,
+          "evidence": "line among low-income economies."
+        }
+      ]
+    ]
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "answerable": true,
+    "question": "Vì sao việc nâng chuẩn nghèo quốc gia được nêu trong báo cáo không có nghĩa là định nghĩa người nghèo trở nên rộng rãi hơn?",
+    "expected_answer": "Các điều chỉnh phản ánh dữ liệu tốt hơn để đánh giá chi phí nhu cầu cơ bản, gồm giỏ lương thực tối thiểu và tiêu dùng phi lương thực thiết yếu.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 45,
+        "evidence": "These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold"
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "answerable": true,
+    "question": "Trong mục “Gains in global poverty reduction could be reversed in coming decades”, nếu giá thực phẩm tăng vì chi phí phân bón hoặc vận chuyển tăng, người sản xuất thực phẩm có chắc hưởng lợi không?",
+    "expected_answer": "Không. Họ không có lợi ích ròng và thậm chí có thể thiệt hơn nếu nhu cầu thực phẩm giảm.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 46,
+        "evidence": "If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold",
+    "filter": {
+      "section": "Gains in global poverty reduction could be reversed in coming decades"
+    }
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "answerable": true,
+    "question": "Ước tính cơ sở của báo cáo giả định thu nhập của mọi người trong một quốc gia tăng như thế nào?",
+    "expected_answer": "Thu nhập của mọi người trong quốc gia tăng cùng một tốc độ.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 47,
+        "evidence": "The baseline estimates assume that the incomes of everyone in the country grow at the same rate."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold"
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "answerable": true,
+    "question": "Vì sao hộ nghèo thường nhạy cảm hơn trước biến động giá lương thực và năng lượng?",
+    "expected_answer": "Họ dành tỷ trọng ngân sách lớn hơn cho lương thực và năng lượng nên nhạy cảm hơn với thay đổi giá các mặt hàng này.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 47,
+        "evidence": "Typically, poorer households spend a larger share of their budgets on food and energy and are thus more sensitive to price changes for these items."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold"
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "answerable": true,
+    "question": "Vì sao tăng trưởng nông nghiệp thấp trong dự báo năm 2026 làm giảm tốc độ giảm nghèo?",
+    "expected_answer": "Tăng trưởng nông nghiệp dự kiến thấp hơn dịch vụ và công nghiệp; phần lớn hơn trong số người cực nghèo làm nông nghiệp nên mức giảm nghèo bị hạn chế.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 47,
+        "evidence": "One of the main reasons is that projected agricultural growth is much lower than the growth projected in the service and industrial sectors in 2026. Because a larger share of the extreme poor work in the agricultural sector, poverty reduction is muted because of the low agricultural growth."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold"
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "answerable": true,
+    "question": "Nếu tốc độ giảm nghèo giai đoạn 2000–2013 được duy trì, tỷ lệ nghèo cùng cực năm 2026 sẽ khoảng bao nhiêu và thấp hơn thực tế bao nhiêu điểm phần trăm?",
+    "expected_answer": "Khoảng 7%, thấp hơn thực tế khoảng 3 điểm phần trăm.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 49,
+        "evidence": "Had poverty continued to decline at the pace observed between 2000 and 2013, the extreme poverty rate would have reached roughly 7 percent by 2026, some 3 percentage points below the actual rate (refer to figure 1.1)."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold"
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "answerable": true,
+    "question": "Việc giảm nghèo chậm hơn xu hướng 2000–2013 có xảy ra tương tự ở chuẩn $3,00 và các chuẩn cao hơn như $4,20 không?",
+    "expected_answer": "Không. Sự chậm lại chỉ quan sát được tại chuẩn $3,00; ở các chuẩn cao hơn như $4,20, mức giảm nhìn chung theo kịp xu hướng trước 2013.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 49,
+        "evidence": "The slowdown relative to the 2000–13 trend is only observable at the $3.00 line. At the higher poverty lines (for example, $4.20), actual poverty reduction has broadly kept pace with the pre-2013 trend."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold"
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "answerable": true,
+    "question": "Trong phân loại gần đúng của báo cáo, nhóm trung lưu toàn cầu sống trong khoảng thu nhập hoặc tiêu dùng bao nhiêu USD mỗi ngày?",
+    "expected_answer": "Trong khoảng $8,30–$28,00 mỗi ngày.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 52,
+        "evidence": "Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class;"
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold"
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "answerable": true,
+    "question": "Có thể xác định một mức thu nhập cố định bảo đảm an toàn kinh tế cho mọi hoàn cảnh không?",
+    "expected_answer": "Không. Ranh giới an toàn kinh tế và trung lưu thay đổi theo môi trường sống và rủi ro của hộ.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 52,
+        "evidence": "There is no fixed income at which security begins. The boundary of the middle class shifts with the environment in which households live."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold",
+    "evidence_sets": [
+      [
+        {
+          "source_id": "worldbank-ppp-2026-ch1",
+          "page": 52,
+          "evidence": "There is no fixed income at which security begins. The boundary of the"
+        },
+        {
+          "source_id": "worldbank-ppp-2026-ch1",
+          "page": 52,
+          "evidence": "middle class shifts with the environment in which households live."
+        }
+      ]
+    ]
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "answerable": true,
+    "question": "Trong mục “Gains in global poverty reduction could be reversed in coming decades”, thu nhập trung vị toàn cầu đã tăng lên mức bao nhiêu USD/ngày vào năm 2024?",
+    "expected_answer": "$9,20 mỗi ngày.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 54,
+        "evidence": "By 2024, however, many people had moved above the international poverty line, and the median income had risen to $9.20 a day, reflecting substantive improvements in living standards across much of the globe."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold",
+    "filter": {
+      "section": "Gains in global poverty reduction could be reversed in coming decades"
+    }
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "answerable": true,
+    "question": "Năm 2026, bao nhiêu phần trăm người nghèo cùng cực toàn cầu sống trong nền kinh tế FCS, so với năm 2010?",
+    "expected_answer": "57% năm 2026, tăng từ 12% năm 2010.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 65,
+        "evidence": "As of 2026, more than half the extreme poor globally, 57 percent, were living in an FCS economy, up from 12 percent in 2010 (refer to figure 1.11, panel a)."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold"
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "answerable": true,
+    "question": "Đến năm 2030, bao nhiêu phần trăm người nghèo cùng cực toàn cầu được dự báo sống ở châu Phi cận Sahara hoặc nền kinh tế FCS?",
+    "expected_answer": "87%.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 65,
+        "evidence": "By 2030, 87 percent of the extreme poor globally will be living either in Sub-Saharan Africa or in an FCS economy (refer to figure 1.11, panel a)."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold"
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "answerable": true,
+    "question": "Các mô phỏng dự báo nghèo giả định gì về bất bình đẳng trong từng quốc gia, và kết quả sẽ thay đổi thế nào nếu tăng trưởng có lợi cho người nghèo?",
+    "expected_answer": "Giữ bất bình đẳng trong từng quốc gia ở mức hiện tại; nếu có tăng trưởng có lợi cho người nghèo, tỷ lệ nghèo dự báo sẽ thấp hơn.",
+    "gold": [
+      {
+        "source_id": "worldbank-ppp-2026-ch1",
+        "page": 63,
+        "evidence": "These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower."
+      }
+    ],
+    "provenance": "Day 6 dev; giữ nguyên question/answer/gold"
+  },
+  {
+    "id": "dneg01",
+    "split": "dev",
+    "answerable": false,
+    "question": "Theo bộ tài liệu này, tỷ lệ nghèo cùng cực của tỉnh Quảng Ninh năm 2024 chính xác là bao nhiêu phần trăm?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Kho chỉ gồm chương báo cáo tổng hợp; không có số liệu cho tỉnh Quảng Ninh.",
+    "absence_check": {
+      "scope": "Toàn bộ 37 trang PDF 43–79 trong snapshot, không chỉ top-k",
+      "method": "AI rà phạm vi báo cáo và tìm chuỗi toàn corpus; số 0 không tự chứng minh vắng mọi diễn đạt tương đương",
+      "terms_and_counts": {
+        "Quảng Ninh": 0,
+        "Quang Ninh": 0
+      },
+      "review_status": "student_verified",
+      "reviewer": "Quách Ngọc Phúc",
+      "review_note": "Đã đối chiếu toàn bộ corpus; không có dữ liệu đủ để trả lời câu hỏi."
+    }
+  },
+  {
+    "id": "dneg02",
+    "split": "dev",
+    "answerable": false,
+    "question": "Hãy liệt kê mã định danh và thu nhập của từng hộ gia đình trong dữ liệu gốc dùng cho báo cáo.",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Kho là báo cáo tổng hợp, không chứa bảng vi dữ liệu có mã định danh và thu nhập từng hộ.",
+    "absence_check": {
+      "scope": "Toàn bộ 37 trang PDF 43–79 trong snapshot, không chỉ top-k",
+      "method": "AI rà phạm vi báo cáo và tìm chuỗi toàn corpus; số 0 không tự chứng minh vắng mọi diễn đạt tương đương",
+      "terms_and_counts": {
+        "microdata": 0,
+        "household identifiers": 0,
+        "individual household": 0
+      },
+      "review_status": "student_verified",
+      "reviewer": "Quách Ngọc Phúc",
+      "review_note": "Đã đối chiếu toàn bộ corpus; không có dữ liệu đủ để trả lời câu hỏi."
+    }
+  }
+]

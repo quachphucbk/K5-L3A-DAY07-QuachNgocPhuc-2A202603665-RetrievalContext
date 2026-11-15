@@ -1,0 +1,976 @@
+{
+  "created_at_utc": "2026-11-14T14:08:11.639319+00:00",
+  "stage": "agent_test",
+  "query_id": "t05",
+  "config_id": "baseline800",
+  "split": "test",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Năm 2024, tỷ lệ nghèo của người không đi học, người có giáo dục trung học và người có giáo dục bậc cao lần lượt là bao nhiêu?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Năm 2024, tỷ lệ nghèo của người không đi học, người có giáo dục trung học và người có giáo dục bậc cao lần lượt là bao nhiêu?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2x9tQ6XXmngY43cKQu6",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01GUiVhrhAFDi7ydd5Sb7ZDt",
+            "name": "search_documents",
+            "input": {
+              "query": "2024 poverty rate by education level no education secondary tertiary"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01GUiVhrhAFDi7ydd5Sb7ZDt",
+          "name": "search_documents",
+          "input": {
+            "query": "2024 poverty rate by education level no education secondary tertiary"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1354,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 65,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001679,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1354,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.0943146669887938
+    },
+    {
+      "event": "search",
+      "query": "2024 poverty rate by education level no education secondary tertiary",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "bf93a4c4e20a8d0ddc352e4073f3a968b9559c8e4ee2ada8512e863d71256024",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "Educational attainment is strongly associated with poverty incidence. Individuals with no formal education in 2024 faced poverty rates of 22 percent, compared with only 6 percent among individuals with secondary education and 1 percent among individuals with tertiary education (refer to figure 1.13, panel b). Poverty declined by the greatest amount in absolute terms—12 percentage points—between 2013 and 2024 among individuals with no formal education. A Shapley decomposition of this decline reveals that, within economies, the poverty rate among individuals with no formal education fell by 15 percentage points (refer to annex 1B, figure 1B.3).13 This within-economy progress was highly concentrated. India alone accounted for roughly 70 percent of the progress, and five economies—Bangladesh, China, India, Indonesia, and Pakistan—accounted for nearly all the progress. The increase in the",
+          "metadata": {
+            "end": 1656,
+            "start": 760,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.8959635744181694
+        },
+        {
+          "id": "643b1cdf26d1d0facabd57a7a4f6fe65845e0052ec1d899a212f856a6acc062d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "36 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.13 Rates of extreme poverty are high among youth and people with no education Child (<18) Youth (15−24) Adult (25+) 0 5 10 15 20 25 30 a. Age No education Primary Secondary Tertiary 0 10 20 30 40 Rate of extreme poverty (%) Rate of extreme poverty (%) b. Education 2013 2024 Sources: Global Monitoring database (version September 2026), internal database, World bank; luxembourg income Study (May 2026 vintage), liS Cross-national data Center, https://www.lisdatacenter.org/our-data/lis-database/.\n\nNote: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2013 and 2024 (refer to annex 1a).",
+          "metadata": {
+            "end": 758,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.8893582422688782
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8834934830665839
+        }
+      ],
+      "context": "[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+      "context_candidates": [
+        {
+          "id": "bf93a4c4e20a8d0ddc352e4073f3a968b9559c8e4ee2ada8512e863d71256024",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "Educational attainment is strongly associated with poverty incidence. Individuals with no formal education in 2024 faced poverty rates of 22 percent, compared with only 6 percent among individuals with secondary education and 1 percent among individuals with tertiary education (refer to figure 1.13, panel b). Poverty declined by the greatest amount in absolute terms—12 percentage points—between 2013 and 2024 among individuals with no formal education. A Shapley decomposition of this decline reveals that, within economies, the poverty rate among individuals with no formal education fell by 15 percentage points (refer to annex 1B, figure 1B.3).13 This within-economy progress was highly concentrated. India alone accounted for roughly 70 percent of the progress, and five economies—Bangladesh, China, India, Indonesia, and Pakistan—accounted for nearly all the progress. The increase in the",
+          "metadata": {
+            "end": 1656,
+            "start": 760,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.8959635744181694
+        },
+        {
+          "id": "643b1cdf26d1d0facabd57a7a4f6fe65845e0052ec1d899a212f856a6acc062d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "36 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.13 Rates of extreme poverty are high among youth and people with no education Child (<18) Youth (15−24) Adult (25+) 0 5 10 15 20 25 30 a. Age No education Primary Secondary Tertiary 0 10 20 30 40 Rate of extreme poverty (%) Rate of extreme poverty (%) b. Education 2013 2024 Sources: Global Monitoring database (version September 2026), internal database, World bank; luxembourg income Study (May 2026 vintage), liS Cross-national data Center, https://www.lisdatacenter.org/our-data/lis-database/.\n\nNote: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2013 and 2024 (refer to annex 1a).",
+          "metadata": {
+            "end": 758,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.8893582422688782
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8834934830665839
+        }
+      ],
+      "context_ids": [
+        "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55"
+      ],
+      "elapsed_seconds": 0.031135541008552536
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Năm 2024, tỷ lệ nghèo của người không đi học, người có giáo dục trung học và người có giáo dục bậc cao lần lượt là bao nhiêu?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01GUiVhrhAFDi7ydd5Sb7ZDt",
+              "name": "search_documents",
+              "input": {
+                "query": "2024 poverty rate by education level no education secondary tertiary"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01GUiVhrhAFDi7ydd5Sb7ZDt",
+              "content": "{\"current_context\": \"[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\", \"current_context_ids\": [\"bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55\"], \"searched_queries\": [\"2024 poverty rate by education level no education secondary tertiary\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2x9yDotnMkjWFD3qSvd",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_015SA719U9KdS3GB4uaQyzcu",
+            "name": "search_documents",
+            "input": {
+              "query": "poverty rate by educational attainment: no education, secondary education, tertiary education, 2024"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_015SA719U9KdS3GB4uaQyzcu",
+          "name": "search_documents",
+          "input": {
+            "query": "poverty rate by educational attainment: no education, secondary education, tertiary education, 2024"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1873,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 91,
+          "output_tokens_details": {
+            "thinking_tokens": 16
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002328,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1873,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.0602298329904443
+    },
+    {
+      "event": "search",
+      "query": "poverty rate by educational attainment: no education, secondary education, tertiary education, 2024",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "bf93a4c4e20a8d0ddc352e4073f3a968b9559c8e4ee2ada8512e863d71256024",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "Educational attainment is strongly associated with poverty incidence. Individuals with no formal education in 2024 faced poverty rates of 22 percent, compared with only 6 percent among individuals with secondary education and 1 percent among individuals with tertiary education (refer to figure 1.13, panel b). Poverty declined by the greatest amount in absolute terms—12 percentage points—between 2013 and 2024 among individuals with no formal education. A Shapley decomposition of this decline reveals that, within economies, the poverty rate among individuals with no formal education fell by 15 percentage points (refer to annex 1B, figure 1B.3).13 This within-economy progress was highly concentrated. India alone accounted for roughly 70 percent of the progress, and five economies—Bangladesh, China, India, Indonesia, and Pakistan—accounted for nearly all the progress. The increase in the",
+          "metadata": {
+            "end": 1656,
+            "start": 760,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.9212095878345528
+        },
+        {
+          "id": "643b1cdf26d1d0facabd57a7a4f6fe65845e0052ec1d899a212f856a6acc062d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "36 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.13 Rates of extreme poverty are high among youth and people with no education Child (<18) Youth (15−24) Adult (25+) 0 5 10 15 20 25 30 a. Age No education Primary Secondary Tertiary 0 10 20 30 40 Rate of extreme poverty (%) Rate of extreme poverty (%) b. Education 2013 2024 Sources: Global Monitoring database (version September 2026), internal database, World bank; luxembourg income Study (May 2026 vintage), liS Cross-national data Center, https://www.lisdatacenter.org/our-data/lis-database/.\n\nNote: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2013 and 2024 (refer to annex 1a).",
+          "metadata": {
+            "end": 758,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.8988536716874037
+        },
+        {
+          "id": "5b42c214d0309fdb3987a808f0847695ac8cb27d39c4904e9a72f7d7cec77af2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "Poverty persists unevenly across people and places This section examines who the poor are by education, age, residency in urban or rural areas, and subregions within economies. It relies on investments in expanded databases to explore these links. The poverty estimates are constructed from household measures of consumption or income and assume an equal allocation of resources within households, regardless of age and gender.11 Poverty is highest among young people, people with low educational attainment, and in households caring for children without two working-age adults Globally, populations are becoming more educated, and age composition is changing only slightly (refer to figure 1.12, panel a).12 As of 2024, almost three in four people globally were living in households with children, 39 percent in multiple-adult households, and 28 percent in two-adult households; only 2 percent were",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 34,
+            "segment_start": 1521
+          },
+          "score": 0.8925122682742929
+        }
+      ],
+      "context": "[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+      "context_candidates": [
+        {
+          "id": "bf93a4c4e20a8d0ddc352e4073f3a968b9559c8e4ee2ada8512e863d71256024",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "Educational attainment is strongly associated with poverty incidence. Individuals with no formal education in 2024 faced poverty rates of 22 percent, compared with only 6 percent among individuals with secondary education and 1 percent among individuals with tertiary education (refer to figure 1.13, panel b). Poverty declined by the greatest amount in absolute terms—12 percentage points—between 2013 and 2024 among individuals with no formal education. A Shapley decomposition of this decline reveals that, within economies, the poverty rate among individuals with no formal education fell by 15 percentage points (refer to annex 1B, figure 1B.3).13 This within-economy progress was highly concentrated. India alone accounted for roughly 70 percent of the progress, and five economies—Bangladesh, China, India, Indonesia, and Pakistan—accounted for nearly all the progress. The increase in the",
+          "metadata": {
+            "end": 1656,
+            "start": 760,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.9212095878345528
+        },
+        {
+          "id": "643b1cdf26d1d0facabd57a7a4f6fe65845e0052ec1d899a212f856a6acc062d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "36 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.13 Rates of extreme poverty are high among youth and people with no education Child (<18) Youth (15−24) Adult (25+) 0 5 10 15 20 25 30 a. Age No education Primary Secondary Tertiary 0 10 20 30 40 Rate of extreme poverty (%) Rate of extreme poverty (%) b. Education 2013 2024 Sources: Global Monitoring database (version September 2026), internal database, World bank; luxembourg income Study (May 2026 vintage), liS Cross-national data Center, https://www.lisdatacenter.org/our-data/lis-database/.\n\nNote: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2013 and 2024 (refer to annex 1a).",
+          "metadata": {
+            "end": 758,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.8988536716874037
+        },
+        {
+          "id": "5b42c214d0309fdb3987a808f0847695ac8cb27d39c4904e9a72f7d7cec77af2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "Poverty persists unevenly across people and places This section examines who the poor are by education, age, residency in urban or rural areas, and subregions within economies. It relies on investments in expanded databases to explore these links. The poverty estimates are constructed from household measures of consumption or income and assume an equal allocation of resources within households, regardless of age and gender.11 Poverty is highest among young people, people with low educational attainment, and in households caring for children without two working-age adults Globally, populations are becoming more educated, and age composition is changing only slightly (refer to figure 1.12, panel a).12 As of 2024, almost three in four people globally were living in households with children, 39 percent in multiple-adult households, and 28 percent in two-adult households; only 2 percent were",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 34,
+            "segment_start": 1521
+          },
+          "score": 0.8925122682742929
+        }
+      ],
+      "context_ids": [
+        "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55"
+      ],
+      "elapsed_seconds": 0.029613167003844865
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Năm 2024, tỷ lệ nghèo của người không đi học, người có giáo dục trung học và người có giáo dục bậc cao lần lượt là bao nhiêu?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_015SA719U9KdS3GB4uaQyzcu",
+              "name": "search_documents",
+              "input": {
+                "query": "poverty rate by educational attainment: no education, secondary education, tertiary education, 2024"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_015SA719U9KdS3GB4uaQyzcu",
+              "content": "{\"current_context\": \"[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\", \"current_context_ids\": [\"bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55\"], \"searched_queries\": [\"2024 poverty rate by education level no education secondary tertiary\", \"poverty rate by educational attainment: no education, secondary education, tertiary education, 2024\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xA3v6BrUD8eRx2PeJU",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_0129eapiBNQcFra1mnKULq64",
+            "name": "search_documents",
+            "input": {
+              "query": "poverty rate households head education level no schooling secondary tertiary Poverty, Prosperity and Planet 2026"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_0129eapiBNQcFra1mnKULq64",
+          "name": "search_documents",
+          "input": {
+            "query": "poverty rate households head education level no schooling secondary tertiary Poverty, Prosperity and Planet 2026"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1913,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 104,
+          "output_tokens_details": {
+            "thinking_tokens": 21
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002433,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1913,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.2253085830016062
+    },
+    {
+      "event": "search",
+      "query": "poverty rate households head education level no schooling secondary tertiary Poverty, Prosperity and Planet 2026",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "643b1cdf26d1d0facabd57a7a4f6fe65845e0052ec1d899a212f856a6acc062d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "36 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.13 Rates of extreme poverty are high among youth and people with no education Child (<18) Youth (15−24) Adult (25+) 0 5 10 15 20 25 30 a. Age No education Primary Secondary Tertiary 0 10 20 30 40 Rate of extreme poverty (%) Rate of extreme poverty (%) b. Education 2013 2024 Sources: Global Monitoring database (version September 2026), internal database, World bank; luxembourg income Study (May 2026 vintage), liS Cross-national data Center, https://www.lisdatacenter.org/our-data/lis-database/.\n\nNote: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2013 and 2024 (refer to annex 1a).",
+          "metadata": {
+            "end": 758,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.8960074310293876
+        },
+        {
+          "id": "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.",
+          "metadata": {
+            "end": 139,
+            "start": 0,
+            "section": "Summary",
+            "chunking": "paragraph",
+            "printed_page": 12,
+            "segment_start": 0
+          },
+          "score": 0.8936311336269672
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8920613462961665
+        }
+      ],
+      "context": "[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.",
+      "context_candidates": [
+        {
+          "id": "643b1cdf26d1d0facabd57a7a4f6fe65845e0052ec1d899a212f856a6acc062d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "36 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.13 Rates of extreme poverty are high among youth and people with no education Child (<18) Youth (15−24) Adult (25+) 0 5 10 15 20 25 30 a. Age No education Primary Secondary Tertiary 0 10 20 30 40 Rate of extreme poverty (%) Rate of extreme poverty (%) b. Education 2013 2024 Sources: Global Monitoring database (version September 2026), internal database, World bank; luxembourg income Study (May 2026 vintage), liS Cross-national data Center, https://www.lisdatacenter.org/our-data/lis-database/.\n\nNote: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2013 and 2024 (refer to annex 1a).",
+          "metadata": {
+            "end": 758,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.8960074310293876
+        },
+        {
+          "id": "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.",
+          "metadata": {
+            "end": 139,
+            "start": 0,
+            "section": "Summary",
+            "chunking": "paragraph",
+            "printed_page": 12,
+            "segment_start": 0
+          },
+          "score": 0.8936311336269672
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8920613462961665
+        }
+      ],
+      "context_ids": [
+        "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d"
+      ],
+      "elapsed_seconds": 0.025465875005465932
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Năm 2024, tỷ lệ nghèo của người không đi học, người có giáo dục trung học và người có giáo dục bậc cao lần lượt là bao nhiêu?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_0129eapiBNQcFra1mnKULq64",
+              "name": "search_documents",
+              "input": {
+                "query": "poverty rate households head education level no schooling secondary tertiary Poverty, Prosperity and Planet 2026"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_0129eapiBNQcFra1mnKULq64",
+              "content": "{\"current_context\": \"[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\", \"current_context_ids\": [\"4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d\"], \"searched_queries\": [\"2024 poverty rate by education level no education secondary tertiary\", \"poverty rate by educational attainment: no education, secondary education, tertiary education, 2024\", \"poverty rate households head education level no schooling secondary tertiary Poverty, Prosperity and Planet 2026\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xA9HYfH1NgezZCaHAJ",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01YahNdNnhfAm4e1p212M4Lt",
+            "name": "search_documents",
+            "input": {
+              "query": "extreme poverty rate 2024 by educational attainment percent of people with no education, secondary, tertiary"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01YahNdNnhfAm4e1p212M4Lt",
+          "name": "search_documents",
+          "input": {
+            "query": "extreme poverty rate 2024 by educational attainment percent of people with no education, secondary, tertiary"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1770,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 109,
+          "output_tokens_details": {
+            "thinking_tokens": 29
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0002315,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1770,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.2298362080036895
+    },
+    {
+      "event": "search",
+      "query": "extreme poverty rate 2024 by educational attainment percent of people with no education, secondary, tertiary",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "643b1cdf26d1d0facabd57a7a4f6fe65845e0052ec1d899a212f856a6acc062d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "36 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.13 Rates of extreme poverty are high among youth and people with no education Child (<18) Youth (15−24) Adult (25+) 0 5 10 15 20 25 30 a. Age No education Primary Secondary Tertiary 0 10 20 30 40 Rate of extreme poverty (%) Rate of extreme poverty (%) b. Education 2013 2024 Sources: Global Monitoring database (version September 2026), internal database, World bank; luxembourg income Study (May 2026 vintage), liS Cross-national data Center, https://www.lisdatacenter.org/our-data/lis-database/.\n\nNote: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2013 and 2024 (refer to annex 1a).",
+          "metadata": {
+            "end": 758,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.9218756603076677
+        },
+        {
+          "id": "bf93a4c4e20a8d0ddc352e4073f3a968b9559c8e4ee2ada8512e863d71256024",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "Educational attainment is strongly associated with poverty incidence. Individuals with no formal education in 2024 faced poverty rates of 22 percent, compared with only 6 percent among individuals with secondary education and 1 percent among individuals with tertiary education (refer to figure 1.13, panel b). Poverty declined by the greatest amount in absolute terms—12 percentage points—between 2013 and 2024 among individuals with no formal education. A Shapley decomposition of this decline reveals that, within economies, the poverty rate among individuals with no formal education fell by 15 percentage points (refer to annex 1B, figure 1B.3).13 This within-economy progress was highly concentrated. India alone accounted for roughly 70 percent of the progress, and five economies—Bangladesh, China, India, Indonesia, and Pakistan—accounted for nearly all the progress. The increase in the",
+          "metadata": {
+            "end": 1656,
+            "start": 760,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.9138251645773517
+        },
+        {
+          "id": "5b42c214d0309fdb3987a808f0847695ac8cb27d39c4904e9a72f7d7cec77af2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "Poverty persists unevenly across people and places This section examines who the poor are by education, age, residency in urban or rural areas, and subregions within economies. It relies on investments in expanded databases to explore these links. The poverty estimates are constructed from household measures of consumption or income and assume an equal allocation of resources within households, regardless of age and gender.11 Poverty is highest among young people, people with low educational attainment, and in households caring for children without two working-age adults Globally, populations are becoming more educated, and age composition is changing only slightly (refer to figure 1.12, panel a).12 As of 2024, almost three in four people globally were living in households with children, 39 percent in multiple-adult households, and 28 percent in two-adult households; only 2 percent were",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 34,
+            "segment_start": 1521
+          },
+          "score": 0.8992985486984253
+        }
+      ],
+      "context": "[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.",
+      "context_candidates": [
+        {
+          "id": "643b1cdf26d1d0facabd57a7a4f6fe65845e0052ec1d899a212f856a6acc062d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "36 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.13 Rates of extreme poverty are high among youth and people with no education Child (<18) Youth (15−24) Adult (25+) 0 5 10 15 20 25 30 a. Age No education Primary Secondary Tertiary 0 10 20 30 40 Rate of extreme poverty (%) Rate of extreme poverty (%) b. Education 2013 2024 Sources: Global Monitoring database (version September 2026), internal database, World bank; luxembourg income Study (May 2026 vintage), liS Cross-national data Center, https://www.lisdatacenter.org/our-data/lis-database/.\n\nNote: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2013 and 2024 (refer to annex 1a).",
+          "metadata": {
+            "end": 758,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.9218756603076677
+        },
+        {
+          "id": "bf93a4c4e20a8d0ddc352e4073f3a968b9559c8e4ee2ada8512e863d71256024",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 68,
+          "text": "Educational attainment is strongly associated with poverty incidence. Individuals with no formal education in 2024 faced poverty rates of 22 percent, compared with only 6 percent among individuals with secondary education and 1 percent among individuals with tertiary education (refer to figure 1.13, panel b). Poverty declined by the greatest amount in absolute terms—12 percentage points—between 2013 and 2024 among individuals with no formal education. A Shapley decomposition of this decline reveals that, within economies, the poverty rate among individuals with no formal education fell by 15 percentage points (refer to annex 1B, figure 1B.3).13 This within-economy progress was highly concentrated. India alone accounted for roughly 70 percent of the progress, and five economies—Bangladesh, China, India, Indonesia, and Pakistan—accounted for nearly all the progress. The increase in the",
+          "metadata": {
+            "end": 1656,
+            "start": 760,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 36,
+            "segment_start": 0
+          },
+          "score": 0.9138251645773517
+        },
+        {
+          "id": "5b42c214d0309fdb3987a808f0847695ac8cb27d39c4904e9a72f7d7cec77af2",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "Poverty persists unevenly across people and places This section examines who the poor are by education, age, residency in urban or rural areas, and subregions within economies. It relies on investments in expanded databases to explore these links. The poverty estimates are constructed from household measures of consumption or income and assume an equal allocation of resources within households, regardless of age and gender.11 Poverty is highest among young people, people with low educational attainment, and in households caring for children without two working-age adults Globally, populations are becoming more educated, and age composition is changing only slightly (refer to figure 1.12, panel a).12 As of 2024, almost three in four people globally were living in households with children, 39 percent in multiple-adult households, and 28 percent in two-adult households; only 2 percent were",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 34,
+            "segment_start": 1521
+          },
+          "score": 0.8992985486984253
+        }
+      ],
+      "context_ids": [
+        "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d"
+      ],
+      "elapsed_seconds": 0.0303020830033347
+    },
+    {
+      "event": "model",
+      "step": 5,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Năm 2024, tỷ lệ nghèo của người không đi học, người có giáo dục trung học và người có giáo dục bậc cao lần lượt là bao nhiêu?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01YahNdNnhfAm4e1p212M4Lt",
+              "name": "search_documents",
+              "input": {
+                "query": "extreme poverty rate 2024 by educational attainment percent of people with no education, secondary, tertiary"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01YahNdNnhfAm4e1p212M4Lt",
+              "content": "{\"current_context\": \"[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\", \"current_context_ids\": [\"4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d\"], \"searched_queries\": [\"2024 poverty rate by education level no education secondary tertiary\", \"poverty rate by educational attainment: no education, secondary education, tertiary education, 2024\", \"poverty rate households head education level no schooling secondary tertiary Poverty, Prosperity and Planet 2026\", \"extreme poverty rate 2024 by educational attainment percent of people with no education, secondary, tertiary\"], \"searches_remaining\": 0}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2xAEbnSZoPeih9RYHC5",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01N8gSKPz6mXNTPdL912g2gu",
+            "name": "finish",
+            "input": {
+              "status": "abstain",
+              "answer": "Chưa đủ bằng chứng trong kho để trả lời. Kết quả tìm kiếm chỉ có một đoạn (trang 44) nói rằng người sống trong hộ nghèo phần lớn là trẻ, ở nông thôn và ít được học hơn, nhưng không đưa ra tỷ lệ nghèo năm 2024 cho nhóm không đi học, trung học hoặc bậc cao. Tôi không suy đoán các con số này. Đã hết lượt tìm kiếm.",
+              "citations": []
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01N8gSKPz6mXNTPdL912g2gu",
+          "name": "finish",
+          "input": {
+            "status": "abstain",
+            "answer": "Chưa đủ bằng chứng trong kho để trả lời. Kết quả tìm kiếm chỉ có một đoạn (trang 44) nói rằng người sống trong hộ nghèo phần lớn là trẻ, ở nông thôn và ít được học hơn, nhưng không đưa ra tỷ lệ nghèo năm 2024 cho nhóm không đi học, trung học hoặc bậc cao. Tôi không suy đoán các con số này. Đã hết lượt tìm kiếm.",
+            "citations": []
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1803,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 373,
+          "output_tokens_details": {
+            "thinking_tokens": 105
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003668,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1803,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.256834959000116
+    },
+    {
+      "event": "finish",
+      "status": "abstain",
+      "answer": "Chưa đủ bằng chứng trong kho để trả lời. Kết quả tìm kiếm chỉ có một đoạn (trang 44) nói rằng người sống trong hộ nghèo phần lớn là trẻ, ở nông thôn và ít được học hơn, nhưng không đưa ra tỷ lệ nghèo năm 2024 cho nhóm không đi học, trung học hoặc bậc cao. Tôi không suy đoán các con số này. Đã hết lượt tìm kiếm.",
+      "citations": [],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 4,
+  "model_calls": 5,
+  "usage": {
+    "input_tokens": 8713,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 742
+  },
+  "cost_usd": null,
+  "status": "abstain",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 800,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.",
+  "context_ids": [
+    "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d"
+  ],
+  "context_chunks": [
+    {
+      "id": "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 44,
+      "text": "12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.",
+      "metadata": {
+        "end": 139,
+        "start": 0,
+        "section": "Summary",
+        "chunking": "paragraph",
+        "printed_page": 12,
+        "segment_start": 0
+      },
+      "score": 0.8936311336269672
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 5,
+    "returned_calls": 5
+  },
+  "estimated_cost_usd": 0.0012423,
+  "answer": "Chưa đủ bằng chứng trong kho để trả lời. Kết quả tìm kiếm chỉ có một đoạn (trang 44) nói rằng người sống trong hộ nghèo phần lớn là trẻ, ở nông thôn và ít được học hơn, nhưng không đưa ra tỷ lệ nghèo năm 2024 cho nhóm không đi học, trung học hoặc bậc cao. Tôi không suy đoán các con số này. Đã hết lượt tìm kiếm.",
+  "citations": [],
+  "elapsed_seconds": 6.983311917007086,
+  "answerable": true,
+  "context_strict_hit": false,
+  "context_set_hit": false,
+  "first_search_hit3": true,
+  "first_search_is_original_query": false
+}

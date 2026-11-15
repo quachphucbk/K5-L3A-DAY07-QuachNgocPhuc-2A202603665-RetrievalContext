@@ -1,0 +1,403 @@
+{
+  "created_at_utc": "2026-11-14T10:37:33.863956+00:00",
+  "stage": "agent_dev",
+  "query_id": "q04",
+  "config_id": "budget3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Trong mục “Gains in global poverty reduction could be reversed in coming decades”, nếu giá thực phẩm tăng vì chi phí phân bón hoặc vận chuyển tăng, người sản xuất thực phẩm có chắc hưởng lợi không?",
+  "filter": {
+    "section": "Gains in global poverty reduction could be reversed in coming decades"
+  },
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong mục “Gains in global poverty reduction could be reversed in coming decades”, nếu giá thực phẩm tăng vì chi phí phân bón hoặc vận chuyển tăng, người sản xuất thực phẩm có chắc hưởng lợi không?\", \"filter\": {\"section\": \"Gains in global poverty reduction could be reversed in coming decades\"}}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g6JyjPZ7obGZxz6GxW",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_011PUg5kFYEWK68oGR3hsaSJ",
+            "name": "search_documents",
+            "input": {
+              "query": "Gains in global poverty reduction could be reversed in coming decades food prices fertilizer transport costs food producers benefit"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_011PUg5kFYEWK68oGR3hsaSJ",
+          "name": "search_documents",
+          "input": {
+            "query": "Gains in global poverty reduction could be reversed in coming decades food prices fertilizer transport costs food producers benefit"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1411,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 84,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001831,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1411,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.024969541991595
+    },
+    {
+      "event": "search",
+      "query": "Gains in global poverty reduction could be reversed in coming decades food prices fertilizer transport costs food producers benefit",
+      "query_rewritten": true,
+      "filter": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades"
+      },
+      "results": [
+        {
+          "id": "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "Record maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)",
+          "metadata": {
+            "end": 2742,
+            "start": 1903,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8863813944827821
+        },
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8498521864238008
+        },
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8469849228859008
+        }
+      ],
+      "context": "[01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nRecord maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)\n\n[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\n\n[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+      "context_candidates": [
+        {
+          "id": "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "Record maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)",
+          "metadata": {
+            "end": 2742,
+            "start": 1903,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8863813944827821
+        },
+        {
+          "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 46,
+          "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+          "metadata": {
+            "end": 1901,
+            "start": 1416,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 14,
+            "segment_start": 0
+          },
+          "score": 0.8498521864238008
+        },
+        {
+          "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 63,
+          "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+          "metadata": {
+            "end": 2601,
+            "start": 1762,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 31,
+            "segment_start": 0
+          },
+          "score": 0.8469849228859008
+        }
+      ],
+      "context_ids": [
+        "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+        "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+        "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242"
+      ],
+      "elapsed_seconds": 0.051629833003971726
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Trong mục “Gains in global poverty reduction could be reversed in coming decades”, nếu giá thực phẩm tăng vì chi phí phân bón hoặc vận chuyển tăng, người sản xuất thực phẩm có chắc hưởng lợi không?\", \"filter\": {\"section\": \"Gains in global poverty reduction could be reversed in coming decades\"}}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_011PUg5kFYEWK68oGR3hsaSJ",
+              "name": "search_documents",
+              "input": {
+                "query": "Gains in global poverty reduction could be reversed in coming decades food prices fertilizer transport costs food producers benefit"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_011PUg5kFYEWK68oGR3hsaSJ",
+              "content": "{\"current_context\": \"[01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\\nRecord maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\\n\\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)\\n\\n[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\\n\\n[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).\", \"current_context_ids\": [\"01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4\", \"1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f\", \"a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242\"], \"searched_queries\": [\"Gains in global poverty reduction could be reversed in coming decades food prices fertilizer transport costs food producers benefit\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2g6Tt1ksNk1xSmQY1Qv",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01RCgb7fgEu4ySCMDHvicZ9A",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Không. Theo mục này, nhiều người nghèo là người sản xuất thực phẩm nên có thể hưởng lợi khi giá thực phẩm tăng, nhưng lợi ích đó có điều kiện. Điều quan trọng là xem chi phí đầu vào: nếu giá thực phẩm tăng do chi phí đầu vào như phân bón hoặc vận chuyển, thì người sản xuất thực phẩm không có lợi ròng; họ thậm chí có thể nghèo đi hơn nếu nhu cầu thực phẩm giảm [01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4]. Ngoài ra, các yếu tố như sản lượng ngô kỷ lục ở Nam Phi, giá phân bón được cố định ở một số nước như Ấn Độ, và tỷ lệ sử dụng phân bón thấp ở châu Phi cận Sahara có thể giảm tác động lên giá thực phẩm, nhưng đây là các ví dụ cụ thể chứ không phải bảo đảm chung [01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4].",
+              "citations": [
+                "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01RCgb7fgEu4ySCMDHvicZ9A",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Không. Theo mục này, nhiều người nghèo là người sản xuất thực phẩm nên có thể hưởng lợi khi giá thực phẩm tăng, nhưng lợi ích đó có điều kiện. Điều quan trọng là xem chi phí đầu vào: nếu giá thực phẩm tăng do chi phí đầu vào như phân bón hoặc vận chuyển, thì người sản xuất thực phẩm không có lợi ròng; họ thậm chí có thể nghèo đi hơn nếu nhu cầu thực phẩm giảm [01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4]. Ngoài ra, các yếu tố như sản lượng ngô kỷ lục ở Nam Phi, giá phân bón được cố định ở một số nước như Ấn Độ, và tỷ lệ sử dụng phân bón thấp ở châu Phi cận Sahara có thể giảm tác động lên giá thực phẩm, nhưng đây là các ví dụ cụ thể chứ không phải bảo đảm chung [01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4].",
+            "citations": [
+              "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2701,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 701,
+          "output_tokens_details": {
+            "thinking_tokens": 131
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0006206,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2701,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 3.818398375005927
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Không. Theo mục này, nhiều người nghèo là người sản xuất thực phẩm nên có thể hưởng lợi khi giá thực phẩm tăng, nhưng lợi ích đó có điều kiện. Điều quan trọng là xem chi phí đầu vào: nếu giá thực phẩm tăng do chi phí đầu vào như phân bón hoặc vận chuyển, thì người sản xuất thực phẩm không có lợi ròng; họ thậm chí có thể nghèo đi hơn nếu nhu cầu thực phẩm giảm [01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4]. Ngoài ra, các yếu tố như sản lượng ngô kỷ lục ở Nam Phi, giá phân bón được cố định ở một số nước như Ấn Độ, và tỷ lệ sử dụng phân bón thấp ở châu Phi cận Sahara có thể giảm tác động lên giá thực phẩm, nhưng đây là các ví dụ cụ thể chứ không phải bảo đảm chung [01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4].",
+      "citations": [
+        "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "usage": {
+    "input_tokens": 4112,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 785
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "latest"
+  },
+  "context": "[01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nRecord maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)\n\n[1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 46]\nwas different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.\n\n[a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 63]\nIf these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+  "context_ids": [
+    "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+    "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+    "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242"
+  ],
+  "context_chunks": [
+    {
+      "id": "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 46,
+      "text": "Record maize harvests in South Africa (Crop Estimates Committee 2026) fixed fertilizer prices in some countries, such as India (PIB 2026), and the low take-up of fertilizers in Sub-Saharan Africa (FAO 2025) generally could mitigate the impact on food prices. Furthermore, the overall effect of higher food prices on extreme poverty is complicated by the fact that many of the poor are food producers and could thus benefit from higher food prices (Ivanic and Martin 2008). It is thus crucial to understand what happens to input costs. If the increase in food prices is driven by input costs (for instance, fertilizer or transport costs), there are no net benefits among food producers, who may even be less well off if there is a reduction in food demand.\n\nBOX 1.1 Updated poverty lines carry important implications (continued) (continued)",
+      "metadata": {
+        "end": 2742,
+        "start": 1903,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 14,
+        "segment_start": 0
+      },
+      "score": 0.8863813944827821
+    },
+    {
+      "id": "1aa1bf0b4526492748627f2094425ca5fb56345732b6530fbca56fd0c38a622f",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 46,
+      "text": "was different this time was that the shock has primarily affected energy prices, and these exert an impact on household budgets directly, but also indirectly through, for example, higher transport costs for food. Furthermore, there has been a significant rise in fertilizer prices, which has affected food production throughout 2026. More generally, energy intensity varies by economic sectors. So, household income can be affected differentially depending on the sector of employment.",
+      "metadata": {
+        "end": 1901,
+        "start": 1416,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 14,
+        "segment_start": 0
+      },
+      "score": 0.8498521864238008
+    },
+    {
+      "id": "a3e2e5888f7d5682dbb4285a7cb5a007a26b69060db12cb740fdf2dc33313242",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 63,
+      "text": "If these economies were to achieve the growth rates they experienced during 2000–09, the global poverty rate would still remain above 8 percent in 2030 even under these more optimistic assumptions. Current GDP forecasts show slower poverty reduction, resulting in a poverty rate above 9 percent in 2030. Only under sustained annual global GDP growth of 4 percent would the extreme poverty rate approach the ambitious 3 percent goal by 2050, two decades later than the initial target year. These simulations hold within-country inequality constant at today’s level. If economies manage to achieve pro-poor growth, the projected poverty rates would be lower.7 For example, growth in agriculture has been shown to benefit the poorest relatively more, although this effect dissipates as economies become richer (Beegle and Christiaensen 2019).",
+      "metadata": {
+        "end": 2601,
+        "start": 1762,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 31,
+        "segment_start": 0
+      },
+      "score": 0.8469849228859008
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 2,
+    "returned_calls": 2
+  },
+  "estimated_cost_usd": 0.0008037,
+  "answer": "Không. Theo mục này, nhiều người nghèo là người sản xuất thực phẩm nên có thể hưởng lợi khi giá thực phẩm tăng, nhưng lợi ích đó có điều kiện. Điều quan trọng là xem chi phí đầu vào: nếu giá thực phẩm tăng do chi phí đầu vào như phân bón hoặc vận chuyển, thì người sản xuất thực phẩm không có lợi ròng; họ thậm chí có thể nghèo đi hơn nếu nhu cầu thực phẩm giảm [01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4]. Ngoài ra, các yếu tố như sản lượng ngô kỷ lục ở Nam Phi, giá phân bón được cố định ở một số nước như Ấn Độ, và tỷ lệ sử dụng phân bón thấp ở châu Phi cận Sahara có thể giảm tác động lên giá thực phẩm, nhưng đây là các ví dụ cụ thể chứ không phải bảo đảm chung [01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4].",
+  "citations": [
+    "01b19e099f5739adced97e1c1bb073e31f06a7dab5c1607a0ebb484a10bd76d4"
+  ],
+  "elapsed_seconds": 5.895169957992039,
+  "answerable": true,
+  "context_strict_hit": true,
+  "context_set_hit": true,
+  "first_search_hit3": true,
+  "first_search_is_original_query": false
+}

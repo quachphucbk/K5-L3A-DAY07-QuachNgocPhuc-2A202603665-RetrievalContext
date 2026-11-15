@@ -1,0 +1,1327 @@
+{
+  "created_at_utc": "2026-11-14T10:42:03.363245+00:00",
+  "stage": "agent_dev",
+  "query_id": "dneg01",
+  "config_id": "neighbors3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Theo bộ tài liệu này, tỷ lệ nghèo cùng cực của tỉnh Quảng Ninh năm 2024 chính xác là bao nhiêu phần trăm?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Theo bộ tài liệu này, tỷ lệ nghèo cùng cực của tỉnh Quảng Ninh năm 2024 chính xác là bao nhiêu phần trăm?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gSBKvAXErXCeosGZFC",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01VG1Bk6t3PZJzRs6KUBK6RA",
+            "name": "search_documents",
+            "input": {
+              "query": "Quảng Ninh tỷ lệ nghèo cùng cực năm 2024"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01VG1Bk6t3PZJzRs6KUBK6RA",
+          "name": "search_documents",
+          "input": {
+            "query": "Quảng Ninh tỷ lệ nghèo cùng cực năm 2024"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1359,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 74,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001729,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1359,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.1952735410013702
+    },
+    {
+      "event": "search",
+      "query": "Quảng Ninh tỷ lệ nghèo cùng cực năm 2024",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "(2022).",
+          "metadata": {
+            "end": 907,
+            "start": 900,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.808605861150882
+        },
+        {
+          "id": "8bbee20955c6f327c14201ed0fe1208b4b515fc01cd27fa7c1f12fe79092942a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 65,
+          "text": "33 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.10 The population is expected to grow most quickly in high-poverty economies and those affected by fragility, conflict, and violence −2.0 −1.5 −1.0 −0.5 0.0 0.5 1.0 1.5 2.0 2.5 3.0 Annual population growth rate, 2024–50 (%) 0 10–10 20 30 40 50 60 70 80 90 Extreme poverty rate, 2024 (%) Non-FCS economies FCS economies Fitted line Sources: Un deSa 2024; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 574,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 33,
+            "segment_start": 0
+          },
+          "score": 0.7957804446482185
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.7955418229103315
+        }
+      ],
+      "context": "[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n(2022).\n\n[de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.\n\n[409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) The speed of extreme poverty reduction has shifted markedly over time. Between 1990 and 2004, the global rate of extreme poverty fell from 43 percent to 30 percent, with hundreds of millions of people pulled out of extreme poverty. As the fight against extreme poverty gained momentum in populous economies, most notably China, the global rate of extreme poverty fell starkly in the years after 2004, delivering substantial progress toward the goal of reducing extreme poverty across the globe. However, the momentum shifted in the late 2010s, even before the onset of the COVID-19 pandemic. The slowdown reflected persistently low economic growth in low-income economies leading to an increasing concentration of the global poor in these economies (World Bank 2018, 2024a). After a rise in the incidence of\n\n[8bbee20955c6f327c14201ed0fe1208b4b515fc01cd27fa7c1f12fe79092942a | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\n33 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.10 The population is expected to grow most quickly in high-poverty economies and those affected by fragility, conflict, and violence −2.0 −1.5 −1.0 −0.5 0.0 0.5 1.0 1.5 2.0 2.5 3.0 Annual population growth rate, 2024–50 (%) 0 10–10 20 30 40 50 60 70 80 90 Extreme poverty rate, 2024 (%) Non-FCS economies FCS economies Fitted line Sources: Un deSa 2024; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+      "context_candidates": [
+        {
+          "id": "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "(2022).",
+          "metadata": {
+            "end": 907,
+            "start": 900,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.808605861150882
+        },
+        {
+          "id": "de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 17,
+            "segment_start": 0,
+            "start": 0,
+            "end": 899,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "BOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) The speed of extreme poverty reduction has shifted markedly over time. Between 1990 and 2004, the global rate of extreme poverty fell from 43 percent to 30 percent, with hundreds of millions of people pulled out of extreme poverty. As the fight against extreme poverty gained momentum in populous economies, most notably China, the global rate of extreme poverty fell starkly in the years after 2004, delivering substantial progress toward the goal of reducing extreme poverty across the globe. However, the momentum shifted in the late 2010s, even before the onset of the COVID-19 pandemic. The slowdown reflected persistently low economic growth in low-income economies leading to an increasing concentration of the global poor in these economies (World Bank 2018, 2024a). After a rise in the incidence of",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 17,
+            "segment_start": 0,
+            "start": 909,
+            "end": 1802,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "8bbee20955c6f327c14201ed0fe1208b4b515fc01cd27fa7c1f12fe79092942a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 65,
+          "text": "33 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.10 The population is expected to grow most quickly in high-poverty economies and those affected by fragility, conflict, and violence −2.0 −1.5 −1.0 −0.5 0.0 0.5 1.0 1.5 2.0 2.5 3.0 Annual population growth rate, 2024–50 (%) 0 10–10 20 30 40 50 60 70 80 90 Extreme poverty rate, 2024 (%) Non-FCS economies FCS economies Fitted line Sources: Un deSa 2024; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 574,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 33,
+            "segment_start": 0
+          },
+          "score": 0.7957804446482185
+        },
+        {
+          "id": "972837ea7dd76ddca19488bf7fe2502173c7c3a5f1d865217e3026daa7d17dc8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 65,
+          "text": "Note: each bubble in the figure represents an economy. the horizontal axis shows the rate of extreme poverty in 2024 at the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). bubble sizes reflect expected population numbers in 2050. economies are considered to be in fragile and conflict-affected situations (FCS) based on the World bank’s classification in 2025.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 33,
+            "segment_start": 0,
+            "start": 576,
+            "end": 963,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.7955418229103315
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 514,
+            "end": 1281,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42",
+        "de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0",
+        "409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c",
+        "8bbee20955c6f327c14201ed0fe1208b4b515fc01cd27fa7c1f12fe79092942a"
+      ],
+      "elapsed_seconds": 0.021415374998468906
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Theo bộ tài liệu này, tỷ lệ nghèo cùng cực của tỉnh Quảng Ninh năm 2024 chính xác là bao nhiêu phần trăm?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01VG1Bk6t3PZJzRs6KUBK6RA",
+              "name": "search_documents",
+              "input": {
+                "query": "Quảng Ninh tỷ lệ nghèo cùng cực năm 2024"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01VG1Bk6t3PZJzRs6KUBK6RA",
+              "content": "{\"current_context\": \"[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\n(2022).\\n\\n[de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\n17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.\\n\\n[409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) The speed of extreme poverty reduction has shifted markedly over time. Between 1990 and 2004, the global rate of extreme poverty fell from 43 percent to 30 percent, with hundreds of millions of people pulled out of extreme poverty. As the fight against extreme poverty gained momentum in populous economies, most notably China, the global rate of extreme poverty fell starkly in the years after 2004, delivering substantial progress toward the goal of reducing extreme poverty across the globe. However, the momentum shifted in the late 2010s, even before the onset of the COVID-19 pandemic. The slowdown reflected persistently low economic growth in low-income economies leading to an increasing concentration of the global poor in these economies (World Bank 2018, 2024a). After a rise in the incidence of\\n\\n[8bbee20955c6f327c14201ed0fe1208b4b515fc01cd27fa7c1f12fe79092942a | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 65]\\n33 Global Poverty: Stalled Pro GreSS and riSinG Con Centration FIGURE 1.10 The population is expected to grow most quickly in high-poverty economies and those affected by fragility, conflict, and violence −2.0 −1.5 −1.0 −0.5 0.0 0.5 1.0 1.5 2.0 2.5 3.0 Annual population growth rate, 2024–50 (%) 0 10–10 20 30 40 50 60 70 80 90 Extreme poverty rate, 2024 (%) Non-FCS economies FCS economies Fitted line Sources: Un deSa 2024; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\", \"current_context_ids\": [\"3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42\", \"de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0\", \"409c605b7c09b3c3c575c7308cc086b57b48a558ff1e749c904ffc04a0d7a51c\", \"8bbee20955c6f327c14201ed0fe1208b4b515fc01cd27fa7c1f12fe79092942a\"], \"searched_queries\": [\"Quảng Ninh tỷ lệ nghèo cùng cực năm 2024\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gSGQmGq8g513tAvkrq",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_014CFUfsds3VLSURYLdZXPDj",
+            "name": "search_documents",
+            "input": {
+              "query": "Quang Ninh province extreme poverty rate Vietnam provincial poverty"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_014CFUfsds3VLSURYLdZXPDj",
+          "name": "search_documents",
+          "input": {
+            "query": "Quang Ninh province extreme poverty rate Vietnam provincial poverty"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2946,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 119,
+          "output_tokens_details": {
+            "thinking_tokens": 46
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003541,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2946,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.359808458990301
+    },
+    {
+      "event": "search",
+      "query": "Quang Ninh province extreme poverty rate Vietnam provincial poverty",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "eedf2c38dfce2c9903fa0f3a2c597d3597306157689436ca06155c5b4202d150",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "The baseline using projections of Global Economic Prospects, June 2026 (World Bank 2026c) provides estimates of the number of people living in extreme poverty at 811 million people in 2026 (refer to figure B1.2.1). This is an increase of 2.5 million people relative to the preconflict growth projections of Global Economic Prospects, January 2026 (World Bank 2026b). While these differences are not solely attributable to the conflict, the numbers confirm a worsening outlook.",
+          "metadata": {
+            "end": 1897,
+            "start": 1421,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8490069182502789
+        },
+        {
+          "id": "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 56,
+          "text": "Sub-Saharan Africa, in contrast, experienced much more modest improvement.2 There, extreme poverty rates declined from 62 percent in 1990 to 43 percent in 2026. The extreme poverty rate has declined little in the region since 2014. In the Middle East, North Africa, Afghanistan, and Pakistan region (refer to box 1.4 for information on World Bank regional classifications), extreme poverty has been increasing in recent years. In both regions, low rates of per capita economic growth have undermined efforts to reduce poverty (Beegle et al. 2016).",
+          "metadata": {
+            "end": 1681,
+            "start": 1134,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 24,
+            "segment_start": 0
+          },
+          "score": 0.8484080108866687
+        },
+        {
+          "id": "30bdc821421a0b45ec2ca7c23550284b8020fb98e893bdca75e99831b44f8081",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "Eighteen percent of children under the age of 18 are living in extreme poverty, compared with 6 percent among adults, and individuals with no formal education have a poverty rate of 22 percent. Extreme poverty rates in rural areas are more than three times higher than urban rates. Although extreme poverty declined across most demographic groups between 2013 and 2023, progress was slowest among households caring for children in which none or only one working-age adult was working. • Subnational data reveal that poverty is concentrated not only in specific economies, but in specific regions within these economies. Poverty has been stagnating or rising in many regions within economies in Sub-Saharan Africa and MENAAP over the past decade. • Broadening measurement beyond absolute monetary thresholds—to relative poverty lines and to multidimensional deprivation—reinforces the existence of",
+          "metadata": {
+            "end": 1037,
+            "start": 141,
+            "section": "Summary",
+            "chunking": "paragraph",
+            "printed_page": 12,
+            "segment_start": 0
+          },
+          "score": 0.8479587616969692
+        }
+      ],
+      "context": "[eedf2c38dfce2c9903fa0f3a2c597d3597306157689436ca06155c5b4202d150 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\nThe baseline using projections of Global Economic Prospects, June 2026 (World Bank 2026c) provides estimates of the number of people living in extreme poverty at 811 million people in 2026 (refer to figure B1.2.1). This is an increase of 2.5 million people relative to the preconflict growth projections of Global Economic Prospects, January 2026 (World Bank 2026b). While these differences are not solely attributable to the conflict, the numbers confirm a worsening outlook.\n\n[c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\nTo investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.\n\n[59e5ff495ab17586b2ec22b12b96b0cfe804b34e994b69adb02444083d382e81 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\nAllowing for distributional impacts either from uneven income shocks or price shocks leads to a further increase compared with the preconflict projections and essentially a stagnation in extreme poverty relative to 2025 (when the number was 816.9 million people). Taking the differential impact of sectoral growth rates into consideration reveals that 816.6 million people were estimated to be living in extreme poverty in 2026. One of the main reasons is that projected agricultural growth is much lower than the growth projected in the service and industrial sectors in 2026. Because a larger share of the extreme poor work in the agricultural sector, poverty reduction is muted because of the low agricultural growth. This also highlights that it is important for the poor to engage in resilient high-growth sectors to favor poverty reduction (refer to chapter 4).\n\n[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\n\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n(2022).",
+      "context_candidates": [
+        {
+          "id": "eedf2c38dfce2c9903fa0f3a2c597d3597306157689436ca06155c5b4202d150",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "The baseline using projections of Global Economic Prospects, June 2026 (World Bank 2026c) provides estimates of the number of people living in extreme poverty at 811 million people in 2026 (refer to figure B1.2.1). This is an increase of 2.5 million people relative to the preconflict growth projections of Global Economic Prospects, January 2026 (World Bank 2026b). While these differences are not solely attributable to the conflict, the numbers confirm a worsening outlook.",
+          "metadata": {
+            "end": 1897,
+            "start": 1421,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8490069182502789
+        },
+        {
+          "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 15,
+            "segment_start": 0,
+            "start": 589,
+            "end": 1419,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "59e5ff495ab17586b2ec22b12b96b0cfe804b34e994b69adb02444083d382e81",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "Allowing for distributional impacts either from uneven income shocks or price shocks leads to a further increase compared with the preconflict projections and essentially a stagnation in extreme poverty relative to 2025 (when the number was 816.9 million people). Taking the differential impact of sectoral growth rates into consideration reveals that 816.6 million people were estimated to be living in extreme poverty in 2026. One of the main reasons is that projected agricultural growth is much lower than the growth projected in the service and industrial sectors in 2026. Because a larger share of the extreme poor work in the agricultural sector, poverty reduction is muted because of the low agricultural growth. This also highlights that it is important for the poor to engage in resilient high-growth sectors to favor poverty reduction (refer to chapter 4).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 15,
+            "segment_start": 0,
+            "start": 1899,
+            "end": 2766,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 56,
+          "text": "Sub-Saharan Africa, in contrast, experienced much more modest improvement.2 There, extreme poverty rates declined from 62 percent in 1990 to 43 percent in 2026. The extreme poverty rate has declined little in the region since 2014. In the Middle East, North Africa, Afghanistan, and Pakistan region (refer to box 1.4 for information on World Bank regional classifications), extreme poverty has been increasing in recent years. In both regions, low rates of per capita economic growth have undermined efforts to reduce poverty (Beegle et al. 2016).",
+          "metadata": {
+            "end": 1681,
+            "start": 1134,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 24,
+            "segment_start": 0
+          },
+          "score": 0.8484080108866687
+        },
+        {
+          "id": "b39224efc24a0b99d16b04a5ee30c217eacd8da7bdf9b48e516a60785a1f7c73",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 56,
+          "text": "Note: the figure reports extreme poverty rates ($3.00-a-person-a-day poverty line in 2021 purchasing power parity terms). dots within lines indicate that surveys around the corresponding year covered less than 50 percent of a region’s population (refer to box 1.4 and annex 1a). dashed portions of lines show data that are nowcasts (refer to annex 1a). the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. MenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 24,
+            "segment_start": 0,
+            "start": 571,
+            "end": 1132,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "7d90b4a5921a8940a58578888fcdff9c14d5b8cc54148e0050a685c8e3c361fd",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 56,
+          "text": "The COVID-19 pandemic has had a particularly persistent impact in these regions, where low rates of economic growth make recovery from such shocks a lengthy prospect. In MENAAP , poverty rates at the $3.00 and $4.20 lines have not yet returned to prepandemic levels, while 2026 is the first year in which poverty rates at the $3.00 line are projected to be back at the prepandemic level in Sub-Saharan Africa (World Bank 2024a) (refer to figure 1.4). The world’s low-income economies are overwhelmingly concentrated in these two regions.3 Meanwhile, the conflict in the Middle East has generated new economic strains. Rising energy, food, and fertilizer prices are projected to have slowed the pace of poverty reduction additionally between 2025 and 2026 (refer to box 1.2).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 24,
+            "segment_start": 0,
+            "start": 1683,
+            "end": 2457,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "30bdc821421a0b45ec2ca7c23550284b8020fb98e893bdca75e99831b44f8081",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "Eighteen percent of children under the age of 18 are living in extreme poverty, compared with 6 percent among adults, and individuals with no formal education have a poverty rate of 22 percent. Extreme poverty rates in rural areas are more than three times higher than urban rates. Although extreme poverty declined across most demographic groups between 2013 and 2023, progress was slowest among households caring for children in which none or only one working-age adult was working. • Subnational data reveal that poverty is concentrated not only in specific economies, but in specific regions within these economies. Poverty has been stagnating or rising in many regions within economies in Sub-Saharan Africa and MENAAP over the past decade. • Broadening measurement beyond absolute monetary thresholds—to relative poverty lines and to multidimensional deprivation—reinforces the existence of",
+          "metadata": {
+            "end": 1037,
+            "start": 141,
+            "section": "Summary",
+            "chunking": "paragraph",
+            "printed_page": 12,
+            "segment_start": 0
+          },
+          "score": 0.8479587616969692
+        },
+        {
+          "id": "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.",
+          "metadata": {
+            "section": "Summary",
+            "printed_page": 12,
+            "segment_start": 0,
+            "start": 0,
+            "end": 139,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "ff4e2986219952e0b23693c3b93363e0419fb0788470236f839c27d7aa218100",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 44,
+          "text": "these patterns: Across 103 economies, 17 percent of people were multidimensionally poor in 2023, compared with 11 percent based on the $3.00-a-person-a-day line. The largest differences are across poverty measures in South Asia and Sub-Saharan Africa.",
+          "metadata": {
+            "section": "Summary",
+            "printed_page": 12,
+            "segment_start": 0,
+            "start": 1038,
+            "end": 1289,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "eedf2c38dfce2c9903fa0f3a2c597d3597306157689436ca06155c5b4202d150",
+        "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+        "59e5ff495ab17586b2ec22b12b96b0cfe804b34e994b69adb02444083d382e81",
+        "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+        "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42"
+      ],
+      "elapsed_seconds": 0.04092354199383408
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Theo bộ tài liệu này, tỷ lệ nghèo cùng cực của tỉnh Quảng Ninh năm 2024 chính xác là bao nhiêu phần trăm?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_014CFUfsds3VLSURYLdZXPDj",
+              "name": "search_documents",
+              "input": {
+                "query": "Quang Ninh province extreme poverty rate Vietnam provincial poverty"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_014CFUfsds3VLSURYLdZXPDj",
+              "content": "{\"current_context\": \"[eedf2c38dfce2c9903fa0f3a2c597d3597306157689436ca06155c5b4202d150 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\\nThe baseline using projections of Global Economic Prospects, June 2026 (World Bank 2026c) provides estimates of the number of people living in extreme poverty at 811 million people in 2026 (refer to figure B1.2.1). This is an increase of 2.5 million people relative to the preconflict growth projections of Global Economic Prospects, January 2026 (World Bank 2026b). While these differences are not solely attributable to the conflict, the numbers confirm a worsening outlook.\\n\\n[c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\\nTo investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.\\n\\n[59e5ff495ab17586b2ec22b12b96b0cfe804b34e994b69adb02444083d382e81 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 47]\\nAllowing for distributional impacts either from uneven income shocks or price shocks leads to a further increase compared with the preconflict projections and essentially a stagnation in extreme poverty relative to 2025 (when the number was 816.9 million people). Taking the differential impact of sectoral growth rates into consideration reveals that 816.6 million people were estimated to be living in extreme poverty in 2026. One of the main reasons is that projected agricultural growth is much lower than the growth projected in the service and industrial sectors in 2026. Because a larger share of the extreme poor work in the agricultural sector, poverty reduction is muted because of the low agricultural growth. This also highlights that it is important for the poor to engage in resilient high-growth sectors to favor poverty reduction (refer to chapter 4).\\n\\n[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\\n\\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\n(2022).\", \"current_context_ids\": [\"eedf2c38dfce2c9903fa0f3a2c597d3597306157689436ca06155c5b4202d150\", \"c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8\", \"59e5ff495ab17586b2ec22b12b96b0cfe804b34e994b69adb02444083d382e81\", \"4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d\", \"3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42\"], \"searched_queries\": [\"Quảng Ninh tỷ lệ nghèo cùng cực năm 2024\", \"Quang Ninh province extreme poverty rate Vietnam provincial poverty\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gSPaNS5QyMhxzDnNek",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_016Tm7x1UP7StbgBWT1ki7kv",
+            "name": "search_documents",
+            "input": {
+              "query": "Vietnam provinces poverty rate 2024 Quang Ninh subnational"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_016Tm7x1UP7StbgBWT1ki7kv",
+          "name": "search_documents",
+          "input": {
+            "query": "Vietnam provinces poverty rate 2024 Quang Ninh subnational"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2991,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 127,
+          "output_tokens_details": {
+            "thinking_tokens": 54
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003626,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2991,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.653606874999241
+    },
+    {
+      "event": "search",
+      "query": "Vietnam provinces poverty rate 2024 Quang Ninh subnational",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.861303006643596
+        },
+        {
+          "id": "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 895,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.8521183044980961
+        },
+        {
+          "id": "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 72,
+          "text": "Note: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 1115,
+            "start": 601,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 40,
+            "segment_start": 0
+          },
+          "score": 0.8507421105657886
+        }
+      ],
+      "context": "[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\n\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\n\n[61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 60]\n28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\n[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\n\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n(2022).",
+      "context_candidates": [
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.861303006643596
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 514,
+            "end": 1281,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 895,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.8521183044980961
+        },
+        {
+          "id": "b887257ea9ac313047e0a71b429c78e9bc171e307178b7cc9d4a0f1eebcb92b0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "Note: the figure reports the number of people living in extreme poverty, that is, below the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms) and the global share of extreme poverty. the 20 economies with the largest share of poor people are labeled. the figure reports the estimates that underlie the global and regional aggregates. these have been extrapolated or interpolated to a common year if a survey is unavailable in 2024 (refer to annex 1a). For example, in the case of the republic of yemen, the latest available survey has been extrapolated from 2014. Furthermore, countries without any available surveys in the Poverty and inequality Platform, such as afghanistan and the Federal republic of Somalia, have been imputed following the method of Mahler et al. (2026). the Philippines collects survey data on both household income and consumption expenditure. World",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 28,
+            "segment_start": 0,
+            "start": 897,
+            "end": 1795,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "90780afe35fe76d028a7f881278115ffc561d5bb2d1cf8e60bc10b0a5d79ad85",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 72,
+          "text": "Note: each vertical line in the figure represents an individual economy. Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). the analysis uses data that are aligned with 2024 (refer to annex 1a). the thicker column boxes depict the range between the first and third quartile. the lower end of the vertical line represents the 10th percentile, and the upper end represents the 90th percentile.\n\nMenaaP = Middle east, north africa, afghanistan, and Pakistan.",
+          "metadata": {
+            "end": 1115,
+            "start": 601,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 40,
+            "segment_start": 0
+          },
+          "score": 0.8507421105657886
+        },
+        {
+          "id": "efc21903bebd46627e0162705e8945d170349f3985cb280bfd5246d606074816",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 72,
+          "text": "40 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.16 Subnational poverty rates vary widely in MENAAP and Sub-Saharan Africa, 2024 0 10 20 30 40 50 60 70 80 90 100 Subnational poverty rate (%) 10 20 30 40 50 60 70 80 90 National poverty rate (%) Sub-Saharan Africa MENAAP Sources: World bank calculations based on data from the Global Subnational Poverty atlas (version april 2026), World bank, https://datacatalog.worldbank.org/search/dataset/0042041/global-subnational-poverty-atlas-gsap; Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 40,
+            "segment_start": 0,
+            "start": 0,
+            "end": 599,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "b88a7a6bc37115f9109265d7b2b94301ff074a593289d6e973c13f7107e78d6f",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 72,
+          "text": "The East Asia and Pacific region and the Latin America and Caribbean region also display considerable within-region heterogeneity (refer to annex 1B, figure 1B.5). Although the median poverty rates there are modest (4 percent and 3 percent, respectively), both regions include subregions with rates comparable with those in Sub-Saharan Africa, about 60 percent or higher in parts of Haiti, the Solomon Islands, and Timor-Leste. South Asia exhibits a more compressed distribution. Poverty rates in most subregions are clustered below 10 percent. In Europe and Central Asia and in North America, rates are uniformly low. Medians are below 1 percent, and there are few outliers, except in Central Asia.\n\nSubnational data reveal diverging trajectories that mirror global patterns of uneven progress.\n\nThe Kyrgyz Republic and the Philippines exemplify successful broad-based poverty reduction.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 40,
+            "segment_start": 0,
+            "start": 1117,
+            "end": 2005,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+        "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+        "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+        "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+        "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42"
+      ],
+      "elapsed_seconds": 0.037097624997841194
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Theo bộ tài liệu này, tỷ lệ nghèo cùng cực của tỉnh Quảng Ninh năm 2024 chính xác là bao nhiêu phần trăm?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_016Tm7x1UP7StbgBWT1ki7kv",
+              "name": "search_documents",
+              "input": {
+                "query": "Vietnam provinces poverty rate 2024 Quang Ninh subnational"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_016Tm7x1UP7StbgBWT1ki7kv",
+              "content": "{\"current_context\": \"[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\\n\\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\\n\\n[61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 60]\\n28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\\n\\n[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\\n\\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\n(2022).\", \"current_context_ids\": [\"bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55\", \"21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4\", \"61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33\", \"4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d\", \"3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42\"], \"searched_queries\": [\"Quảng Ninh tỷ lệ nghèo cùng cực năm 2024\", \"Quang Ninh province extreme poverty rate Vietnam provincial poverty\", \"Vietnam provinces poverty rate 2024 Quang Ninh subnational\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gSWR8BKe25KRT1sRms",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_011D4boJAeXLKGpJqdLB2Rui",
+            "name": "search_documents",
+            "input": {
+              "query": "Quang Ninh extreme poverty rate 2024 table Vietnam provinces"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_011D4boJAeXLKGpJqdLB2Rui",
+          "name": "search_documents",
+          "input": {
+            "query": "Quang Ninh extreme poverty rate 2024 table Vietnam provinces"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 3317,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 73,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003682,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 3317,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.376214167001308
+    },
+    {
+      "event": "search",
+      "query": "Quang Ninh extreme poverty rate 2024 table Vietnam provinces",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8794768905016116
+        },
+        {
+          "id": "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 895,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.8728560209274292
+        },
+        {
+          "id": "eedf2c38dfce2c9903fa0f3a2c597d3597306157689436ca06155c5b4202d150",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "The baseline using projections of Global Economic Prospects, June 2026 (World Bank 2026c) provides estimates of the number of people living in extreme poverty at 811 million people in 2026 (refer to figure B1.2.1). This is an increase of 2.5 million people relative to the preconflict growth projections of Global Economic Prospects, January 2026 (World Bank 2026b). While these differences are not solely attributable to the conflict, the numbers confirm a worsening outlook.",
+          "metadata": {
+            "end": 1897,
+            "start": 1421,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8701582032347812
+        }
+      ],
+      "context": "[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\n\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\n\n[61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 60]\n28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\n[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\n\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n(2022).",
+      "context_candidates": [
+        {
+          "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+          "metadata": {
+            "end": 512,
+            "start": 0,
+            "section": "Poverty persists unevenly across people and places",
+            "chunking": "paragraph",
+            "printed_page": 42,
+            "segment_start": 0
+          },
+          "score": 0.8794768905016116
+        },
+        {
+          "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 74,
+          "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+          "metadata": {
+            "section": "Poverty persists unevenly across people and places",
+            "printed_page": 42,
+            "segment_start": 0,
+            "start": 514,
+            "end": 1281,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "end": 895,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 28,
+            "segment_start": 0
+          },
+          "score": 0.8728560209274292
+        },
+        {
+          "id": "b887257ea9ac313047e0a71b429c78e9bc171e307178b7cc9d4a0f1eebcb92b0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 60,
+          "text": "Note: the figure reports the number of people living in extreme poverty, that is, below the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms) and the global share of extreme poverty. the 20 economies with the largest share of poor people are labeled. the figure reports the estimates that underlie the global and regional aggregates. these have been extrapolated or interpolated to a common year if a survey is unavailable in 2024 (refer to annex 1a). For example, in the case of the republic of yemen, the latest available survey has been extrapolated from 2014. Furthermore, countries without any available surveys in the Poverty and inequality Platform, such as afghanistan and the Federal republic of Somalia, have been imputed following the method of Mahler et al. (2026). the Philippines collects survey data on both household income and consumption expenditure. World",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 28,
+            "segment_start": 0,
+            "start": 897,
+            "end": 1795,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "eedf2c38dfce2c9903fa0f3a2c597d3597306157689436ca06155c5b4202d150",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "The baseline using projections of Global Economic Prospects, June 2026 (World Bank 2026c) provides estimates of the number of people living in extreme poverty at 811 million people in 2026 (refer to figure B1.2.1). This is an increase of 2.5 million people relative to the preconflict growth projections of Global Economic Prospects, January 2026 (World Bank 2026b). While these differences are not solely attributable to the conflict, the numbers confirm a worsening outlook.",
+          "metadata": {
+            "end": 1897,
+            "start": 1421,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 15,
+            "segment_start": 0
+          },
+          "score": 0.8701582032347812
+        },
+        {
+          "id": "c460089cbc2f49af08c6b31c6b57d4a3b67b337c46f239268c5144fec7905ad8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "To investigate the disproportionate impact, two methods allow variation in the intensity of the shock faced by households (Kimura et al. 2026). In both cases, the average growth of the economy is maintained at the level indicated in Global Economic Prospects, June 2026 (World Bank 2026c), which captures the aggregate income and price shock. First, households are allocated sectoral growth rates based on their sector of employment. Second, inflation is allocated to households depending on their budget’s exposure to food and energy. Poorer households typically spend a greater share on food and energy and thus receive lower real income if the prices of these items rise. A distribution-neutral assumption, which is used as the baseline throughout the report, would instead assume the equal distribution of inflationary shocks.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 15,
+            "segment_start": 0,
+            "start": 589,
+            "end": 1419,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "59e5ff495ab17586b2ec22b12b96b0cfe804b34e994b69adb02444083d382e81",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 47,
+          "text": "Allowing for distributional impacts either from uneven income shocks or price shocks leads to a further increase compared with the preconflict projections and essentially a stagnation in extreme poverty relative to 2025 (when the number was 816.9 million people). Taking the differential impact of sectoral growth rates into consideration reveals that 816.6 million people were estimated to be living in extreme poverty in 2026. One of the main reasons is that projected agricultural growth is much lower than the growth projected in the service and industrial sectors in 2026. Because a larger share of the extreme poor work in the agricultural sector, poverty reduction is muted because of the low agricultural growth. This also highlights that it is important for the poor to engage in resilient high-growth sectors to favor poverty reduction (refer to chapter 4).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 15,
+            "segment_start": 0,
+            "start": 1899,
+            "end": 2766,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+        "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+        "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+        "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+        "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42"
+      ],
+      "elapsed_seconds": 0.042710999987320974
+    },
+    {
+      "event": "model",
+      "step": 5,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Theo bộ tài liệu này, tỷ lệ nghèo cùng cực của tỉnh Quảng Ninh năm 2024 chính xác là bao nhiêu phần trăm?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_011D4boJAeXLKGpJqdLB2Rui",
+              "name": "search_documents",
+              "input": {
+                "query": "Quang Ninh extreme poverty rate 2024 table Vietnam provinces"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_011D4boJAeXLKGpJqdLB2Rui",
+              "content": "{\"current_context\": \"[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\\n\\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\\n\\n[61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 60]\\n28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\\n\\n[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\\n\\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\n(2022).\", \"current_context_ids\": [\"bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55\", \"21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4\", \"61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33\", \"4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d\", \"3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42\"], \"searched_queries\": [\"Quảng Ninh tỷ lệ nghèo cùng cực năm 2024\", \"Quang Ninh province extreme poverty rate Vietnam provincial poverty\", \"Vietnam provinces poverty rate 2024 Quang Ninh subnational\", \"Quang Ninh extreme poverty rate 2024 table Vietnam provinces\"], \"searches_remaining\": 0}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gSbmax1E7DVUAiK23z",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01UrguUu5ERNVYKMjYAKo35q",
+            "name": "finish",
+            "input": {
+              "status": "abstain",
+              "answer": "Chưa đủ bằng chứng trong kho để xác định tỷ lệ nghèo cùng cực của tỉnh Quảng Ninh năm 2024. Các đoạn tìm được (37 trang PDF 43–79 của chương 1) chỉ có dữ liệu nghèo cùng cực ở cấp quốc gia (ví dụ Figure 1.6: Nigeria 11.5%, Congo Dem. Rep. 10.9%, Philippines 1.4% năm 2024) và bản đồ dưới cấp quốc gia của Nigeria và Guatemala. Không có dòng nào nêu Quảng Ninh hay Việt Nam theo tỉnh. Tôi không suy đoán con số này.",
+              "citations": []
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01UrguUu5ERNVYKMjYAKo35q",
+          "name": "finish",
+          "input": {
+            "status": "abstain",
+            "answer": "Chưa đủ bằng chứng trong kho để xác định tỷ lệ nghèo cùng cực của tỉnh Quảng Ninh năm 2024. Các đoạn tìm được (37 trang PDF 43–79 của chương 1) chỉ có dữ liệu nghèo cùng cực ở cấp quốc gia (ví dụ Figure 1.6: Nigeria 11.5%, Congo Dem. Rep. 10.9%, Philippines 1.4% năm 2024) và bản đồ dưới cấp quốc gia của Nigeria và Guatemala. Không có dòng nào nêu Quảng Ninh hay Việt Nam theo tỉnh. Tôi không suy đoán con số này.",
+            "citations": []
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 3348,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 371,
+          "output_tokens_details": {
+            "thinking_tokens": 28
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0005203,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 3348,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.317795458002365
+    },
+    {
+      "event": "finish",
+      "status": "abstain",
+      "answer": "Chưa đủ bằng chứng trong kho để xác định tỷ lệ nghèo cùng cực của tỉnh Quảng Ninh năm 2024. Các đoạn tìm được (37 trang PDF 43–79 của chương 1) chỉ có dữ liệu nghèo cùng cực ở cấp quốc gia (ví dụ Figure 1.6: Nigeria 11.5%, Congo Dem. Rep. 10.9%, Philippines 1.4% năm 2024) và bản đồ dưới cấp quốc gia của Nigeria và Guatemala. Không có dòng nào nêu Quảng Ninh hay Việt Nam theo tỉnh. Tôi không suy đoán con số này.",
+      "citations": [],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 4,
+  "model_calls": 5,
+  "usage": {
+    "input_tokens": 13961,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 764
+  },
+  "cost_usd": null,
+  "status": "abstain",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "neighbors"
+  },
+  "context": "[bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\n42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.\n\n[21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 74]\nNote: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.\n\n[61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 60]\n28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\n[4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 44]\n12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.\n\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n(2022).",
+  "context_ids": [
+    "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+    "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+    "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+    "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+    "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42"
+  ],
+  "context_chunks": [
+    {
+      "id": "bec7005a4fe672f14da82adf60ff075558f401cc5aa731f1f2dd5c5fc902da55",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 74,
+      "text": "42 POVERTY , PROSPERITY , AND PLANET REPORT 2026 c. Nigeria 2018–19 2022–23 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) d. Guatemala 2014 2023 70–100 60–70 50–60 40–50 30–40 20–30 10–20 5–10 0–5 No data Extreme poverty rate (%) Source: World bank calculations based on data from the Subnational Poverty and inequality database (version october 2025), World bank, https://datacatalog.worldbank.org/search/dataset/0064796/subnational-poverty-and -inequality -database-spid.",
+      "metadata": {
+        "end": 512,
+        "start": 0,
+        "section": "Poverty persists unevenly across people and places",
+        "chunking": "paragraph",
+        "printed_page": 42,
+        "segment_start": 0
+      },
+      "score": 0.8794768905016116
+    },
+    {
+      "id": "21be6670c1e24f115c2ea751e73f17d5a56adab866521eb0b60adc29759107e4",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 74,
+      "text": "Note: Poverty rates are reported for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). this line does not necessarily reflect the poverty line typically used at the country level. Welfare aggregates are comparable in all economies between the two years depicted. Gray shading indicates regions in which data quality is insufficient for analysis. both income and consumption data are available for the Philippines. income data are used to remain consistent with national reporting conventions. the subnational estimates in the Subnational Poverty and inequality database directly use the available household surveys (for example, nlSS 2018/19 and 2022/23 in the case of nigeria). Given survey availability, periods differ across countries.",
+      "metadata": {
+        "section": "Poverty persists unevenly across people and places",
+        "printed_page": 42,
+        "segment_start": 0,
+        "start": 514,
+        "end": 1281,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "61a6a6ed7794a8c07df7387ca57ac0ccb43822e7e3449c663624429aa05b8b33",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 60,
+      "text": "28 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.6 Extreme poverty is concentrated in a few economies, 2024 Sub-Saharan Africa Latin America and the Caribbean East Asia and Paciﬁc Europe and Central Asia South Asia MENAAP North America Mozambique 28M · 3.4% Uganda 27M · 3.2% First 53% 9 countries Nigeria 95M · 11.5% Congo, Dem. Rep. 90M · 10.9% Pakistan 56M · 6.8% Ethiopia 42M · 5.1% India 33M · 4.0% Tanzania 32M · 3.9% Yemen, Rep. 29M · 3.5% Next 23% 11 countries Kenya 24M · 3.0% Madagascar 22M · 2.6% Sudan 21M · 2.5% Afghanistan 20M · 2.4% Angola 16M · 1.9% Malawi 16M · 2.0% Niger 15M · 1.8% Indonesia 15M · 1.9% Zambia 15M · 1.8% Philippines 12M · 1.4% Somalia, Federal Republic of 12M · 1.5% Remaining 24% 53 countries Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+      "metadata": {
+        "end": 895,
+        "start": 0,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 28,
+        "segment_start": 0
+      },
+      "score": 0.8728560209274292
+    },
+    {
+      "id": "4ae9a54318ba348fccdf0f787b2efd16c57fbd28407b100e4d89bb6614fec65d",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 44,
+      "text": "12 POVERTY , PROSPERITY , AND PLANET REPORT 2026 • People living in poor households are disproportionately young, rural, and less educated.",
+      "metadata": {
+        "section": "Summary",
+        "printed_page": 12,
+        "segment_start": 0,
+        "start": 0,
+        "end": 139,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 49,
+      "text": "(2022).",
+      "metadata": {
+        "end": 907,
+        "start": 900,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 17,
+        "segment_start": 0
+      },
+      "score": 0.808605861150882
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 5,
+    "returned_calls": 5
+  },
+  "estimated_cost_usd": 0.0017781,
+  "answer": "Chưa đủ bằng chứng trong kho để xác định tỷ lệ nghèo cùng cực của tỉnh Quảng Ninh năm 2024. Các đoạn tìm được (37 trang PDF 43–79 của chương 1) chỉ có dữ liệu nghèo cùng cực ở cấp quốc gia (ví dụ Figure 1.6: Nigeria 11.5%, Congo Dem. Rep. 10.9%, Philippines 1.4% năm 2024) và bản đồ dưới cấp quốc gia của Nigeria và Guatemala. Không có dòng nào nêu Quảng Ninh hay Việt Nam theo tỉnh. Tôi không suy đoán con số này.",
+  "citations": [],
+  "elapsed_seconds": 8.04527087500901,
+  "answerable": false,
+  "context_strict_hit": null,
+  "context_set_hit": null,
+  "first_search_hit3": null,
+  "first_search_is_original_query": false
+}

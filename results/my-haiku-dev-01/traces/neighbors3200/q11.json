@@ -1,0 +1,1153 @@
+{
+  "created_at_utc": "2026-11-14T10:41:09.783052+00:00",
+  "stage": "agent_dev",
+  "query_id": "q11",
+  "config_id": "neighbors3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Có thể xác định một mức thu nhập cố định bảo đảm an toàn kinh tế cho mọi hoàn cảnh không?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Có thể xác định một mức thu nhập cố định bảo đảm an toàn kinh tế cho mọi hoàn cảnh không?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gNErspBu9NmBXGf81N",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01PX6kxGbR2Zg7ZEd9ncscx4",
+            "name": "search_documents",
+            "input": {
+              "query": "fixed income threshold economic security for all circumstances"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01PX6kxGbR2Zg7ZEd9ncscx4",
+          "name": "search_documents",
+          "input": {
+            "query": "fixed income threshold economic security for all circumstances"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1340,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 61,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001645,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1340,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.6981851659948006
+    },
+    {
+      "event": "search",
+      "query": "fixed income threshold economic security for all circumstances",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "62747ec152d5dcf88245fe6050b6de3cc7cc96f71f3d56b9cddb7bf160b9ed5a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "Note: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms).\n\nPoverty rate projections for 2025–30 are based on historical GdP per capita growth rates of economies in 2010–19 (refer to figure 1.9). economies are classified as FCS using the World bank classification of FCS from each year until 2025 (fiscal year 2026). the classification is fixed after 2025. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. FCS = fragile and conflict-affected situations; MenaaP = Middle east, north africa, afghanistan, and Pakistan; pps = percentage points; SSa = Sub-Saharan africa.",
+          "metadata": {
+            "end": 1519,
+            "start": 792,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 34,
+            "segment_start": 0
+          },
+          "score": 0.843996524810791
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8439475800959829
+        },
+        {
+          "id": "de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.8438794798994744
+        }
+      ],
+      "context": "[62747ec152d5dcf88245fe6050b6de3cc7cc96f71f3d56b9cddb7bf160b9ed5a | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 66]\nNote: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms).\n\nPoverty rate projections for 2025–30 are based on historical GdP per capita growth rates of economies in 2010–19 (refer to figure 1.9). economies are classified as FCS using the World bank classification of FCS from each year until 2025 (fiscal year 2026). the classification is fixed after 2025. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. FCS = fragile and conflict-affected situations; MenaaP = Middle east, north africa, afghanistan, and Pakistan; pps = percentage points; SSa = Sub-Saharan africa.\n\n[721fd8d8bc1fe8b39edc3e57289a75473ede5ad0bb52cb4fdeeedebfc7df26b7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 66]\n34 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.11 The concentration of extreme poverty in FCS economies and in Sub-Saharan Africa will increase a. Extreme poverty rate b. Population in poverty Projections 0 20 40 60 80 100 Non-FCS SSA FCS SSA FCS non-SSA Rest of the world Share of extremely poor globally (%) 2000 2005 2010 2015 2020 2025 2030 Projections 0 10 20 30 40 2000 2005 2010 2015 2020 2025 2030 Contribution to extremely poor globally (pps) Latin America and the Caribbean MENAAP South Asia Sub-Saharan Africa Europe and Central Asia East Asia and Paciﬁc North America Sources: iMF 2025; Un deSa 2024; World bank 2025b; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\n\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\n(2022).",
+      "context_candidates": [
+        {
+          "id": "62747ec152d5dcf88245fe6050b6de3cc7cc96f71f3d56b9cddb7bf160b9ed5a",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "Note: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms).\n\nPoverty rate projections for 2025–30 are based on historical GdP per capita growth rates of economies in 2010–19 (refer to figure 1.9). economies are classified as FCS using the World bank classification of FCS from each year until 2025 (fiscal year 2026). the classification is fixed after 2025. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. FCS = fragile and conflict-affected situations; MenaaP = Middle east, north africa, afghanistan, and Pakistan; pps = percentage points; SSa = Sub-Saharan africa.",
+          "metadata": {
+            "end": 1519,
+            "start": 792,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 34,
+            "segment_start": 0
+          },
+          "score": 0.843996524810791
+        },
+        {
+          "id": "721fd8d8bc1fe8b39edc3e57289a75473ede5ad0bb52cb4fdeeedebfc7df26b7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 66,
+          "text": "34 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.11 The concentration of extreme poverty in FCS economies and in Sub-Saharan Africa will increase a. Extreme poverty rate b. Population in poverty Projections 0 20 40 60 80 100 Non-FCS SSA FCS SSA FCS non-SSA Rest of the world Share of extremely poor globally (%) 2000 2005 2010 2015 2020 2025 2030 Projections 0 10 20 30 40 2000 2005 2010 2015 2020 2025 2030 Contribution to extremely poor globally (pps) Latin America and the Caribbean MENAAP South Asia Sub-Saharan Africa Europe and Central Asia East Asia and Paciﬁc North America Sources: iMF 2025; Un deSa 2024; World bank 2025b; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 34,
+            "segment_start": 0,
+            "start": 0,
+            "end": 790,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "Note: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the",
+          "metadata": {
+            "end": 1427,
+            "start": 531,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 16,
+            "segment_start": 0
+          },
+          "score": 0.8439475800959829
+        },
+        {
+          "id": "cbbc802f294764b2b6e59a7c537124d50980ba9aaabd029ca95621f35452b6fd",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "16 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE B1.2.1 Projected extreme poverty increases because of the growth and price impacts of the conflict Number of people in extreme poverty (millions) 800 2023 2024 2025 2026 810 820 830 840 850 811 808 817 813 Baseline Preconflict growth projectionsIncome shock Price shock Sources: Kimura et al. 2026; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip .worldbank.org/home; World bank 2026b, 2026c.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 0,
+            "end": 529,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "638d99963d4808acaafe1a38d9b005667a15f7d8b76527ed6e47ec6ac00b83b6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 48,
+          "text": "forecast of the World bank in June 2026 (World bank 2026c).\n\nThe differential price shock adjusts the real growth rates faced by households based on their food and energy expenditure. Growth is downgraded among households that have above average food and energy exposure, while it is revised upward for the rest to match the overall mean growth in the baseline. With these price shock assumptions, the number of people living in extreme poverty in 2026 is estimated at 813 million people, slightly below the 817 million in 2025.\n\nBOX 1.2 Tracking the impact on poverty of the conflict in the Middle East (continued) (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 16,
+            "segment_start": 0,
+            "start": 1428,
+            "end": 2055,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "de0d086d38bacadb996f9bb457239ee2a140d1e52d5891c8a58e798afcfc7db0",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "17 Global Poverty: Stalled Pro GreSS and riSinG Con Centration Since January 2026, the global economy has experienced a series of significant developments. There is currently great uncertainty regarding the trajectory of the conflict in the Middle East and its implications for the global economy in 2026, as well as any potential recovery beyond that. Furthermore, El Niño is still intensifying toward a projected peak in late 2026 and already approaching new records. This is driving impacts in food security, incomes, and livelihoods across the globe, including effects on nutrition and human capital that could persist for years. a. in the case of economies that use a consumption aggregate, a pass-through rate of 0.7 is applied, compared with a rate of 1.0 (full pass-through) in the case of economies that rely on an income aggregates based on the empirical evidence provided by Mahler et al.",
+          "metadata": {
+            "end": 899,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 17,
+            "segment_start": 0
+          },
+          "score": 0.8438794798994744
+        },
+        {
+          "id": "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 49,
+          "text": "(2022).",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 17,
+            "segment_start": 0,
+            "start": 900,
+            "end": 907,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "62747ec152d5dcf88245fe6050b6de3cc7cc96f71f3d56b9cddb7bf160b9ed5a",
+        "721fd8d8bc1fe8b39edc3e57289a75473ede5ad0bb52cb4fdeeedebfc7df26b7",
+        "9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715",
+        "3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42"
+      ],
+      "elapsed_seconds": 0.040344957989873365
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Có thể xác định một mức thu nhập cố định bảo đảm an toàn kinh tế cho mọi hoàn cảnh không?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01PX6kxGbR2Zg7ZEd9ncscx4",
+              "name": "search_documents",
+              "input": {
+                "query": "fixed income threshold economic security for all circumstances"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01PX6kxGbR2Zg7ZEd9ncscx4",
+              "content": "{\"current_context\": \"[62747ec152d5dcf88245fe6050b6de3cc7cc96f71f3d56b9cddb7bf160b9ed5a | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 66]\\nNote: the figure reports poverty rates for the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms).\\n\\nPoverty rate projections for 2025–30 are based on historical GdP per capita growth rates of economies in 2010–19 (refer to figure 1.9). economies are classified as FCS using the World bank classification of FCS from each year until 2025 (fiscal year 2026). the classification is fixed after 2025. the regional groupings align with the World bank’s current regional classification and differ from those used in previous editions of the report. FCS = fragile and conflict-affected situations; MenaaP = Middle east, north africa, afghanistan, and Pakistan; pps = percentage points; SSa = Sub-Saharan africa.\\n\\n[721fd8d8bc1fe8b39edc3e57289a75473ede5ad0bb52cb4fdeeedebfc7df26b7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 66]\\n34 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.11 The concentration of extreme poverty in FCS economies and in Sub-Saharan Africa will increase a. Extreme poverty rate b. Population in poverty Projections 0 20 40 60 80 100 Non-FCS SSA FCS SSA FCS non-SSA Rest of the world Share of extremely poor globally (%) 2000 2005 2010 2015 2020 2025 2030 Projections 0 10 20 30 40 2000 2005 2010 2015 2020 2025 2030 Contribution to extremely poor globally (pps) Latin America and the Caribbean MENAAP South Asia Sub-Saharan Africa Europe and Central Asia East Asia and Paciﬁc North America Sources: iMF 2025; Un deSa 2024; World bank 2025b; World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\\n\\n[9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 48]\\nNote: the figure reports the trend in millions of poor people from 2023 to 2026, as assessed against the international poverty line of $3.00-a-person-a-day. data for 2025 and 2026 are nowcasts and are represented by dashed lines in the figure (refer to annex 1a). the baseline scenario relies on distribution-neutral growth forecasts in Global Economic Prospects, June 2026 (World bank 2026c) to nowcast poverty for 2026. the income shock scenario allows for distributional changes by combining household employment data with sectoral growth rates, while the price shock scenario captures disproportionate household impacts based on the household exposure to food and energy spending. the preconflict scenario applies the forecasts in Global Economic Prospects, January 2026 (World bank 2026b). in both the income and price shock scenarios, the growth in average income or consumption matches the\\n\\n[3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 49]\\n(2022).\", \"current_context_ids\": [\"62747ec152d5dcf88245fe6050b6de3cc7cc96f71f3d56b9cddb7bf160b9ed5a\", \"721fd8d8bc1fe8b39edc3e57289a75473ede5ad0bb52cb4fdeeedebfc7df26b7\", \"9ece4c7f5069065df8fa1c4ee5a88e1f68300f21a45612c1a788408a2075f715\", \"3fd8216cc7f1b2ae204b25a1d43c7292a4cd1b1cf7003d303e85095b8cde1b42\"], \"searched_queries\": [\"fixed income threshold economic security for all circumstances\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gNMdRNw1WzgvH8Rma6",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01R454ka6uS2Jv7GXsRZrrGZ",
+            "name": "search_documents",
+            "input": {
+              "query": "poverty line differs across countries cost of living single threshold limitations"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01R454ka6uS2Jv7GXsRZrrGZ",
+          "name": "search_documents",
+          "input": {
+            "query": "poverty line differs across countries cost of living single threshold limitations"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2976,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 116,
+          "output_tokens_details": {
+            "thinking_tokens": 50
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003556,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2976,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.5670497909886762
+    },
+    {
+      "event": "search",
+      "query": "poverty line differs across countries cost of living single threshold limitations",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "The societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe",
+          "metadata": {
+            "end": 1879,
+            "start": 980,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 43,
+            "segment_start": 63
+          },
+          "score": 0.8828785419464111
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8808856010437012
+        },
+        {
+          "id": "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty",
+          "metadata": {
+            "end": 896,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8765178322792053
+        }
+      ],
+      "context": "[c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 75]\nThe societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe\n\n[bfdec343e394de8b039db29cb5cb1f12635c7c961b12aab525be46b997f98bd6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 75]\nThe $3.00 international poverty line measures deprivation with respect to the most basic needs as defined across low-income economies. As an economy’s income level increases, the perception of the composition of these basic needs may evolve (Herforth et al. 2020; Jolliffe and Prydz 2016; World Bank 2024a). Measurement might shift to the application of relative poverty lines that establish the poverty threshold not only according to the requirements to satisfy basic needs, but typically relative to the average level of income or consumption.\n\n[5b44acfbe7485f6eb4153c33d4a2f7d24f9c554b4e856070392cb635445fc7d5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 75]\nand Prydz 2021).\n\nRegional patterns in societal poverty, as measured by the societal poverty line, mirror the patterns observed in extreme poverty rates. Although the measure is only weakly relative (refer to figure 1.17, panel a), economies with high societal poverty lines tend to exhibit lower societal poverty rates. Sub-Saharan Africa accounts for most economies with high societal poverty rates, consistent with the concentration of extreme poverty in the region (refer to figure 1.17, panel b). Higher-income economies typically exhibit lower societal poverty rates, despite their higher societal poverty lines. These comparisons depend on the level of inequality in an economy and, in particular, the concentration of people at the bottom tail (refer to chapter 2).\n\n[4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nNote: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+      "context_candidates": [
+        {
+          "id": "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "The societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe",
+          "metadata": {
+            "end": 1879,
+            "start": 980,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 43,
+            "segment_start": 63
+          },
+          "score": 0.8828785419464111
+        },
+        {
+          "id": "bfdec343e394de8b039db29cb5cb1f12635c7c961b12aab525be46b997f98bd6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "The $3.00 international poverty line measures deprivation with respect to the most basic needs as defined across low-income economies. As an economy’s income level increases, the perception of the composition of these basic needs may evolve (Herforth et al. 2020; Jolliffe and Prydz 2016; World Bank 2024a). Measurement might shift to the application of relative poverty lines that establish the poverty threshold not only according to the requirements to satisfy basic needs, but typically relative to the average level of income or consumption.",
+          "metadata": {
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "printed_page": 43,
+            "segment_start": 63,
+            "start": 432,
+            "end": 978,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "5b44acfbe7485f6eb4153c33d4a2f7d24f9c554b4e856070392cb635445fc7d5",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "and Prydz 2021).\n\nRegional patterns in societal poverty, as measured by the societal poverty line, mirror the patterns observed in extreme poverty rates. Although the measure is only weakly relative (refer to figure 1.17, panel a), economies with high societal poverty lines tend to exhibit lower societal poverty rates. Sub-Saharan Africa accounts for most economies with high societal poverty rates, consistent with the concentration of extreme poverty in the region (refer to figure 1.17, panel b). Higher-income economies typically exhibit lower societal poverty rates, despite their higher societal poverty lines. These comparisons depend on the level of inequality in an economy and, in particular, the concentration of people at the bottom tail (refer to chapter 2).",
+          "metadata": {
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "printed_page": 43,
+            "segment_start": 63,
+            "start": 1880,
+            "end": 2653,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8808856010437012
+        },
+        {
+          "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 897,
+            "end": 1538,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Note: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 2234,
+            "end": 2494,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty",
+          "metadata": {
+            "end": 896,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8765178322792053
+        }
+      ],
+      "context_ids": [
+        "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+        "bfdec343e394de8b039db29cb5cb1f12635c7c961b12aab525be46b997f98bd6",
+        "5b44acfbe7485f6eb4153c33d4a2f7d24f9c554b4e856070392cb635445fc7d5",
+        "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e"
+      ],
+      "elapsed_seconds": 0.03645841698744334
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Có thể xác định một mức thu nhập cố định bảo đảm an toàn kinh tế cho mọi hoàn cảnh không?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01R454ka6uS2Jv7GXsRZrrGZ",
+              "name": "search_documents",
+              "input": {
+                "query": "poverty line differs across countries cost of living single threshold limitations"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01R454ka6uS2Jv7GXsRZrrGZ",
+              "content": "{\"current_context\": \"[c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 75]\\nThe societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe\\n\\n[bfdec343e394de8b039db29cb5cb1f12635c7c961b12aab525be46b997f98bd6 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 75]\\nThe $3.00 international poverty line measures deprivation with respect to the most basic needs as defined across low-income economies. As an economy’s income level increases, the perception of the composition of these basic needs may evolve (Herforth et al. 2020; Jolliffe and Prydz 2016; World Bank 2024a). Measurement might shift to the application of relative poverty lines that establish the poverty threshold not only according to the requirements to satisfy basic needs, but typically relative to the average level of income or consumption.\\n\\n[5b44acfbe7485f6eb4153c33d4a2f7d24f9c554b4e856070392cb635445fc7d5 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 75]\\nand Prydz 2021).\\n\\nRegional patterns in societal poverty, as measured by the societal poverty line, mirror the patterns observed in extreme poverty rates. Although the measure is only weakly relative (refer to figure 1.17, panel a), economies with high societal poverty lines tend to exhibit lower societal poverty rates. Sub-Saharan Africa accounts for most economies with high societal poverty rates, consistent with the concentration of extreme poverty in the region (refer to figure 1.17, panel b). Higher-income economies typically exhibit lower societal poverty rates, despite their higher societal poverty lines. These comparisons depend on the level of inequality in an economy and, in particular, the concentration of people at the bottom tail (refer to chapter 2).\\n\\n[4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nNote: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)\", \"current_context_ids\": [\"c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7\", \"bfdec343e394de8b039db29cb5cb1f12635c7c961b12aab525be46b997f98bd6\", \"5b44acfbe7485f6eb4153c33d4a2f7d24f9c554b4e856070392cb635445fc7d5\", \"4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e\"], \"searched_queries\": [\"fixed income threshold economic security for all circumstances\", \"poverty line differs across countries cost of living single threshold limitations\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gNUsVkHscAfyLFCVgn",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01BQPANhjpQd7SxVkmFsoW4d",
+            "name": "search_documents",
+            "input": {
+              "query": "economic security income threshold varies by household circumstances needs wellbeing beyond income"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01BQPANhjpQd7SxVkmFsoW4d",
+          "name": "search_documents",
+          "input": {
+            "query": "economic security income threshold varies by household circumstances needs wellbeing beyond income"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2843,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 162,
+          "output_tokens_details": {
+            "thinking_tokens": 90
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003653,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2843,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.9663537919986993
+    },
+    {
+      "event": "search",
+      "query": "economic security income threshold varies by household circumstances needs wellbeing beyond income",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8750353716324385
+        },
+        {
+          "id": "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "The thresholds used in this report can serve as approximate class boundaries. Each of the three poverty lines is the typical national poverty line of an income group: $3.00 a day for low-income economies, $4.20 for lower-middle-income economies, and $8.30 for upper-middle-income economies (refer to box 1.1). Households living on less than $3.00 a day are extremely poor by any standard. Those living on between $3.00 and $8.30 are above the extreme poverty line, but would count as poor in a middle-income economy and, for the most part, remain short of economic security. Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class; and those above $28.00 a day exceed the prosperity standard this report uses to gauge shared prosperity (refer to chapter 2). These thresholds are proxies. Ongoing work indicates that",
+          "metadata": {
+            "end": 1503,
+            "start": 605,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8676808038138447
+        },
+        {
+          "id": "bfdec343e394de8b039db29cb5cb1f12635c7c961b12aab525be46b997f98bd6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "The $3.00 international poverty line measures deprivation with respect to the most basic needs as defined across low-income economies. As an economy’s income level increases, the perception of the composition of these basic needs may evolve (Herforth et al. 2020; Jolliffe and Prydz 2016; World Bank 2024a). Measurement might shift to the application of relative poverty lines that establish the poverty threshold not only according to the requirements to satisfy basic needs, but typically relative to the average level of income or consumption.",
+          "metadata": {
+            "end": 978,
+            "start": 432,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 43,
+            "segment_start": 63
+          },
+          "score": 0.8661934395490125
+        }
+      ],
+      "context": "[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\n\n[244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nthe income required for security is higher than any poverty line.\n\n[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nmiddle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\n\n[a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nThe thresholds used in this report can serve as approximate class boundaries. Each of the three poverty lines is the typical national poverty line of an income group: $3.00 a day for low-income economies, $4.20 for lower-middle-income economies, and $8.30 for upper-middle-income economies (refer to box 1.1). Households living on less than $3.00 a day are extremely poor by any standard. Those living on between $3.00 and $8.30 are above the extreme poverty line, but would count as poor in a middle-income economy and, for the most part, remain short of economic security. Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class; and those above $28.00 a day exceed the prosperity standard this report uses to gauge shared prosperity (refer to chapter 2). These thresholds are proxies. Ongoing work indicates that",
+      "context_candidates": [
+        {
+          "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+          "metadata": {
+            "end": 2469,
+            "start": 1571,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8750353716324385
+        },
+        {
+          "id": "244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "the income required for security is higher than any poverty line.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 20,
+            "segment_start": 0,
+            "start": 1504,
+            "end": 1569,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 20,
+            "segment_start": 0,
+            "start": 2470,
+            "end": 3083,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "The thresholds used in this report can serve as approximate class boundaries. Each of the three poverty lines is the typical national poverty line of an income group: $3.00 a day for low-income economies, $4.20 for lower-middle-income economies, and $8.30 for upper-middle-income economies (refer to box 1.1). Households living on less than $3.00 a day are extremely poor by any standard. Those living on between $3.00 and $8.30 are above the extreme poverty line, but would count as poor in a middle-income economy and, for the most part, remain short of economic security. Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class; and those above $28.00 a day exceed the prosperity standard this report uses to gauge shared prosperity (refer to chapter 2). These thresholds are proxies. Ongoing work indicates that",
+          "metadata": {
+            "end": 1503,
+            "start": 605,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 20,
+            "segment_start": 0
+          },
+          "score": 0.8676808038138447
+        },
+        {
+          "id": "617f2d2ff4c85003af7ded4dfc15fad94224fd7f5e3f51562a574cb1b3c2c017",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 52,
+          "text": "20 POVERTY , PROSPERITY , AND PLANET REPORT 2026 domestic demand, investment in education, and support for institutions that mediate distributional tensions (Banerjee and Duflo 2008; Easterly 2001). It is also a product of growth. As an economy’s average income rises, so does the share of the population that has attained economic security. The middle-income economies, home to about three-quarters of the world’s population (World Bank 2024b), are precisely the ones in which this transition is under way and far enough along that extreme poverty has receded, but not so far that security is the norm.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 20,
+            "segment_start": 0,
+            "start": 0,
+            "end": 603,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "bfdec343e394de8b039db29cb5cb1f12635c7c961b12aab525be46b997f98bd6",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "The $3.00 international poverty line measures deprivation with respect to the most basic needs as defined across low-income economies. As an economy’s income level increases, the perception of the composition of these basic needs may evolve (Herforth et al. 2020; Jolliffe and Prydz 2016; World Bank 2024a). Measurement might shift to the application of relative poverty lines that establish the poverty threshold not only according to the requirements to satisfy basic needs, but typically relative to the average level of income or consumption.",
+          "metadata": {
+            "end": 978,
+            "start": 432,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 43,
+            "segment_start": 63
+          },
+          "score": 0.8661934395490125
+        },
+        {
+          "id": "5f39ec778451ce6418b7e5983d44e5d446ab5e63740980dbf7a17adfb6a3b3e7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "Poverty extends beyond absolute welfare thresholds Poverty can be described along other dimensions besides poverty thresholds set according to monetary measures of welfare relying on consumption or income. Deprivation can be defined by considering a cutoff determined using basic needs, and it can be defined in relative terms through a comparison among peers. Measurement along nonmonetary dimensions can be useful and revealing.",
+          "metadata": {
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "printed_page": 43,
+            "segment_start": 63,
+            "start": 0,
+            "end": 430,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "c368eb88968f0542dc9850a9586c43e9bcb5c1c1503454e5f04c4f297b0c67d7",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 75,
+          "text": "The societal poverty line, a relative measure of poverty, was developed to capture the shifting nature of deprivation across income levels. Following the recommendations of the Atkinson Commission on Global Poverty (World Bank 2017), the societal poverty line varies according to the living standards in an economy. It is set equal to $1.30, plus half the median consumption or income in the economy, with a floor at the $3.00 international poverty line (Foster et al. 2025) (refer to annex 1A). This (weakly) relative approach reflects a recognition that poverty partly involves exclusion from a normal life in a given society. It also allows the poverty line to be specific to an economy. Globally, the societal poverty line varies with average income in a way that approximately corresponds to the way national poverty lines vary with average income across countries (Foster et al. 2025; Jolliffe",
+          "metadata": {
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "printed_page": 43,
+            "segment_start": 63,
+            "start": 980,
+            "end": 1879,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+        "244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c",
+        "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+        "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e"
+      ],
+      "elapsed_seconds": 0.04588570799387526
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Có thể xác định một mức thu nhập cố định bảo đảm an toàn kinh tế cho mọi hoàn cảnh không?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01BQPANhjpQd7SxVkmFsoW4d",
+              "name": "search_documents",
+              "input": {
+                "query": "economic security income threshold varies by household circumstances needs wellbeing beyond income"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01BQPANhjpQd7SxVkmFsoW4d",
+              "content": "{\"current_context\": \"[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\\n\\n[244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nthe income required for security is higher than any poverty line.\\n\\n[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nmiddle class shifts with the environment in which households live.\\n\\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\\n\\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\\n\\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\\n\\n[a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nThe thresholds used in this report can serve as approximate class boundaries. Each of the three poverty lines is the typical national poverty line of an income group: $3.00 a day for low-income economies, $4.20 for lower-middle-income economies, and $8.30 for upper-middle-income economies (refer to box 1.1). Households living on less than $3.00 a day are extremely poor by any standard. Those living on between $3.00 and $8.30 are above the extreme poverty line, but would count as poor in a middle-income economy and, for the most part, remain short of economic security. Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class; and those above $28.00 a day exceed the prosperity standard this report uses to gauge shared prosperity (refer to chapter 2). These thresholds are proxies. Ongoing work indicates that\", \"current_context_ids\": [\"42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22\", \"244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c\", \"38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1\", \"a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e\"], \"searched_queries\": [\"fixed income threshold economic security for all circumstances\", \"poverty line differs across countries cost of living single threshold limitations\", \"economic security income threshold varies by household circumstances needs wellbeing beyond income\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gNcyubwCZyXrfCoU56",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01Mk82WVUEgnt7gfTf4Zqpud",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Không. Theo chương 1, không có một mức thu nhập cố định nào đánh dấu điểm bắt đầu an toàn kinh tế: \"There is no fixed income at which security begins.\" Ngưỡng này thay đổi theo từng nền kinh tế và theo rủi ro hộ gia đình đối mặt. Khi áp dụng phương pháp vulnerability vào khảo sát hộ gia đình của World Bank, các ngưỡng an toàn kinh tế khoảng 6,00, 7,00 và 14,00 USD/ngày cho ba nhóm thu nhập, gấp khoảng hai lần đường nghèo tương ứng, nhưng biến động lớn giữa các nền kinh tế. Ngưỡng này cũng dịch chuyển theo rủi ro: ở Đông Âu và Trung Á, mức thu nhập cần thiết tăng khoảng 10% thực tế giai đoạn 2008–2018 do các cú sốc lớn hơn. Các ngưỡng 3,00–28,00 USD/ngày trong báo cáo được nêu là giá trị xấp xỉ (proxy), không phải ranh giới cố định.",
+              "citations": [
+                "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+                "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01Mk82WVUEgnt7gfTf4Zqpud",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Không. Theo chương 1, không có một mức thu nhập cố định nào đánh dấu điểm bắt đầu an toàn kinh tế: \"There is no fixed income at which security begins.\" Ngưỡng này thay đổi theo từng nền kinh tế và theo rủi ro hộ gia đình đối mặt. Khi áp dụng phương pháp vulnerability vào khảo sát hộ gia đình của World Bank, các ngưỡng an toàn kinh tế khoảng 6,00, 7,00 và 14,00 USD/ngày cho ba nhóm thu nhập, gấp khoảng hai lần đường nghèo tương ứng, nhưng biến động lớn giữa các nền kinh tế. Ngưỡng này cũng dịch chuyển theo rủi ro: ở Đông Âu và Trung Á, mức thu nhập cần thiết tăng khoảng 10% thực tế giai đoạn 2008–2018 do các cú sốc lớn hơn. Các ngưỡng 3,00–28,00 USD/ngày trong báo cáo được nêu là giá trị xấp xỉ (proxy), không phải ranh giới cố định.",
+            "citations": [
+              "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+              "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2879,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 582,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0005789,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2879,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 3.7115364170022076
+    },
+    {
+      "event": "invalid_finish",
+      "error": "Citation phải khớp [chunk-id] trong answer và context hiện hành"
+    },
+    {
+      "event": "model",
+      "step": 5,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Có thể xác định một mức thu nhập cố định bảo đảm an toàn kinh tế cho mọi hoàn cảnh không?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01Mk82WVUEgnt7gfTf4Zqpud",
+              "name": "finish",
+              "input": {
+                "status": "answered",
+                "answer": "Không. Theo chương 1, không có một mức thu nhập cố định nào đánh dấu điểm bắt đầu an toàn kinh tế: \"There is no fixed income at which security begins.\" Ngưỡng này thay đổi theo từng nền kinh tế và theo rủi ro hộ gia đình đối mặt. Khi áp dụng phương pháp vulnerability vào khảo sát hộ gia đình của World Bank, các ngưỡng an toàn kinh tế khoảng 6,00, 7,00 và 14,00 USD/ngày cho ba nhóm thu nhập, gấp khoảng hai lần đường nghèo tương ứng, nhưng biến động lớn giữa các nền kinh tế. Ngưỡng này cũng dịch chuyển theo rủi ro: ở Đông Âu và Trung Á, mức thu nhập cần thiết tăng khoảng 10% thực tế giai đoạn 2008–2018 do các cú sốc lớn hơn. Các ngưỡng 3,00–28,00 USD/ngày trong báo cáo được nêu là giá trị xấp xỉ (proxy), không phải ranh giới cố định.",
+                "citations": [
+                  "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+                  "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e"
+                ]
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01Mk82WVUEgnt7gfTf4Zqpud",
+              "content": "{\"current_context\": \"[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\\n\\n[244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nthe income required for security is higher than any poverty line.\\n\\n[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nmiddle class shifts with the environment in which households live.\\n\\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\\n\\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\\n\\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\\n\\n[a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\\nThe thresholds used in this report can serve as approximate class boundaries. Each of the three poverty lines is the typical national poverty line of an income group: $3.00 a day for low-income economies, $4.20 for lower-middle-income economies, and $8.30 for upper-middle-income economies (refer to box 1.1). Households living on less than $3.00 a day are extremely poor by any standard. Those living on between $3.00 and $8.30 are above the extreme poverty line, but would count as poor in a middle-income economy and, for the most part, remain short of economic security. Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class; and those above $28.00 a day exceed the prosperity standard this report uses to gauge shared prosperity (refer to chapter 2). These thresholds are proxies. Ongoing work indicates that\", \"current_context_ids\": [\"42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22\", \"244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c\", \"38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1\", \"a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e\"], \"searched_queries\": [\"fixed income threshold economic security for all circumstances\", \"poverty line differs across countries cost of living single threshold limitations\", \"economic security income threshold varies by household circumstances needs wellbeing beyond income\"], \"searches_remaining\": 1, \"error\": \"Citation phải khớp [chunk-id] trong answer và context hiện hành\"}",
+              "is_error": true
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gNturzAvgN3MkvLQbN",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_013WM8jwXStJbYHLYwG3Ydyq",
+            "name": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Không. Chương 1 nêu rõ: không có mức thu nhập cố định nào mà từ đó an toàn kinh tế bắt đầu [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Ngưỡng an toàn thay đổi theo nền kinh tế và theo rủi ro hộ gia đình đối mặt: áp dụng phương pháp vulnerability cho khảo sát hộ của World Bank cho ra khoảng 6,00, 7,00 và 14,00 USD/ngày cho ba nhóm thu nhập, gấp khoảng hai lần đường nghèo tương ứng nhưng khác biệt lớn giữa các nền kinh tế; ở Đông Âu và Trung Á, mức cần thiết tăng khoảng 10% thực tế giai đoạn 2008–2018 [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Các ngưỡng 3,00–8,30 và 8,30–28,00 USD/ngày chỉ là giá trị xấp xỉ (proxy) để phân loại, không phải ranh giới cố định [a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e]; báo cáo cũng cho thấy nhóm 3,00–8,30 USD/ngày gần một phần ba dân số thế giới, nên thoát nghèo cực đoan thường là chuyển sang tình trạng dễ bị tổn thương chứ chưa phải an toàn [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+              "citations": [
+                "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+                "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+                "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+              ]
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_013WM8jwXStJbYHLYwG3Ydyq",
+          "name": "finish",
+          "input": {
+            "status": "answered",
+            "answer": "Không. Chương 1 nêu rõ: không có mức thu nhập cố định nào mà từ đó an toàn kinh tế bắt đầu [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Ngưỡng an toàn thay đổi theo nền kinh tế và theo rủi ro hộ gia đình đối mặt: áp dụng phương pháp vulnerability cho khảo sát hộ của World Bank cho ra khoảng 6,00, 7,00 và 14,00 USD/ngày cho ba nhóm thu nhập, gấp khoảng hai lần đường nghèo tương ứng nhưng khác biệt lớn giữa các nền kinh tế; ở Đông Âu và Trung Á, mức cần thiết tăng khoảng 10% thực tế giai đoạn 2008–2018 [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Các ngưỡng 3,00–8,30 và 8,30–28,00 USD/ngày chỉ là giá trị xấp xỉ (proxy) để phân loại, không phải ranh giới cố định [a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e]; báo cáo cũng cho thấy nhóm 3,00–8,30 USD/ngày gần một phần ba dân số thế giới, nên thoát nghèo cực đoan thường là chuyển sang tình trạng dễ bị tổn thương chứ chưa phải an toàn [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+            "citations": [
+              "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+              "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+              "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+            ]
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 3428,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1073,
+          "output_tokens_details": {
+            "thinking_tokens": 233
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0008793,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 3428,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 5.9534082080062944
+    },
+    {
+      "event": "finish",
+      "status": "answered",
+      "answer": "Không. Chương 1 nêu rõ: không có mức thu nhập cố định nào mà từ đó an toàn kinh tế bắt đầu [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Ngưỡng an toàn thay đổi theo nền kinh tế và theo rủi ro hộ gia đình đối mặt: áp dụng phương pháp vulnerability cho khảo sát hộ của World Bank cho ra khoảng 6,00, 7,00 và 14,00 USD/ngày cho ba nhóm thu nhập, gấp khoảng hai lần đường nghèo tương ứng nhưng khác biệt lớn giữa các nền kinh tế; ở Đông Âu và Trung Á, mức cần thiết tăng khoảng 10% thực tế giai đoạn 2008–2018 [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Các ngưỡng 3,00–8,30 và 8,30–28,00 USD/ngày chỉ là giá trị xấp xỉ (proxy) để phân loại, không phải ranh giới cố định [a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e]; báo cáo cũng cho thấy nhóm 3,00–8,30 USD/ngày gần một phần ba dân số thế giới, nên thoát nghèo cực đoan thường là chuyển sang tình trạng dễ bị tổn thương chứ chưa phải an toàn [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+      "citations": [
+        "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+        "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+        "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+      ],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 3,
+  "model_calls": 5,
+  "usage": {
+    "input_tokens": 13466,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1994
+  },
+  "cost_usd": null,
+  "status": "answered",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "neighbors"
+  },
+  "context": "[42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nApplying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the\n\n[244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nthe income required for security is higher than any poverty line.\n\n[38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nmiddle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)\n\n[a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 52]\nThe thresholds used in this report can serve as approximate class boundaries. Each of the three poverty lines is the typical national poverty line of an income group: $3.00 a day for low-income economies, $4.20 for lower-middle-income economies, and $8.30 for upper-middle-income economies (refer to box 1.1). Households living on less than $3.00 a day are extremely poor by any standard. Those living on between $3.00 and $8.30 are above the extreme poverty line, but would count as poor in a middle-income economy and, for the most part, remain short of economic security. Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class; and those above $28.00 a day exceed the prosperity standard this report uses to gauge shared prosperity (refer to chapter 2). These thresholds are proxies. Ongoing work indicates that",
+  "context_ids": [
+    "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+    "244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c",
+    "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+    "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e"
+  ],
+  "context_chunks": [
+    {
+      "id": "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 52,
+      "text": "Applying the vulnerability approach to the World Bank’s harmonized household surveys—estimating, for each economy, the probability that a household is living on less than the poverty line of the relevant income group over a few years, and identifying the consumption level at which this probability becomes low—yields economic security lines of about $6.00, $7.00, and $14.00 a day for the three income groups. This is roughly twice the corresponding poverty lines, but with wide variation across economies (Bolch et al. 2026). The threshold also shifts with the risks households face. In Europe and Central Asia, the income needed to maintain a low probability of falling into poverty rose by about 10 percent in real terms between 2008 and 2018 as the shocks pushing households into poverty grew larger (Bussolo et al. 2025). There is no fixed income at which security begins. The boundary of the",
+      "metadata": {
+        "end": 2469,
+        "start": 1571,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 20,
+        "segment_start": 0
+      },
+      "score": 0.8750353716324385
+    },
+    {
+      "id": "244616057392d4bff7160457cf0f203cbbd77d3c84a95c3bafcd3cdafbee974c",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 52,
+      "text": "the income required for security is higher than any poverty line.",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 20,
+        "segment_start": 0,
+        "start": 1504,
+        "end": 1569,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 52,
+      "text": "middle class shifts with the environment in which households live.\n\nMeasured against these thresholds, the global middle class has grown substantially since 2000, roughly doubling as a share of the world’s population.\n\nThe group living on between $3.00 and $8.30 a day, however, has remained close to a third of the world’s population throughout the period. Among large numbers of people, the exit from extreme poverty has thus represented an exit into vulnerability rather than into security.\n\nBOX 1.3 The global middle class has grown, but economic security remains out of reach for many (continued) (continued)",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 20,
+        "segment_start": 0,
+        "start": 2470,
+        "end": 3083,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 52,
+      "text": "The thresholds used in this report can serve as approximate class boundaries. Each of the three poverty lines is the typical national poverty line of an income group: $3.00 a day for low-income economies, $4.20 for lower-middle-income economies, and $8.30 for upper-middle-income economies (refer to box 1.1). Households living on less than $3.00 a day are extremely poor by any standard. Those living on between $3.00 and $8.30 are above the extreme poverty line, but would count as poor in a middle-income economy and, for the most part, remain short of economic security. Those living on between $8.30 and $28.00 a day are above the poverty line of every developing economy and constitute a global middle class; and those above $28.00 a day exceed the prosperity standard this report uses to gauge shared prosperity (refer to chapter 2). These thresholds are proxies. Ongoing work indicates that",
+      "metadata": {
+        "end": 1503,
+        "start": 605,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 20,
+        "segment_start": 0
+      },
+      "score": 0.8676808038138447
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 5,
+    "returned_calls": 5
+  },
+  "estimated_cost_usd": 0.0023436,
+  "answer": "Không. Chương 1 nêu rõ: không có mức thu nhập cố định nào mà từ đó an toàn kinh tế bắt đầu [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Ngưỡng an toàn thay đổi theo nền kinh tế và theo rủi ro hộ gia đình đối mặt: áp dụng phương pháp vulnerability cho khảo sát hộ của World Bank cho ra khoảng 6,00, 7,00 và 14,00 USD/ngày cho ba nhóm thu nhập, gấp khoảng hai lần đường nghèo tương ứng nhưng khác biệt lớn giữa các nền kinh tế; ở Đông Âu và Trung Á, mức cần thiết tăng khoảng 10% thực tế giai đoạn 2008–2018 [42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22]. Các ngưỡng 3,00–8,30 và 8,30–28,00 USD/ngày chỉ là giá trị xấp xỉ (proxy) để phân loại, không phải ranh giới cố định [a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e]; báo cáo cũng cho thấy nhóm 3,00–8,30 USD/ngày gần một phần ba dân số thế giới, nên thoát nghèo cực đoan thường là chuyển sang tình trạng dễ bị tổn thương chứ chưa phải an toàn [38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1].",
+  "citations": [
+    "42d5e96ebee4eab749b0b04504c045356a3e531dac7bb893ecc6e12763370c22",
+    "a757691789777b49238ff05d33c7598f0e2642ccf8f8ebb73f50a1e4fa16ff9e",
+    "38bb5873f8a3883ee4d6957b9cdcf3328407a27227d51d70b44a7ff0edb3d5e1"
+  ],
+  "elapsed_seconds": 15.019783875002759,
+  "answerable": true,
+  "context_strict_hit": false,
+  "context_set_hit": true,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

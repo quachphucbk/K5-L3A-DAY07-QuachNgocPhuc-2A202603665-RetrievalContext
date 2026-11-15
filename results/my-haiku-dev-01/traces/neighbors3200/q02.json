@@ -1,0 +1,1245 @@
+{
+  "created_at_utc": "2026-11-14T10:39:35.806223+00:00",
+  "stage": "agent_dev",
+  "query_id": "q02",
+  "config_id": "neighbors3200",
+  "split": "dev",
+  "requested_model": "claude-haiku-5-5",
+  "provider": "anthropic",
+  "retrieval_method": "dense",
+  "semantic_review": "pending",
+  "engine": "starter.agentic.run_agent",
+  "question": "Chuẩn nghèo quốc tế được xác định từ các chuẩn nghèo quốc gia của nhóm nền kinh tế nào, và dùng thống kê nào?",
+  "filter": null,
+  "events": [
+    {
+      "event": "model",
+      "step": 1,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chuẩn nghèo quốc tế được xác định từ các chuẩn nghèo quốc gia của nhóm nền kinh tế nào, và dùng thống kê nào?\", \"filter\": null}"
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gFJWDLJUG8v2sXYbtE",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01MAPE6w91spCZ5oCmL6JhJC",
+            "name": "search_documents",
+            "input": {
+              "query": "international poverty line national poverty lines median low-income countries"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01MAPE6w91spCZ5oCmL6JhJC",
+          "name": "search_documents",
+          "input": {
+            "query": "international poverty line national poverty lines median low-income countries"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 1354,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 62,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0001664,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 1354,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.6346358339942526
+    },
+    {
+      "event": "search",
+      "query": "international poverty line national poverty lines median low-income countries",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "line Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.",
+          "metadata": {
+            "end": 1377,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 30,
+            "segment_start": 0
+          },
+          "score": 0.8934539023963287
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8922668759663791
+        },
+        {
+          "id": "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30",
+          "metadata": {
+            "end": 900,
+            "start": 0,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 30,
+            "segment_start": 0
+          },
+          "score": 0.8869759772129101
+        }
+      ],
+      "context": "[e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\nline Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.\n\n[a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\n30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30\n\n[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\n\n[4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nNote: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+      "context_candidates": [
+        {
+          "id": "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "line Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.",
+          "metadata": {
+            "end": 1377,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 30,
+            "segment_start": 0
+          },
+          "score": 0.8934539023963287
+        },
+        {
+          "id": "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 30,
+            "segment_start": 0,
+            "start": 0,
+            "end": 900,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8922668759663791
+        },
+        {
+          "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 897,
+            "end": 1538,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Note: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 2234,
+            "end": 2494,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+        "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+        "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+        "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e"
+      ],
+      "elapsed_seconds": 0.042005540992249735
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chuẩn nghèo quốc tế được xác định từ các chuẩn nghèo quốc gia của nhóm nền kinh tế nào, và dùng thống kê nào?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01MAPE6w91spCZ5oCmL6JhJC",
+              "name": "search_documents",
+              "input": {
+                "query": "international poverty line national poverty lines median low-income countries"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01MAPE6w91spCZ5oCmL6JhJC",
+              "content": "{\"current_context\": \"[e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\\nline Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\\n\\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.\\n\\n[a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\\n30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30\\n\\n[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\\n\\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\\n\\n[4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nNote: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)\", \"current_context_ids\": [\"e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1\", \"a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219\", \"90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc\", \"4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e\"], \"searched_queries\": [\"international poverty line national poverty lines median low-income countries\"], \"searches_remaining\": 3}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gFRRw95bcFzCZkhBkW",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01Ee6jQ5Umd1f79XgUiCp1aZ",
+            "name": "search_documents",
+            "input": {
+              "query": "international poverty lines derived from national poverty lines of low-income, lower-middle-income, upper-middle-income countries median"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01Ee6jQ5Umd1f79XgUiCp1aZ",
+          "name": "search_documents",
+          "input": {
+            "query": "international poverty lines derived from national poverty lines of low-income, lower-middle-income, upper-middle-income countries median"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2924,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 125,
+          "output_tokens_details": {
+            "thinking_tokens": 41
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003549,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2924,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.5536077919969102
+    },
+    {
+      "event": "search",
+      "query": "international poverty lines derived from national poverty lines of low-income, lower-middle-income, upper-middle-income countries median",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "line Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.",
+          "metadata": {
+            "end": 1377,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 30,
+            "segment_start": 0
+          },
+          "score": 0.8891905546188354
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.887537956237793
+        },
+        {
+          "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+          "metadata": {
+            "end": 1538,
+            "start": 897,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8854447739786242
+        }
+      ],
+      "context": "[e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\nline Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.\n\n[a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\n30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30\n\n[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\n\n[4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nNote: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+      "context_candidates": [
+        {
+          "id": "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "line Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.",
+          "metadata": {
+            "end": 1377,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 30,
+            "segment_start": 0
+          },
+          "score": 0.8891905546188354
+        },
+        {
+          "id": "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 30,
+            "segment_start": 0,
+            "start": 0,
+            "end": 900,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.887537956237793
+        },
+        {
+          "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 897,
+            "end": 1538,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Note: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 2234,
+            "end": 2494,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "03c97da6c6e714cdcd5cbb90f4b1865fe0f34e0b61df9d01a2f91b42322d1266",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "13 Global Poverty: Stalled Pro GreSS and riSinG Con Centration BOX 1.1 Updated poverty lines carry important implications This report relies on updated global poverty lines to incorporate the latest available data on purchasing power parities (PPPs), as compiled by the International Comparison Program. In June 2025, the base year for comparing price levels across economies was updated from 2017 to 2021 (Alfani et al. 2025). PPPs are used to convert welfare data and national poverty lines from local currency units into dollars. a As part of the update, the global poverty lines were revised to reflect updated national poverty lines set by national authorities around the world. The World Bank’s global poverty lines are based on the national poverty lines that are used by governments to monitor poverty within national borders. The international poverty line is the median national poverty",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 0,
+            "end": 896,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+        "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+        "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+        "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e"
+      ],
+      "elapsed_seconds": 0.040092791998176835
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chuẩn nghèo quốc tế được xác định từ các chuẩn nghèo quốc gia của nhóm nền kinh tế nào, và dùng thống kê nào?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01Ee6jQ5Umd1f79XgUiCp1aZ",
+              "name": "search_documents",
+              "input": {
+                "query": "international poverty lines derived from national poverty lines of low-income, lower-middle-income, upper-middle-income countries median"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01Ee6jQ5Umd1f79XgUiCp1aZ",
+              "content": "{\"current_context\": \"[e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\\nline Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\\n\\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.\\n\\n[a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\\n30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30\\n\\n[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\\n\\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\\n\\n[4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nNote: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)\", \"current_context_ids\": [\"e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1\", \"a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219\", \"90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc\", \"4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e\"], \"searched_queries\": [\"international poverty line national poverty lines median low-income countries\", \"international poverty lines derived from national poverty lines of low-income, lower-middle-income, upper-middle-income countries median\"], \"searches_remaining\": 2}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gFYGwCpYEX1hb4DTWe",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_011L2QsME92bBhLCotLsQedL",
+            "name": "search_documents",
+            "input": {
+              "query": "international poverty line set by median of national poverty lines in countries of each income group, 2021 PPP"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_011L2QsME92bBhLCotLsQedL",
+          "name": "search_documents",
+          "input": {
+            "query": "international poverty line set by median of national poverty lines in countries of each income group, 2021 PPP"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 2985,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 136,
+          "output_tokens_details": {
+            "thinking_tokens": 60
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003665,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 2985,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 1.9781138340040343
+    },
+    {
+      "event": "search",
+      "query": "international poverty line set by median of national poverty lines in countries of each income group, 2021 PPP",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.9151412895237647
+        },
+        {
+          "id": "b5cc207879c3796a4a44e7b69ec3a6d673cad1b207a8335406751a057a839816",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 76,
+          "text": "44 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.17 Societal poverty is high in economies with lower societal poverty lines 5 0 10 20 40 80 Societal poverty line ($-a-person-a-day at 2021 PPP, log) 5 10 20 40 80 160 Mean welfare ($-a-person-a-day at 2021 PPP, log) a. Societal poverty line relative to mean welfare 0 20 40 60 80 100 Societal poverty rate (%) 5 10 20 40 80 160 Mean welfare ($-a-person-a-day at 2021 PPP, log) b. Societal poverty rate relative to mean welfare (%) Europe and Central Asia North America East Asia and Paciﬁc MENAAP Latin America and the Caribbean South Asia Sub-Saharan Africa Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: MenaaP = Middle east, north africa, afghanistan, and Pakistan; PPP = purchasing power parity.",
+          "metadata": {
+            "end": 874,
+            "start": 0,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 44,
+            "segment_start": 0
+          },
+          "score": 0.9005200862884586
+        },
+        {
+          "id": "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "line Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.",
+          "metadata": {
+            "end": 1377,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 30,
+            "segment_start": 0
+          },
+          "score": 0.895266121908063
+        }
+      ],
+      "context": "[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\n\n[0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nline among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.\n\n[4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nNote: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)\n\n[b5cc207879c3796a4a44e7b69ec3a6d673cad1b207a8335406751a057a839816 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 76]\n44 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.17 Societal poverty is high in economies with lower societal poverty lines 5 0 10 20 40 80 Societal poverty line ($-a-person-a-day at 2021 PPP, log) 5 10 20 40 80 160 Mean welfare ($-a-person-a-day at 2021 PPP, log) a. Societal poverty line relative to mean welfare 0 20 40 60 80 100 Societal poverty rate (%) 5 10 20 40 80 160 Mean welfare ($-a-person-a-day at 2021 PPP, log) b. Societal poverty rate relative to mean welfare (%) Europe and Central Asia North America East Asia and Paciﬁc MENAAP Latin America and the Caribbean South Asia Sub-Saharan Africa Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: MenaaP = Middle east, north africa, afghanistan, and Pakistan; PPP = purchasing power parity.",
+      "context_candidates": [
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.9151412895237647
+        },
+        {
+          "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 897,
+            "end": 1538,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Note: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 2234,
+            "end": 2494,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "b5cc207879c3796a4a44e7b69ec3a6d673cad1b207a8335406751a057a839816",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 76,
+          "text": "44 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.17 Societal poverty is high in economies with lower societal poverty lines 5 0 10 20 40 80 Societal poverty line ($-a-person-a-day at 2021 PPP, log) 5 10 20 40 80 160 Mean welfare ($-a-person-a-day at 2021 PPP, log) a. Societal poverty line relative to mean welfare 0 20 40 60 80 100 Societal poverty rate (%) 5 10 20 40 80 160 Mean welfare ($-a-person-a-day at 2021 PPP, log) b. Societal poverty rate relative to mean welfare (%) Europe and Central Asia North America East Asia and Paciﬁc MENAAP Latin America and the Caribbean South Asia Sub-Saharan Africa Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: MenaaP = Middle east, north africa, afghanistan, and Pakistan; PPP = purchasing power parity.",
+          "metadata": {
+            "end": 874,
+            "start": 0,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 44,
+            "segment_start": 0
+          },
+          "score": 0.9005200862884586
+        },
+        {
+          "id": "b55283216de12838aedbb6bd7e61d07d363f9615c160e5fb73038cb89b5f61c8",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 76,
+          "text": "Multidimensional deprivations add depth to the poverty profile The World Bank’s absolute and societal poverty lines rely on the measurement of household monetary welfare through the level of consumption or income. The World Bank Multidimensional Poverty Measure (MPM), by contrast, incorporates measures of nonmonetary deprivation (World Bank 2026e). In addition to extreme poverty, which is measured in monetary terms, the MPM includes deprivations in education and access to basic infrastructure services (Lara Ibarra et al. 2026) (refer to annex 1A). (The components of the MPM are among the indicators discussed in chapters 3 and 4.) The MPM defines a household that is deprived along at least one of these three dimensions— monetary welfare, education, and access to infrastructure—as multidimensionally poor. Any person identified as poor using the international poverty line is also identified",
+          "metadata": {
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "printed_page": 44,
+            "segment_start": 0,
+            "start": 876,
+            "end": 1776,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "line Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.",
+          "metadata": {
+            "end": 1377,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 30,
+            "segment_start": 0
+          },
+          "score": 0.895266121908063
+        },
+        {
+          "id": "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 30,
+            "segment_start": 0,
+            "start": 0,
+            "end": 900,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+        "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+        "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e",
+        "b5cc207879c3796a4a44e7b69ec3a6d673cad1b207a8335406751a057a839816"
+      ],
+      "elapsed_seconds": 0.038856750004924834
+    },
+    {
+      "event": "model",
+      "step": 4,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chuẩn nghèo quốc tế được xác định từ các chuẩn nghèo quốc gia của nhóm nền kinh tế nào, và dùng thống kê nào?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_011L2QsME92bBhLCotLsQedL",
+              "name": "search_documents",
+              "input": {
+                "query": "international poverty line set by median of national poverty lines in countries of each income group, 2021 PPP"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_011L2QsME92bBhLCotLsQedL",
+              "content": "{\"current_context\": \"[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\\n\\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\\n\\n[0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nline among low-income economies.\\n\\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.\\n\\n[4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nNote: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)\\n\\n[b5cc207879c3796a4a44e7b69ec3a6d673cad1b207a8335406751a057a839816 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 76]\\n44 POVERTY , PROSPERITY , AND PLANET REPORT 2026 FIGURE 1.17 Societal poverty is high in economies with lower societal poverty lines 5 0 10 20 40 80 Societal poverty line ($-a-person-a-day at 2021 PPP, log) 5 10 20 40 80 160 Mean welfare ($-a-person-a-day at 2021 PPP, log) a. Societal poverty line relative to mean welfare 0 20 40 60 80 100 Societal poverty rate (%) 5 10 20 40 80 160 Mean welfare ($-a-person-a-day at 2021 PPP, log) b. Societal poverty rate relative to mean welfare (%) Europe and Central Asia North America East Asia and Paciﬁc MENAAP Latin America and the Caribbean South Asia Sub-Saharan Africa Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\\n\\nNote: MenaaP = Middle east, north africa, afghanistan, and Pakistan; PPP = purchasing power parity.\", \"current_context_ids\": [\"90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc\", \"0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944\", \"4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e\", \"b5cc207879c3796a4a44e7b69ec3a6d673cad1b207a8335406751a057a839816\"], \"searched_queries\": [\"international poverty line national poverty lines median low-income countries\", \"international poverty lines derived from national poverty lines of low-income, lower-middle-income, upper-middle-income countries median\", \"international poverty line set by median of national poverty lines in countries of each income group, 2021 PPP\"], \"searches_remaining\": 1}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gFhLPagzzXiN3cPnHv",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01DQbUX4meYcbZ34C6fdXhUg",
+            "name": "search_documents",
+            "input": {
+              "query": "median national poverty line of low-income economies used as international poverty line"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_01DQbUX4meYcbZ34C6fdXhUg",
+          "name": "search_documents",
+          "input": {
+            "query": "median national poverty line of low-income economies used as international poverty line"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 3051,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 110
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0003926,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 3051,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 2.852121249990887
+    },
+    {
+      "event": "search",
+      "query": "median national poverty line of low-income economies used as international poverty line",
+      "query_rewritten": true,
+      "filter": null,
+      "results": [
+        {
+          "id": "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "line Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.",
+          "metadata": {
+            "end": 1377,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 30,
+            "segment_start": 0
+          },
+          "score": 0.8975648880004883
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8958859443664551
+        },
+        {
+          "id": "2d3bb1fcb6051bcd4bb33784db356664dd83dc75a234114b0404500792f27386",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 78,
+          "text": "Note: each dot in the figure represents an individual economy. the rate of multidimensional poverty is the share of the population defined as multidimensionally poor. Panels b–f show the share of the population in each economy deprived along one of the five indicators used in the Multidimensional Poverty Measure (MPM). because the MPM is estimated for all economies that are covered by at least one indicator within each dimension, the number of economies in each of the six panels varies. the lowest number of economies covered by data refers to educational enrollment (available on 72 economies) (lara ibarra et al. 2026). the extreme poverty rate is based on the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). by definition, the MPM cannot be lower than the extreme poverty rate. iPl = international poverty line; MenaaP = Middle east, north africa, afghanistan, and",
+          "metadata": {
+            "end": 1982,
+            "start": 1083,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 46,
+            "segment_start": 0
+          },
+          "score": 0.8940015498398827
+        }
+      ],
+      "context": "[e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\nline Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.\n\n[a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\n30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30\n\n[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\n\n[4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nNote: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+      "context_candidates": [
+        {
+          "id": "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "line Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.",
+          "metadata": {
+            "end": 1377,
+            "start": 901,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 30,
+            "segment_start": 0
+          },
+          "score": 0.8975648880004883
+        },
+        {
+          "id": "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 62,
+          "text": "30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 30,
+            "segment_start": 0,
+            "start": 0,
+            "end": 900,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+          "metadata": {
+            "end": 2232,
+            "start": 1540,
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "chunking": "paragraph",
+            "printed_page": 13,
+            "segment_start": 0
+          },
+          "score": 0.8958859443664551
+        },
+        {
+          "id": "0ed1996f2ed3d0eef805763ef4ae2071260d69e38582f5538a6b29e3f2561944",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "line among low-income economies.\n\nIt thus reflects the typical standard by which governments in the poorest economies define poverty at the national level. Upward revisions in national poverty lines, especially in West Africa, have stemmed from improvements in household survey methodologies that have resulted in higher measured consumption and thus also upward revisions in national poverty lines. These higher national poverty lines do not reflect a more generous standard of what it means to be poor. They reflect better data to assess the cost of basic needs for a minimum food bundle and an allowance for essential nonfood consumption.",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 897,
+            "end": 1538,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 45,
+          "text": "Note: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+          "metadata": {
+            "section": "Gains in global poverty reduction could be reversed in coming decades",
+            "printed_page": 13,
+            "segment_start": 0,
+            "start": 2234,
+            "end": 2494,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "2d3bb1fcb6051bcd4bb33784db356664dd83dc75a234114b0404500792f27386",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 78,
+          "text": "Note: each dot in the figure represents an individual economy. the rate of multidimensional poverty is the share of the population defined as multidimensionally poor. Panels b–f show the share of the population in each economy deprived along one of the five indicators used in the Multidimensional Poverty Measure (MPM). because the MPM is estimated for all economies that are covered by at least one indicator within each dimension, the number of economies in each of the six panels varies. the lowest number of economies covered by data refers to educational enrollment (available on 72 economies) (lara ibarra et al. 2026). the extreme poverty rate is based on the $3.00-a-person-a-day poverty line (in 2021 purchasing power parity terms). by definition, the MPM cannot be lower than the extreme poverty rate. iPl = international poverty line; MenaaP = Middle east, north africa, afghanistan, and",
+          "metadata": {
+            "end": 1982,
+            "start": 1083,
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "chunking": "paragraph",
+            "printed_page": 46,
+            "segment_start": 0
+          },
+          "score": 0.8940015498398827
+        },
+        {
+          "id": "be3565042a2ba801b31ad1e6c4ef1da635cca782011234e750e3766a08b28c22",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 78,
+          "text": "calculations based on data from the Multidimensional Poverty Measure database (September 2026), World bank, https://www.worldbank.org/en/topic/poverty/brief/multidimensional-poverty-measure.",
+          "metadata": {
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "printed_page": 46,
+            "segment_start": 0,
+            "start": 891,
+            "end": 1081,
+            "chunking": "paragraph"
+          }
+        },
+        {
+          "id": "659121aa37c2a3926df9e4b5d170d6bd7e6413e6f3dc02d1dc358e5c7ac72b46",
+          "source_id": "worldbank-ppp-2026-ch1",
+          "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+          "page": 78,
+          "text": "Pakistan.",
+          "metadata": {
+            "section": "Poverty extends beyond absolute welfare thresholds",
+            "printed_page": 46,
+            "segment_start": 0,
+            "start": 1983,
+            "end": 1992,
+            "chunking": "paragraph"
+          }
+        }
+      ],
+      "context_ids": [
+        "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+        "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+        "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+        "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e"
+      ],
+      "elapsed_seconds": 0.035555125010432675
+    },
+    {
+      "event": "model",
+      "step": 5,
+      "request_messages": [
+        {
+          "role": "user",
+          "content": "{\"question\": \"Chuẩn nghèo quốc tế được xác định từ các chuẩn nghèo quốc gia của nhóm nền kinh tế nào, và dùng thống kê nào?\", \"filter\": null}"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool_use",
+              "id": "toolu_01DQbUX4meYcbZ34C6fdXhUg",
+              "name": "search_documents",
+              "input": {
+                "query": "median national poverty line of low-income economies used as international poverty line"
+              },
+              "caller": {
+                "type": "direct"
+              }
+            }
+          ]
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "tool_result",
+              "tool_use_id": "toolu_01DQbUX4meYcbZ34C6fdXhUg",
+              "content": "{\"current_context\": \"[e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\\nline Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\\n\\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.\\n\\n[a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\\n30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30\\n\\n[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\\n\\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\\n\\n[4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\\nNote: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)\", \"current_context_ids\": [\"e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1\", \"a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219\", \"90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc\", \"4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e\"], \"searched_queries\": [\"international poverty line national poverty lines median low-income countries\", \"international poverty lines derived from national poverty lines of low-income, lower-middle-income, upper-middle-income countries median\", \"international poverty line set by median of national poverty lines in countries of each income group, 2021 PPP\", \"median national poverty line of low-income economies used as international poverty line\"], \"searches_remaining\": 0}",
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "response": {
+        "id": "msg_011Ch2gFvWuFPCQbWkuxUPLp",
+        "model": "claude-haiku-5-5",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_016kLjdSxJzEF6GxDQhsDQd9",
+            "name": "finish",
+            "input": {
+              "status": "abstain",
+              "answer": "Chưa đủ bằng chứng trong kho để trả lời đầy đủ. Các đoạn đã tìm được cho biết các chuẩn nghèo toàn cầu được điều chỉnh theo PPP 2021 theo nhóm thu nhập: nhóm thu nhập thấp $3.00, nhóm trung-thấp $4.20, nhóm trung-cao $8.30 (trước đây theo PPP 2017 là $2.15, $3.65, $6.85). Đoạn này cũng nói việc này phản ánh các chuẩn nghèo quốc gia mới nhất và PPP 2021. Tuy nhiên, các đoạn truy xuất được không nêu rõ chuẩn nghèo quốc tế được tính từ chuẩn nghèo quốc gia của nhóm nền kinh tế nào, cũng không nêu thống kê dùng để tổng hợp (ví dụ trung vị). Đã dùng hết lượt tìm kiếm nên không thể suy đoán thêm.",
+              "citations": []
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "tool_call": {
+          "type": "tool_use",
+          "id": "toolu_016kLjdSxJzEF6GxDQhsDQd9",
+          "name": "finish",
+          "input": {
+            "status": "abstain",
+            "answer": "Chưa đủ bằng chứng trong kho để trả lời đầy đủ. Các đoạn đã tìm được cho biết các chuẩn nghèo toàn cầu được điều chỉnh theo PPP 2021 theo nhóm thu nhập: nhóm thu nhập thấp $3.00, nhóm trung-thấp $4.20, nhóm trung-cao $8.30 (trước đây theo PPP 2017 là $2.15, $3.65, $6.85). Đoạn này cũng nói việc này phản ánh các chuẩn nghèo quốc gia mới nhất và PPP 2021. Tuy nhiên, các đoạn truy xuất được không nêu rõ chuẩn nghèo quốc tế được tính từ chuẩn nghèo quốc gia của nhóm nền kinh tế nào, cũng không nêu thống kê dùng để tổng hợp (ví dụ trung vị). Đã dùng hết lượt tìm kiếm nên không thể suy đoán thêm.",
+            "citations": []
+          },
+          "caller": {
+            "type": "direct"
+          }
+        },
+        "usage": {
+          "input_tokens": 3019,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 813,
+          "output_tokens_details": {
+            "thinking_tokens": 370
+          },
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "cost_estimate": {
+          "estimated_usd": 0.0007084,
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "output": "0.50",
+            "read": "0.01",
+            "write5m": "0.125",
+            "write1h": "0.20"
+          },
+          "prompt_tokens_including_cache": 3019,
+          "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "checked_on": "2026-11-14",
+          "note": "Standard direct API estimate; excludes taxes, discounts and any call without returned usage. Not a verified invoice."
+        }
+      },
+      "elapsed_seconds": 5.117085124991718
+    },
+    {
+      "event": "finish",
+      "status": "abstain",
+      "answer": "Chưa đủ bằng chứng trong kho để trả lời đầy đủ. Các đoạn đã tìm được cho biết các chuẩn nghèo toàn cầu được điều chỉnh theo PPP 2021 theo nhóm thu nhập: nhóm thu nhập thấp $3.00, nhóm trung-thấp $4.20, nhóm trung-cao $8.30 (trước đây theo PPP 2017 là $2.15, $3.65, $6.85). Đoạn này cũng nói việc này phản ánh các chuẩn nghèo quốc gia mới nhất và PPP 2021. Tuy nhiên, các đoạn truy xuất được không nêu rõ chuẩn nghèo quốc tế được tính từ chuẩn nghèo quốc gia của nhóm nền kinh tế nào, cũng không nêu thống kê dùng để tổng hợp (ví dụ trung vị). Đã dùng hết lượt tìm kiếm nên không thể suy đoán thêm.",
+      "citations": [],
+      "citation_check": "ID membership/format only; semantic support requires review"
+    }
+  ],
+  "searches": 4,
+  "model_calls": 5,
+  "usage": {
+    "input_tokens": 13333,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1311
+  },
+  "cost_usd": null,
+  "status": "abstain",
+  "configuration": {
+    "top_k": 3,
+    "budget_chars": 3200,
+    "max_searches": 4,
+    "max_model_calls": 7,
+    "context_policy": "neighbors"
+  },
+  "context": "[e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\nline Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.\n\n[a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219 | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 62]\n30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30\n\n[90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nCombined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.\n\n[4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e | https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694 | page 45]\nNote: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+  "context_ids": [
+    "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+    "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+    "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+    "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e"
+  ],
+  "context_chunks": [
+    {
+      "id": "e205a4a2291fed4e118677a27260e4513a7bf833a37e40f23c0f142d778d63f1",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 62,
+      "text": "line Low incomeLower-middle incomeUpper-middle incomeHigh income Source: World bank calculations based on data from the Poverty and inequality Platform (version September 2026), World bank, https://pip.worldbank.org/home.\n\nNote: the figure reports the share of the global poor living in each income group at three poverty lines (in 2021 purchasing power parity terms). economies are classified into income groups according to the World bank classification in fiscal year 2026.",
+      "metadata": {
+        "end": 1377,
+        "start": 901,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 30,
+        "segment_start": 0
+      },
+      "score": 0.8975648880004883
+    },
+    {
+      "id": "a1df9c70af97a97bac71810607c83cd2fdf4d34df2918407c4de6e0e1a094219",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 62,
+      "text": "30 POVERTY , PROSPERITY , AND PLANET REPORT 2026 economies. At the $4.20 line, nearly two-thirds of the global poor live in middle-income economies (54 percent in lower-middle-income economies). At the $8.30 line, 80 percent of the poor are living in middle-income economies. A handful of large middle-income economies drive these numbers. At the $4.20 line, India, Nigeria, and Pakistan, together, account for more than a third of the global poor. At the $8.30 line, India alone accounts for over 1 billion people FIGURE 1.8 Most of the world’s poor live in middle-income economies, especially at the higher poverty lines 11 53 35 19 62 18 14 56 29 37 54 8 18 52 29 49 44 6 0 20 40 60 80 100 Share of global poor (%) Share of global poor (%) 2010 2015 2020 2025 a. $3.00 line 0 20 40 60 80 100 2010 2015 2020 2025 b. $4.20 line Share of global poor (%) 0 20 40 60 80 100 2010 2015 2020 2025 c. $8.30",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 30,
+        "segment_start": 0,
+        "start": 0,
+        "end": 900,
+        "chunking": "paragraph"
+      }
+    },
+    {
+      "id": "90b36dfa5e309dd66b2ea67f30adb730b05bc713980c6f336550b14353d1d5bc",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 45,
+      "text": "Combined, the 2021 PPPs and the latest national poverty lines have contributed to higher global poverty lines (refer to table B1.1.1). They do not constitute a movement of the goalpost in poverty measurement. Rather, they reflect evolving standards of how the poorest countries measure consumption and evolving differences in the cost of living across countries as captured by an established methodology (World Bank 2025d).\n\nTABLE B1.1.1 Revised global poverty lines Economy group Previous poverty line (2017 PPPs) Revised poverty line (2021 PPPs) Low-income economies $2.15 $3.00 Lower-middle-income economies $3.65 $4.20 Upper-middle-income economies $6.85 $8.30 Source: alfani et al. 2025.",
+      "metadata": {
+        "end": 2232,
+        "start": 1540,
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "chunking": "paragraph",
+        "printed_page": 13,
+        "segment_start": 0
+      },
+      "score": 0.8958859443664551
+    },
+    {
+      "id": "4b793cc69806d0f1b35177eaf4f02433115f0de0ea443b64fbe752d20d954d6e",
+      "source_id": "worldbank-ppp-2026-ch1",
+      "source": "https://openknowledge.worldbank.org/entities/publication/6fbbb475-58f1-49e0-90b3-f329e8124694",
+      "page": 45,
+      "text": "Note: the economy income groups have been updated as needed, and the sample of economies on which information is available has expanded. However, these changes have had only a small effect on the poverty data overall. PPP = purchasing power parity. (continued)",
+      "metadata": {
+        "section": "Gains in global poverty reduction could be reversed in coming decades",
+        "printed_page": 13,
+        "segment_start": 0,
+        "start": 2234,
+        "end": 2494,
+        "chunking": "paragraph"
+      }
+    }
+  ],
+  "cost_estimate_coverage": {
+    "known_calls": 5,
+    "returned_calls": 5
+  },
+  "estimated_cost_usd": 0.0019888,
+  "answer": "Chưa đủ bằng chứng trong kho để trả lời đầy đủ. Các đoạn đã tìm được cho biết các chuẩn nghèo toàn cầu được điều chỉnh theo PPP 2021 theo nhóm thu nhập: nhóm thu nhập thấp $3.00, nhóm trung-thấp $4.20, nhóm trung-cao $8.30 (trước đây theo PPP 2017 là $2.15, $3.65, $6.85). Đoạn này cũng nói việc này phản ánh các chuẩn nghèo quốc gia mới nhất và PPP 2021. Tuy nhiên, các đoạn truy xuất được không nêu rõ chuẩn nghèo quốc tế được tính từ chuẩn nghèo quốc gia của nhóm nền kinh tế nào, cũng không nêu thống kê dùng để tổng hợp (ví dụ trung vị). Đã dùng hết lượt tìm kiếm nên không thể suy đoán thêm.",
+  "citations": [],
+  "elapsed_seconds": 13.29252175000147,
+  "answerable": true,
+  "context_strict_hit": false,
+  "context_set_hit": false,
+  "first_search_hit3": false,
+  "first_search_is_original_query": false
+}

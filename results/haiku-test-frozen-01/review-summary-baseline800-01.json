@@ -1,0 +1,80 @@
+{
+  "grounded_answer": {
+    "distribution": {
+      "0": 3,
+      "1": 0,
+      "2": 2
+    },
+    "N": 5,
+    "mean_out_of_2": 0.8
+  },
+  "citation_validity": {
+    "n": 2,
+    "N": 2
+  },
+  "answer_citation_coverage": {
+    "n": 2,
+    "N": 2
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2
+  },
+  "false_abstention": {
+    "n": 3,
+    "N": 5
+  },
+  "context_sufficient_reviewed": {
+    "n": 2,
+    "N": 5
+  },
+  "errors": 0,
+  "limits": 0,
+  "context_grade_distribution": {
+    "0": 3,
+    "1": 0,
+    "2": 2
+  },
+  "technical": {
+    "scheduled": 7,
+    "status_counts": {
+      "answered": 2,
+      "abstain": 5
+    },
+    "tool_use": {
+      "n": 7,
+      "N": 7
+    },
+    "search_distribution": {
+      "1": 1,
+      "2": 1,
+      "4": 5
+    },
+    "model_calls": 31,
+    "elapsed_seconds": 48.97179808301735,
+    "usage": {
+      "input_tokens": 52515,
+      "output_tokens": 5019,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "known_estimated_cost_usd": 0.007761,
+    "cost_estimate_complete": true,
+    "context_evidence_exact": {
+      "n": 2,
+      "N": 5
+    },
+    "context_evidence_set": {
+      "n": 2,
+      "N": 5
+    },
+    "semantic_quality": "pending human review; status counts are not accuracy/abstention correctness",
+    "billing": "Estimate from returned usage only; not invoice or hardware cost."
+  },
+  "review_provenance": "Codex presented file evidence and proposed labels; Quách Ngọc Phúc explicitly confirmed each case in chat.",
+  "abstention_policy": "Strict review includes no unsupported added assertions; raw abstain status reported separately. Unique citation IDs count once; support requires all attached claims.",
+  "raw_unanswerable_abstention": {
+    "n": 2,
+    "N": 2
+  }
+}

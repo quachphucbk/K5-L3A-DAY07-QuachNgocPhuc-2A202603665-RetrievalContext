@@ -1,0 +1,121 @@
+[
+  {
+    "query_id": "t01",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:11:24.123088+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "1fe2bf3d370344e1cad8b7960f769eb37c35b5337bae6bd3b535f5b2b080ab17",
+        "supports": true,
+        "reason": "Có trong context trang PDF 55; hỗ trợ phân loại nhóm thu nhập theo năm 2024, giữ cố định thành phần quốc gia khi so sánh 1990/2024, bốn nhóm và PPP 2021."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ phân loại năm 2024 và thành phần quốc gia không đổi. Context đủ evidence cùng nguồn/trang; phần bổ sung bốn nhóm và PPP 2021 cũng có trong nguồn. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "t02",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:12:50.030127+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "51f7094ec21a71dc3b4229ae733f470e7d5aaa726279bb09067c773a7a0438c0",
+        "supports": true,
+        "reason": "Có trong context trang PDF 56; hỗ trợ giảm tỷ lệ nghèo cùng cực châu Phi cận Sahara từ 62% năm 1990 xuống 43% năm 2026 và giảm ít kể từ 2014."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ tỷ lệ, mốc năm và khu vực; phần bổ sung về giảm ít từ 2014 cũng có trong nguồn. Context đủ evidence cùng nguồn/trang và citation hỗ trợ. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "t03",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:15:34.391925+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "f714d51bebf5e4b5a3044ee78031b6934ce586833dcf39346d7587502f1ee913",
+        "supports": true,
+        "reason": "Có trong context trang PDF 58; hỗ trợ Figure 1.5 loại bỏ ba phân vị thấp nhất/cao nhất và các giai đoạn growth incidence 2000–2019, 2019–2025."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ ba phân vị ở mỗi đầu phân phối. Context đủ evidence cùng nguồn/trang; các giai đoạn bổ sung có trong cùng chú thích nguồn. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "t04",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:17:09.821067+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "6ac6e5fb468044851eb34c0122cc5b524a94ce7a19d289005857664b6812663a",
+        "supports": true,
+        "reason": "Có trong context trang PDF 60; hỗ trợ dissimilarity 0.31 năm 2000, 0.65 năm 2024, số liệu 2010 và ý nghĩa chỉ số 0 đến 1."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ hai giá trị cùng mốc năm; thông tin bổ sung về năm 2010 và ý nghĩa chỉ số có trong nguồn. Context đủ evidence cùng nguồn/trang. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "t05",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:18:49.533198+07:00",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      {
+        "id": "bf93a4c4e20a8d0ddc352e4073f3a968b9559c8e4ee2ada8512e863d71256024",
+        "supports": true,
+        "reason": "Có trong context trang PDF 68; hỗ trợ tỷ lệ nghèo năm 2024 lần lượt 22%, 6%, 1% cho không có giáo dục chính quy, trung học và bậc cao."
+      },
+      {
+        "id": "643b1cdf26d1d0facabd57a7a4f6fe65845e0052ec1d899a212f856a6acc062d",
+        "supports": true,
+        "reason": "Có trong context trang PDF 68; hỗ trợ ngưỡng nghèo $3.00/người/ngày theo PPP 2021 và dữ liệu năm 2024."
+      }
+    ],
+    "abstention_correct": null,
+    "reason": "Trả lời đúng và đủ ba nhóm, ba tỷ lệ 22%/6%/1% và năm 2024. Context đủ evidence cùng nguồn/trang; điều kiện $3/người/ngày PPP 2021 có trong chú thích. Hai citation hỗ trợ phát biểu tương ứng. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận answer=2, context=2 và hai citation hợp lệ trong chat: ok."
+  },
+  {
+    "query_id": "tneg01",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:20:08.280604+07:00",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Benchmark tneg01 thiếu evidence về hệ số co giãn nhân quả nghèo theo giá năng lượng tại Việt Nam kèm sai số chuẩn. Agent tìm 4 lượt; context chỉ có chú thích biểu đồ/bảng và cách đo nghèo. Agent từ chối rõ ràng, không bịa số liệu. Đề xuất tìm thêm không khẳng định trang/phụ lục khác chắc chắn có đáp án. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận từ chối đúng trong chat: ok."
+  },
+  {
+    "query_id": "tneg02",
+    "config_id": "budget3200",
+    "review_status": "verified",
+    "reviewer": "Quách Ngọc Phúc",
+    "reviewed_at": "2026-11-14T21:21:57.583339+07:00",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": false,
+    "reason": "Agent tìm 4 lượt và từ chối cung cấp mã Python/phiên bản thư viện, không bịa code. Tuy nhiên gợi ý gán Annex 1a vào trang PDF 43–79 của chương 1 chưa có căn cứ: 43–79 là phạm vi toàn snapshot, không phải phạm vi phụ lục đã xác nhận từ context. Theo tiêu chí nghiêm ngặt từ chối không kèm thông tin thiếu căn cứ, abstention_correct=false; hành vi từ chối vẫn được ghi riêng trong trace. Codex trình bày dẫn chứng từ file; Quách Ngọc Phúc xác nhận đánh giá lượt cuối trong chat: ok."
+  }
+]

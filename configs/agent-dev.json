@@ -1,0 +1,21 @@
+{
+  "model": "claude-haiku-5-5",
+  "split": "dev",
+  "purpose": "Chọn/thử trên dev, không phải cấu hình cuối và không chạy test mới.",
+  "configs": [
+    {"id": "baseline800", "method": "dense", "top_k": 3, "budget": 800, "max_searches": 4, "max_model_calls": 7, "context_policy": "latest", "parent": null,
+     "hypothesis": "Baseline để đo mất evidence khi whole chunk + header không vừa 800 ký tự."},
+    {"id": "budget3200", "method": "dense", "top_k": 3, "budget": 3200, "max_searches": 4, "max_model_calls": 7, "context_policy": "latest", "parent": "baseline800",
+     "hypothesis": "Chỉ tăng budget để giữ khoảng ba chunk gần 900 ký tự kèm nguồn; có thể tăng token nhưng giảm mất evidence."},
+    {"id": "neighbors3200", "method": "dense", "top_k": 3, "budget": 3200, "max_searches": 4, "max_model_calls": 7, "context_policy": "neighbors", "parent": "budget3200",
+     "hypothesis": "Chỉ đổi chọn context: thêm hàng xóm cùng trang/section theo offset để nối evidence bị tách; có thể đẩy mất đoạn khác."}
+  ],
+  "rationale": {
+    "top_k": "3 để xuất cùng cutoff benchmark ranking và hạn chế context nhiễu.",
+    "max_searches": "4 cho phép query gốc, viết lại/tiếng Anh và lượt tìm bổ sung; là giới hạn vận hành, chưa chứng minh tối ưu.",
+    "max_model_calls": "7 để có lượt finish/sửa citation ngoài lượt search; limit tách khỏi abstain.",
+    "common_conditions": "Cùng model, prompt, corpus, dev, top-k và giới hạn. Native auto, không ép temperature mà API đã báo deprecated.",
+    "controlled_context": "Đo context offline từ cùng retrieval trace ở bước 2 để cô lập packing. Agent có thể viết query khác giữa các run, cần báo riêng.",
+    "selection": "Chỉ chọn sau review grounded answer/citation, tiếp đến context; hòa chất lượng thì xét latency và estimated API USD. Không chọn bằng test."
+  }
+}

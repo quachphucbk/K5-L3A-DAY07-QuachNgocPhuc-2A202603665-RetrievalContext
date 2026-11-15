@@ -1,0 +1,79 @@
+{
+  "split": "dev",
+  "stage": "retrieval_only",
+  "initialization": {
+    "bm25_seconds": 0.0030374159978237003,
+    "dense_seconds": 3.7551292080024723
+  },
+  "wall_seconds": 4.190024415991502,
+  "api_cost_usd": 0,
+  "limitations": [
+    "Literal normalized evidence proxy; semantic equivalents need separate human review.",
+    "Packed context is a candidate context, not yet sent to a model; no grounded answer/citation/abstention metrics.",
+    "Quality denominator excludes retrieval errors; report errors, total and scored counts together.",
+    "Shared branch rankings: hybrid search time equals BM25 + dense + fusion; initialization reported separately.",
+    "Local inference API USD=0, excludes hardware/electricity; one measurement, fixed branch order, cache may matter."
+  ],
+  "metrics": [
+    {
+      "method": "dense",
+      "scheduled": 17,
+      "successful": 17,
+      "errors": 0,
+      "answerable_total": 15,
+      "answerable_scored": 15,
+      "unanswerable_successful": 2,
+      "mean_search_ms": 24.553156823351266,
+      "hit1_n": 5,
+      "hit1_rate": 0.3333333333333333,
+      "hit3_n": 7,
+      "hit3_rate": 0.4666666666666667,
+      "evidence_set_hit3_n": 7,
+      "evidence_set_hit3_rate": 0.4666666666666667,
+      "packed_context_strict_hit_n": 2,
+      "packed_context_strict_hit_rate": 0.13333333333333333,
+      "packed_context_set_hit_n": 2,
+      "packed_context_set_hit_rate": 0.13333333333333333
+    },
+    {
+      "method": "bm25",
+      "scheduled": 17,
+      "successful": 17,
+      "errors": 0,
+      "answerable_total": 15,
+      "answerable_scored": 15,
+      "unanswerable_successful": 2,
+      "mean_search_ms": 0.18113964624182485,
+      "hit1_n": 1,
+      "hit1_rate": 0.06666666666666667,
+      "hit3_n": 4,
+      "hit3_rate": 0.26666666666666666,
+      "evidence_set_hit3_n": 4,
+      "evidence_set_hit3_rate": 0.26666666666666666,
+      "packed_context_strict_hit_n": 2,
+      "packed_context_strict_hit_rate": 0.13333333333333333,
+      "packed_context_set_hit_n": 2,
+      "packed_context_set_hit_rate": 0.13333333333333333
+    },
+    {
+      "method": "hybrid",
+      "scheduled": 17,
+      "successful": 17,
+      "errors": 0,
+      "answerable_total": 15,
+      "answerable_scored": 15,
+      "unanswerable_successful": 2,
+      "mean_search_ms": 24.796465528197587,
+      "hit1_n": 4,
+      "hit1_rate": 0.26666666666666666,
+      "hit3_n": 6,
+      "hit3_rate": 0.4,
+      "evidence_set_hit3_n": 6,
+      "evidence_set_hit3_rate": 0.4,
+      "packed_context_strict_hit_n": 2,
+      "packed_context_strict_hit_rate": 0.13333333333333333,
+      "packed_context_set_hit_n": 2,
+      "packed_context_set_hit_rate": 0.13333333333333333
+    }
+  ]
+}
